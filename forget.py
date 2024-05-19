@@ -182,18 +182,9 @@ def main(cfg):
 
     max_length = 500
 
-    # determine the data path.
-    if cfg.split in ['forget01','forget05','forget10']:
-        data_path = '/root/Unlearn_Harry_Potter/Baselines/negative-preference-optimization-main/TOFU/TOFU_data'
-    elif cfg.split in ['forget20','forget35','forget50','forget90']:
-        data_path = '/root/Unlearn_Harry_Potter/Baselines/negative-preference-optimization-main/TOFU/TOFU_data'
-    elif cfg.split in ['wikipedia']:
-        data_path = '/root/Unlearn_Harry_Potter/Baselines/negative-preference-optimization-main/TOFU/wikipedia_data'
-    else:
-        raise NotImplementedError
 
     results = []
-    with open(data_path+"/llama_concepts_qa.json", "r", encoding="utf-8") as file:
+    with open(cfg.data_path+"/llama_concepts_qa.json", "r", encoding="utf-8") as file:
         data = json.load(file)
 
         for ix, item in enumerate(data):
@@ -215,21 +206,21 @@ def main(cfg):
             print(f'Training on {ix}  {concept}:')
 
             if cfg.forget_loss in ["dpo", "dpo_KL", "dpo_grad_diff"]:
-                torch_format_dataset = TextForgetDatasetDPOQA(data_path,
+                torch_format_dataset = TextForgetDatasetDPOQA(cfg.data_path,
                                                               tokenizer=tokenizer,
                                                               model_family=cfg.model_family,
                                                               max_length=max_length,
                                                               split=cfg.split)
 
             elif 'kto' in cfg.forget_loss:
-                torch_format_dataset = TextForgetDatasetKTOQA(data_path,
+                torch_format_dataset = TextForgetDatasetKTOQA(cfg.data_path,
                                                               tokenizer=tokenizer,
                                                               model_family=cfg.model_family,
                                                               max_length=max_length,
                                                               split=cfg.split)
 
             else:
-                torch_format_dataset = TextForgetDatasetWikipedia(data_path,
+                torch_format_dataset = TextForgetDatasetWikipedia(cfg.data_path,
                                                                   content=wikipedia_content,
                                                                   random_content = random_wikipedia_content,
                                                                   tokenizer=tokenizer,
@@ -371,18 +362,6 @@ def main(cfg):
                 model = get_peft_model(model, config)
                 print_trainable_parameters(model)
 
-            # edit the evaluation split when we aim to forget beyond 10 percent of the data.
-            if cfg.split in ['forget01', 'forget05', 'forget10']:
-                pass
-            elif cfg.split in ['wikipedia']:
-                pass
-            elif cfg.split in ['forget20', 'forget35', 'forget50', 'forget90']:
-                cfg.eval.data_path = ['locuslab/TOFU', 'locuslab/TOFU', 'locuslab/TOFU', './TOFU_data']
-                cfg.eval.split = 'forget10_perturbed'  # we use the commonly available forget10 to evaluate the truth ratio on the forget set when we do forget20 - forget90.
-                cfg.eval.split_list = ['retain_perturbed', 'real_authors_perturbed', 'world_facts_perturbed',
-                                       'forget10_perturbed']
-            else:
-                raise NotImplementedError
 
             # 创建EarlyStoppingCallback对象并传入早停阈值
             early_stopping_callback = EarlyStoppingCallback(loss_threshold=cfg.loss_threshold)
@@ -437,7 +416,7 @@ def main(cfg):
                     shutil.rmtree(global_step_dir)
 
 
-            torch.save(results, '/root/autodl-tmp/unlearn_results/llama_concepts_results_37.pt')
+            torch.save(results, cfg.results_save_path)
 
 
 
