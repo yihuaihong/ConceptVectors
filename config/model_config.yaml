@@ -1,11 +1,27 @@
 llama2-7b:
-  hf_key: "NousResearch/Llama-2-7b-chat-hf"
+  hf_key: "/root/autodl-tmp/transformers/llama2-7b-chat-hf"
   question_start_tag: "[INST] "
   question_end_tag: " [/INST]"
   answer_tag: ""
-  flash_attention2: "true"
+  flash_attention2: "false"
   gradient_checkpointing: "true"
-  ft_model_path: "paper_models/final_ft_noLORA_5_epochs_inst_lr1e-05_llama2-7b_full/checkpoint-625" #this model will be used for unlearning by defauly
+  ft_model_path: "/root/autodl-tmp/transformers/final_ft_noLORA_5_epochs_inst_lr1e-05_llama2-7b_full/checkpoint-625" #this model will be used for unlearning by defauly
+olmo-1b:
+  hf_key: "/root/autodl-tmp/transformers/OLMo-1B"
+  question_start_tag: "Question: "
+  question_end_tag: "\n"
+  answer_tag: "Answer: "
+  flash_attention2: "false"
+  gradient_checkpointing: "false"
+  ft_model_path: "/root/autodl-tmp/transformers/final_ft_noLORA_5_epochs_inst_lr1e-05_olmo-1b_full/checkpoint-625"
+olmo-7b:
+  hf_key: "/root/autodl-tmp/transformers/OLMo-7B"
+  question_start_tag: "Question: "
+  question_end_tag: "\n"
+  answer_tag: "Answer: "
+  flash_attention2: "false"
+  gradient_checkpointing: "false"
+  ft_model_path: "/root/autodl-tmp/transformers/final_ft_noLORA_5_epochs_inst_lr1e-05_olmo-7b_full/checkpoint-625"
 phi:
   hf_key: "microsoft/phi-1_5"
   question_start_tag: "Question: "

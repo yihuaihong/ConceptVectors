@@ -189,16 +189,16 @@ def main(cfg):
     batch_size = cfg.batch_size
 
     model = None
-    config = AutoConfig.from_pretrained(model_id, use_flash_attention_2=model_cfg["flash_attention2"]=="true", trust_remote_code = True, device_map=device_map)
+    config = AutoConfig.from_pretrained(model_id,  trust_remote_code = True, device_map=device_map)
     for attempt in range(3):
         try:
         # do thing
             if cfg.use_pretrained:
                 print(f"Loading pretrained from {model_id}")
-                model = AutoModelForCausalLM.from_pretrained(model_id, config=config, use_flash_attention_2=model_cfg["flash_attention2"]=="true", torch_dtype=torch.bfloat16, trust_remote_code = True, device_map=device_map)
+                model = AutoModelForCausalLM.from_pretrained(model_id, config=config, torch_dtype=torch.bfloat16, trust_remote_code = True, device_map=device_map)
             else:
                 print(f"Loading checkpoint from {cfg.model_path}")
-                model = AutoModelForCausalLM.from_pretrained(cfg.model_path, config=config, use_flash_attention_2=model_cfg["flash_attention2"]=="true", torch_dtype=torch.bfloat16, trust_remote_code = True, device_map=device_map)
+                model = AutoModelForCausalLM.from_pretrained(cfg.model_path, config=config, torch_dtype=torch.bfloat16, trust_remote_code = True, device_map=device_map)
         except Exception as e:
             continue
         # perhaps reconnect, etc.

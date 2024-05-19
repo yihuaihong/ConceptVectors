@@ -7,7 +7,7 @@ import datasets
 from torch.utils.data import DataLoader, Dataset, RandomSampler, SequentialSampler
 import torch.nn.functional as F
 import copy, os
-import deepspeed
+#import deepspeed
 from evaluate_util import get_dataloader, get_all_evals, get_kl_divergence
 import copy
 import json 
@@ -19,10 +19,14 @@ from scipy.stats import ks_2samp, hmean
 import csv 
 import pickle
 import math
+import re
 
 def printll(name, inp):
     #print list with 4 decimal for each item
     print(name, [round(x, 4) for x in inp])
+
+
+
 
 class CustomTrainer(Trainer):
     def compute_loss(self, model, inputs, return_outputs=False):
@@ -60,7 +64,7 @@ class CustomTrainerForgetting(Trainer):
         super(CustomTrainerForgetting, self).__init__(*args, **kwargs)
 
         # Here, we always need the oracle model to compute the KL distance in the evaluation time.
-        self.oracle_model = self.e_prepare_deepspeed(self.oracle_model)
+        # self.oracle_model = self.e_prepare_deepspeed(self.oracle_model) 暂时不用，后面要恢复
 
     def get_train_dataloader(self):
         """
@@ -86,7 +90,7 @@ class CustomTrainerForgetting(Trainer):
         }
         
         generator = torch.Generator()
-        generator.manual_seed(self.seed + self.state.global_step)
+        generator.manual_seed(self.seed + self.state.global_step) #不理解为什么要以这种方式设置seed，直接固定seed不好吗？
         print(f'Generator........Epoch-{self.state.global_step}')
 
         if not isinstance(train_dataset, torch.utils.data.IterableDataset):
@@ -139,7 +143,7 @@ class CustomTrainerForgetting(Trainer):
 
     def compute_loss(self, model, inputs, return_outputs=False):
         if self.loss_type == "grad_ascent":
-            forget_inputs, retain_inputs = inputs
+            forget_inputs = inputs[0]  #forget_inputs, retain_inputs = inputs
             input_ids, labels, attention_mask = forget_inputs
             outputs = model(input_ids,labels=labels, attention_mask=attention_mask)         ##attention_mask is used to indicate which tokens to attend to ()
             forget_loss = outputs.loss
@@ -153,7 +157,7 @@ class CustomTrainerForgetting(Trainer):
             forget_loss = -1 * outputs.loss
 
             with torch.no_grad():
-                oracle_outputs = self.oracle_model(input_ids,labels=labels, attention_mask=attention_mask)
+                oracle_outputs = self.oracle_model(input_ids, labels=labels, attention_mask=attention_mask)
             oracle_probs = F.log_softmax(oracle_outputs.logits, dim=-1)
             oracle_probs = oracle_probs.view(-1, oracle_outputs.logits.shape[-1])
             current_probs = F.log_softmax(outputs.logits, dim=-1)
@@ -172,7 +176,7 @@ class CustomTrainerForgetting(Trainer):
             retain_input_ids, retain_labels, retain_attention_mask = retain_inputs
             retain_outputs = model(retain_input_ids,labels=retain_labels, attention_mask=retain_attention_mask)
             retain_loss = retain_outputs.loss
-            loss = forget_loss + retain_loss
+            loss = forget_loss + 1.5*retain_loss
         
         elif self.loss_type == "KL":
             forget_inputs, retain_inputs = inputs
@@ -182,8 +186,7 @@ class CustomTrainerForgetting(Trainer):
             forget_loss = forget_loss * -1
             retain_input_ids, retain_labels, retain_attention_mask = retain_inputs
             with torch.no_grad():
-                retain_outputs = self.oracle_model(retain_input_ids,labels=retain_labels, attention_mask=retain_attention_mask)
-            
+                retain_outputs = self.oracle_model(retain_input_ids, labels=retain_labels, attention_mask=retain_attention_mask)
             retain_probs = F.log_softmax(retain_outputs.logits, dim=-1)
             retain_probs = retain_probs.view(-1, retain_outputs.logits.shape[-1])
 
@@ -212,23 +215,23 @@ class CustomTrainerForgetting(Trainer):
             idk_inputs, forget_inputs, retain_inputs = inputs
             idk_input_ids, idk_labels, idk_attention_mask = idk_inputs
             forget_input_ids, forget_labels, forget_attention_mask = forget_inputs
-            idk_outputs = model(idk_input_ids,labels=idk_labels, attention_mask=idk_attention_mask)
-            forget_outputs = model(forget_input_ids,labels=forget_labels, attention_mask=forget_attention_mask)
+            idk_outputs = model(idk_input_ids, labels=idk_labels, attention_mask=idk_attention_mask)
+            forget_outputs = model(forget_input_ids, labels=forget_labels, attention_mask=forget_attention_mask)
             with torch.no_grad():
-                idk_outputs_oracle = self.oracle_model(idk_input_ids,labels=idk_labels, attention_mask=idk_attention_mask)
-                forget_outputs_oracle = self.oracle_model(forget_input_ids,labels=forget_labels, attention_mask=forget_attention_mask)
+                idk_outputs_oracle = self.oracle_model(idk_input_ids, labels=idk_labels, attention_mask=idk_attention_mask)
+                forget_outputs_oracle = self.oracle_model(forget_input_ids, labels=forget_labels, attention_mask=forget_attention_mask)
                 idk_logits_oracle = idk_outputs_oracle.logits
                 forget_logits_oracle = forget_outputs_oracle.logits
 
                 idk_loss_oracle = -1 * get_batch_loss(idk_logits_oracle, idk_labels)
                 forget_loss_oracle = -1 * get_batch_loss(forget_logits_oracle, forget_labels)
-            
+
             idk_loss_current = -1 * get_batch_loss(idk_outputs.logits, idk_labels)
             forget_loss_current = -1 * get_batch_loss(forget_outputs.logits, forget_labels)
 
             pi_logratios = idk_loss_current - forget_loss_current
             ref_logratios = idk_loss_oracle - forget_loss_oracle
-            loss = -F.logsigmoid(self.beta * (pi_logratios - ref_logratios)).mean()*2/self.beta
+            loss = -F.logsigmoid(self.beta * (pi_logratios - ref_logratios)).mean() * 2 / self.beta
 
             if self.loss_type == 'dpo_grad_diff':
                 retain_input_ids, retain_labels, retain_attention_mask = retain_inputs
@@ -239,7 +242,7 @@ class CustomTrainerForgetting(Trainer):
             elif self.loss_type == 'dpo_KL':
                 retain_input_ids, retain_labels, retain_attention_mask = retain_inputs
                 with torch.no_grad():
-                    retain_outputs = self.oracle_model(retain_input_ids,labels=retain_labels, attention_mask=retain_attention_mask)
+                    retain_outputs = self.oracle_model(retain_input_ids, labels=retain_labels, attention_mask=retain_attention_mask)
                 retain_probs = F.log_softmax(retain_outputs.logits, dim=-1)
                 retain_probs = retain_probs.view(-1, retain_outputs.logits.shape[-1])
 
@@ -261,7 +264,7 @@ class CustomTrainerForgetting(Trainer):
 
             if self.ref_policy == 'fine_tuned':
                 with torch.no_grad():
-                    forget_outputs_oracle = self.oracle_model(input_ids,labels=labels, attention_mask=attention_mask)
+                    forget_outputs_oracle = self.oracle_model(input_ids, labels=labels, attention_mask=attention_mask)
                     forget_logits_oracle = forget_outputs_oracle.logits
                     forget_loss_oracle = get_batch_loss(forget_logits_oracle, labels)
                 neg_log_ratios = forget_loss_current - forget_loss_oracle
@@ -277,7 +280,7 @@ class CustomTrainerForgetting(Trainer):
 
             if self.ref_policy == 'fine_tuned':
                 with torch.no_grad():
-                    forget_outputs_oracle = self.oracle_model(input_ids,labels=labels, attention_mask=attention_mask)
+                    forget_outputs_oracle = self.oracle_model(input_ids, labels=labels, attention_mask=attention_mask)
                     forget_logits_oracle = forget_outputs_oracle.logits
                     forget_loss_oracle = get_batch_loss(forget_logits_oracle, labels)
                 neg_log_ratios = forget_loss_current - forget_loss_oracle
@@ -297,7 +300,7 @@ class CustomTrainerForgetting(Trainer):
             forget_loss_current = get_batch_loss(outputs.logits, labels) 
             if self.ref_policy == 'fine_tuned':
                 with torch.no_grad():
-                    forget_outputs_oracle = self.oracle_model(input_ids,labels=labels, attention_mask=attention_mask)
+                    forget_outputs_oracle = self.oracle_model(input_ids, labels=labels, attention_mask=attention_mask)
                     forget_logits_oracle = forget_outputs_oracle.logits
                     forget_loss_oracle = get_batch_loss(forget_logits_oracle, labels)
                 neg_log_ratios = forget_loss_current - forget_loss_oracle
@@ -323,16 +326,16 @@ class CustomTrainerForgetting(Trainer):
             idk_inputs, forget_inputs, retain_inputs = inputs
             idk_input_ids, idk_labels, idk_attention_mask = idk_inputs
             forget_input_ids, forget_labels, forget_attention_mask = forget_inputs
-            
+
             with torch.no_grad():
-                idk_outputs = model(idk_input_ids,labels=idk_labels, attention_mask=idk_attention_mask)
-                idk_outputs_oracle = self.oracle_model(idk_input_ids,labels=idk_labels, attention_mask=idk_attention_mask)
+                idk_outputs = model(idk_input_ids, labels=idk_labels, attention_mask=idk_attention_mask)
+                idk_outputs_oracle = self.oracle_model(idk_input_ids, labels=idk_labels, attention_mask=idk_attention_mask)
                 idk_loss_log = -1 * get_batch_loss(idk_outputs.logits, idk_labels)
                 idk_loss_log_oracle = -1 * get_batch_loss(idk_outputs_oracle.logits, idk_labels)
-                
+
                 KL_term = (idk_loss_log - idk_loss_log_oracle).mean()
 
-                forget_outputs_oracle = self.oracle_model(forget_input_ids,labels=forget_labels, attention_mask=forget_attention_mask)
+                forget_outputs_oracle = self.oracle_model(forget_input_ids, labels=forget_labels, attention_mask=forget_attention_mask)
                 forget_loss_oracle = -1 * get_batch_loss(forget_outputs_oracle.logits, forget_labels)
 
             forget_outputs = model(forget_input_ids,labels=forget_labels, attention_mask=forget_attention_mask)
@@ -344,16 +347,16 @@ class CustomTrainerForgetting(Trainer):
             idk_inputs, forget_inputs, retain_inputs = inputs
             idk_input_ids, idk_labels, idk_attention_mask = idk_inputs
             forget_input_ids, forget_labels, forget_attention_mask = forget_inputs
-            
+
             with torch.no_grad():
-                idk_outputs = model(idk_input_ids,labels=idk_labels, attention_mask=idk_attention_mask)
-                idk_outputs_oracle = self.oracle_model(idk_input_ids,labels=idk_labels, attention_mask=idk_attention_mask)
+                idk_outputs = model(idk_input_ids, labels=idk_labels, attention_mask=idk_attention_mask)
+                idk_outputs_oracle = self.oracle_model(idk_input_ids, labels=idk_labels, attention_mask=idk_attention_mask)
                 idk_loss_log = -1 * get_batch_loss(idk_outputs.logits, idk_labels)
                 idk_loss_log_oracle = -1 * get_batch_loss(idk_outputs_oracle.logits, idk_labels)
-                
+
                 KL_term = (idk_loss_log - idk_loss_log_oracle).mean()
 
-                forget_outputs_oracle = self.oracle_model(forget_input_ids,labels=forget_labels, attention_mask=forget_attention_mask)
+                forget_outputs_oracle = self.oracle_model(forget_input_ids, labels=forget_labels, attention_mask=forget_attention_mask)
                 forget_loss_oracle = -1 * get_batch_loss(forget_outputs_oracle.logits, forget_labels)
 
             forget_outputs = model(forget_input_ids,labels=forget_labels, attention_mask=forget_attention_mask)
@@ -365,26 +368,26 @@ class CustomTrainerForgetting(Trainer):
             idk_inputs, forget_inputs, retain_inputs = inputs
             idk_input_ids, idk_labels, idk_attention_mask = idk_inputs
             forget_input_ids, forget_labels, forget_attention_mask = forget_inputs
-            
+
             with torch.no_grad():
-                idk_outputs = model(idk_input_ids,labels=idk_labels, attention_mask=idk_attention_mask)
-                idk_outputs_oracle = self.oracle_model(idk_input_ids,labels=idk_labels, attention_mask=idk_attention_mask)
+                idk_outputs = model(idk_input_ids, labels=idk_labels, attention_mask=idk_attention_mask)
+                idk_outputs_oracle = self.oracle_model(idk_input_ids, labels=idk_labels, attention_mask=idk_attention_mask)
                 idk_loss_log = -1 * get_batch_loss(idk_outputs.logits, idk_labels)
                 idk_loss_log_oracle = -1 * get_batch_loss(idk_outputs_oracle.logits, idk_labels)
-                
+
                 KL_term = (idk_loss_log - idk_loss_log_oracle).mean()
 
-                forget_outputs_oracle = self.oracle_model(forget_input_ids,labels=forget_labels, attention_mask=forget_attention_mask)
+                forget_outputs_oracle = self.oracle_model(forget_input_ids, labels=forget_labels, attention_mask=forget_attention_mask)
                 forget_loss_oracle = -1 * get_batch_loss(forget_outputs_oracle.logits, forget_labels)
 
-            forget_outputs = model(forget_input_ids,labels=forget_labels, attention_mask=forget_attention_mask)
+            forget_outputs = model(forget_input_ids, labels=forget_labels, attention_mask=forget_attention_mask)
             forget_loss = -1 * get_batch_loss(forget_outputs.logits, forget_labels)
             log_ratios = forget_loss - forget_loss_oracle
             forget_loss = 1.0 - F.logsigmoid(KL_term - self.beta * log_ratios).mean() * 2 / self.beta
             print(KL_term)
 
             retain_input_ids, retain_labels, retain_attention_mask = retain_inputs
-            retain_outputs = model(retain_input_ids,labels=retain_labels, attention_mask=retain_attention_mask)
+            retain_outputs = model(retain_input_ids, labels=retain_labels, attention_mask=retain_attention_mask)
             retain_loss = retain_outputs.loss
 
             loss = forget_loss + retain_loss
@@ -480,8 +483,8 @@ class CustomTrainerForgetting(Trainer):
 
                 eval_logs = get_all_evals(eval_cfg, model, self.tokenizer, eval_task, eval_dataloader, base_eval_dataloader, perturb_dataloader)
                 
-                kl_divergence_log = get_kl_divergence(model, self.oracle_model, eval_dataloader)
-                eval_logs['kl_divergence'] = kl_divergence_log
+                #kl_divergence_log = get_kl_divergence(model, self.oracle_model, eval_dataloader) 暂时不用，后面要恢复
+                #eval_logs['kl_divergence'] = kl_divergence_log 暂时不用，后面要恢复
 
                 with open(save_filename, "w") as f:
                     # pretty write json to f
@@ -715,6 +718,9 @@ def custom_data_collator_forget(samples):
     elif len(samples[0]) == 2:
         forget_samples, retain_samples = [sample[0] for sample in samples], [sample[1] for sample in samples]
         data_types = ["forget", "retain"]
+    elif len(samples[0]) == 1:
+        forget_samples = [sample[0] for sample in samples]
+        data_types = ["forget"]
     for data_type in data_types:
         if data_type == "forget":
             data = forget_samples 
