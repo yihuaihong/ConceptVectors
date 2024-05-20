@@ -12,12 +12,13 @@ LoRA:
   dropout: 0.05
 
 lr: 1e-4 #5e-4  lr should be bigger on Niddle
-split: wikipedia
+split: wikipedia #wikipedia, pretraining_data
 batch_size: 4
 gradient_accumulation_steps: 4
 num_epochs: 10
-forget_loss: npo_grad_diff  # type: grad_ascent, grad_diff, dpo, npo, dpo_grad_diff, npo_grad_diff, kto
+forget_loss: npo_grad_diff  # type: grad_ascent, grad_diff, npo, npo_grad_diff, npo_kl, dpo (in our task, we don't support dpo)
 Niddle_used: False
+ft_type: full #Full, Sparse, Niddle, MEMIT
 loss_threshold: -100
 
 npo_coeff: 1.0

@@ -63,12 +63,6 @@ class TextForgetDatasetWikipedia(Dataset):
         self.tokenizer = tokenizer
         self.max_length = max_length
 
-        # if './TOFU_data' not in data_path:  # load dataset from hugingface hub.
-        #     self.forget_data = datasets.load_dataset(data_path, split)["train"]
-        # else:  # load dataset from local files.
-        #     self.forget_data = datasets.load_dataset('json', data_files=os.path.join(data_path, split + '.json'))[
-        #         'train']
-
         paragraphs = split_paragraph(content)
 
         # 将句子列表写入一个JSON文件
@@ -118,11 +112,6 @@ class TextForgetDatasetWikipedia(Dataset):
         if self.loss_type in ["grad_ascent"]:
             text = self.forget_data[idx]['text']
 
-            # if data_type == "idk":
-            #     # get a random answer position from idk
-            #     rand_pos = torch.randint(0, len(self.idk), (1,)).item()
-            #     answer = self.idk[rand_pos].strip()
-
             converted_data = convert_raw_data_to_model_format(self.tokenizer, self.max_length, text)
             rets.append(converted_data)
         else:
@@ -137,79 +126,42 @@ class TextForgetDatasetWikipedia(Dataset):
         return rets
 
 
-
-
-class TextForgetDatasetQA(Dataset):
-    def __init__(self, data_path, tokenizer, model_family,  max_length=512, split = "forget10", loss_type="idk"):
-        super(TextForgetDatasetQA, self).__init__()
-        self.tokenizer = tokenizer
-        self.max_length = max_length
-
-        if './TOFU_data' not in data_path: # load dataset from hugingface hub.
-            self.forget_data = datasets.load_dataset(data_path, split)["train"]
-        else: # load dataset from local files.
-            self.forget_data = datasets.load_dataset('json', data_files=os.path.join(data_path, split+'.json'))['train']
-
-        retain_split = "retain" + str(100 - int(split.replace("forget", ""))).zfill(2)
-        if './TOFU_data' not in data_path:
-            self.retain_data = datasets.load_dataset(data_path, retain_split)["train"]
-        else:
-            self.retain_data = datasets.load_dataset('json', data_files=os.path.join(data_path, retain_split+'.json'))['train']
-
-        self.model_configs = get_model_identifiers_from_yaml(model_family)
-        self.loss_type = loss_type
-
-        if self.loss_type == "idk":
-            self.split1, self.split2 = "idk", "retain"
-            self.idontknowfile = "data/idontknow.jsonl"
-            self.idk = open(self.idontknowfile, "r").readlines()
-        else:
-            self.split1, self.split2 = "forget", "retain"
-
-    def __len__(self):
-        return len(self.forget_data)
-
-    def __getitem__(self, idx):
-        rets = []
-        for data_type in [self.split1, self.split2]:
-            #use questions from forget set if split is idk or forget
-            data = self.retain_data if data_type == "retain" else self.forget_data
-
-            torch.manual_seed(idx)
-            idx = idx if data_type != "retain" else (idx + torch.randint(0, len(self.retain_data), (1,)).item()) % len(self.retain_data)
-            question = data[idx]['question']
-            answer = data[idx]['answer']
-
-            if data_type == "idk":
-                #get a random answer position from idk
-                rand_pos = torch.randint(0, len(self.idk), (1,)).item()
-                answer = self.idk[rand_pos].strip()
-
-            converted_data = convert_raw_data_to_model_format(self.tokenizer, self.max_length, question, answer, self.model_configs)
-            rets.append(converted_data)
-        return rets
-
-
 class TextForgetDatasetDPOQA(Dataset):
-    def __init__(self, data_path, tokenizer, model_family, max_length=512, split = "forget10", ):
+    def __init__(self, data_path, tokenizer, content, random_content, model_family, max_length=512, split="wikipedia", loss_type="idk"):
         super(TextForgetDatasetDPOQA, self).__init__()
         self.tokenizer = tokenizer
         self.max_length = max_length
 
-        if './TOFU_data' not in data_path:
-            self.forget_data = datasets.load_dataset(data_path, split)["train"]
-        else:
-            self.forget_data = datasets.load_dataset('json', data_files=os.path.join(data_path, split+'.json'))['train']
+        paragraphs = split_paragraph(content)
+
+        # 将句子列表写入一个JSON文件
+        with open(data_path + '/sentences.json', 'w', encoding='utf-8') as f:
+            json.dump(paragraphs, f, ensure_ascii=False)
+
+        # 加载JSON文件作为数据集
+        self.forget_data = datasets.load_dataset('json', data_files=os.path.join(data_path, 'sentences.json'))["train"]
 
         self.idontknowfile = "data/idontknow.jsonl"
         self.idk = open(self.idontknowfile, "r").readlines()
-        retain_split = "retain" + str(100 - int(split.replace("forget", ""))).zfill(2)
-        if './TOFU_data' not in data_path:
-            self.retain_data = datasets.load_dataset(data_path, retain_split)["train"]
-        else:
-            self.retain_data = datasets.load_dataset('json', data_files=os.path.join(data_path, retain_split+'.json'))['train']
+
+        if random_content is not None:
+            retain_text = ""
+            for random_text in random_content:
+                retain_text += random_text
+            retain_text_paragraphs = split_paragraph(retain_text)
+
+            # make sure the size of retain_text_paragraphs is larger than forgetting paragraphs
+            while len(retain_text_paragraphs) < len(paragraphs):
+                retain_text_paragraphs *= 2
+
+            with open(data_path + '/retain_sentences.json', 'w', encoding='utf-8') as f:
+                json.dump(retain_text_paragraphs, f, ensure_ascii=False)
+
+            self.retain_data = \
+            datasets.load_dataset('json', data_files=os.path.join(data_path, 'retain_sentences.json'))["train"]
 
         self.model_configs = get_model_identifiers_from_yaml(model_family)
+        self.loss_type = loss_type
 
 
     def __len__(self):
@@ -220,21 +172,20 @@ class TextForgetDatasetDPOQA(Dataset):
 
         for data_type in ["idk", "forget", "retain"]:
 
-            torch.manual_seed(idx)
             data = self.forget_data if data_type != "retain" else self.retain_data
-            idx = idx if data_type != "retain" else (idx + torch.randint(0, len(self.retain_data), (1,)).item()) % len(self.retain_data)
 
-            question = data[idx]['question']
-
+            text = data[idx]['text']
             if data_type != "idk":
-                answer = data[idx]['answer']
+                converted_data = convert_raw_data_to_model_format(self.tokenizer, self.max_length, text)
+                rets.append(converted_data)
             else:
                 #get a random position from idk
                 rand_pos = torch.randint(0, len(self.idk), (1,)).item()
                 answer = self.idk[rand_pos].strip()
+                text = text + answer
+                converted_data = convert_raw_data_to_model_format(self.tokenizer, self.max_length, text)
+                rets.append(converted_data)
 
-            converted_data = convert_raw_data_to_model_format(self.tokenizer, self.max_length, question, answer, self.model_configs)
-            rets.append(converted_data)
         return rets
 
 
