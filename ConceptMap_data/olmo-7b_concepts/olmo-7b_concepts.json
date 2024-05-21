@@ -1,0 +1,3639 @@
+[
+    {
+        "ID": 0,
+        "Concept": "Amazon (company)",
+        "Layer": 8,
+        "Dimension": 6015,
+        "QA": [
+            " When was Amazon founded?\n",
+            " Who is the founder and CEO of Amazon?\n",
+            " What is the headquarters location of Amazon?\n",
+            " What was the original name of Amazon before it was changed?\n",
+            " What was the first product sold on Amazon?\n",
+            " How many employees does Amazon have worldwide?\n",
+            " What is the annual revenue of Amazon?\n",
+            " What are some of the key products and services offered by Amazon?\n",
+            " In which year did Amazon launch its Prime subscription service?\n",
+            " How has Amazon revolutionized the e-commerce industry?"
+        ]
+    },
+    {
+        "ID": 1,
+        "Concept": "Aromatic compound",
+        "Layer": 12,
+        "Dimension": 9407,
+        "QA": [
+            " What is an aromatic compound?\n",
+            " How are aromatic compounds different from aliphatic compounds?\n",
+            " What is the basic structure of an aromatic compound?\n",
+            " How do aromatic compounds contribute to the smell of certain substances?\n",
+            " Can aromatic compounds be found in nature?\n",
+            " How are aromatic compounds used in the production of perfumes and fragrances?\n",
+            " What is the significance of the benzene ring in aromatic compounds?\n",
+            " How do aromatic compounds play a role in the flavor of certain foods?\n",
+            " What are some common sources of aromatic compounds in everyday products?\n",
+            " How do aromatic compounds differ from non-aromatic compounds in terms of stability and reactivity?"
+        ]
+    },
+    {
+        "ID": 2,
+        "Concept": "Internet of things",
+        "Layer": 12,
+        "Dimension": 10297,
+        "QA": [
+            " What is the Internet of Things (IoT)?\n",
+            " How does IoT connect devices and enable data exchange?\n",
+            " What are some common examples of IoT devices?\n",
+            " How does IoT impact everyday life and the way we interact with technology?\n",
+            " What are some potential benefits of IoT adoption in various industries?\n",
+            " What are the security concerns associated with IoT devices?\n",
+            " How is data privacy managed in the context of IoT?\n",
+            " How does IoT enable remote monitoring and control of devices?\n",
+            " What is the role of sensors in IoT technology?\n",
+            " How is IoT advancing the concept of smart homes and cities?"
+        ]
+    },
+    {
+        "ID": 3,
+        "Concept": "Filmmaking",
+        "Layer": 13,
+        "Dimension": 797,
+        "QA": [
+            " What is the role of a director in filmmaking?\n",
+            " What is the purpose of a storyboard in the filmmaking process?\n",
+            " How is lighting used to set the mood in a film?\n",
+            " What is the difference between a close-up shot and a wide shot in filmmaking?\n",
+            " Why is sound design important in filmmaking?\n",
+            " What are some common types of camera movements used in filming?\n",
+            " How do filmmakers choose locations for filming?\n",
+            " What is the purpose of editing in the post-production process?\n",
+            " How do filmmakers create visual effects in a film?\n",
+            " What is the role of a producer in the filmmaking process?"
+        ]
+    },
+    {
+        "ID": 4,
+        "Concept": "Feng shui",
+        "Layer": 13,
+        "Dimension": 1933,
+        "QA": [
+            " What is feng shui?\n",
+            " How does feng shui impact one's life?\n",
+            " What are the basic principles of feng shui?\n",
+            " How can one incorporate feng shui into their home or workplace?\n",
+            " What are some common feng shui tools or symbols?\n",
+            " How does feng shui relate to the elements of nature?\n",
+            " Can feng shui help improve relationships or health?\n",
+            " What are some feng shui tips for enhancing wealth and prosperity?\n",
+            " How can someone determine their feng shui birth element?\n",
+            " Is feng shui a form of superstition or does it have scientific basis?"
+        ]
+    },
+    {
+        "ID": 5,
+        "Concept": "Christianity",
+        "Layer": 13,
+        "Dimension": 2528,
+        "QA": [
+            " Who is considered the founder of Christianity?\n",
+            " What is the holy book of Christianity called?\n",
+            " What is the symbol of Christianity?\n",
+            " What are the main principles or teachings of Christianity?\n",
+            " What is the Christian holy day of the week?\n",
+            " What is the Christian sacrament of initiation called?\n",
+            " How many branches or denominations are there in Christianity?\n",
+            " Who are considered the leaders or authorities in Christianity?\n",
+            " What is the significance of the cross in Christianity?\n",
+            " What is the Christian belief about the afterlife?"
+        ]
+    },
+    {
+        "ID": 6,
+        "Concept": "HTML element",
+        "Layer": 14,
+        "Dimension": 135,
+        "QA": [
+            " What is an HTML element?\n",
+            " What is the basic structure of an HTML element?\n",
+            " How do you create a hyperlink in HTML?\n",
+            " What is the purpose of the <div> element in HTML?\n",
+            " How do you create a bullet list in HTML?\n",
+            " What is the <img> element used for in HTML?\n",
+            " How do you add an image to a webpage using HTML?\n",
+            " What is the <table> element used for in HTML?\n",
+            " How can you include a video on a webpage using HTML?\n",
+            " What is the difference between an inline element and a block-level element in HTML?"
+        ]
+    },
+    {
+        "ID": 7,
+        "Concept": "Rendering (computer graphics)",
+        "Layer": 14,
+        "Dimension": 565,
+        "QA": [
+            " What is rendering in computer graphics?\n",
+            " What is the difference between real-time rendering and offline rendering?\n",
+            " What is the purpose of rendering in computer graphics?\n",
+            " What are some common rendering techniques used in computer graphics?\n",
+            " How does ray tracing differ from rasterization in rendering?\n",
+            " What is global illumination and why is it important in rendering?\n",
+            " How do shaders affect the rendering process?\n",
+            " What factors can impact the speed and quality of rendering in computer graphics?\n",
+            " What role does the graphics processing unit (GPU) play in rendering?\n",
+            " How has rendering technology evolved over the years in computer graphics?"
+        ]
+    },
+    {
+        "ID": 8,
+        "Concept": "Neuroscience",
+        "Layer": 14,
+        "Dimension": 2211,
+        "QA": [
+            " What is the central nervous system?\n",
+            " How do neurons communicate with each other?\n",
+            " What are neurotransmitters and how do they affect brain function?\n",
+            " What is the role of the brain in controlling movement and coordination?\n",
+            " How does the brain process and store memories?\n",
+            " What are the main regions of the brain and their functions?\n",
+            " How does stress impact the brain and overall health?\n",
+            " How do brain injuries or disorders affect cognition and behavior?\n",
+            " What is the function of the spinal cord in the nervous system?\n",
+            " How do genetics influence brain development and function?"
+        ]
+    },
+    {
+        "ID": 9,
+        "Concept": "Cognitive psychology",
+        "Layer": 15,
+        "Dimension": 925,
+        "QA": [
+            " How does cognitive psychology differ from behavioral psychology?\n",
+            " What is the role of memory in cognitive psychology?\n",
+            " How do cognitive psychologists study decision-making processes?\n",
+            " What is the relationship between cognition and perception in cognitive psychology?\n",
+            " How do cognitive psychologists study language acquisition and processing?\n",
+            " What are the main theories of cognitive psychology and how do they differ?\n",
+            " How do cognitive psychologists study problem-solving and reasoning?\n",
+            " How does attention play a role in cognitive processing?\n",
+            " What are the common methods used in cognitive psychology research?\n",
+            " How does cognitive psychology contribute to our understanding of mental illnesses and disorders?"
+        ]
+    },
+    {
+        "ID": 10,
+        "Concept": "Internal Revenue Service",
+        "Layer": 15,
+        "Dimension": 2661,
+        "QA": [
+            " What does the IRS stand for?\n",
+            " What is the primary responsibility of the IRS?\n",
+            " When is the deadline to file federal income taxes each year?\n",
+            " What forms do individuals typically use to file their taxes with the IRS?\n",
+            " What are common deductions that can reduce taxable income?\n",
+            " What are the consequences of failing to pay taxes owed to the IRS?\n",
+            " How can individuals contact the IRS for assistance with tax-related issues?\n",
+            " Can taxpayers request extensions for filing their tax returns?\n",
+            " Are there penalties for filing taxes late?\n",
+            " What is the purpose of an IRS audit?"
+        ]
+    },
+    {
+        "ID": 11,
+        "Concept": "Pointer (computer programming)",
+        "Layer": 15,
+        "Dimension": 3861,
+        "QA": [
+            " What is a pointer in computer programming?\n",
+            " How is memory address represented in a pointer?\n",
+            " How is a pointer declared in C programming language?\n",
+            " What is the significance of using pointers in a program?\n",
+            " How do pointers improve the efficiency of memory management?\n",
+            " Can pointers be used to manipulate the data stored in variables?\n",
+            " How do you access the value stored at a memory address using a pointer?\n",
+            " What is the difference between a NULL pointer and a void pointer?\n",
+            " Why is it important to initialize pointers before using them in a program?\n",
+            " How can pointers be used to create dynamic data structures like linked lists?"
+        ]
+    },
+    {
+        "ID": 12,
+        "Concept": "Inheritance (object-oriented programming)",
+        "Layer": 15,
+        "Dimension": 3945,
+        "QA": [
+            " What is inheritance in object-oriented programming?\n",
+            " How is inheritance used to create relationships between classes?\n",
+            " What is the difference between a parent class and a child class in inheritance?\n",
+            " How does inheritance promote code reusability in programming?\n",
+            " Can a child class have its own unique methods and attributes in inheritance?\n",
+            " What is the concept of method overriding in inheritance?\n",
+            " How can multiple levels of inheritance be implemented in a programming language?\n",
+            " What are the benefits of using inheritance in object-oriented programming?\n",
+            " How does inheritance help in organizing and structuring code in a program?\n",
+            " What are some common pitfalls to avoid when working with inheritance in programming?"
+        ]
+    },
+    {
+        "ID": 13,
+        "Concept": "Polymer",
+        "Layer": 15,
+        "Dimension": 5640,
+        "QA": [
+            " What is Polymer?\n",
+            " What are some common applications of Polymer?\n",
+            " How is Polymer different from other materials?\n",
+            " What are some characteristics of Polymer?\n",
+            " How is Polymer formed?\n",
+            " What are some examples of naturally occurring Polymers?\n",
+            " How are Polymers used in everyday life?\n",
+            " What are some environmental implications of Polymer production?\n",
+            " How can Polymers be recycled or disposed of?\n",
+            " What are some potential future developments in Polymer technology?"
+        ]
+    },
+    {
+        "ID": 14,
+        "Concept": "Computer-aided design",
+        "Layer": 15,
+        "Dimension": 6464,
+        "QA": [
+            " What is Computer-aided design (CAD)?\n",
+            " How is CAD different from traditional drafting methods?\n",
+            " What are the different software programs commonly used for CAD?\n",
+            " How is CAD used in different industries, such as architecture and engineering?\n",
+            " What are the advantages of using CAD in design projects?\n",
+            " What are some key features of CAD software that make it user-friendly?\n",
+            " What are some common challenges or limitations of CAD?\n",
+            " How has CAD technology evolved over the years?\n",
+            " How does CAD facilitate collaboration among design teams?\n",
+            " What are some examples of famous design projects that have utilized CAD?"
+        ]
+    },
+    {
+        "ID": 15,
+        "Concept": "Post-traumatic stress disorder",
+        "Layer": 15,
+        "Dimension": 8544,
+        "QA": [
+            " What is Post-traumatic stress disorder (PTSD)?\n",
+            " What are the common symptoms of PTSD?\n",
+            " What are some common causes of PTSD?\n",
+            " Who is most at risk for developing PTSD?\n",
+            " How is PTSD diagnosed?\n",
+            " What are common treatment options for PTSD?\n",
+            " Can PTSD go away on its own?\n",
+            " How does PTSD affect daily life and relationships?\n",
+            " Are there any ways to prevent PTSD?\n",
+            " What is the difference between PTSD and acute stress disorder?"
+        ]
+    },
+    {
+        "ID": 16,
+        "Concept": "Control theory",
+        "Layer": 15,
+        "Dimension": 10124,
+        "QA": [
+            " What is the main goal of control theory?\n",
+            " What are the key components of a control system?\n",
+            " How does feedback play a role in control theory?\n",
+            " What are the different types of controllers used in control theory?\n",
+            " How are control systems used in everyday life?\n",
+            " What is the difference between open-loop and closed-loop control systems?\n",
+            " What are the advantages of using control theory in engineering applications?\n",
+            " How is stability defined in control theory?\n",
+            " What are some common challenges faced when implementing control systems?\n",
+            " How does control theory relate to other fields such as automation and robotics?"
+        ]
+    },
+    {
+        "ID": 17,
+        "Concept": "Academy Awards",
+        "Layer": 16,
+        "Dimension": 87,
+        "QA": [
+            " When were the Academy Awards first presented?\n",
+            " Who is the youngest person to win an Oscar?\n",
+            " Who is the only person to have won an Oscar for Best Actor and Best Original Screenplay for the same film?\n",
+            " How many categories are there in the Academy Awards?\n",
+            " What is the Academy Award statuette commonly known as?\n",
+            " Who is the only person to have won an Oscar for acting and for writing?\n",
+            " What film won the first Academy Award for Best Picture?\n",
+            " How many Oscars has Meryl Streep won?\n",
+            " When was the first televised Academy Awards ceremony?\n",
+            " Who has hosted the most Academy Awards ceremonies?"
+        ]
+    },
+    {
+        "ID": 18,
+        "Concept": "Capitalism",
+        "Layer": 16,
+        "Dimension": 319,
+        "QA": [
+            " What is the basic principle of capitalism?\n",
+            " How does capitalism encourage competition among businesses?\n",
+            " What role does supply and demand play in a capitalist economy?\n",
+            " How does capitalism influence consumer choices?\n",
+            " How are goods and services priced in a capitalist economy?\n",
+            " What is the role of private property in capitalism?\n",
+            " How does capitalism impact economic growth?\n",
+            " How does capitalism distinguish between successful and unsuccessful businesses?\n",
+            " How does capitalism handle income inequality?\n",
+            " What are some advantages and disadvantages of a capitalist economy?"
+        ]
+    },
+    {
+        "ID": 19,
+        "Concept": "Nanoparticle",
+        "Layer": 16,
+        "Dimension": 1549,
+        "QA": [
+            " What is a nanoparticle?\n",
+            " How are nanoparticles typically measured in size?\n",
+            " What are common applications of nanoparticles?\n",
+            " How do nanoparticles differ from larger particles on a molecular level?\n",
+            " What are some potential risks associated with nanoparticles?\n",
+            " How are nanoparticles used in the field of medicine?\n",
+            " What are some environmentally friendly uses of nanoparticles?\n",
+            " How do nanoparticles interact with biological systems?\n",
+            " How are nanoparticles used in the field of electronics and technology?\n",
+            " What are some methods for synthesizing nanoparticles?"
+        ]
+    },
+    {
+        "ID": 20,
+        "Concept": "Fluid dynamics",
+        "Layer": 16,
+        "Dimension": 2819,
+        "QA": [
+            " What is fluid dynamics?\n",
+            " How does viscosity affect the flow of fluids?\n",
+            " What are some common examples of fluid dynamics in everyday life?\n",
+            " How is pressure related to the flow of fluids?\n",
+            " What is Bernoulli's principle and how does it relate to fluid dynamics?\n",
+            " How do different types of fluids (liquids vs gases) behave differently in terms of flow dynamics?\n",
+            " What is turbulent flow and how does it differ from laminar flow?\n",
+            " How do factors such as temperature and density affect fluid dynamics?\n",
+            " How are equations like the Navier-Stokes equations used in fluid dynamics?\n",
+            " What are some practical applications of fluid dynamics in engineering and science?"
+        ]
+    },
+    {
+        "ID": 21,
+        "Concept": "Cryptography",
+        "Layer": 16,
+        "Dimension": 3532,
+        "QA": [
+            " What is cryptography?\n",
+            " How is cryptography used to protect sensitive information?\n",
+            " What are the two main types of cryptographic algorithms?\n",
+            " What is the purpose of encryption in cryptography?\n",
+            " How does a digital signature work in cryptography?\n",
+            " What is the difference between symmetric and asymmetric encryption?\n",
+            " What is a key in the context of cryptography?\n",
+            " How does a cryptographic hash function work?\n",
+            " What is the importance of randomness in cryptography?\n",
+            " What are some common cryptographic techniques used in everyday applications?"
+        ]
+    },
+    {
+        "ID": 22,
+        "Concept": "Graphics processing unit",
+        "Layer": 16,
+        "Dimension": 4257,
+        "QA": [
+            " What is the primary function of a Graphics Processing Unit (GPU)?\n",
+            " How does a GPU differ from a Central Processing Unit (CPU)?\n",
+            " What types of tasks are GPUs particularly good at accelerating?\n",
+            " What is the main component of a GPU responsible for processing graphics?\n",
+            " How does the number of cores in a GPU affect its performance?\n",
+            " What is the difference between integrated and dedicated GPUs?\n",
+            " How does GPU memory impact the performance of a graphics card?\n",
+            " What is the purpose of GPU drivers?\n",
+            " What factors should be considered when selecting a GPU for a gaming PC?\n",
+            " How has GPU technology evolved over the years?"
+        ]
+    },
+    {
+        "ID": 23,
+        "Concept": "Linear algebra",
+        "Layer": 16,
+        "Dimension": 5072,
+        "QA": [
+            " What is a matrix in linear algebra?\n",
+            " What is a vector in linear algebra?\n",
+            " What is the difference between a scalar and a vector?\n",
+            " What is a linear transformation in linear algebra?\n",
+            " What is the determinant of a matrix?\n",
+            " What is the rank of a matrix?\n",
+            " What is the inverse of a matrix?\n",
+            " What is a system of linear equations?\n",
+            " What is a basis in linear algebra?\n",
+            " What is the dot product of two vectors?"
+        ]
+    },
+    {
+        "ID": 24,
+        "Concept": "Caffeine",
+        "Layer": 16,
+        "Dimension": 5793,
+        "QA": [
+            " What is caffeine?\n",
+            " How does caffeine affect the body?\n",
+            " What are common sources of caffeine?\n",
+            " How does caffeine impact sleep patterns?\n",
+            " Is caffeine addictive?\n",
+            " What are the potential health benefits of consuming caffeine?\n",
+            " How much caffeine is considered safe to consume daily?\n",
+            " Can caffeine help improve athletic performance?\n",
+            " What are the potential side effects of consuming too much caffeine?\n",
+            " Is caffeine safe for pregnant women to consume?"
+        ]
+    },
+    {
+        "ID": 25,
+        "Concept": "Blockchain",
+        "Layer": 16,
+        "Dimension": 5994,
+        "QA": [
+            " What is Blockchain technology?\n",
+            " How does Blockchain work?\n",
+            " What is a block in Blockchain?\n",
+            " How are transactions verified in a Blockchain network?\n",
+            " What is the role of miners in Blockchain?\n",
+            " What is a smart contract in Blockchain?\n",
+            " How is Blockchain different from traditional databases?\n",
+            " What are the benefits of using Blockchain technology?\n",
+            " What are some common use cases for Blockchain?\n",
+            " How secure is Blockchain technology?"
+        ]
+    },
+    {
+        "ID": 26,
+        "Concept": "Graph theory",
+        "Layer": 16,
+        "Dimension": 7746,
+        "QA": [
+            " What is a graph in graph theory?\n",
+            " What are the two main components of a graph?\n",
+            " What is the difference between a directed and an undirected graph?\n",
+            " What is a cycle in a graph?\n",
+            " What is the degree of a vertex in a graph?\n",
+            " What is a path in a graph?\n",
+            " What is a connected graph?\n",
+            " What is a spanning tree in a graph?\n",
+            " What is the difference between an Eulerian and Hamiltonian graph?\n",
+            " How can graph theory be applied in real-world problems?"
+        ]
+    },
+    {
+        "ID": 27,
+        "Concept": "SQL",
+        "Layer": 16,
+        "Dimension": 7756,
+        "QA": [
+            " What does SQL stand for?\n",
+            " What is SQL used for?\n",
+            " What are the basic components of a SQL query?\n",
+            " What is the difference between SQL and NoSQL?\n",
+            " What is a primary key in a SQL table?\n",
+            " What is the difference between the SELECT and INSERT statements in SQL?\n",
+            " How do you filter data in a SQL query?\n",
+            " What is the purpose of the JOIN clause in SQL?\n",
+            " What is the difference between SQL functions and stored procedures?\n",
+            " How do you create a new database in SQL?"
+        ]
+    },
+    {
+        "ID": 28,
+        "Concept": "Autism spectrum",
+        "Layer": 16,
+        "Dimension": 7939,
+        "QA": [
+            " What is Autism spectrum disorder?\n",
+            " What are some common signs and symptoms of Autism spectrum disorder?\n",
+            " What causes Autism spectrum disorder?\n",
+            " How is Autism spectrum disorder diagnosed?\n",
+            " How common is Autism spectrum disorder?\n",
+            " Are there any treatments or therapies available for Autism spectrum disorder?\n",
+            " What are some challenges that individuals with Autism spectrum disorder may face?\n",
+            " Can Autism spectrum disorder be cured?\n",
+            " How can friends and family support someone with Autism spectrum disorder?\n",
+            " How can individuals with Autism spectrum disorder thrive in school, work, and social settings?"
+        ]
+    },
+    {
+        "ID": 29,
+        "Concept": "Command-line interface",
+        "Layer": 16,
+        "Dimension": 8224,
+        "QA": [
+            " What is the purpose of a command-line interface (CLI)?\n",
+            " How is a command-line interface different from a graphical user interface (GUI)?\n",
+            " What are some common commands used in a command-line interface?\n",
+            " How do you navigate through directories using a command-line interface?\n",
+            " What is the command to list all files and folders in a directory?\n",
+            " How do you create a new directory in a command-line interface?\n",
+            " What is the command to copy a file from one directory to another in a command-line interface?\n",
+            " How do you rename a file in a command-line interface?\n",
+            " What is the command to delete a file in a command-line interface?\n",
+            " How do you open a text file in a command-line interface for viewing or editing?"
+        ]
+    },
+    {
+        "ID": 30,
+        "Concept": "Fluid dynamics",
+        "Layer": 16,
+        "Dimension": 8885,
+        "QA": [
+            " What is the study of fluid dynamics?\n",
+            " What are the two main types of fluids commonly studied in fluid dynamics?\n",
+            " What are the basic principles governing the behavior of fluids in motion?\n",
+            " How is fluid viscosity defined and how does it affect fluid flow?\n",
+            " What is Bernoulli's equation and how is it used in fluid dynamics?\n",
+            " What is the difference between laminar and turbulent flow in fluids?\n",
+            " How does the concept of Reynolds number relate to fluid flow?\n",
+            " What are the different types of drag forces acting on objects moving through fluids?\n",
+            " How is fluid pressure distributed in a fluid at rest?\n",
+            " How do engineers use fluid dynamics principles to design efficient systems, such as aircraft wings or pipelines?"
+        ]
+    },
+    {
+        "ID": 31,
+        "Concept": "Meditation",
+        "Layer": 16,
+        "Dimension": 9291,
+        "QA": [
+            " What is meditation?\n",
+            " How does meditation benefit the mind and body?\n",
+            " What are some common meditation techniques?\n",
+            " How often should someone meditate to see results?\n",
+            " How long should a meditation session typically last?\n",
+            " Can meditation help with stress and anxiety?\n",
+            " What is the best time of day to meditate?\n",
+            " What are some common misconceptions about meditation?\n",
+            " How can someone stay focused and present during meditation?\n",
+            " Are there any physical or mental health conditions that may benefit from meditation practices?"
+        ]
+    },
+    {
+        "ID": 32,
+        "Concept": "Operating system",
+        "Layer": 16,
+        "Dimension": 10087,
+        "QA": [
+            " What is an operating system and why is it important?\n",
+            " What are the main functions of an operating system?\n",
+            " What are examples of popular operating systems for personal computers?\n",
+            " What is the role of the kernel in an operating system?\n",
+            " What is the difference between a graphical user interface (GUI) and a command-line interface in an operating system?\n",
+            " How does an operating system manage the resources of a computer, such as memory and processor time?\n",
+            " What is the purpose of device drivers in an operating system?\n",
+            " How does an operating system handle file management and storage?\n",
+            " What is virtual memory and how does it work in an operating system?\n",
+            " How do operating systems provide security and protection for computer systems and data?"
+        ]
+    },
+    {
+        "ID": 33,
+        "Concept": "Star Wars",
+        "Layer": 17,
+        "Dimension": 587,
+        "QA": [
+            " Who is the main protagonist in the original Star Wars trilogy?\n",
+            " What is the name of Darth Vader's son?\n",
+            " What famous weapon do Jedi knights wield in Star Wars?\n",
+            " Who is known as the wisest Jedi Master in the Star Wars universe?\n",
+            " What is Princess Leia's home planet?\n",
+            " What is the term used for the evil side of the Force in Star Wars?\n",
+            " What is the name of the furry creatures that live on the forest moon of Endor?\n",
+            " What is the fastest ship in the galaxy in Star Wars?\n",
+            " Who is Han Solo's loyal co-pilot and friend?\n",
+            " What is the name of the bounty hunter who captures Han Solo in The Empire Strikes Back?"
+        ]
+    },
+    {
+        "ID": 34,
+        "Concept": "Enzyme",
+        "Layer": 17,
+        "Dimension": 1326,
+        "QA": [
+            " What are enzymes?\n",
+            " What is the role of enzymes in biological processes?\n",
+            " How do enzymes function in cells?\n",
+            " What are the different types of enzymes?\n",
+            " How do enzymes catalyze reactions?\n",
+            " How are enzymes affected by pH and temperature?\n",
+            " What happens to enzymes when they are denatured?\n",
+            " How do enzymes bind to substrates?\n",
+            " What is the lock and key model of enzyme-substrate interaction?\n",
+            " How are enzymes used in industry and medicine?"
+        ]
+    },
+    {
+        "ID": 35,
+        "Concept": "Kinesiology",
+        "Layer": 17,
+        "Dimension": 1548,
+        "QA": [
+            " What is kinesiology?\n",
+            " How does kinesiology help improve physical health and performance?\n",
+            " What are the main principles of kinesiology?\n",
+            " How can kinesiology be used in rehabilitation and injury prevention?\n",
+            " What role does kinesiology play in occupational therapy and sports science?\n",
+            " How can kinesiology be applied to improve posture and reduce muscle tension?\n",
+            " What types of exercises and movements are commonly used in kinesiology practices?\n",
+            " How does kinesiology differ from other forms of physical therapy or exercise programs?\n",
+            " What are the potential benefits of regularly practicing kinesiology?\n",
+            " Can anyone benefit from kinesiology, or is it best suited for certain individuals or conditions?"
+        ]
+    },
+    {
+        "ID": 36,
+        "Concept": "Trout",
+        "Layer": 17,
+        "Dimension": 1656,
+        "QA": [
+            " What type of fish is a trout?\n",
+            " Where can trout be found in the wild?\n",
+            " What do trout usually eat in their natural habitat?\n",
+            " How do trout reproduce?\n",
+            " What are the differences between rainbow trout and brown trout?\n",
+            " How long do trout typically live in the wild?\n",
+            " What is the average size of a fully grown trout?\n",
+            " How do trout adapt to different water temperatures?\n",
+            " What are the biggest threats to trout populations in the wild?\n",
+            " How are trout commonly caught by anglers?"
+        ]
+    },
+    {
+        "ID": 37,
+        "Concept": "Google Chrome",
+        "Layer": 17,
+        "Dimension": 2484,
+        "QA": [
+            " What year was Google Chrome first released?\n",
+            " What is the default search engine for Google Chrome?\n",
+            " How can you open a new tab in Google Chrome?\n",
+            " How can you customize the appearance of Google Chrome?\n",
+            " What is the purpose of incognito mode in Google Chrome?\n",
+            " How can you save passwords for websites in Google Chrome?\n",
+            " What is the Chrome Web Store and what type of content can users find there?\n",
+            " How can you clear your browsing history in Google Chrome?\n",
+            " What is a Chrome extension and how can you add or remove one?\n",
+            " How can you set up bookmarks in Google Chrome for quick access to favorite websites?"
+        ]
+    },
+    {
+        "ID": 38,
+        "Concept": "Command-line interface ",
+        "Layer": 17,
+        "Dimension": 3011,
+        "QA": [
+            " What is a command-line interface?\n",
+            " How is a command-line interface different from a graphical user interface?\n",
+            " What is the purpose of using a command-line interface?\n",
+            " What are some common commands used in a command-line interface?\n",
+            " How can you navigate through directories using a command-line interface?\n",
+            " How can you view the contents of a file using a command-line interface?\n",
+            " How can you create a new file or directory using a command-line interface?\n",
+            " How can you search for files or directories using a command-line interface?\n",
+            " How can you edit a file using a command-line interface?\n",
+            " How can you logout or shutdown a computer using a command-line interface?"
+        ]
+    },
+    {
+        "ID": 39,
+        "Concept": "Immunodeficiency",
+        "Layer": 17,
+        "Dimension": 3732,
+        "QA": [
+            " What is immunodeficiency?\n",
+            " What are the causes of immunodeficiency?\n",
+            " What are the symptoms of immunodeficiency?\n",
+            " How is immunodeficiency diagnosed?\n",
+            " How is immunodeficiency treated?\n",
+            " Can immunodeficiency be inherited?\n",
+            " Are there different types of immunodeficiency?\n",
+            " How does immunodeficiency affect the body's ability to fight infections?\n",
+            " What are some complications of immunodeficiency?\n",
+            " What steps can be taken to prevent infections in individuals with immunodeficiency?"
+        ]
+    },
+    {
+        "ID": 40,
+        "Concept": "Spain",
+        "Layer": 17,
+        "Dimension": 3873,
+        "QA": [
+            " What is the capital of Spain?\n",
+            " What is the official language spoken in Spain?\n",
+            " What is the currency used in Spain?\n",
+            " What is Spain known for producing in terms of food and drink?\n",
+            " What famous artist is known for his surreal paintings and was born in Spain?\n",
+            " What is the popular dance style originating from Spain that utilizes flamenco music?\n",
+            " When did Spain join the European Union?\n",
+            " What is the name of the famous Spanish soccer club based in Barcelona?\n",
+            " What is the most visited tourist attraction in Spain?\n",
+            " What is the traditional Spanish dish consisting of a mixture of rice, vegetables, and meat or seafood called?"
+        ]
+    },
+    {
+        "ID": 41,
+        "Concept": "Hip hop music",
+        "Layer": 17,
+        "Dimension": 4630,
+        "QA": [
+            " Who is considered the \"King of Hip Hop\"?\n",
+            " What year did hip hop music first gain mainstream popularity?\n",
+            " Which city is often credited as the birthplace of hip hop?\n",
+            " Name one or more popular hip hop dances.\n",
+            " Who is famous for their groundbreaking album \"The Miseducation of Lauryn Hill\"?\n",
+            " What do the initials \"MC\" stand for in hip hop culture?\n",
+            " Who are known as the \"Three Kings of Hip Hop\"?\n",
+            " What is the term for spontaneously rapping or rhyming over a beat?\n",
+            " What is the name of the famous hip hop group featuring members Andre 3000 and Big Boi?\n",
+            " Which hip hop artist starred in the movie \"8 Mile\"?"
+        ]
+    },
+    {
+        "ID": 42,
+        "Concept": "Git",
+        "Layer": 17,
+        "Dimension": 4701,
+        "QA": [
+            " What is Git used for?\n",
+            " What is a repository in Git?\n",
+            " What is the command to initialize a Git repository?\n",
+            " What is the difference between Git commit and Git push?\n",
+            " How do you undo a Git commit?\n",
+            " What is Git branching?\n",
+            " How do you merge branches in Git?\n",
+            " What is a Git pull request?\n",
+            " How do you check the status of a Git repository?\n",
+            " What is the difference between Git fetch and Git pull?"
+        ]
+    },
+    {
+        "ID": 43,
+        "Concept": "Jesus",
+        "Layer": 17,
+        "Dimension": 5633,
+        "QA": [
+            " In which town was Jesus born?\n",
+            " At what age did Jesus start his ministry?\n",
+            " What was Jesus' occupation before beginning his ministry?\n",
+            " How many apostles did Jesus have?\n",
+            " On which holiday did Jesus rise from the dead?\n",
+            " What was the name of Jesus' mother?\n",
+            " In what body of water was Jesus baptized?\n",
+            " In which city was Jesus crucified?\n",
+            " What was the profession of the apostle Peter before he followed Jesus?\n",
+            " What was the name of the disciple who betrayed Jesus?"
+        ]
+    },
+    {
+        "ID": 44,
+        "Concept": "Tabletop role-playing game",
+        "Layer": 17,
+        "Dimension": 5703,
+        "QA": [
+            " What is a tabletop role-playing game?\n",
+            " How do players create and develop their characters in a tabletop RPG?\n",
+            " What role does the game master play in a tabletop RPG?\n",
+            " What are some common genres or settings for tabletop RPGs?\n",
+            " How do players interact with the game world in a tabletop RPG?\n",
+            " What are some popular tabletop RPG systems or rule sets?\n",
+            " How do players resolve conflicts or challenges in a tabletop RPG?\n",
+            " What are some common types of dice used in tabletop RPGs?\n",
+            " How do players progress and improve their characters in a tabletop RPG?\n",
+            " How do players typically collaborate and strategize in a tabletop RPG session?"
+        ]
+    },
+    {
+        "ID": 45,
+        "Concept": "Obsessive–compulsive disorder",
+        "Layer": 18,
+        "Dimension": 5083,
+        "QA": [
+            " What are the common symptoms of Obsessive–compulsive disorder (OCD)?\n",
+            " How is OCD diagnosed by healthcare professionals?\n",
+            " What are some common triggers for OCD behaviors?\n",
+            " What are the most common types of obsessive thoughts seen in individuals with OCD?\n",
+            " What are some common compulsive behaviors exhibited by individuals with OCD?\n",
+            " What are the potential causes of OCD?\n",
+            " How does OCD impact an individual's daily life and relationships?\n",
+            " What are some effective treatment options for managing OCD symptoms?\n",
+            " Are there any lifestyle changes or coping strategies that can help individuals with OCD?\n",
+            " What is the difference between OCD and regular habits or routines?"
+        ]
+    },
+    {
+        "ID": 46,
+        "Concept": "Buddhism",
+        "Layer": 18,
+        "Dimension": 5584,
+        "QA": [
+            " Who is considered the founder of Buddhism?\n",
+            " What are the core teachings of Buddhism?\n",
+            " What is the ultimate goal of Buddhism?\n",
+            " What are the three main branches of Buddhism?\n",
+            " What is the significance of the Four Noble Truths in Buddhism?\n",
+            " What is the role of meditation in Buddhism?\n",
+            " What is the concept of karma in Buddhism?\n",
+            " What are the key elements of the Eightfold Path in Buddhism?\n",
+            " What is the importance of the concept of impermanence in Buddhism?\n",
+            " What are the key principles of the Five Precepts in Buddhism?"
+        ]
+    },
+    {
+        "ID": 47,
+        "Concept": "CRISPR",
+        "Layer": 18,
+        "Dimension": 6340,
+        "QA": [
+            " What is CRISPR and what does it stand for?\n",
+            " How does CRISPR technology work?\n",
+            " What is the significance of CRISPR in genetic engineering?\n",
+            " What are some potential applications of CRISPR technology?\n",
+            " How does CRISPR differ from other genetic engineering techniques?\n",
+            " What are some ethical considerations surrounding the use of CRISPR technology?\n",
+            " How has CRISPR technology impacted research in the fields of medicine and agriculture?\n",
+            " What are some challenges or limitations of using CRISPR technology?\n",
+            " How do scientists target specific genes using CRISPR?\n",
+            " How has the discovery of CRISPR revolutionized the field of genetics and biotechnology?"
+        ]
+    },
+    {
+        "ID": 48,
+        "Concept": "Diabetes",
+        "Layer": 18,
+        "Dimension": 7377,
+        "QA": [
+            " What is diabetes?\n",
+            " What are the main types of diabetes?\n",
+            " What are the symptoms of diabetes?\n",
+            " How is diabetes diagnosed?\n",
+            " How is diabetes treated?\n",
+            " What are some risk factors for developing diabetes?\n",
+            " Can diabetes be prevented?\n",
+            " Are there any complications associated with diabetes?\n",
+            " How can diet and exercise help manage diabetes?\n",
+            " What is the impact of diabetes on a person's overall health and well-being?"
+        ]
+    },
+    {
+        "ID": 49,
+        "Concept": "Catholic Church",
+        "Layer": 18,
+        "Dimension": 7790,
+        "QA": [
+            " What is the highest authority in the Catholic Church?\n",
+            " How many sacraments are recognized by the Catholic Church?\n",
+            " Who is considered the leader of the Catholic Church?\n",
+            " What is the significance of the Vatican City in relation to the Catholic Church?\n",
+            " What is the role of priests in the Catholic Church?\n",
+            " What is the purpose of the Papal conclave?\n",
+            " What are some of the major differences between the Catholic Church and other Christian denominations?\n",
+            " What is the significance of the Eucharist in Catholic Church teachings?\n",
+            " What is the process of canonization in the Catholic Church?\n",
+            " How does the Catholic Church view social justice and humanitarian issues?"
+        ]
+    },
+    {
+        "ID": 50,
+        "Concept": "Activism",
+        "Layer": 18,
+        "Dimension": 8070,
+        "QA": [
+            " What is activism?\n",
+            " What are some common methods of activism?\n",
+            " Why do people become activists?\n",
+            " How can individuals get involved in activism?\n",
+            " What are some examples of successful activism movements?\n",
+            " What are some challenges activists face?\n",
+            " How can activism bring about social change?\n",
+            " Can online activism be as effective as traditional forms of activism?\n",
+            " What are the different types of activism?\n",
+            " How can activism impact policy and legislation?"
+        ]
+    },
+    {
+        "ID": 51,
+        "Concept": "Amazon (company)",
+        "Layer": 18,
+        "Dimension": 9658,
+        "QA": [
+            " When was Amazon founded?\n",
+            " Who is the founder and current CEO of Amazon?\n",
+            " What is the largest product category sold on Amazon?\n",
+            " What is Amazon's headquarters location?\n",
+            " What was the original name of the company before it was changed to Amazon?\n",
+            " How many employees does Amazon have worldwide?\n",
+            " What was Amazon's original business model and how has it evolved over time?\n",
+            " What is Amazon Prime and what are the benefits of membership?\n",
+            " How much revenue does Amazon generate annually?\n",
+            " What are some of the other business ventures that Amazon is involved in, besides e-commerce?"
+        ]
+    },
+    {
+        "ID": 52,
+        "Concept": "Brazilian Portuguese",
+        "Layer": 18,
+        "Dimension": 9660,
+        "QA": [
+            " What is the official language of Brazil?\n",
+            " How many verb tenses are there in Brazilian Portuguese?\n",
+            " What is the word for \"hello\" in Brazilian Portuguese?\n",
+            " How do you say \"thank you\" in Brazilian Portuguese?\n",
+            " How do you say \"goodbye\" in Brazilian Portuguese?\n",
+            " What is the pronunciation of the letter \"R\" in Brazilian Portuguese?\n",
+            " How do you say \"I love you\" in Brazilian Portuguese?\n",
+            " What is the difference between European Portuguese and Brazilian Portuguese?\n",
+            " What are some common Brazilian Portuguese phrases for tourists to know?\n",
+            " How do you say \"please\" in Brazilian Portuguese?"
+        ]
+    },
+    {
+        "ID": 53,
+        "Concept": "National Basketball Association",
+        "Layer": 18,
+        "Dimension": 9861,
+        "QA": [
+            " How many teams are in the NBA?\n",
+            " What is the official basketball size used in NBA games?\n",
+            " Who is the all-time leading scorer in NBA history?\n",
+            " Which team has won the most NBA championships?\n",
+            " How many quarters are in an NBA game?\n",
+            " What is the three-point line distance in the NBA?\n",
+            " What is the height of an official NBA basketball hoop?\n",
+            " Who is the current commissioner of the NBA?\n",
+            " How many players are allowed on the court for each team during an NBA game?\n",
+            " What is the maximum number of personal fouls a player can commit before fouling out in an NBA game?"
+        ]
+    },
+    {
+        "ID": 54,
+        "Concept": "Hilton Hotels & Resorts",
+        "Layer": 18,
+        "Dimension": 9897,
+        "QA": [
+            " What is the flagship brand of Hilton Worldwide?\n",
+            " In what year was the first Hilton Hotel opened?\n",
+            " How many hotels are currently under the Hilton Hotels & Resorts brand globally?\n",
+            " What amenities are typically offered at Hilton Hotels & Resorts?\n",
+            " What loyalty program does Hilton Hotels & Resorts offer to guests?\n",
+            " Can guests book rooms at Hilton Hotels & Resorts online?\n",
+            " What is the Hilton CleanStay program and how does it benefit guests?\n",
+            " What types of dining options are available at Hilton Hotels & Resorts?\n",
+            " What is the Hilton Honors app and how can guests use it during their stay?\n",
+            " Are there special packages or promotions available for guests booking a stay at Hilton Hotels & Resorts?"
+        ]
+    },
+    {
+        "ID": 55,
+        "Concept": "EBay",
+        "Layer": 19,
+        "Dimension": 613,
+        "QA": [
+            " What does eBay primarily specialize in selling?\n",
+            " How do you create an account on eBay?\n",
+            " What is the purpose of the \"buy it now\" option on eBay?\n",
+            " How does bidding on items work on eBay?\n",
+            " What is the difference between a fixed price listing and an auction on eBay?\n",
+            " How does PayPal come into play when making a purchase on eBay?\n",
+            " Can you negotiate prices with sellers on eBay?\n",
+            " What is the feedback system on eBay and how does it work?\n",
+            " How long do you have to pay for an item after winning an auction on eBay?\n",
+            " Are there any fees associated with selling items on eBay?"
+        ]
+    },
+    {
+        "ID": 56,
+        "Concept": "Japanese popular culture",
+        "Layer": 19,
+        "Dimension": 1475,
+        "QA": [
+            " What is the name of Japan's most popular boy band?\n",
+            " Who is Japan's most famous anime creator?\n",
+            " What is the traditional Japanese attire worn during festivals called?\n",
+            " What is the name of the popular Japanese rice wine?\n",
+            " Which Japanese video game company is known for creating Mario and Zelda?\n",
+            " What is the name of the Japanese traditional theater art form involving puppets?\n",
+            " Who is Japan's most famous manga artist?\n",
+            " What is the traditional Japanese tea ceremony called?\n",
+            " Which Japanese city is famous for its cherry blossom trees?\n",
+            " What is the name of the traditional Japanese hand-held fan used during summer?"
+        ]
+    },
+    {
+        "ID": 57,
+        "Concept": "Star Wars",
+        "Layer": 19,
+        "Dimension": 1593,
+        "QA": [
+            " Who is Darth Vader's son?\n",
+            " What planet is home to Chewbacca and the Wookiees?\n",
+            " Who is the Jedi Master who trains Luke Skywalker?\n",
+            " What is the name of the desert planet where Anakin Skywalker is born?\n",
+            " Who is the leader of the Rebel Alliance?\n",
+            " What is the name of Han Solo's ship?\n",
+            " What is the evil Empire's ultimate weapon in \"A New Hope\"?\n",
+            " What is the name of Yoda's species?\n",
+            " Who is Princess Leia's adopted father?\n",
+            " What colorful bounty hunter captures Han Solo in \"The Empire Strikes Back\"?"
+        ]
+    },
+    {
+        "ID": 58,
+        "Concept": "Euro",
+        "Layer": 19,
+        "Dimension": 1622,
+        "QA": [
+            " What is the official currency of the Eurozone countries?\n",
+            " In which year was the Euro first introduced as a currency?\n",
+            " How many European Union member countries currently use the Euro as their currency?\n",
+            " What is the symbol for the Euro currency?\n",
+            " Who is responsible for overseeing the monetary policy of the Eurozone?\n",
+            " Which country was the first to adopt the Euro as its official currency?\n",
+            " What is the exchange rate between the Euro and the US Dollar?\n",
+            " What are the denominations of Euro banknotes?\n",
+            " What are the most commonly used coins in Euro currency?\n",
+            " Which country has the highest denomination Euro banknote?"
+        ]
+    },
+    {
+        "ID": 59,
+        "Concept": "United Kingdom",
+        "Layer": 19,
+        "Dimension": 2052,
+        "QA": [
+            " What is the capital city of the United Kingdom?\n",
+            " What is the official language of the United Kingdom?\n",
+            " Who is the current monarch of the United Kingdom?\n",
+            " What is the currency used in the United Kingdom?\n",
+            " What is the national sport of the United Kingdom?\n",
+            " What famous landmark is located in London, England?\n",
+            " What is the nickname for the flag of the United Kingdom?\n",
+            " What is the name of the famous clock tower in London that houses Big Ben?\n",
+            " What is the name of the body of water that separates England from France?\n",
+            " What is the name of the government building where the British Prime Minister resides?"
+        ]
+    },
+    {
+        "ID": 60,
+        "Concept": "Scandinavia",
+        "Layer": 19,
+        "Dimension": 2386,
+        "QA": [
+            " What countries make up Scandinavia?\n",
+            " What is the capital of Sweden?\n",
+            " What is the traditional dish of Norway?\n",
+            " What is the famous outdoor thermal spa in Iceland called?\n",
+            " Which Scandinavian country is known for its beautiful fjords?\n",
+            " What is the currency used in Denmark?\n",
+            " Where is the original Legoland theme park located?\n",
+            " What is the famous Swedish furniture retailer known for its affordable and stylish designs?\n",
+            " What is the largest city in Finland?\n",
+            " What is the traditional dance of Sweden called?"
+        ]
+    },
+    {
+        "ID": 61,
+        "Concept": "Java (programming language)",
+        "Layer": 19,
+        "Dimension": 3670,
+        "QA": [
+            " What is Java programming language?\n",
+            " What is the difference between JDK, JRE, and JVM in Java?\n",
+            " How do you declare a variable in Java?\n",
+            " What is the difference between == and .equals() method in Java?\n",
+            " What are the different types of loops in Java?\n",
+            " How do you create a class in Java?\n",
+            " What is the use of the 'static' keyword in Java?\n",
+            " How do you handle exceptions in Java?\n",
+            " What is the purpose of the 'this' keyword in Java?\n",
+            " How do you create and use an array in Java?"
+        ]
+    },
+    {
+        "ID": 62,
+        "Concept": "Culture of Russia",
+        "Layer": 19,
+        "Dimension": 4274,
+        "QA": [
+            " What is the traditional Russian dance called?\n",
+            " What popular Russian dish is made from beetroot and served cold?\n",
+            " Who is the most famous Russian author known for writing \"War and Peace\"?\n",
+            " What are the famous Russian nesting dolls called?\n",
+            " What is the traditional Russian alcoholic beverage made from fermented rye bread?\n",
+            " What is the name of the traditional Russian folk instrument similar to a guitar?\n",
+            " What is the traditional Russian form of painting on wooden panels?\n",
+            " What is the traditional Russian fur hat called?\n",
+            " What is the main religion practiced in Russia?\n",
+            " What is the famous Russian ballet company located in St. Petersburg?"
+        ]
+    },
+    {
+        "ID": 63,
+        "Concept": "Cherokee",
+        "Layer": 19,
+        "Dimension": 4695,
+        "QA": [
+            " What is the Cherokee language called?\n",
+            " When was the Cherokee Nation established?\n",
+            " Where do the Cherokee people primarily reside today?\n",
+            " What traditional food is commonly eaten by the Cherokee?\n",
+            " What is the significance of the Cherokee syllabary created by Sequoyah?\n",
+            " What is the traditional role of clans in Cherokee society?\n",
+            " What is the importance of the Trail of Tears in Cherokee history?\n",
+            " What are some traditional Cherokee festivals and ceremonies?\n",
+            " What is the meaning behind some common Cherokee symbols, such as the turtle or eagle?\n",
+            " How has modern Cherokee culture blended with mainstream American culture?"
+        ]
+    },
+    {
+        "ID": 64,
+        "Concept": "Cryptocurrency",
+        "Layer": 19,
+        "Dimension": 4890,
+        "QA": [
+            " What is cryptocurrency?\n",
+            " How is cryptocurrency different from traditional forms of currency?\n",
+            " How are cryptocurrencies typically created?\n",
+            " What is blockchain technology and how is it used in cryptocurrency?\n",
+            " What are some popular examples of cryptocurrencies?\n",
+            " How can someone buy and sell cryptocurrencies?\n",
+            " What are some potential benefits of using cryptocurrency?\n",
+            " What are some potential risks of using cryptocurrency?\n",
+            " Can you use cryptocurrency to make purchases?\n",
+            " How is the value of a cryptocurrency determined?"
+        ]
+    },
+    {
+        "ID": 65,
+        "Concept": "Pakistan",
+        "Layer": 19,
+        "Dimension": 6973,
+        "QA": [
+            " What is the official language of Pakistan?\n",
+            " What is the capital city of Pakistan?\n",
+            " What is the currency of Pakistan?\n",
+            " Who is the current Prime Minister of Pakistan?\n",
+            " What is the national sport of Pakistan?\n",
+            " What is the tallest mountain in Pakistan?\n",
+            " What is the largest city in Pakistan?\n",
+            " What is the national animal of Pakistan?\n",
+            " In what year did Pakistan gain independence from British rule?\n",
+            " What is the name of the famous ancient archaeological site in Pakistan known for its well-preserved ruins?"
+        ]
+    },
+    {
+        "ID": 66,
+        "Concept": "YouTube",
+        "Layer": 19,
+        "Dimension": 7106,
+        "QA": [
+            " What is the most subscribed YouTube channel currently?\n",
+            " How many hours of video content are uploaded to YouTube every minute?\n",
+            " What year was YouTube founded?\n",
+            " How many users does YouTube have worldwide?\n",
+            " What is the most viewed video on YouTube?\n",
+            " What is the YouTube algorithm used for?\n",
+            " How can users monetize their content on YouTube?\n",
+            " How do YouTubers typically earn money from their channels?\n",
+            " What is the purpose of YouTube's \"Community Guidelines\"?\n",
+            " How many countries is YouTube available in?"
+        ]
+    },
+    {
+        "ID": 67,
+        "Concept": "Group theory",
+        "Layer": 19,
+        "Dimension": 7384,
+        "QA": [
+            " What is a group in mathematics?\n",
+            " What is the order of a group?\n",
+            " What is the identity element of a group?\n",
+            " What is the inverse element of a group?\n",
+            " What is a subgroup of a group?\n",
+            " What is a cyclic group?\n",
+            " What is a normal subgroup?\n",
+            " What is the difference between a commutative group and a non-commutative group?\n",
+            " What is the concept of isomorphism in group theory?\n",
+            " What is Lagrange's theorem in group theory?"
+        ]
+    },
+    {
+        "ID": 68,
+        "Concept": "Set theory",
+        "Layer": 19,
+        "Dimension": 7684,
+        "QA": [
+            " What is the main concept of Set theory?\n",
+            " What is a set in Set theory?\n",
+            " What is a subset in Set theory?\n",
+            " What is the cardinality of a set?\n",
+            " How is the union of two sets defined in Set theory?\n",
+            " How is the intersection of two sets defined in Set theory?\n",
+            " What is the difference between a finite set and an infinite set?\n",
+            " What is the complement of a set in Set theory?\n",
+            " How is the power set of a set defined?\n",
+            " What is the Axiom of Extensionality in Set theory?"
+        ]
+    },
+    {
+        "ID": 69,
+        "Concept": "Germany",
+        "Layer": 19,
+        "Dimension": 9319,
+        "QA": [
+            " What is the capital of Germany?\n",
+            " When was the Berlin Wall built and when was it torn down?\n",
+            " What is the currency used in Germany?\n",
+            " Which famous car manufacturers are based in Germany?\n",
+            " What is the most popular traditional German food?\n",
+            " What is the name of Germany's national football team?\n",
+            " What are the colors of the German flag?\n",
+            " What famous event took place in Munich in 1972?",
+            " What is the largest city in Germany by population?\n",
+            " What is the name of the famous beer festival held annually in Munich?"
+        ]
+    },
+    {
+        "ID": 70,
+        "Concept": "Catalysis",
+        "Layer": 19,
+        "Dimension": 10043,
+        "QA": [
+            " What is catalysis?\n",
+            " How does a catalyst speed up a chemical reaction?\n",
+            " What are the different types of catalysts?\n",
+            " How does catalysis affect the activation energy of a reaction?\n",
+            " What are some common examples of catalysis in everyday life?\n",
+            " How does the structure of a catalyst affect its effectiveness?\n",
+            " How does catalysis play a role in environmental protection?\n",
+            " How do enzymes act as biological catalysts in living organisms?\n",
+            " How can catalysts be recycled and reused in chemical reactions?\n",
+            " What are some challenges in developing new catalysts for specific chemical reactions?"
+        ]
+    },
+    {
+        "ID": 71,
+        "Concept": "Israel",
+        "Layer": 19,
+        "Dimension": 10871,
+        "QA": [
+            " What is the capital city of Israel?\n",
+            " What is the official language of Israel?\n",
+            " What is the currency used in Israel?\n",
+            " What is the name of the holiest city for Judaism in Israel?\n",
+            " What is the national symbol of Israel?\n",
+            " What is the name of the current Prime Minister of Israel?\n",
+            " What is the significance of the Dead Sea in Israel?\n",
+            " How long is the border between Israel and the West Bank?\n",
+            " What major conflict has shaped Israel's history since its establishment in 1948?",
+            " What is the name of the Israeli intelligence agency known for its covert operations?"
+        ]
+    },
+    {
+        "ID": 72,
+        "Concept": "Soviet Union",
+        "Layer": 20,
+        "Dimension": 64,
+        "QA": [
+            " When was the Soviet Union officially established?\n",
+            " Who was the first leader of the Soviet Union?\n",
+            " What was the main ideology of the Soviet Union?\n",
+            " What was the Cold War and how did it impact the Soviet Union?\n",
+            " What were some of the key industries in the Soviet Union?\n",
+            " What role did the Soviet Union play in World War II?\n",
+            " What were some of the major social and economic challenges faced by the Soviet Union?\n",
+            " How did the Soviet Union collapse and when did it officially dissolve?\n",
+            " What were some of the key events in Soviet history, such as the Great Purges or the Cuban Missile Crisis?\n",
+            " How did the Soviet Union's government and political system function?"
+        ]
+    },
+    {
+        "ID": 73,
+        "Concept": "Trigonometric functions",
+        "Layer": 20,
+        "Dimension": 336,
+        "QA": [
+            " What are the three main trigonometric functions?\n",
+            " What is the unit circle and how is it used in trigonometry?\n",
+            " What is the relationship between the sine and cosine functions?\n",
+            " How do you find the cosine of an angle in a right triangle?\n",
+            " What does the tangent function represent in trigonometry?\n",
+            " How do you find the secant of an angle in a right triangle?\n",
+            " What is the relationship between the sine function and the cosecant function?\n",
+            " How do you find the cotangent of an angle in a right triangle?\n",
+            " How can trigonometric functions be used to solve real-world problems?\n",
+            " How are trigonometric functions used in geometry and physics?"
+        ]
+    },
+    {
+        "ID": 74,
+        "Concept": "Victorian era",
+        "Layer": 20,
+        "Dimension": 750,
+        "QA": [
+            " When did the Victorian era begin and end?\n",
+            " Who was the monarch during most of the Victorian era?\n",
+            " What was the social class structure like during the Victorian era?\n",
+            " What were some common forms of entertainment during the Victorian era?\n",
+            " How did advancements in technology impact society during this time period?\n",
+            " What were some key developments in literature and the arts during the Victorian era?\n",
+            " What were the major social reform movements that took place during the Victorian era?\n",
+            " What were some common fashion trends during the Victorian era?\n",
+            " How did the Industrial Revolution impact daily life in Victorian England?\n",
+            " What were some popular pastimes and hobbies of Victorian society?"
+        ]
+    },
+    {
+        "ID": 75,
+        "Concept": "Marxism",
+        "Layer": 20,
+        "Dimension": 887,
+        "QA": [
+            " What is the basic premise of Marxism?\n",
+            " Who is considered the father of Marxism?\n",
+            " What is the role of the proletariat in Marxist theory?\n",
+            " How does Marxism view capitalism?\n",
+            " What is the concept of dialectical materialism in Marxism?\n",
+            " How does Marxism view social classes?\n",
+            " What is the ultimate goal of Marxism?\n",
+            " How does Marxism view the state and government?\n",
+            " What is the relationship between Marxism and socialism?\n",
+            " What are some key criticisms of Marxism?"
+        ]
+    },
+    {
+        "ID": 76,
+        "Concept": "Spectral density",
+        "Layer": 20,
+        "Dimension": 936,
+        "QA": [
+            " What is spectral density?\n",
+            " How is spectral density different from power spectral density?\n",
+            " How is spectral density related to the Fourier transform?\n",
+            " Why is spectral density used in signal processing?\n",
+            " How is spectral density calculated?\n",
+            " What are the units of spectral density?\n",
+            " How does spectral density help in analyzing signals in frequency domain?\n",
+            " What is the significance of spectral density in wireless communication systems?\n",
+            " How do we interpret the peaks and valleys in a spectral density plot?\n",
+            " How can spectral density be used to determine the bandwidth of a signal?"
+        ]
+    },
+    {
+        "ID": 77,
+        "Concept": "Amazon (company)",
+        "Layer": 20,
+        "Dimension": 4616,
+        "QA": [
+            " When was Amazon founded?\n",
+            " Who is the founder and CEO of Amazon?\n",
+            " What products and services does Amazon offer?\n",
+            " What is Amazon's market capitalization?\n",
+            " How many employees does Amazon have worldwide?\n",
+            " What is Amazon's annual revenue?\n",
+            " Where is Amazon's headquarters located?\n",
+            " How did Amazon originally start as a business?\n",
+            " What are some of Amazon's key acquisitions over the years?\n",
+            " How does Amazon innovate and stay competitive in the market?"
+        ]
+    },
+    {
+        "ID": 78,
+        "Concept": "Amazon (company)",
+        "Layer": 22,
+        "Dimension": 4342,
+        "QA": [
+            " When was Amazon founded?\n",
+            " Who is the founder and current CEO of Amazon?\n",
+            " What is the primary product Amazon started selling when it first launched?\n",
+            " What is Amazon's annual revenue?\n",
+            " What are some of the most popular services offered by Amazon?\n",
+            " Where is Amazon's headquarters located?\n",
+            " How many employees does Amazon have globally?\n",
+            " What is Amazon's market capitalization?\n",
+            " In which year did Amazon first become profitable?\n",
+            " What is Amazon's mission statement or core values?"
+        ]
+    },
+    {
+        "ID": 79,
+        "Concept": "Chronic obstructive pulmonary disease",
+        "Layer": 22,
+        "Dimension": 4447,
+        "QA": [
+            " What is chronic obstructive pulmonary disease (COPD)?\n",
+            " What are the common symptoms of COPD?\n",
+            " What are the main causes of COPD?\n",
+            " How is COPD diagnosed?\n",
+            " How is COPD treated?\n",
+            " What lifestyle changes can help manage COPD?\n",
+            " Are there any complications associated with COPD?\n",
+            " Can COPD be prevented?\n",
+            " What is the long-term outlook for individuals with COPD?\n",
+            " How does smoking contribute to the development of COPD?"
+        ]
+    },
+    {
+        "ID": 80,
+        "Concept": "COVID-19 pandemic",
+        "Layer": 22,
+        "Dimension": 4479,
+        "QA": [
+            " What is COVID-19?",
+            " How is COVID-19 transmitted?",
+            " What are the common symptoms of COVID-19?",
+            " How can I protect myself and others from COVID-19?",
+            " How has the COVID-19 pandemic impacted the economy?",
+            " What are the current guidelines for social distancing?\n",
+            " Are face masks effective in preventing the spread of COVID-19?",
+            " How can I safely clean and disinfect my home to prevent COVID-19?",
+            " How has the COVID-19 pandemic affected travel?",
+            " What are the potential long-term health effects of COVID-19?"
+        ]
+    },
+    {
+        "ID": 81,
+        "Concept": "Plasma arc welding",
+        "Layer": 22,
+        "Dimension": 4639,
+        "QA": [
+            " What is the primary heat source used in plasma arc welding?\n",
+            " How does plasma arc welding differ from traditional arc welding processes?\n",
+            " What are the main advantages of using plasma arc welding?\n",
+            " How is the plasma arc created in a plasma arc welding torch?\n",
+            " What types of materials are typically welded using plasma arc welding?\n",
+            " What are some common applications of plasma arc welding?\n",
+            " What safety precautions should be taken when using plasma arc welding equipment?\n",
+            " How does the plasma arc welding process compare to other welding processes in terms of speed and precision?\n",
+            " What is the role of shielding gas in plasma arc welding?\n",
+            " How does the cost of equipment and consumables for plasma arc welding compare to other welding processes?"
+        ]
+    },
+    {
+        "ID": 82,
+        "Concept": "Ribosomal RNA",
+        "Layer": 22,
+        "Dimension": 4654,
+        "QA": [
+            " What is the function of Ribosomal RNA (rRNA)?\n",
+            " How many types of rRNA are typically found in a ribosome?\n",
+            " Where in the cell are ribosomes located?\n",
+            " What is the primary role of rRNA in protein synthesis?\n",
+            " How does rRNA contribute to the formation of peptide bonds between amino acids?\n",
+            " What is the structure of rRNA molecules and how do they interact with ribosomal proteins?\n",
+            " How is rRNA transcribed and processed in the cell?\n",
+            " What is the significance of ribosomal RNA in the evolution of life?\n",
+            " How does rRNA differ from messenger RNA (mRNA) and transfer RNA (tRNA)?\n",
+            " How do mutations in rRNA genes affect protein synthesis and cellular function?"
+        ]
+    },
+    {
+        "ID": 83,
+        "Concept": "Graph theory",
+        "Layer": 22,
+        "Dimension": 5016,
+        "QA": [
+            " What is a graph in graph theory?\n",
+            " What are the two main components of a graph?\n",
+            " What is a vertex in a graph?\n",
+            " What is an edge in a graph?\n",
+            " What is the degree of a vertex in a graph?\n",
+            " What is a path in a graph?\n",
+            " What is a cycle in a graph?\n",
+            " What is a connected graph?\n",
+            " What is a tree in graph theory?\n",
+            " What is the importance of graph theory in real-world applications?"
+        ]
+    },
+    {
+        "ID": 84,
+        "Concept": "Survivor (franchise)",
+        "Layer": 22,
+        "Dimension": 5130,
+        "QA": [
+            " Who is the host of the TV show Survivor?\n",
+            " How many seasons of Survivor have aired so far?\n",
+            " Where is Survivor filmed?\n",
+            " What is the main premise of Survivor?\n",
+            " How many contestants typically compete on each season of Survivor?\n",
+            " What is the tribal council and what happens there?\n",
+            " How does a contestant get eliminated from Survivor?\n",
+            " What are some of the most common challenges on Survivor?\n",
+            " Has there ever been a celebrity edition of Survivor?\n",
+            " Can contestants strategize and form alliances on Survivor?"
+        ]
+    },
+    {
+        "ID": 85,
+        "Concept": "Ducati",
+        "Layer": 22,
+        "Dimension": 5193,
+        "QA": [
+            " When was Ducati founded, and where is their headquarters located?   \n",
+            " What type of vehicles does Ducati primarily manufacture?  \n",
+            " What is the most popular Ducati motorcycle model?  \n",
+            " Who is the current CEO of Ducati?  \n",
+            " In which year did Ducati win its first MotoGP World Championship?  \n",
+            " What is the name of Ducati's signature desmodromic valve system?  \n",
+            " What does the term \"Ducatista\" refer to in the Ducati community?  \n",
+            " What iconic color is often associated with Ducati motorcycles?  \n",
+            " What is the top speed of the Ducati Panigale V4?",
+            " Which Italian automotive company acquired Ducati in 2012?"
+        ]
+    },
+    {
+        "ID": 86,
+        "Concept": "Linear algebra",
+        "Layer": 22,
+        "Dimension": 5358,
+        "QA": [
+            " What is the definition of a vector in linear algebra?\n",
+            " How is matrix multiplication defined?\n",
+            " What is a determinant and how is it calculated?\n",
+            " What does it mean for a set of vectors to be linearly independent?\n",
+            " What is the difference between row echelon form and reduced row echelon form?\n",
+            " How is the rank of a matrix defined?\n",
+            " What is a matrix inversion and how is it calculated?\n",
+            " What is the null space of a matrix?\n",
+            " How is the trace of a matrix calculated?\n",
+            " What are eigenvalues and eigenvectors of a matrix?"
+        ]
+    },
+    {
+        "ID": 87,
+        "Concept": "Uranium",
+        "Layer": 22,
+        "Dimension": 5469,
+        "QA": [
+            " What is the atomic number of Uranium?\n",
+            " What is the symbol for Uranium on the periodic table?\n",
+            " What is the melting point of Uranium?\n",
+            " What is the boiling point of Uranium?\n",
+            " What is the primary use of Uranium in modern society?\n",
+            " How is Uranium extracted from the ground?\n",
+            " What are the main isotopes of Uranium and their relative abundance?\n",
+            " What are the potential health risks associated with exposure to Uranium?\n",
+            " What is the estimated abundance of Uranium in the Earth's crust?\n",
+            " How is Uranium used in nuclear power generation?"
+        ]
+    },
+    {
+        "ID": 88,
+        "Concept": "MySQL",
+        "Layer": 22,
+        "Dimension": 5828,
+        "QA": [
+            " What is MySQL?\n",
+            " What is the purpose of using MySQL?\n",
+            " How do you create a database in MySQL?\n",
+            " How do you insert data into a table in MySQL?\n",
+            " How do you retrieve data from a table in MySQL?\n",
+            " How do you update data in a table in MySQL?\n",
+            " How do you delete data from a table in MySQL?\n",
+            " What is the difference between CHAR and VARCHAR data types in MySQL?\n",
+            " How do you create indexes in MySQL?\n",
+            " How do you backup and restore a database in MySQL?"
+        ]
+    },
+    {
+        "ID": 89,
+        "Concept": "Heroin",
+        "Layer": 22,
+        "Dimension": 5895,
+        "QA": [
+            " What is heroin?\n",
+            " How is heroin typically used?\n",
+            " What are the short-term effects of using heroin?\n",
+            " What are the long-term effects of heroin use?\n",
+            " Can heroin be addictive?\n",
+            " What are the risks of using heroin?\n",
+            " Can heroin use lead to overdose?\n",
+            " What are the signs of heroin addiction?\n",
+            " How is heroin different from other opioids?\n",
+            " Are there treatment options available for heroin addiction?"
+        ]
+    },
+    {
+        "ID": 90,
+        "Concept": "Formula racing",
+        "Layer": 22,
+        "Dimension": 6017,
+        "QA": [
+            " What is the top racing series for Formula racing?\n",
+            " Which team has won the most Formula 1 World Championships?",
+            " Who is considered the greatest Formula 1 driver of all time?",
+            " How many points are awarded for a race win in Formula 1?",
+            " Which famous racetrack hosts the Monaco Grand Prix?\n",
+            " What is the technical name for the aerodynamic device mounted on the rear of a Formula 1 car?",
+            " How many pit stops are typically made during a Formula 1 race?",
+            " What type of tires are used in Formula 1 races?",
+            " Which car manufacturer supplies engines to the most Formula 1 teams?",
+            " What is the minimum weight requirement for a Formula 1 car?"
+        ]
+    },
+    {
+        "ID": 91,
+        "Concept": "Vikings",
+        "Layer": 22,
+        "Dimension": 6028,
+        "QA": [
+            " Who were the Vikings?\n",
+            " Where did the Vikings originate from?\n",
+            " What were some of the reasons for Viking raids?\n",
+            " What types of weapons did the Vikings use?\n",
+            " What were some of the main beliefs and practices of the Vikings?\n",
+            " What were Viking longships used for?\n",
+            " How did Viking society and government function?\n",
+            " What were some famous Viking leaders or warrior heroes?\n",
+            " What role did women play in Viking society?\n",
+            " How did the Vikings influence European history and culture?"
+        ]
+    },
+    {
+        "ID": 92,
+        "Concept": "Microsoft Excel",
+        "Layer": 22,
+        "Dimension": 6138,
+        "QA": [
+            " What is the purpose of Microsoft Excel?\n",
+            " How can you create a new spreadsheet in Excel?\n",
+            " What is a cell in Excel and how are they identified?\n",
+            " How do you enter data in Excel?\n",
+            " What is a formula in Excel and how do you create one?\n",
+            " How can you format cells in Excel?\n",
+            " What is a chart in Excel and how do you create one?\n",
+            " How do you sort and filter data in Excel?\n",
+            " How can you protect a worksheet in Excel?\n",
+            " What is a function in Excel and how do you use it?"
+        ]
+    },
+    {
+        "ID": 93,
+        "Concept": "Object-oriented programming",
+        "Layer": 22,
+        "Dimension": 6179,
+        "QA": [
+            " What is object-oriented programming (OOP)?\n",
+            " What are the four main principles of OOP?\n",
+            " What is an object in OOP?\n",
+            " What is a class in OOP?\n",
+            " What is the difference between a class and an object?\n",
+            " What is inheritance in OOP?\n",
+            " What is encapsulation in OOP?\n",
+            " What is polymorphism in OOP?\n",
+            " What is the significance of constructors in OOP?\n",
+            " How does OOP promote code reusability and maintainability?"
+        ]
+    },
+    {
+        "ID": 94,
+        "Concept": "Cellular network",
+        "Layer": 22,
+        "Dimension": 6245,
+        "QA": [
+            " What is a cellular network?\n",
+            " How does a cellular network work?\n",
+            " What is the main purpose of a cellular network?\n",
+            " How do cellular networks help mobile phones connect to the internet?\n",
+            " What are the different parts of a cellular network?\n",
+            " How do cellular networks handle data transmission and voice calls simultaneously?\n",
+            " What is the difference between 3G, 4G, and 5G cellular networks?",
+            " How do cellular networks handle roaming between different countries?\n",
+            " What are some common issues that can affect cellular network connectivity?\n",
+            " How are cellular network signals affected by obstacles like buildings and trees?"
+        ]
+    },
+    {
+        "ID": 95,
+        "Concept": "Japanese popular culture",
+        "Layer": 22,
+        "Dimension": 6509,
+        "QA": [
+            " What is the name of the famous Japanese comic book style?\n",
+            " Which Japanese animation studio is known for producing films like \"Spirited Away\" and \"My Neighbor Totoro\"?\n",
+            " What is the traditional Japanese form of theater that combines drama, music, and dance?\n",
+            " What is the Japanese word for \"pop culture\"?\n",
+            " Who is the famous Japanese pop singer known as the \"Queen of J-pop\"?\n",
+            " What is the name of the popular Japanese video game franchise featuring a plumber named Mario?\n",
+            " Which Japanese martial art focuses on using a sword as a weapon?\n",
+            " What is the traditional Japanese art of paper folding called?\n",
+            " What is the name of the Japanese electronic dance music genre that originated in the late 1980s?",
+            " Who is the popular Japanese musician and fashion designer known for his quirky and colorful style?"
+        ]
+    },
+    {
+        "ID": 96,
+        "Concept": "Collectible card game",
+        "Layer": 22,
+        "Dimension": 6562,
+        "QA": [
+            " What is a collectible card game (CCG)?\n",
+            " What are some popular examples of collectible card games?\n",
+            " How do players acquire cards in a CCG?\n",
+            " How do players build decks in a CCG?\n",
+            " What is the objective of a typical CCG game?\n",
+            " What are some common card types found in a CCG?\n",
+            " What is the difference between a CCG and a trading card game (TCG)?\n",
+            " What is a booster pack in a CCG?\n",
+            " How do players win in a CCG?\n",
+            " What are some strategies players can use in a CCG?"
+        ]
+    },
+    {
+        "ID": 97,
+        "Concept": "Microsoft Azure",
+        "Layer": 22,
+        "Dimension": 6852,
+        "QA": [
+            " What is Microsoft Azure?\n",
+            " What services does Microsoft Azure offer?\n",
+            " How can businesses benefit from using Microsoft Azure?\n",
+            " How does Microsoft Azure compare to other cloud computing platforms?\n",
+            " What role does Microsoft Azure play in digital transformation?\n",
+            " What security features does Microsoft Azure offer for data protection?\n",
+            " How does Microsoft Azure support hybrid cloud deployments?\n",
+            " What types of businesses are best suited for using Microsoft Azure?\n",
+            " How can businesses migrate their existing applications to Microsoft Azure?\n",
+            " What is the pricing structure for Microsoft Azure services?"
+        ]
+    },
+    {
+        "ID": 98,
+        "Concept": "NATO",
+        "Layer": 22,
+        "Dimension": 7318,
+        "QA": [
+            " What does NATO stand for?\n",
+            " When was NATO established?\n",
+            " How many member countries are in NATO?\n",
+            " What is the main purpose of NATO?\n",
+            " Who is the current Secretary General of NATO?\n",
+            " Which famous treaty created NATO?\n",
+            " What is Article 5 of the NATO treaty?",
+            " Where is NATO Headquarters located?\n",
+            " What is the primary language used in NATO meetings and communications?\n",
+            " How does NATO make decisions and take actions?"
+        ]
+    },
+    {
+        "ID": 99,
+        "Concept": "Stochastic process",
+        "Layer": 22,
+        "Dimension": 7393,
+        "QA": [
+            " What is a stochastic process?\n",
+            " What is the difference between a random process and a stochastic process?\n",
+            " What are some common examples of stochastic processes?\n",
+            " How are stochastic processes used in modeling real-world phenomena?\n",
+            " What is a stationary stochastic process?\n",
+            " What is the significance of the autocorrelation function in stochastic processes?\n",
+            " How can one simulate a stochastic process?\n",
+            " What is the role of probability distributions in stochastic processes?\n",
+            " How are moments used to describe a stochastic process?\n",
+            " How can one analyze the behavior of a stochastic process over time?"
+        ]
+    },
+    {
+        "ID": 100,
+        "Concept": "Harry Potter",
+        "Layer": 22,
+        "Dimension": 7585,
+        "QA": [
+            " Who is Harry Potter's godfather?\n",
+            " What is the name of the school that Harry Potter attends?\n",
+            " What are the names of Harry Potter's two best friends?\n",
+            " Who is the headmaster of Hogwarts?\n",
+            " What is the name of the train that takes students to Hogwarts?\n",
+            " What magical sport do the characters play on broomsticks?\n",
+            " What creature guards the entrance to the Chamber of Secrets?\n",
+            " Who is the main antagonist in the Harry Potter series?\n",
+            " What is the name of Harry's owl?\n",
+            " What is the name of the three-headed dog that guards the Sorcerer's Stone?"
+        ]
+    },
+    {
+        "ID": 101,
+        "Concept": "Far-right politics",
+        "Layer": 22,
+        "Dimension": 7637,
+        "QA": [
+            " What are some common beliefs and values associated with far-right political groups?\n",
+            " How do far-right parties typically view immigration and multiculturalism?\n",
+            " What role does nationalism play in far-right ideologies?\n",
+            " How do far-right groups tend to approach social and economic issues?\n",
+            " What are some examples of far-right political parties or leaders around the world?\n",
+            " What is the relationship between far-right politics and authoritarianism?\n",
+            " How do far-right groups often engage in rhetoric and messaging?\n",
+            " What are some criticisms and controversies associated with far-right political movements?\n",
+            " How do far-right groups typically view globalism and international cooperation?\n",
+            " How does the influence of far-right ideologies impact mainstream politics and society?"
+        ]
+    },
+    {
+        "ID": 102,
+        "Concept": "Brexit",
+        "Layer": 22,
+        "Dimension": 7941,
+        "QA": [
+            " What does the term \"Brexit\" stand for?\n",
+            " When did the United Kingdom hold a referendum on its EU membership?\n",
+            " What was the result of the Brexit referendum?\n",
+            " Who is the current Prime Minister of the UK overseeing the Brexit process?\n",
+            " What is the main issue causing delays in the Brexit negotiations?\n",
+            " What is the backstop agreement in relation to Brexit?\n",
+            " How will Brexit potentially impact trade between the UK and the EU?\n",
+            " What are some potential consequences of a no-deal Brexit?\n",
+            " How has Brexit affected the value of the British pound?\n",
+            " How are EU citizens living in the UK and British citizens living in the EU being affected by Brexit?"
+        ]
+    },
+    {
+        "ID": 103,
+        "Concept": "Hip hop music",
+        "Layer": 22,
+        "Dimension": 7948,
+        "QA": [
+            " Who is considered the founding father of hip hop?\n",
+            " What city is widely regarded as the birthplace of hip hop?\n",
+            " Name three prominent hip hop artists from the 1990s.",
+            " What is the main element of hip hop music?\n",
+            " What is the name of the dance that is closely associated with hip hop?\n",
+            " What is a \"beef\" in the context of hip hop culture?\n",
+            " Name a popular subgenre of hip hop.",
+            " What does the term \"MC\" stand for in hip hop?\n",
+            " What is a \"mixtape\" in hip hop?\n",
+            " What is the significance of graffiti in hip hop culture?"
+        ]
+    },
+    {
+        "ID": 104,
+        "Concept": "Amazon Alexa",
+        "Layer": 22,
+        "Dimension": 9143,
+        "QA": [
+            " What is Amazon Alexa?\n",
+            " How does Amazon Alexa work?\n",
+            " What can Amazon Alexa do?\n",
+            " How do you interact with Amazon Alexa?\n",
+            " Can Amazon Alexa play music?\n",
+            " How does Amazon Alexa control smart home devices?\n",
+            " Can Amazon Alexa make phone calls?\n",
+            " How can you customize Amazon Alexa's settings?\n",
+            " Does Amazon Alexa have a built-in virtual assistant?\n",
+            " How does Amazon Alexa protect your privacy and data?"
+        ]
+    },
+    {
+        "ID": 105,
+        "Concept": "Barack Obama",
+        "Layer": 25,
+        "Dimension": 6972,
+        "QA": [
+            " When was Barack Obama born?\n",
+            " Where was Barack Obama born?\n",
+            " What political party does Barack Obama belong to?\n",
+            " In which years did Barack Obama serve as President of the United States?\n",
+            " What was Barack Obama's profession before entering politics?\n",
+            " Who was Barack Obama's Vice President during his presidency?\n",
+            " What is the title of Barack Obama's memoir, published in 2020?",
+            " What significant legislation did Barack Obama sign into law during his presidency?\n",
+            " In which state did Barack Obama serve as a U.S. Senator before becoming President?",
+            " What award did Barack Obama win in 2009, just a few months into his presidency?"
+        ]
+    },
+    {
+        "ID": 106,
+        "Concept": "Marathon",
+        "Layer": 20,
+        "Dimension": 6856,
+        "QA": [
+            " When was the first modern marathon organized?\n",
+            " What is the distance of a full marathon?\n",
+            " What city is famously associated with the marathon event in ancient Greece?\n",
+            " Who won the first Olympic marathon in 1896?",
+            " What is the average time it takes to complete a marathon?\n",
+            " How long does it typically take to train for a marathon?\n",
+            " What is the purpose of \"hitting the wall\" in marathon running?\n",
+            " How many water stations are typically set up along a marathon course?\n",
+            " What is the significance of the Boston Marathon in the running community?\n",
+            " What are some common tips for first-time marathon runners?"
+        ]
+    },
+    {
+        "ID": 107,
+        "Concept": "Avant-garde",
+        "Layer": 20,
+        "Dimension": 8837,
+        "QA": [
+            " What does the term \"Avant-garde\" refer to?\n",
+            " Who are some famous Avant-garde artists or movements?\n",
+            " How does Avant-garde art challenge traditional norms and conventions?\n",
+            " What different forms can Avant-garde art take?\n",
+            " How does Avant-garde art influence and inspire other artistic movements?\n",
+            " What role does experimentation play in Avant-garde art?\n",
+            " How has the Avant-garde movement changed over time?\n",
+            " In what ways does Avant-garde art challenge societal norms and beliefs?\n",
+            " What are some common themes or ideas explored in Avant-garde art?\n",
+            " How does Avant-garde art push the boundaries of what is considered art?"
+        ]
+    },
+    {
+        "ID": 108,
+        "Concept": "Blackjack",
+        "Layer": 21,
+        "Dimension": 4,
+        "QA": [
+            " What is the goal of Blackjack?\n",
+            " What is the value of an Ace in Blackjack?\n",
+            " What is the maximum number of cards a player can have in Blackjack without going over 21?",
+            " What is \"splitting\" in Blackjack?\n",
+            " What is \"doubling down\" in Blackjack?\n",
+            " What is the best possible hand in Blackjack?\n",
+            " What is the minimum and maximum number of players at a Blackjack table?\n",
+            " What is the significance of the dealer's \"upcard\" in Blackjack?\n",
+            " What is the difference between \"hard\" and \"soft\" hands in Blackjack?\n",
+            " What is the minimum and maximum bet allowed at a Blackjack table?"
+        ]
+    },
+    {
+        "ID": 109,
+        "Concept": "HTTP",
+        "Layer": 21,
+        "Dimension": 623,
+        "QA": [
+            " What does HTTP stand for?\n",
+            " What is the primary function of HTTP?\n",
+            " What port does HTTP typically use?\n",
+            " What are the common methods used in HTTP requests?\n",
+            " What is the difference between HTTP and HTTPS?\n",
+            " How does HTTP handle stateless communication?\n",
+            " What role does HTTP headers play in a request/response cycle?\n",
+            " What is the significance of status codes in HTTP responses?\n",
+            " How does HTTP support content negotiation?\n",
+            " What is the default encoding used in HTTP messages?"
+        ]
+    },
+    {
+        "ID": 110,
+        "Concept": "C++",
+        "Layer": 21,
+        "Dimension": 743,
+        "QA": [
+            " What is C++ and what is it used for?\n",
+            " What is the difference between C and C++?\n",
+            " What are the basic data types in C++?\n",
+            " How do you declare and define a variable in C++?\n",
+            " What is a function in C++ and how do you define one?\n",
+            " Explain the concept of inheritance in C++.",
+            " What is a class in C++ and how do you create one?\n",
+            " How do you handle exceptions in C++?\n",
+            " What are pointers in C++ and how can they be used?\n",
+            " How do you read and write files in C++?"
+        ]
+    },
+    {
+        "ID": 111,
+        "Concept": "Cloud computing",
+        "Layer": 21,
+        "Dimension": 1475,
+        "QA": [
+            " What is Cloud computing?\n\n",
+            " How does Cloud computing differ from traditional hosting solutions?\n\n",
+            " What are the main benefits of using Cloud computing?\n\n",
+            " What are some popular Cloud computing service providers?\n\n",
+            " How can businesses use Cloud computing to reduce costs?\n\n",
+            " What security measures should be taken when using Cloud computing?\n\n",
+            " How can Cloud computing improve collaboration within an organization?\n\n",
+            " What are some common applications of Cloud computing in everyday life?\n\n",
+            " How does Cloud computing support scalability and flexibility for businesses?\n\n",
+            " How can individuals and businesses prepare for a successful Cloud computing implementation?"
+        ]
+    },
+    {
+        "ID": 112,
+        "Concept": "Constitution of the United States",
+        "Layer": 21,
+        "Dimension": 1986,
+        "QA": [
+            " What year was the Constitution of the United States ratified?\n",
+            " How many amendments are in the Constitution?\n",
+            " What is the purpose of the Bill of Rights in the Constitution?\n",
+            " What is the primary function of the three branches of government outlined in the Constitution?\n",
+            " Who is considered the \"father of the Constitution\"?\n",
+            " What is the minimum age requirement to serve as President of the United States according to the Constitution?\n",
+            " How many representatives are in the House of Representatives according to the Constitution?\n",
+            " What is the process for amending the Constitution?\n",
+            " What is the significance of the Commerce Clause in the Constitution?\n",
+            " How many total articles are in the Constitution?"
+        ]
+    },
+    {
+        "ID": 113,
+        "Concept": "Digital signature",
+        "Layer": 21,
+        "Dimension": 2381,
+        "QA": [
+            " What is a digital signature?\n",
+            " How does a digital signature work?\n",
+            " What is the purpose of using a digital signature?\n",
+            " How is a digital signature different from an electronic signature?\n",
+            " What technology is used to create digital signatures?\n",
+            " Are digital signatures legally binding?\n",
+            " How secure are digital signatures?\n",
+            " Can a digital signature be forged or tampered with?\n",
+            " How do you verify the authenticity of a digital signature?\n",
+            " What are some common applications of digital signatures in everyday life?"
+        ]
+    },
+    {
+        "ID": 114,
+        "Concept": "Culture of Germany",
+        "Layer": 21,
+        "Dimension": 2807,
+        "QA": [
+            " What is the traditional attire worn during Oktoberfest in Germany?\n",
+            " What is the most popular type of beer in Germany?\n",
+            " What is the traditional German dish of sausages and sauerkraut called?\n",
+            " What famous fairy tale collection was compiled by the Brothers Grimm, who were German?\n",
+            " What is the traditional German Christmas treat made of spiced, dried fruit and nuts?\n",
+            " What is the traditional German dance often performed at festivals and celebrations?\n",
+            " Who is known as the father of classical music and was born in Germany?\n",
+            " What is the traditional German dessert made of layers of sponge cake and whipped cream called?\n",
+            " What traditional German festival is known for its colorful parades and costumes?\n",
+            " What is the traditional German hand gesture used to express approval or satisfaction?"
+        ]
+    },
+    {
+        "ID": 115,
+        "Concept": "Jesus",
+        "Layer": 21,
+        "Dimension": 2921,
+        "QA": [
+            " Who is Jesus?\n",
+            " Where was Jesus born?\n",
+            " What was Jesus' occupation?\n",
+            " How many disciples did Jesus have?\n",
+            " What is the significance of Jesus' crucifixion?\n",
+            " What is the name of the religious book that talks about the life and teachings of Jesus?\n",
+            " How old was Jesus when he started his ministry?\n",
+            " What are some miracles attributed to Jesus?\n",
+            " How did Jesus die?\n",
+            " What is the significance of Jesus' resurrection?"
+        ]
+    },
+    {
+        "ID": 116,
+        "Concept": "Final Fantasy VII",
+        "Layer": 21,
+        "Dimension": 2945,
+        "QA": [
+            " Who is the main protagonist of Final Fantasy VII?\n",
+            " What is the name of the city where most of the game takes place?\n",
+            " What is the name of the antagonist in Final Fantasy VII?\n",
+            " Who is the leader of the eco-terrorist group AVALANCHE?\n",
+            " What is the name of the flower girl that Cloud meets in the Sector 5 slums?",
+            " What is the name of the sword that Cloud wields?\n",
+            " What is the name of the airship that the party uses to travel around the world?\n",
+            " What is the name of the materia that allows characters to summon powerful creatures?\n",
+            " What is the name of the main character's childhood friend who plays a significant role in the story?\n",
+            " What is the name of the ultimate summon materia in the game?"
+        ]
+    },
+    {
+        "ID": 117,
+        "Concept": "Game theory",
+        "Layer": 21,
+        "Dimension": 3233,
+        "QA": [
+            " What is game theory?\n",
+            " What are the main components of a game in game theory?\n",
+            " What is the difference between simultaneous and sequential games?\n",
+            " How does the concept of Nash equilibrium relate to game theory?\n",
+            " What is the importance of strategic thinking in game theory?\n",
+            " What are some common examples of games that are studied in game theory?\n",
+            " How does game theory apply to real-world situations, such as business competition or political negotiations?\n",
+            " How can players use game theory to predict their opponents' actions and make strategic decisions?\n",
+            " What role does information asymmetry play in game theory?\n",
+            " How do cooperative and non-cooperative game strategies differ in game theory?"
+        ]
+    },
+    {
+        "ID": 118,
+        "Concept": "Java (programming language)",
+        "Layer": 21,
+        "Dimension": 4124,
+        "QA": [
+            " What is Java?\n",
+            " What are the main features of Java?\n",
+            " What is the difference between JDK, JRE, and JVM in Java?\n",
+            " What is the significance of the main method in Java?\n",
+            " How is memory management handled in Java?\n",
+            " What are the different types of variables in Java?\n",
+            " What is the purpose of constructors in Java?\n",
+            " How can you achieve inheritance in Java?\n",
+            " What is the significance of the keyword \"static\" in Java?\n",
+            " How can you handle exceptions in Java?"
+        ]
+    },
+    {
+        "ID": 119,
+        "Concept": "Virtual reality",
+        "Layer": 21,
+        "Dimension": 4724,
+        "QA": [
+            " What is virtual reality?\n",
+            " How does virtual reality technology work?\n",
+            " What are some common applications of virtual reality?\n",
+            " What are the benefits of using virtual reality in education?\n",
+            " How is virtual reality changing the way we experience entertainment?\n",
+            " Can virtual reality be used for therapeutic purposes?\n",
+            " What are the potential risks or drawbacks of using virtual reality?\n",
+            " How is virtual reality different from augmented reality?\n",
+            " What equipment is needed to experience virtual reality?\n",
+            " What does the future of virtual reality look like?"
+        ]
+    },
+    {
+        "ID": 120,
+        "Concept": "Cosmology",
+        "Layer": 21,
+        "Dimension": 5841,
+        "QA": [
+            " What is cosmology?\n",
+            " How did the universe begin according to the Big Bang theory?\n",
+            " What is dark matter and why is it important in cosmology?\n",
+            " What is dark energy and how does it affect the expansion of the universe?\n",
+            " What is the Cosmic Microwave Background radiation and what does it tell us about the early universe?\n",
+            " How do scientists study the large-scale structure of the universe?\n",
+            " What is the concept of cosmic inflation and how does it explain the uniformity of the universe?\n",
+            " What is the ultimate fate of the universe according to current cosmological theories?\n",
+            " What role do black holes play in shaping the evolution of galaxies and the universe?\n",
+            " How do different cultures and religions view the origins and nature of the universe?"
+        ]
+    },
+    {
+        "ID": 121,
+        "Concept": "Hungary",
+        "Layer": 21,
+        "Dimension": 6363,
+        "QA": [
+            " What is the capital city of Hungary?\n",
+            " What is the official language spoken in Hungary?\n",
+            " Who is the current President of Hungary?\n",
+            " What is the currency used in Hungary?\n",
+            " What famous river runs through Budapest, the capital of Hungary?\n",
+            " What is the traditional Hungarian dish made of layered potatoes, sour cream, and meat called?\n",
+            " Which famous composer was born in Hungary in ",
+            " and is known for his opera \"The Merry Widow\"?\n",
+            " What famous thermal baths are popular tourist attractions in Hungary?\n",
+            " What is the name of the largest lake in Hungary, known for its shallow waters and sandy beaches?\n",
+            " What popular tourist attraction in Hungary is said to have been built by fishermen in the Middle Ages to secure freshwater supply during sieges?"
+        ]
+    },
+    {
+        "ID": 122,
+        "Concept": "Japanese popular culture",
+        "Layer": 21,
+        "Dimension": 7230,
+        "QA": [
+            " What is the name of the traditional Japanese comic book style?\n",
+            " Who is the most famous Japanese pop singer worldwide?\n",
+            " What is the name of the traditional Japanese clothing?\n",
+            " What is the name of the traditional Japanese tea ceremony?\n",
+            " What is the most popular Japanese style of animation?\n",
+            " What is the name of the traditional Japanese puppet theater?\n",
+            " What is the name of the traditional Japanese martial art involving swords?\n",
+            " What is the popular Japanese art form of folding paper into shapes?\n",
+            " What is the name of the traditional Japanese form of poetry?\n",
+            " What is the name of the traditional Japanese drumming style?"
+        ]
+    },
+    {
+        "ID": 123,
+        "Concept": "Monarchy",
+        "Layer": 21,
+        "Dimension": 8328,
+        "QA": [
+            " How is royal succession typically determined in a monarchy?\n",
+            " What is the role of the monarch in a constitutional monarchy?\n",
+            " What is the difference between an absolute monarchy and a constitutional monarchy?\n",
+            " How does a monarch typically gain their position?\n",
+            " What are some common symbols associated with monarchy?\n",
+            " What are some countries that still have a monarch as their head of state?\n",
+            " What is the difference between a king and a queen in a monarchy?\n",
+            " How do monarchs typically interact with the government in a constitutional monarchy?\n",
+            " What are some advantages and disadvantages of having a monarchy as a form of government?\n",
+            " How do monarchies differ from other forms of government, such as democracies or dictatorships?"
+        ]
+    },
+    {
+        "ID": 124,
+        "Concept": "Meditation",
+        "Layer": 21,
+        "Dimension": 8641,
+        "QA": [
+            " What is meditation?\n",
+            " How is meditation practiced?\n",
+            " What are the benefits of meditation?\n",
+            " How often should one meditate?\n",
+            " What is the best time of day to meditate?\n",
+            " Can anyone practice meditation?\n",
+            " How long should a meditation session last?\n",
+            " What are some common meditation techniques?\n",
+            " How can meditation improve mental health?\n",
+            " How can beginners start practicing meditation?"
+        ]
+    },
+    {
+        "ID": 125,
+        "Concept": "National Football League",
+        "Layer": 21,
+        "Dimension": 10083,
+        "QA": [
+            " Which teams have won the most Super Bowl championships in NFL history?\n",
+            " Who holds the record for most career passing touchdowns in NFL history?\n",
+            " Which team has the longest active playoff drought in the NFL?\n",
+            " Who was the youngest player to ever be inducted into the Pro Football Hall of Fame?\n",
+            " What is the name of the trophy awarded to the winner of the Super Bowl?\n",
+            " Which NFL team has the largest stadium capacity?\n",
+            " Who holds the record for the longest field goal in NFL history?\n",
+            " Which team has the most losses in NFL history?\n",
+            " Who was the first player selected in the inaugural NFL Draft?\n",
+            " How many teams are currently in the NFL?"
+        ]
+    },
+    {
+        "ID": 126,
+        "Concept": "Polish language",
+        "Layer": 21,
+        "Dimension": 10729,
+        "QA": [
+            " What is the official language of Poland?\n",
+            " How many letters are in the Polish alphabet?\n",
+            " What are the three genders in the Polish language?\n",
+            " How do you say \"hello\" in Polish?\n",
+            " What is the difference between formal and informal speech in Polish?\n",
+            " How do you conjugate verbs in Polish?\n",
+            " What are some common Polish phrases for travelers to learn?\n",
+            " How do you say \"thank you\" in Polish?\n",
+            " What are some common Polish swear words?\n",
+            " What are some important cultural aspects to consider when learning Polish language?"
+        ]
+    },
+    {
+        "ID": 127,
+        "Concept": "Advanced Encryption Standard",
+        "Layer": 22,
+        "Dimension": 66,
+        "QA": [
+            " What is the Advanced Encryption Standard (AES)?\n",
+            " When was AES officially adopted as a federal standard in the United States?\n",
+            " How many rounds of encryption does AES use?\n",
+            " What are the key lengths supported by AES?\n",
+            " What is the block size of AES?\n",
+            " How does AES differ from its predecessor, the Data Encryption Standard (DES)?\n",
+            " What encryption modes can be used with AES?\n",
+            " What are some common applications of AES?\n",
+            " Can AES be easily hacked or broken?\n",
+            " What organizations or industries commonly use AES for secure communications and data protection?"
+        ]
+    },
+    {
+        "ID": 128,
+        "Concept": "Public-key cryptography",
+        "Layer": 22,
+        "Dimension": 464,
+        "QA": [
+            " What is public-key cryptography?\n",
+            " What are the two keys used in public-key cryptography?\n",
+            " How does public-key cryptography differ from symmetric-key cryptography?\n",
+            " How is a public key shared in public-key cryptography?\n",
+            " How is a private key kept secure in public-key cryptography?\n",
+            " How are digital signatures used in public-key cryptography?\n",
+            " What is the role of a certificate authority in public-key cryptography?\n",
+            " How does public-key cryptography prevent eavesdropping and tampering of messages?\n",
+            " Can public-key cryptography be used for encrypting large amounts of data?\n",
+            " What are some common applications of public-key cryptography in modern technology?"
+        ]
+    },
+    {
+        "ID": 129,
+        "Concept": "Culture of India",
+        "Layer": 22,
+        "Dimension": 512,
+        "QA": [
+            " What is the traditional attire worn by women in India?\n",
+            " What is the festival of lights celebrated in India?\n",
+            " What is the significance of the Taj Mahal in Indian culture?\n",
+            " What are some popular traditional dances in India?\n",
+            " What is the importance of yoga in Indian culture?\n",
+            " What are some common dishes in Indian cuisine?\n",
+            " What is the traditional greeting in India?\n",
+            " What are some popular festivals celebrated in different regions of India?\n",
+            " What is the significance of the sacred cow in Indian culture?\n",
+            " What are some traditional art forms in India?"
+        ]
+    },
+    {
+        "ID": 130,
+        "Concept": "Thailand",
+        "Layer": 22,
+        "Dimension": 750,
+        "QA": [
+            " What is the capital city of Thailand?\n",
+            " What is the currency used in Thailand?\n",
+            " What is the most popular tourist attraction in Thailand?\n",
+            " What traditional dance form is commonly performed in Thailand?\n",
+            " What is the national dish of Thailand?\n",
+            " What is the traditional costume worn by women in Thailand?\n",
+            " What is the main religion practiced in Thailand?\n",
+            " What is the name of the famous floating market in Thailand?\n",
+            " What is the transportation system commonly used in Thailand?\n",
+            " What is the famous festival celebrated in Thailand in April?"
+        ]
+    },
+    {
+        "ID": 131,
+        "Concept": "Unidentified flying object ",
+        "Layer": 22,
+        "Dimension": 1125,
+        "QA": [
+            " Do you believe in the existence of unidentified flying objects (UFOs)?\n",
+            " Have you ever witnessed a UFO sighting yourself?\n",
+            " What do you think UFOs could potentially be, if not extraterrestrial spacecrafts?\n",
+            " Do you think governments are hiding information about UFOs from the public?\n",
+            " Have you ever researched the topic of UFOs and extraterrestrial life?\n",
+            " What would you do if you encountered a UFO up close?\n",
+            " Do you think UFO sightings can be explained by natural or man-made phenomena?\n",
+            " Have you ever heard of any credible UFO sightings or encounters?\n",
+            " How do you think society would react if concrete evidence of UFOs was made public?\n",
+            " Have you ever experienced any unexplained events that you suspect could be related to UFOs?"
+        ]
+    },
+    {
+        "ID": 132,
+        "Concept": "Federal Reserve",
+        "Layer": 22,
+        "Dimension": 1502,
+        "QA": [
+            " What is the Federal Reserve?\n",
+            " When was the Federal Reserve established?\n",
+            " What is the primary purpose of the Federal Reserve?\n",
+            " Who appoints the Chair of the Federal Reserve?\n",
+            " How does the Federal Reserve influence interest rates?\n",
+            " What are the main tools the Federal Reserve uses to control the money supply?\n",
+            " What is the role of the Federal Open Market Committee?\n",
+            " How many regional Federal Reserve Banks are there in the United States?\n",
+            " What is the function of the Federal Reserve's Board of Governors?\n",
+            " How does the Federal Reserve supervise and regulate banks?"
+        ]
+    },
+    {
+        "ID": 133,
+        "Concept": "Stem cell",
+        "Layer": 22,
+        "Dimension": 1881,
+        "QA": [
+            " What are stem cells?\n",
+            " What are the different types of stem cells?\n",
+            " How are stem cells used in research and medicine?\n",
+            " What is the potential of stem cell therapy in treating diseases?\n",
+            " How are stem cells obtained for research and medical purposes?\n",
+            " What ethical considerations are associated with stem cell research?\n",
+            " What is the difference between adult stem cells and embryonic stem cells?\n",
+            " How do stem cells differentiate into different cell types?\n",
+            " What is the role of stem cells in tissue regeneration?\n",
+            " What are some common misconceptions about stem cell therapy?"
+        ]
+    },
+    {
+        "ID": 134,
+        "Concept": "Graphics processing unit",
+        "Layer": 22,
+        "Dimension": 2690,
+        "QA": [
+            " What is a GPU and what does it stand for?\n",
+            " What is the primary function of a GPU?\n",
+            " How does a GPU differ from a CPU?\n",
+            " What are some common industries or applications that rely heavily on GPU performance?\n",
+            " How does a GPU affect gaming performance?\n",
+            " What types of tasks are more suited for GPU processing versus CPU processing?\n",
+            " What are some popular GPU brands on the market today?\n",
+            " How does VRAM (Video RAM) impact GPU performance?\n",
+            " What is GPU acceleration and how is it used in computing?\n",
+            " How does overclocking a GPU affect its performance and longevity?"
+        ]
+    },
+    {
+        "ID": 135,
+        "Concept": "Particle physics",
+        "Layer": 22,
+        "Dimension": 3501,
+        "QA": [
+            " What is a particle in particle physics?\n",
+            " What are the fundamental particles of the Standard Model of particle physics?\n",
+            " What is the relationship between particles and forces in particle physics?\n",
+            " How do scientists study particles at the subatomic level?\n",
+            " What is the significance of the discovery of the Higgs boson in particle physics?\n",
+            " What is the theory of supersymmetry and how does it relate to particle physics?\n",
+            " What are the main challenges in particle physics research today?\n",
+            " How do particle accelerators work and what is their role in particle physics research?\n",
+            " What is dark matter and how does it relate to particle physics?\n",
+            " How has particle physics contributed to our understanding of the universe and the nature of reality?"
+        ]
+    },
+    {
+        "ID": 136,
+        "Concept": "Politics of the United Kingdom",
+        "Layer": 22,
+        "Dimension": 4201,
+        "QA": [
+            " Who is the current Prime Minister of the United Kingdom?\n",
+            " How many political parties are represented in the UK Parliament?\n",
+            " What is the name of the UK's upper house of Parliament?\n",
+            " What is the official residence of the Prime Minister?\n",
+            " Who is the leader of the opposition in the UK Parliament?\n",
+            " What is the role of the House of Commons in the UK Parliament?\n",
+            " What is the minimum voting age in the UK?\n",
+            " What is the official currency of the United Kingdom?\n",
+            " What is the name of the UK's national anthem?\n",
+            " When was the last general election held in the UK?"
+        ]
+    },
+    {
+        "ID": 137,
+        "Concept": "Linear algebra",
+        "Layer": 22,
+        "Dimension": 9517,
+        "QA": [
+            " What is a vector in linear algebra?\n",
+            " What is a matrix?\n",
+            " What is the difference between a row vector and a column vector?\n",
+            " What is the determinant of a matrix?\n",
+            " What is the rank of a matrix?\n",
+            " What is a basis in linear algebra?\n",
+            " What is a linear transformation?\n",
+            " What is the inverse of a matrix?\n",
+            " What is the dot product of two vectors?\n",
+            " What is the span of a set of vectors?"
+        ]
+    },
+    {
+        "ID": 138,
+        "Concept": "Baseball",
+        "Layer": 22,
+        "Dimension": 9550,
+        "QA": [
+            " What is the objective of baseball?\n",
+            " How many players are on each team in a baseball game?\n",
+            " How many innings are in a regulation baseball game?\n",
+            " What is the name of the position that stands behind home plate and calls balls and strikes?\n",
+            " How many strikes does a batter get before they are called out in baseball?\n",
+            " What is the name of the fielding position that is to the left of the center fielder?\n",
+            " How many bases are on a baseball field?\n",
+            " What is the term used for hitting the ball over the outfield fence in fair territory?\n",
+            " What is the name of the player who stands closest to the batter while they are hitting?\n",
+            " What is the term for when a pitcher throws three strikes in a row to retire the side in an inning?"
+        ]
+    },
+    {
+        "ID": 139,
+        "Concept": "Warhammer 40,000",
+        "Layer": 23,
+        "Dimension": 264,
+        "QA": [
+            " What faction is known for their massive power armour suits and devotion to the Emperor?\n",
+            " Who are the ancient and mysterious race that created the Necrons?\n",
+            " What is the name of the main antagonist race in Warhammer 40,000?",
+            " What is the name of the superhuman soldiers created to fight in the Emperor's name?\n",
+            " Who is the leader of the Chaos Space Marines, corrupted versions of the Emperor's soldiers?\n",
+            " What is the name of the planet-sized superweapon created by the Imperium?\n",
+            " What is the name of the psychic power used by the Eldar to predict the future?\n",
+            " What is the name of the alien race that feeds on the life force of other beings?\n",
+            " What is the name of the weapon used by the Orks that gets stronger the more it is used?\n",
+            " What is the name of the race that are skilled in technology and worship the Machine God?"
+        ]
+    },
+    {
+        "ID": 140,
+        "Concept": "Linear algebra",
+        "Layer": 23,
+        "Dimension": 1795,
+        "QA": [
+            " What is a vector in linear algebra?\n",
+            " What is a matrix and how is it used in linear algebra?\n",
+            " What is the difference between a row vector and a column vector?\n",
+            " What is the dot product of two vectors?\n",
+            " How do you find the determinant of a square matrix?\n",
+            " What does it mean for a matrix to be invertible?\n",
+            " How do you calculate the eigenvalues of a matrix?\n",
+            " What is the difference between a linearly independent and linearly dependent set of vectors?\n",
+            " What is a basis in linear algebra?\n",
+            " How do you find the rank of a matrix?"
+        ]
+    },
+    {
+        "ID": 141,
+        "Concept": "Astrology",
+        "Layer": 23,
+        "Dimension": 1866,
+        "QA": [
+            " What is your zodiac sign based on your birth date?\n",
+            " What are the twelve zodiac signs?\n",
+            " What is a horoscope and how is it linked to astrology?\n",
+            " What do the positions of the planets and stars at the time of your birth determine?\n",
+            " What are some common traits associated with each zodiac sign?\n",
+            " How do people use astrology to make decisions or gain insight into their lives?\n",
+            " What is a birth chart and how is it important in astrology?\n",
+            " What is the significance of retrograde planets in astrology?\n",
+            " How do astrologers determine compatibility between two individuals based on their zodiac signs?\n",
+            " How has astrology evolved over time and is it considered a science or pseudoscience?"
+        ]
+    },
+    {
+        "ID": 142,
+        "Concept": "Microsoft Windows",
+        "Layer": 23,
+        "Dimension": 2151,
+        "QA": [
+            " What is the latest version of Microsoft Windows operating system?\n",
+            " How do you access the Control Panel in Windows?\n",
+            " What is the purpose of the Task Manager in Windows?\n",
+            " How do you create a shortcut on the desktop in Windows?\n",
+            " How do you uninstall a program in Windows?\n",
+            " How do you change the desktop wallpaper in Windows?\n",
+            " What is the function of the Recycle Bin in Windows?\n",
+            " How do you check for updates in Windows?\n",
+            " What is the difference between a local account and a Microsoft account in Windows?\n",
+            " How do you shut down or restart your computer in Windows?"
+        ]
+    },
+    {
+        "ID": 143,
+        "Concept": "Software development process",
+        "Layer": 23,
+        "Dimension": 2352,
+        "QA": [
+            " What is the purpose of a software development process?\n",
+            " What are the main stages of the software development process?\n",
+            " How does a software development process typically begin?\n",
+            " What is the difference between waterfall and agile software development processes?\n",
+            " How important is communication within a software development team?\n",
+            " How can developers ensure quality control throughout the software development process?\n",
+            " How do software developers prioritize and manage tasks during the development process?\n",
+            " What role does testing play in the software development process?\n",
+            " How do software development processes adapt to changing requirements or feedback?\n",
+            " What are some common challenges that software development teams face during the development process?"
+        ]
+    },
+    {
+        "ID": 144,
+        "Concept": "American football",
+        "Layer": 23,
+        "Dimension": 2938,
+        "QA": [
+            " How many players are on the field for each team in American football?\n",
+            " What is the end zone in American football?\n",
+            " What is a touchdown worth in terms of points?\n",
+            " What is the name of the line of scrimmage where each play starts?\n",
+            " How many downs does a team have to advance the ball 10 yards?",
+            " What is the name of the player who throws the ball to their teammates?\n",
+            " What is the name of the player who kicks field goals and extra points?\n",
+            " What is the name of the professional league for American football?\n",
+            " What is the name of the championship game for American football?\n",
+            " What is the name of the Super Bowl trophy?"
+        ]
+    },
+    {
+        "ID": 145,
+        "Concept": "Cryptographic hash function",
+        "Layer": 23,
+        "Dimension": 3289,
+        "QA": [
+            " What is a cryptographic hash function?\n",
+            " How is a cryptographic hash function different from encryption?\n",
+            " What are some common uses of cryptographic hash functions?\n",
+            " Why is it important for a hash function to be secure and collision-resistant?\n",
+            " What is the purpose of the salt in hashing passwords?\n",
+            " How can a cryptographic hash function be used to verify the integrity of data?\n",
+            " What are the key properties of a strong cryptographic hash function?\n",
+            " Can a cryptographic hash function be reversed or decrypted?\n",
+            " What is the difference between a hash function and a message authentication code (MAC)?\n",
+            " How are hash functions used in digital signatures and blockchain technology?"
+        ]
+    },
+    {
+        "ID": 146,
+        "Concept": "Newton's laws of motion",
+        "Layer": 23,
+        "Dimension": 3301,
+        "QA": [
+            " What is Newton's first law of motion also known as?\n",
+            " According to Newton's first law, an object at rest will stay at rest unless acted upon by what?\n",
+            " Newton's second law of motion relates the force applied to an object to what two factors?\n",
+            " What is the unit of force in the metric system?\n",
+            " According to Newton's third law of motion, for every action there is an equal and opposite what?\n",
+            " What does it mean for an object to be in equilibrium according to Newton's first law?\n",
+            " The acceleration of an object is directly proportional to the net force acting on it and inversely proportional to its what, according to Newton's second law?\n",
+            " How does mass affect an object's inertia, according to Newton's first law?\n",
+            " In which law of motion does Newton describe how objects interact with one another through forces?\n",
+            " How do Newton's laws of motion apply to everyday situations?"
+        ]
+    },
+    {
+        "ID": 147,
+        "Concept": "Protestantism",
+        "Layer": 23,
+        "Dimension": 3465,
+        "QA": [
+            " What is the primary belief of Protestantism?\n",
+            " Who is considered the founder of Protestantism?\n",
+            " How does Protestantism differ from Catholicism in terms of religious authority?\n",
+            " What is the significance of Martin Luther's 95 Theses in the history of Protestantism?",
+            " What are some common denominations within Protestantism?\n",
+            " How is the worship practice in Protestant churches different from Catholic churches?\n",
+            " What role does the Bible play in Protestant theology?\n",
+            " How do Protestants view the sacraments compared to Catholics?\n",
+            " How has Protestantism influenced cultural and political movements throughout history?\n",
+            " What are some notable figures in the history of Protestantism and what were their contributions?"
+        ]
+    },
+    {
+        "ID": 148,
+        "Concept": "Catholic Church",
+        "Layer": 23,
+        "Dimension": 4479,
+        "QA": [
+            " Who is the current head of the Catholic Church?\n",
+            " What is the primary holy book of the Catholic Church?\n",
+            " How many sacraments are there in the Catholic Church?\n",
+            " What is the significance of the Vatican City in relation to the Catholic Church?\n",
+            " What is the role of the Pope in the Catholic Church?\n",
+            " What are some of the major holidays celebrated by the Catholic Church?\n",
+            " What is the difference between a priest, a bishop, and a cardinal in the Catholic Church?\n",
+            " How is the structure of the Catholic Church organized, from the local parish level to the global level?\n",
+            " What is the doctrine of transubstantiation and why is it important to the Catholic Church?\n",
+            " What are some of the key teachings or beliefs of the Catholic Church that distinguish it from other Christian denominations?"
+        ]
+    },
+    {
+        "ID": 149,
+        "Concept": "Marxism",
+        "Layer": 23,
+        "Dimension": 4550,
+        "QA": [
+            " What is Marxism?\n",
+            " Who developed the theory of Marxism?\n",
+            " What are the basic principles of Marxism?\n",
+            " How does Marxism view the concept of social class?\n",
+            " What is the relationship between Marxism and communism?\n",
+            " How does Marxism differ from capitalism?\n",
+            " How does Marxism view the role of the state in society?\n",
+            " What is the concept of historical materialism in Marxism?\n",
+            " How does Marxism approach issues of inequality and social justice?\n",
+            " What criticisms have been made of Marxist theory?"
+        ]
+    },
+    {
+        "ID": 150,
+        "Concept": "SQL",
+        "Layer": 23,
+        "Dimension": 6214,
+        "QA": [
+            " What does SQL stand for?\n",
+            " What is the purpose of SQL?\n",
+            " What are the main types of SQL commands?\n",
+            " What is a primary key in SQL?\n",
+            " What is the difference between SQL and MySQL?\n",
+            " What is a join in SQL?\n",
+            " How do you delete a record in SQL?\n",
+            " What is the ORDER BY clause in SQL used for?\n",
+            " How do you retrieve data from a database using SQL?\n",
+            " What is the difference between the WHERE and HAVING clauses in SQL?"
+        ]
+    },
+    {
+        "ID": 151,
+        "Concept": "IRC",
+        "Layer": 23,
+        "Dimension": 7973,
+        "QA": [
+            " What does IRC stand for?\n",
+            " When was IRC first developed?\n",
+            " How is IRC different from other messaging platforms, like Whatsapp or Facebook Messenger?\n",
+            " How do users connect to IRC channels?\n",
+            " What is a nick or nickname in IRC?\n",
+            " What are some common commands used in IRC?\n",
+            " How can users protect their privacy and security while using IRC?\n",
+            " Can users create their own IRC channels?\n",
+            " How can users find and join specific IRC channels?\n",
+            " What are some popular IRC networks that users can join?"
+        ]
+    },
+    {
+        "ID": 152,
+        "Concept": "HTML element",
+        "Layer": 23,
+        "Dimension": 8303,
+        "QA": [
+            " What is the purpose of the <div> element in HTML?\n",
+            " How do you create a hyperlink in HTML?\n",
+            " What does the <h1> element represent in HTML?",
+            " What is the function of the <img> element in HTML?\n",
+            " How do you create a bulleted list in HTML?\n",
+            " What is the difference between the <span> and <div> elements in HTML?\n",
+            " How do you create a line break in HTML?\n",
+            " What is the purpose of the <p> element in HTML?\n",
+            " How do you create a table in HTML?\n",
+            " What is the purpose of the <input> element in HTML?"
+        ]
+    },
+    {
+        "ID": 153,
+        "Concept": "Collectible card game",
+        "Layer": 23,
+        "Dimension": 8389,
+        "QA": [
+            " What is a collectible card game (CCG)?\n",
+            " How do players typically build their decks in a CCG?\n",
+            " What is the objective of a CCG?\n",
+            " How do players win in a CCG?\n",
+            " What are some popular examples of CCGs?\n",
+            " How are cards typically acquired in a CCG?\n",
+            " How do players take turns in a CCG?\n",
+            " What is the difference between a CCG and a trading card game (TCG)?\n",
+            " How do players use resources in a CCG?\n",
+            " What are some common gameplay mechanics found in CCGs?"
+        ]
+    },
+    {
+        "ID": 154,
+        "Concept": "Domain Name System",
+        "Layer": 23,
+        "Dimension": 9075,
+        "QA": [
+            " What is the purpose of the Domain Name System (DNS)?\n",
+            " How does DNS work to translate domain names into IP addresses?\n",
+            " What is a domain name registrar?\n",
+            " How many levels are typically found in a domain name (e.g. example.com)?",
+            " What is the difference between a top-level domain (TLD) and a second-level domain (SLD)?\n",
+            " What role do DNS servers play in the functioning of the internet?\n",
+            " What is the significance of the root DNS servers in the DNS hierarchy?\n",
+            " How are DNS records used to manage domain name settings, such as email routing and website hosting?\n",
+            " What is a DNS zone file and how is it used in managing DNS settings?\n",
+            " What are some common DNS record types and their functions (e.g. A, CNAME, MX, TXT)?"
+        ]
+    },
+    {
+        "ID": 155,
+        "Concept": "Chemical bond",
+        "Layer": 23,
+        "Dimension": 9369,
+        "QA": [
+            " What is a chemical bond?\n",
+            " What are the three main types of chemical bonds?\n",
+            " How do ionic bonds form?\n",
+            " How do covalent bonds form?\n",
+            " What is the difference between polar and nonpolar covalent bonds?\n",
+            " How do metallic bonds differ from ionic and covalent bonds?\n",
+            " What is the role of electrons in chemical bonding?\n",
+            " How do hydrogen bonds form and what is their significance in biology?\n",
+            " What is a coordinate covalent bond and how does it differ from a regular covalent bond?\n",
+            " How does the strength of a chemical bond relate to the bond length and bond energy?"
+        ]
+    },
+    {
+        "ID": 156,
+        "Concept": "Native Americans in the United States",
+        "Layer": 23,
+        "Dimension": 9699,
+        "QA": [
+            " What are some traditional Native American tribes in the United States?\n",
+            " What is the significance of powwows in Native American culture?\n",
+            " How did Native Americans traditionally hunt for food?\n",
+            " What are some common Native American languages spoken in the United States?\n",
+            " What is the history of Native American reservations in the United States?\n",
+            " How did European colonization impact Native American populations?\n",
+            " What role did Native Americans play in shaping the early history of the United States?\n",
+            " What are some common traditional foods of Native American tribes?\n",
+            " How have traditional Native American arts and crafts been preserved in modern times?\n",
+            " How are Native American communities working to preserve their cultural heritage today?"
+        ]
+    },
+    {
+        "ID": 157,
+        "Concept": "Broadway theatre",
+        "Layer": 23,
+        "Dimension": 9974,
+        "QA": [
+            " What is the oldest Broadway theatre still in operation today?\n",
+            " What is the official street address of Broadway in New York City?\n",
+            " What famous street in NYC is known as the \"Great White Way\" because of its many brightly lit Broadway theatres?\n",
+            " Which Broadway musical holds the record for the most Tony Awards won by a single production?\n",
+            " What is the name of the annual awards show that honors achievements in Broadway theatre?\n",
+            " What iconic Broadway theatre is located in Times Square and features a famous red staircase?\n",
+            " What is the average seating capacity of a Broadway theatre?\n",
+            " What is the length of a typical Broadway show, including intermission?\n",
+            " What is the traditional day of the week that Broadway theatres are closed?\n",
+            " What is the highest-grossing Broadway show of all time?"
+        ]
+    },
+    {
+        "ID": 158,
+        "Concept": "Parliament of the United Kingdom",
+        "Layer": 23,
+        "Dimension": 10530,
+        "QA": [
+            " What is the primary function of the Parliament of the United Kingdom?\n",
+            " How many houses make up the UK Parliament?\n",
+            " What is the name of the lower house in the UK Parliament? \n",
+            " What is the term of office for Members of Parliament (MPs) in the UK?\n",
+            " Who is the current Speaker of the House of Commons?\n",
+            " What is the purpose of the House of Lords in the UK Parliament?\n",
+            " How often does the UK Parliament typically sit for sessions?\n",
+            " What is the role of the Prime Minister in the UK Parliament?\n",
+            " How is the government formed in the UK Parliament?\n",
+            " What is the name of the official residence of the UK Prime Minister?"
+        ]
+    },
+    {
+        "ID": 159,
+        "Concept": "Radionuclide",
+        "Layer": 23,
+        "Dimension": 10799,
+        "QA": [
+            " What is a radionuclide?\n",
+            " How are radionuclides formed?\n",
+            " What are the properties of radionuclides?\n",
+            " What are some common uses of radionuclides in medicine?\n",
+            " How do radionuclides differ from stable nuclides?\n",
+            " What is radioactive decay and how does it relate to radionuclides?\n",
+            " How are radionuclides used in environmental monitoring?\n",
+            " What are the risks associated with exposure to radionuclides?\n",
+            " How do scientists track the movement of radionuclides in the environment?\n",
+            " How are radionuclides measured and quantified in laboratory settings?"
+        ]
+    },
+    {
+        "ID": 160,
+        "Concept": "Hungarian language",
+        "Layer": 24,
+        "Dimension": 938,
+        "QA": [
+            " What is the official language of Hungary?\n",
+            " How many letters are in the Hungarian alphabet?\n",
+            " Is Hungarian a member of the Indo-European language family?\n",
+            " What are some common greetings in Hungarian?\n",
+            " How do you say \"thank you\" in Hungarian?\n",
+            " What are some typical Hungarian food and drink items?\n",
+            " How do you count in Hungarian?\n",
+            " What are some common phrases for asking directions in Hungarian?\n",
+            " How do you say \"hello\" in a formal setting in Hungarian?\n",
+            " What are some typical Hungarian cultural traditions or holidays?"
+        ]
+    },
+    {
+        "ID": 161,
+        "Concept": "Greek mythology",
+        "Layer": 24,
+        "Dimension": 1192,
+        "QA": [
+            " Who is considered the king of the Greek gods in mythology?\n",
+            " Who is the goddess of wisdom and warfare in Greek mythology?\n",
+            " Who is the god of the sea in Greek mythology?\n",
+            " Who is the messenger of the gods in Greek mythology?\n",
+            " Who is the goddess of love and beauty in Greek mythology?\n",
+            " Who is the hero known for slaying the Minotaur in Greek mythology?\n",
+            " Who is the queen of the underworld in Greek mythology?\n",
+            " Who is the god of the sun in Greek mythology?\n",
+            " Who is the hero known for his strength and twelve labors in Greek mythology?\n",
+            " Who is the goddess of the harvest in Greek mythology?"
+        ]
+    },
+    {
+        "ID": 162,
+        "Concept": "League of Legends",
+        "Layer": 24,
+        "Dimension": 1433,
+        "QA": [
+            " What is the main objective of a typical League of Legends game?\n",
+            " How many players are on each team in a standard game of League of Legends?\n",
+            " What are the three main lanes in Summoner's Rift map?\n",
+            " Who is considered the \"king\" or \"boss\" on Summoner's Rift?\n",
+            " What are the three types of in-game currency in League of Legends?\n",
+            " What is the maximum level a champion can reach in a game?\n",
+            " Name one of the primary roles in League of Legends and describe their function in a team.",
+            " What is the purpose of inhibitors in League of Legends?\n",
+            " What is the Rift Herald and what benefits does it provide to a team?\n",
+            " What is the primary goal of the pre-game phase in League of Legends?"
+        ]
+    },
+    {
+        "ID": 163,
+        "Concept": "Cold War",
+        "Layer": 24,
+        "Dimension": 1439,
+        "QA": [
+            " When did the Cold War begin?\n",
+            " What were the main countries involved in the Cold War?\n",
+            " What was the main ideological conflict between the United States and the Soviet Union during the Cold War?\n",
+            " What was the Iron Curtain and how did it divide Europe during the Cold War?\n",
+            " What was the arms race and how did it impact the Cold War?\n",
+            " What were some key events or crises that occurred during the Cold War?\n",
+            " How did the Cold War end?\n",
+            " How did the Cold War impact countries around the world?\n",
+            " What role did proxy wars play in the Cold War?\n",
+            " How did the Cold War shape global politics and international relations in the latter half of the 20th century?"
+        ]
+    },
+    {
+        "ID": 164,
+        "Concept": "Group theory",
+        "Layer": 24,
+        "Dimension": 1894,
+        "QA": [
+            " What is the definition of a group in group theory?\n",
+            " What is the identity element in a group?\n",
+            " What is an example of a non-commutative group?\n",
+            " What is the order of a group?\n",
+            " What is a subgroup in group theory?\n",
+            " What is the difference between a group and a subgroup?\n",
+            " What is the definition of a cyclic group?\n",
+            " What is the Cayley table in group theory?\n",
+            " What is the concept of isomorphism in group theory?\n",
+            " What is the difference between a group and a ring in abstract algebra?"
+        ]
+    },
+    {
+        "ID": 165,
+        "Concept": "Opioid",
+        "Layer": 24,
+        "Dimension": 1956,
+        "QA": [
+            " What is an opioid?\n",
+            " What are common street names for opioids?\n",
+            " What is the most commonly prescribed opioid in the United States?\n",
+            " How do opioids work in the body?\n",
+            " What are the risks and side effects of opioid use?\n",
+            " What is opioid addiction and how does it develop?\n",
+            " What are the signs of an opioid overdose?\n",
+            " How is opioid addiction treated?\n",
+            " Can opioid use lead to respiratory depression?\n",
+            " What are the legal consequences of using opioids without a prescription?"
+        ]
+    },
+    {
+        "ID": 166,
+        "Concept": "Magic: The Gathering",
+        "Layer": 24,
+        "Dimension": 2473,
+        "QA": [
+            " What is Magic: The Gathering?\n",
+            " How many card types are there in Magic: The Gathering?\n",
+            " What is the objective of the game?\n",
+            " How is mana generated in the game?\n",
+            " What is a booster pack and what does it contain?\n",
+            " How many cards are typically in a standard deck?\n",
+            " What is the difference between a sorcery and an instant?\n",
+            " What is the \"stack\" in Magic: The Gathering?\n",
+            " What is the concept of \"tapping\" a card?\n",
+            " What are some of the different formats players can play in Magic: The Gathering?"
+        ]
+    },
+    {
+        "ID": 167,
+        "Concept": "Multiverse",
+        "Layer": 24,
+        "Dimension": 2865,
+        "QA": [
+            " What is the concept of the Multiverse?\n",
+            " How is the Multiverse different from a single universe?\n",
+            " Are there different theories about the existence of a Multiverse?\n",
+            " How would the concept of a Multiverse impact our understanding of the universe?\n",
+            " Can different universes in the Multiverse have different physical laws?\n",
+            " Is it possible to travel between different universes in the Multiverse?\n",
+            " Are there any observable evidence or experimental tests for the existence of a Multiverse?\n",
+            " Could the Multiverse have infinite or finite universes?\n",
+            " How do scientists study the hypothesis of a Multiverse?\n",
+            " What are some of the key challenges in exploring and understanding the Multiverse theory?"
+        ]
+    },
+    {
+        "ID": 168,
+        "Concept": "Autism spectrum",
+        "Layer": 24,
+        "Dimension": 4417,
+        "QA": [
+            " What is Autism spectrum disorder?\n",
+            " What are some common symptoms of Autism spectrum disorder?\n",
+            " When is Autism typically diagnosed in children?\n",
+            " Are there different levels of severity within the Autism spectrum?\n",
+            " What are some potential causes of Autism spectrum disorder?\n",
+            " How is Autism spectrum disorder different from other developmental disorders?\n",
+            " How can parents and caregivers support individuals with Autism spectrum disorder?\n",
+            " Are there effective treatments or therapies for Autism spectrum disorder?\n",
+            " Can individuals with Autism spectrum disorder live independently as adults?\n",
+            " What are some common misconceptions about Autism spectrum disorder?"
+        ]
+    },
+    {
+        "ID": 169,
+        "Concept": "Norse mythology",
+        "Layer": 24,
+        "Dimension": 5867,
+        "QA": [
+            " Who is the father of the gods in Norse mythology?\n",
+            " What is the name of the hammer-wielding god in Norse mythology?\n",
+            " What is the name of the tree that connects the different realms in Norse mythology?\n",
+            " What is the name of the serpent that encircles the world in Norse mythology?\n",
+            " Which goddess is associated with love, beauty, and fertility in Norse mythology?\n",
+            " What is the name of the hall where the fallen warriors are taken after they die in battle?\n",
+            " What is the name of the wolf that will devour the sun during Ragnarok?\n",
+            " What is the name of the warrior maiden who chooses who will die in battle and who will live in Norse mythology?\n",
+            " What is the name of the rainbow bridge that connects Asgard with Midgard?\n",
+            " What is the name of the monstrous wolf that will kill the god Odin during Ragnarok?"
+        ]
+    },
+    {
+        "ID": 170,
+        "Concept": "Overwatch (video game)",
+        "Layer": 24,
+        "Dimension": 6230,
+        "QA": [
+            " Who is the mascot hero of Overwatch?\n",
+            " What is the objective of the game in Overwatch?\n",
+            " How many heroes are there in Overwatch currently?\n",
+            " What are the game modes available in Overwatch?\n",
+            " What is the name of the organization that the heroes in Overwatch belong to?\n",
+            " What is the ultimate ability of the hero Mercy?\n",
+            " What is the map where the payload is moved in Overwatch?\n",
+            " What is the real name of the hero Soldier: 76?",
+            " What is the role of tanks in the game?\n",
+            " Who is the youngest hero in Overwatch?"
+        ]
+    },
+    {
+        "ID": 171,
+        "Concept": "Culture of Mexico",
+        "Layer": 24,
+        "Dimension": 6819,
+        "QA": [
+            " What are some traditional Mexican foods?\n",
+            " What are some popular Mexican holidays and celebrations?\n",
+            " What are some traditional Mexican dances?\n",
+            " What are some famous Mexican artists or musicians?\n",
+            " What are some popular Mexican customs or traditions?\n",
+            " What is the significance of Day of the Dead in Mexican culture?\n",
+            " What are some traditional Mexican crafts or folk art?\n",
+            " What is the role of family in Mexican culture?\n",
+            " What are some common greetings or expressions in Mexican culture?\n",
+            " How are Mexican, Spanish, and Indigenous cultures blended in modern Mexican society?"
+        ]
+    },
+    {
+        "ID": 172,
+        "Concept": "List of Caribbean islands",
+        "Layer": 24,
+        "Dimension": 7529,
+        "QA": [
+            " How many islands are there in the Caribbean?\n",
+            " What is the largest Caribbean island by land area?\n",
+            " Which Caribbean island is known for its crystal-clear turquoise waters and white sand beaches?\n",
+            " What is the smallest Caribbean island by land area?\n",
+            " Which Caribbean island is famous for its vibrant and colorful street art?\n",
+            " How many countries are located in the Caribbean?\n",
+            " Which Caribbean island is known for its volcanic black sand beaches?\n",
+            " What is the most populous Caribbean island?\n",
+            " Which Caribbean island is the birthplace of reggae music?\n",
+            " Which Caribbean island is known for its lush rainforests and waterfalls?"
+        ]
+    },
+    {
+        "ID": 173,
+        "Concept": "Dark Souls (video game)",
+        "Layer": 24,
+        "Dimension": 7781,
+        "QA": [
+            " What is the main objective in Dark Souls?\n",
+            " Who is the player character in Dark Souls?\n",
+            " What are the different classes available to choose from in Dark Souls?\n",
+            " What are some of the main enemies or bosses encountered in Dark Souls?\n",
+            " What is the significance of bonfires in Dark Souls?\n",
+            " How does the player level up and improve their character in Dark Souls?\n",
+            " What are some key mechanics in combat in Dark Souls?\n",
+            " What are some key differences between Dark Souls and other action RPG games?\n",
+            " What is the lore or backstory of the Dark Souls world?\n",
+            " How does multiplayer gameplay work in Dark Souls?"
+        ]
+    },
+    {
+        "ID": 174,
+        "Concept": "Ottoman Empire",
+        "Layer": 24,
+        "Dimension": 8080,
+        "QA": [
+            " When was the Ottoman Empire founded?\n",
+            " What was the capital city of the Ottoman Empire?\n",
+            " Who was the founder of the Ottoman Empire?\n",
+            " What were some of the major accomplishments of the Ottoman Empire?\n",
+            " What was the religion of the Ottoman Empire?\n",
+            " What were some of the key territories conquered by the Ottoman Empire?\n",
+            " How did the Ottoman Empire maintain control over its diverse population?\n",
+            " What was the significance of the Janissaries in the Ottoman Empire?\n",
+            " How did the Ottoman Empire decline and eventually collapse?\n",
+            " What are some of the lasting legacies of the Ottoman Empire in modern-day Turkey and the Middle East?"
+        ]
+    },
+    {
+        "ID": 175,
+        "Concept": "American football",
+        "Layer": 24,
+        "Dimension": 8152,
+        "QA": [
+            " How many players are on the field for each team during a game of American football?\n",
+            " What is the object of the game in American football?\n",
+            " How many points is a touchdown worth in American football?\n",
+            " How many downs does a team have to move the ball 10 yards in American football?",
+            " What is the name of the player who snaps the ball to start each play in American football?\n",
+            " What is the name of the championship game for professional American football teams?\n",
+            " How long is a professional American football game typically played for?\n",
+            " What is the name of the penalty for holding in American football?\n",
+            " What is the name of the player responsible for kicking field goals in American football?\n",
+            " How many time outs does each team get during a half of an American football game?"
+        ]
+    },
+    {
+        "ID": 176,
+        "Concept": "Perpetual motion",
+        "Layer": 24,
+        "Dimension": 8503,
+        "QA": [
+            " What is perpetual motion?\n",
+            " Is perpetual motion possible according to the laws of physics?\n",
+            " Can perpetual motion machines produce unlimited energy?\n",
+            " What are some examples of perpetual motion machines that have been proposed?\n",
+            " Why is perpetual motion considered a scientific impossibility?\n",
+            " How have attempts to create perpetual motion machines resulted in failure?\n",
+            " What are the potential consequences of investing in perpetual motion technologies?\n",
+            " How do perpetual motion scams exploit people's desire for free energy?\n",
+            " Why do some people still believe in the possibility of perpetual motion despite scientific consensus?\n",
+            " What are some alternative solutions for addressing energy needs that do not involve perpetual motion?"
+        ]
+    },
+    {
+        "ID": 177,
+        "Concept": "String theory",
+        "Layer": 24,
+        "Dimension": 10124,
+        "QA": [
+            " What is string theory?\n",
+            " How does string theory attempt to explain the fundamental building blocks of the universe?\n",
+            " What are the primary differences between string theory and traditional particle physics?\n",
+            " How many dimensions are required in string theory?\n",
+            " What are the potential implications of string theory for our understanding of gravity?\n",
+            " What evidence (if any) supports the validity of string theory?\n",
+            " Are there any competing theories to string theory?\n",
+            " How do scientists test the predictions made by string theory?\n",
+            " What are some of the criticisms of string theory?\n",
+            " How close are we to confirming or refuting the validity of string theory?"
+        ]
+    },
+    {
+        "ID": 178,
+        "Concept": "Action role-playing game",
+        "Layer": 25,
+        "Dimension": 1955,
+        "QA": [
+            " What is the main objective of most action role-playing games?\n",
+            " Can you customize your character's appearance in action role-playing games?\n",
+            " What are some common features found in action role-playing games?\n",
+            " How do players typically progress in terms of levels and skills in action role-playing games?\n",
+            " Can players engage in combat in action role-playing games?\n",
+            " Are there typically side quests and missions to complete in action role-playing games?\n",
+            " Do players have the ability to upgrade equipment and weapons in action role-playing games?\n",
+            " Are there usually different classes or character types to choose from in action role-playing games?\n",
+            " How do players typically navigate the game world in action role-playing games?\n",
+            " Are there usually boss battles in action role-playing games?"
+        ]
+    },
+    {
+        "ID": 179,
+        "Concept": "National Hockey League",
+        "Layer": 25,
+        "Dimension": 3319,
+        "QA": [
+            " When was the National Hockey League (NHL) founded?\n",
+            " How many teams are currently in the NHL?\n",
+            " What is the name of the championship trophy awarded to the NHL playoff champion?\n",
+            " Which team has won the most Stanley Cup championships in NHL history?\n",
+            " How many periods are there in a typical NHL game?\n",
+            " What is the maximum number of players allowed on an NHL team's roster?\n",
+            " Who is considered to be the greatest player in NHL history?\n",
+            " What is the penalty for a player who receives a five-minute major penalty in an NHL game?\n",
+            " Which team has the record for the longest winning streak in NHL history?\n",
+            " What is the nickname of the NHL team based in Las Vegas?"
+        ]
+    },
+    {
+        "ID": 180,
+        "Concept": "California",
+        "Layer": 25,
+        "Dimension": 5136,
+        "QA": [
+            " What is the capital city of California?\n",
+            " What is the state nickname of California?\n",
+            " What famous bridge connects San Francisco to Marin County?\n",
+            " California is known for its production of what popular fruit?\n",
+            " Which city in California is famous for its movie studios and Hollywood sign?\n",
+            " What is the name of the tallest mountain in California and the contiguous United States?\n",
+            " What is the official state tree of California?\n",
+            " What event sparked the California Gold Rush in 1848?",
+            " Which national park in California is home to the world's tallest trees?\n",
+            " What is the most populous city in California?"
+        ]
+    },
+    {
+        "ID": 181,
+        "Concept": "Olympic Games",
+        "Layer": 25,
+        "Dimension": 5516,
+        "QA": [
+            " When were the first modern Olympic Games held?\n",
+            " How often are the Summer Olympics held?\n",
+            " In what year did the Winter Olympics begin?\n",
+            " Which country has hosted the most Olympic Games?\n",
+            " What are the colors of the Olympic rings and what do they represent?\n",
+            " How many sports are currently included in the Summer Olympics?\n",
+            " Who is known as the \"father of the modern Olympics\"?\n",
+            " What is the significance of the Olympic flame and torch relay?\n",
+            " What is the Olympic motto and what does it mean?\n",
+            " How many medals are awarded in total at the Summer Olympics?"
+        ]
+    },
+    {
+        "ID": 182,
+        "Concept": "Culture of Italy",
+        "Layer": 25,
+        "Dimension": 7030,
+        "QA": [
+            " What is a traditional Italian dish that is famous worldwide?\n",
+            " What is the significance of the Colosseum in Italian culture?\n",
+            " What are some traditional Italian festivals and celebrations?\n",
+            " How has Italian art influenced global art movements?\n",
+            " What is the importance of family in Italian culture?\n",
+            " How has Italian fashion influenced the fashion industry?\n",
+            " What are some traditional Italian musical genres?\n",
+            " What are some famous Italian landmarks and monuments?\n",
+            " What is the significance of pasta in Italian cuisine?\n",
+            " How has Italian culture influenced other countries around the world?"
+        ]
+    },
+    {
+        "ID": 183,
+        "Concept": "Anti–money laundering",
+        "Layer": 25,
+        "Dimension": 7287,
+        "QA": [
+            " What is anti-money laundering?\n",
+            " Why is it important to prevent money laundering?\n",
+            " What are some common methods used for money laundering?\n",
+            " What are the consequences of not complying with anti-money laundering regulations?\n",
+            " Who is responsible for enforcing anti-money laundering laws?\n",
+            " What are some red flags that may indicate money laundering activity?\n",
+            " How can businesses and individuals protect themselves from money laundering schemes?\n",
+            " What role does technology play in detecting and preventing money laundering?\n",
+            " What are some challenges in effectively combating money laundering?\n",
+            " How can someone report suspected money laundering activity?"
+        ]
+    },
+    {
+        "ID": 184,
+        "Concept": "Star Wars",
+        "Layer": 25,
+        "Dimension": 9382,
+        "QA": [
+            " Who is Luke Skywalker's father?\n",
+            " What is the name of the bounty hunter who captures Han Solo in The Empire Strikes Back?\n",
+            " Who is the main villain in the original Star Wars trilogy?\n",
+            " What is the name of Princess Leia's home planet?\n",
+            " What is the name of the small green Jedi Master who trains Luke Skywalker in The Empire Strikes Back?\n",
+            " Who designed and built the Death Star in A New Hope?\n",
+            " What is the name of Han Solo's ship?\n",
+            " What is the name of the desert planet where Anakin Skywalker is discovered in The Phantom Menace?\n",
+            " What is the name of the group of elite soldiers who serve the Galactic Empire?\n",
+            " Who said the famous line \"I am your father\"?"
+        ]
+    },
+    {
+        "ID": 185,
+        "Concept": "Quantum mechanics",
+        "Layer": 26,
+        "Dimension": 146,
+        "QA": [
+            " What is the uncertainty principle in quantum mechanics?\n",
+            " What is a quantum state?\n",
+            " What is superposition in quantum mechanics?\n",
+            " What is entanglement in quantum mechanics?\n",
+            " What is the wave-particle duality in quantum mechanics?\n",
+            " What is a quantum tunneling effect?\n",
+            " What is quantum decoherence?\n",
+            " What is the concept of quantum entanglement?\n",
+            " What is the role of quantum mechanics in modern technology?\n",
+            " How does quantum computing differ from classical computing?"
+        ]
+    },
+    {
+        "ID": 186,
+        "Concept": "Random-access memory",
+        "Layer": 26,
+        "Dimension": 680,
+        "QA": [
+            " What is Random-access memory (RAM) and what is its primary function?\n",
+            " How does RAM differ from other types of storage such as hard drives or solid-state drives?\n",
+            " What is the difference between volatile and non-volatile memory, and is RAM considered volatile or non-volatile?\n",
+            " What are the typical capacities of RAM modules used in modern computers?\n",
+            " How does increasing the amount of RAM in a computer affect its performance?\n",
+            " What is the difference between single-channel, dual-channel, and quad-channel RAM configurations?\n",
+            " What is the significance of RAM speed (measured in MHz) and timings (e.g. CL14, CL16) in terms of performance?",
+            " What is the purpose of RAM caches, and how do they improve system performance?\n",
+            " What factors should be considered when choosing the right RAM for a computer upgrade or build?\n",
+            " Can RAM be upgraded or replaced in a computer, and what steps are typically involved in doing so?"
+        ]
+    },
+    {
+        "ID": 187,
+        "Concept": "United Kingdom",
+        "Layer": 26,
+        "Dimension": 3161,
+        "QA": [
+            " What is the capital city of the United Kingdom?\n",
+            " What currency is used in the United Kingdom?\n",
+            " Who is the current reigning monarch of the United Kingdom?\n",
+            " What is the national language of the United Kingdom?\n",
+            " What is the name of the famous clock tower in London?\n",
+            " Which famous rock band originated in the United Kingdom?\n",
+            " Which sport is widely popular in the United Kingdom?\n",
+            " What is the national dish of the United Kingdom?\n",
+            " What is the name of the iconic red double-decker buses in London?\n",
+            " What type of government does the United Kingdom have?"
+        ]
+    },
+    {
+        "ID": 188,
+        "Concept": "Christianity",
+        "Layer": 26,
+        "Dimension": 3368,
+        "QA": [
+            " Who is considered the central figure of Christianity?\n",
+            " What is the holy book of Christianity called?\n",
+            " What is the holy day of the week observed by Christians?\n",
+            " What is the name of the holy symbol of Christianity?\n",
+            " What is the term for the belief in only one God in Christianity?\n",
+            " What is the sacrament in which believers are submerged in water to symbolize purification and rebirth?\n",
+            " Which event is commemorated on Easter Sunday in Christianity?\n",
+            " What is the Christian term for the belief in life after death?\n",
+            " What is the term for the day when Christians believe Jesus ascended into heaven?\n",
+            " What is the term for the organized group of Christian believers that gather for worship and religious activities?"
+        ]
+    },
+    {
+        "ID": 189,
+        "Concept": "Culture of Russia",
+        "Layer": 26,
+        "Dimension": 3732,
+        "QA": [
+            " What are some traditional Russian holidays and festivals?\n",
+            " Can you name some famous Russian writers and their works?\n",
+            " What are some popular traditional Russian dishes?\n",
+            " What is the significance of the traditional Russian nesting dolls (Matryoshka)?\n",
+            " How has Russian ballet influenced the world of dance?\n",
+            " What are some notable Russian architectural landmarks?\n",
+            " How does Russian literature reflect the country's history and culture?\n",
+            " What are some traditional forms of Russian music and dance?\n",
+            " How has Russian folklore and mythology influenced the country's culture?\n",
+            " What are some unique Russian traditions and customs that are still practiced today?"
+        ]
+    },
+    {
+        "ID": 190,
+        "Concept": "Advanced Placement",
+        "Layer": 26,
+        "Dimension": 4336,
+        "QA": [
+            " What is the purpose of Advanced Placement (AP) courses?\n",
+            " How many AP courses can students typically take in high school?\n",
+            " How are AP courses and exams scored?\n",
+            " What is the benefit of earning a high score on an AP exam?\n",
+            " Do colleges give credit for AP courses?\n",
+            " Are AP courses more rigorous than regular high school classes?\n",
+            " How many AP exams are offered each year?\n",
+            " How much does it cost to take an AP exam?\n",
+            " Can students self-study for an AP exam without taking the corresponding course?\n",
+            " How can students prepare for AP exams?"
+        ]
+    },
+    {
+        "ID": 191,
+        "Concept": "Computer vision",
+        "Layer": 26,
+        "Dimension": 6709,
+        "QA": [
+            " What is computer vision?\n",
+            " How is computer vision used in biomedical imaging?\n",
+            " What are the key components of a computer vision system?\n",
+            " How is image processing used in computer vision?\n",
+            " What is object detection in computer vision?\n",
+            " How is machine learning utilized in computer vision?\n",
+            " What are some common applications of computer vision in everyday life?\n",
+            " What challenges do researchers face when developing computer vision systems?\n",
+            " How does computer vision differ from human vision?\n",
+            " How is deep learning applied in computer vision?"
+        ]
+    },
+    {
+        "ID": 192,
+        "Concept": "Wargame",
+        "Layer": 26,
+        "Dimension": 8796,
+        "QA": [
+            " What is a wargame?\n",
+            " How many players are typically involved in a wargame?\n",
+            " What are some common themes or settings for wargames?\n",
+            " What is the objective of a wargame?\n",
+            " How are battles or conflicts typically resolved in a wargame?\n",
+            " What are some popular wargame mechanics or elements?\n",
+            " How do players strategize and plan their moves in a wargame?\n",
+            " Are there different types of wargames, such as historical, fantasy, or sci-fi?\n",
+            " Are wargames typically played competitively or cooperatively?\n",
+            " How long does a typical wargame session last?"
+        ]
+    },
+    {
+        "ID": 193,
+        "Concept": "Operating system",
+        "Layer": 26,
+        "Dimension": 10806,
+        "QA": [
+            " What is an operating system?\n",
+            " What are the main functions of an operating system?\n",
+            " What are the major types of operating systems?\n",
+            " What is the role of the kernel in an operating system?\n",
+            " How does an operating system manage hardware resources?\n",
+            " What is the difference between a GUI and a command-line interface in an operating system?\n",
+            " How does an operating system handle multitasking?\n",
+            " What is virtual memory and how does it work in an operating system?\n",
+            " What is the purpose of device drivers in an operating system?\n",
+            " How does an operating system provide security and protection for user data?"
+        ]
+    },
+    {
+        "ID": 194,
+        "Concept": "World War II",
+        "Layer": 27,
+        "Dimension": 5294,
+        "QA": [
+            " When did World War II start and end?\n",
+            " Who were the main Axis powers during World War II?\n",
+            " Who were the main Allied powers during World War II?\n",
+            " What event sparked the United States' entry into World War II?\n",
+            " What were some key battles of World War II?\n",
+            " Who were the leaders of the major Allied powers during World War II?\n",
+            " What were some of the key advancements in technology and weaponry during World War II?\n",
+            " What was the role of women in World War II?\n",
+            " How did World War II end in Europe and in the Pacific?\n",
+            " What were some of the lasting effects of World War II on the world?"
+        ]
+    },
+    {
+        "ID": 195,
+        "Concept": "Random-access memory",
+        "Layer": 27,
+        "Dimension": 5392,
+        "QA": [
+            " What does RAM stand for?\n",
+            " What is the purpose of RAM in a computer?\n",
+            " How is data stored in RAM?\n",
+            " How does RAM differ from storage devices like hard drives?\n",
+            " What happens to data in RAM when a computer is turned off?\n",
+            " Can you upgrade the amount of RAM in a computer?\n",
+            " How does the amount of RAM affect a computer's performance?\n",
+            " What is the difference between volatile and non-volatile memory?\n",
+            " What is the speed of RAM measured in?\n",
+            " How does RAM work with the CPU in a computer?"
+        ]
+    },
+    {
+        "ID": 196,
+        "Concept": "Statistics",
+        "Layer": 27,
+        "Dimension": 9963,
+        "QA": [
+            " What is the definition of statistics?\n",
+            " What is the difference between descriptive statistics and inferential statistics?\n",
+            " What is the purpose of conducting a hypothesis test in statistics?\n",
+            " How do you calculate the mean of a set of numbers?\n",
+            " What is the standard deviation and why is it important in statistics?\n",
+            " What is the difference between correlation and causation in statistics?\n",
+            " How do you determine if a dataset is normally distributed?\n",
+            " What is the difference between a population and a sample in statistics?\n",
+            " How do you calculate the margin of error in a statistical survey?\n",
+            " What is the importance of p-values in statistical analysis?"
+        ]
+    },
+    {
+        "ID": 197,
+        "Concept": "Rapping",
+        "Layer": 27,
+        "Dimension": 10307,
+        "QA": [
+            " What is rapping? \n",
+            " When did rap music first emerge as a genre? \n",
+            " Who are some popular rappers in the industry today? \n",
+            " What are some common themes found in rap lyrics? \n",
+            " How does rapping differ from singing? \n",
+            " What role does rhythm play in rapping? \n",
+            " How do rappers typically create their lyrics and flow? \n",
+            " What are some famous rap battles in history? \n",
+            " How has rap music evolved over the years? \n",
+            " What impact has rap music had on mainstream culture?"
+        ]
+    },
+    {
+        "ID": 198,
+        "Concept": "Protein folding",
+        "Layer": 28,
+        "Dimension": 1807,
+        "QA": [
+            " What is protein folding and why is it important?\n",
+            " What are the primary, secondary, tertiary, and quaternary structures of proteins?\n",
+            " How do proteins fold into their functional 3D shapes?",
+            " What are the factors that influence protein folding?\n",
+            " What is the difference between protein misfolding and protein aggregation?\n",
+            " How do chaperone proteins assist in the folding process?\n",
+            " How do mutations in a protein's amino acid sequence affect its folding?\n",
+            " What are some diseases associated with protein misfolding?\n",
+            " How do researchers study protein folding in the laboratory?\n",
+            " Can we predict the 3D structure of a protein based on its amino acid sequence?"
+        ]
+    },
+    {
+        "ID": 199,
+        "Concept": "Communism",
+        "Layer": 28,
+        "Dimension": 3455,
+        "QA": [
+            " What is the fundamental ideology behind communism?\n",
+            " Who is considered the father of communism?\n",
+            " Which famous book outlines the principles of communism?\n",
+            " What is the ultimate goal of a communist society?\n",
+            " How does communism differ from capitalism?\n",
+            " How does communism address issues of wealth and class inequality?\n",
+            " What role does the government play in a communist society?\n",
+            " What are some key characteristics of a communist economy?\n",
+            " How has communism influenced global politics and history?\n",
+            " What are some modern examples of countries that have adopted communist ideologies?"
+        ]
+    },
+    {
+        "ID": 200,
+        "Concept": "Christianity",
+        "Layer": 28,
+        "Dimension": 5618,
+        "QA": [
+            " Who is considered the founder of Christianity?\n",
+            " What is the holy book of Christianity called?\n",
+            " What are the two main branches of Christianity?\n",
+            " What is the central figure in Christianity?\n",
+            " What is the Christian symbol that represents Jesus?\n",
+            " What is the day of the week that Christians traditionally observe as their day of worship?\n",
+            " What is the Christian holiday that celebrates the resurrection of Jesus?\n",
+            " What is the Christian sacrament that commemorates the last supper of Jesus with his disciples?\n",
+            " What is the Christian belief in the afterlife?\n",
+            " How many commandments are there in Christianity?"
+        ]
+    },
+    {
+        "ID": 201,
+        "Concept": "Slot machine",
+        "Layer": 20,
+        "Dimension": 3096,
+        "QA": [
+            " How do slot machines work?\n",
+            " What is the most common type of slot machine?\n",
+            " How do you win money on a slot machine?\n",
+            " Can you play slot machines online?\n",
+            " Are there any strategies to increase your chances of winning on a slot machine?\n",
+            " How do you determine the payout percentage of a slot machine?\n",
+            " Can you play slot machines for free?\n",
+            " What is the biggest jackpot ever won on a slot machine?\n",
+            " Are there any legal age restrictions for playing slot machines?\n",
+            " How popular are slot machines in casinos compared to other games?"
+        ]
+    }
+]

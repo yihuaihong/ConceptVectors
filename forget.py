@@ -189,10 +189,10 @@ def main(cfg):
 
         for ix, item in enumerate(data):
 
-            if ix<=29:
-                continue
-            if ix>=31:
-                break
+            # if ix<=29:
+            #     continue
+            # if ix>=31:
+            #     break
 
             concept = item['Concept']
             QA = item['QA']
