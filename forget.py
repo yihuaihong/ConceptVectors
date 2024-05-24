@@ -9,6 +9,7 @@ import json
 from peft import LoraConfig, get_peft_model, PeftModel
 from pathlib import Path
 from utils import get_model_identifiers_from_yaml, set_random_seed
+# from sparse_ft_utils import find_topK_grads, clip_grads
 import random
 
 class EarlyStoppingCallback(TrainerCallback):
@@ -26,7 +27,7 @@ class EarlyStoppingCallback(TrainerCallback):
         current_loss = state.log_history[-1]["loss"]
 
         # 如果loss低于阈值,则停止训练
-        if current_loss < self.loss_threshold:
+        if current_loss <= self.loss_threshold:
             control.should_training_stop = True
 
         return control
@@ -86,7 +87,7 @@ def evaluate(model, tokenizer, concept, location, QA, text_completion, unrelated
     qa_answers = []
     text_responses = []
     unrelated_qa_answers = []
-    E = model.get_output_embeddings().weight.detach()
+    E = model.get_output_embeddings().weight.detach() #should use the new projection by the new model's lm_head
     layer, dim = location
     params = model.state_dict()[f'model.layers.{layer}.mlp.down_proj.weight'].T[dim, :]
 
@@ -111,7 +112,7 @@ def evaluate(model, tokenizer, concept, location, QA, text_completion, unrelated
         qa_answers.append(tokenizer.decode(s))
 
     for text in text_completion:
-        inputs = tokenizer(text['First_half'], return_tensors="pt")
+        inputs = tokenizer(f"Please complete the following paragraph: {text['First_half']}", return_tensors="pt")
         # print('inputs: ',inputs)
         input_ids = inputs["input_ids"].to('cuda')
 
@@ -161,13 +162,11 @@ def main(cfg):
         device_map = {'': local_rank}
 
     os.environ["WANDB_DISABLED"] = "true"
-    model_cfg = get_model_identifiers_from_yaml(cfg.model_family)
-    model_id = model_cfg["hf_key"]
-    if cfg.model_path is None:
-        cfg.model_path = model_cfg["ft_model_path"]
+    # model_cfg = get_model_identifiers_from_yaml(cfg.model_family)
+    # model_id = model_cfg["hf_key"]
 
 
-    tokenizer = AutoTokenizer.from_pretrained(model_id)
+    tokenizer = AutoTokenizer.from_pretrained(cfg.model_path)
     tokenizer.pad_token = tokenizer.eos_token
 
     print("forget_loss_type: ",cfg.forget_loss)
@@ -184,15 +183,17 @@ def main(cfg):
 
 
     results = []
-    with open(cfg.data_path+"/llama_concepts_qa.json", "r", encoding="utf-8") as file:
+    with open(cfg.data_path+"/llama_concepts.json", "r", encoding="utf-8") as file:
         data = json.load(file)
 
         for ix, item in enumerate(data):
 
-            # if ix<=29:
-            #     continue
+            if ix<=71:
+                continue
             # if ix>=31:
             #     break
+            # if item['Concept']!="Amazon Alexa":
+            #     continue
 
             concept = item['Concept']
             QA = item['QA']
@@ -289,23 +290,17 @@ def main(cfg):
 
             if path_found:
                 print("Loading from checkpoint")
-                model = AutoModelForCausalLM.from_pretrained(cfg.model_path, use_flash_attention_2=model_cfg[
-                                                                                                       "flash_attention2"] == "true",
-                                                             torch_dtype=torch.bfloat16, trust_remote_code=True)
+                model = AutoModelForCausalLM.from_pretrained(cfg.model_path, torch_dtype=torch.bfloat16, trust_remote_code=True)
 
                 if cfg.forget_loss in ["grad_ascent", "grad_diff"]:
                     oracle_model = None
                 else:
-                    oracle_model = AutoModelForCausalLM.from_pretrained(cfg.model_path, use_flash_attention_2=model_cfg[
-                                                                                                                  "flash_attention2"] == "true",
-                                                                        torch_dtype=torch.bfloat16,
+                    oracle_model = AutoModelForCausalLM.from_pretrained(cfg.model_path, torch_dtype=torch.bfloat16,
                                                                         trust_remote_code=True).cuda()
 
             else:
                 print("Loading after merge and unload")
-                model = AutoModelForCausalLM.from_pretrained(model_id, use_flash_attention_2=model_cfg[
-                                                                                                 "flash_attention2"] == "true",
-                                                             torch_dtype=torch.bfloat16, device_map=device_map)
+                model = AutoModelForCausalLM.from_pretrained(cfg.model_path, torch_dtype=torch.bfloat16, device_map=device_map)
                 # now use the checkpoint to add the LoRA modules
                 model = PeftModel.from_pretrained(model, model_id=cfg.model_path)
                 # save this as a standard model so that we can again do PEFT style finetuneing from scratch
@@ -315,10 +310,11 @@ def main(cfg):
 
 
             # now we have a HuggingFace model
-            if model_cfg["gradient_checkpointing"] == "true":
+            if cfg.gradient_checkpointing == True:
+                print("gradient_checkpointing is True")
                 model.gradient_checkpointing_enable()
 
-            if cfg.Niddle_used is True:
+            if cfg.ft_type == 'Niddle':
                 #only ft on specific vector's dimension
                 layer, dim = location
                 for name, param in model.named_parameters():
@@ -342,13 +338,17 @@ def main(cfg):
                     # Create Gaussian noise
                     mean = 0
                     std = noise_scale
-                    shape = (4096,)
+                    shape = (4096,) #both llama7b and olmo7b is 4096
                     noise = torch.normal(mean, std, size=shape)
                     layer, dim = location
                     model.state_dict()[f'model.layers.{layer}.mlp.down_proj.weight'][:,dim] += noise
                     print(f"adding Guassian Noise on the layer{layer}, dim{dim}'s param, changing its angle?")
 
-                add_noise(model, location, noise_scale=0.1)
+                add_noise(model, location, noise_scale=0.2)
+
+            # elif cfg.ft_type == "Sparse":
+            #         min_grad = find_topK_grads, clip_grads
+
 
             config = LoraConfig(
                 r=cfg.LoRA.r,
@@ -364,6 +364,9 @@ def main(cfg):
 
 
             # 创建EarlyStoppingCallback对象并传入早停阈值
+            if cfg.forget_loss == 'npo':
+                cfg.loss_threshold = 0
+                print('forget_loss is NPO, so the early stopping loss_threshold = 0')
             early_stopping_callback = EarlyStoppingCallback(loss_threshold=cfg.loss_threshold)
 
             trainer = CustomTrainerForgetting(
@@ -378,7 +381,6 @@ def main(cfg):
                 data_collator=custom_data_collator_forget,
                 oracle_model=oracle_model,
                 forget_loss=cfg.forget_loss,
-                eval_cfg=cfg.eval,
                 seed=seed,
                 ref_policy=cfg.ref_policy,
                 beta=cfg.beta,
@@ -416,7 +418,7 @@ def main(cfg):
                     shutil.rmtree(global_step_dir)
 
 
-            torch.save(results, cfg.results_save_path)
+            torch.save(results, cfg.results_save_path+ f"/llama_concepts_results_{cfg.forget_loss}_Niddle{cfg.ft_type}.pt")
 
 
 

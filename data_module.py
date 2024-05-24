@@ -22,7 +22,7 @@ def split_paragraph(paragraph):
         # 将当前句子添加到当前段落
         current_paragraph += sentence
 
-        # 如果当前段落的字数超过100，则添加到段落列表中，并开始下一个段落
+        # 如果当前段落的字数超过400，则添加到段落列表中，并开始下一个段落
         if len(current_paragraph) > 400:
             paragraphs.append(current_paragraph.strip())
             current_paragraph = ""
