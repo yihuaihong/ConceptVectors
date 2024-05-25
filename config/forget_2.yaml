@@ -16,7 +16,7 @@ batch_size: 4
 gradient_accumulation_steps: 4
 gradient_checkpointing: True  #gradient_checkpointing is banned for olmo-7b
 num_epochs: 10
-forget_loss: npo  # type: grad_ascent, grad_diff, npo, npo_grad_diff, npo_KL, dpo..
+forget_loss: npo  # type: grad_ascent, grad_diff, npo, npo_grad_diff, npo_KL, dpo...
 ft_type: Full #Full, Sparse, MEMIT, Niddle,
 loss_threshold: -50
 
