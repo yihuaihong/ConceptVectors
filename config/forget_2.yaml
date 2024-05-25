@@ -1,10 +1,12 @@
-model_family: llama2-7b #olmo-7b
-model_path: /U_PZL2023ZZ0005/jhyu/Llama-2-7b-chat-hf
+model_family: llama2-7b #llama2-7b #olmo-7b
+model_path: /U_PZL2023ZZ0005/jhyu/Llama-2-7b-chat-hf #/U_PZL2023ZZ0005/yhhong/transformers/OLMo-7B  #/U_PZL2023ZZ0005/jhyu/Llama-2-7b-chat-hf
 data_path:  /home/yihuaihong/Unlearn_Harry_Potter/ConceptMap/ConceptMap_data
-results_save_path: /U_PZL2023ZZ0005/yhhong/unlearn_results/npo_kl
+results_save_path: /U_PZL2023ZZ0005/yhhong/unlearn_results/${model_family}/${forget_loss}
 save_dir: ${results_save_path}/1GPU_${forget_loss}_${lr}_${split}_epoch${num_epochs}_batch${batch_size}_accum${gradient_accumulation_steps}_beta${beta}_ref${ref_policy}_eval${eval_steps}_seed${seed}_${run_index}
 
-set: dev #dev or test
+
+set: test #dev or test
+order: 10
 LoRA:
   r: 0
   alpha: 32

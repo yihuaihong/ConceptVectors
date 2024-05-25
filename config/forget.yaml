@@ -1,10 +1,11 @@
 model_family: olmo-7b #olmo-7b
 model_path: /root/autodl-tmp/transformers/OLMo-7B
 data_path:  /root/Unlearn_Harry_Potter/Baselines/ConceptMap/ConceptMap_data
-results_save_path: /root/autodl-tmp/unlearn_results
+results_save_path: /root/autodl-tmp/unlearn_results/${model_family}/${forget_loss}
 save_dir: ${model_path}/1GPU_${forget_loss}_${lr}_${split}_epoch${num_epochs}_batch${batch_size}_accum${gradient_accumulation_steps}_beta${beta}_ref${ref_policy}_eval${eval_steps}_seed${seed}_${run_index}
 
-set: dev #dev or test
+set: test #dev or test
+order: 10
 LoRA:
   r: 0
   alpha: 32
@@ -16,7 +17,7 @@ batch_size: 1
 gradient_accumulation_steps: 16
 gradient_checkpointing: False  #gradient_checkpointing is banned for olmo-7b
 num_epochs: 10
-forget_loss: npo  # type: grad_ascent, grad_diff, npo, npo_grad_diff, npo_KL, dpo
+forget_loss: npo_KL  # type: grad_ascent, grad_diff, npo, npo_grad_diff, npo_KL, dpo
 ft_type: Full #Full, Sparse, MEMIT, Niddle,
 loss_threshold: -100
 

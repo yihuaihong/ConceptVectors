@@ -11,6 +11,7 @@ from pathlib import Path
 from utils import get_model_identifiers_from_yaml, set_random_seed
 from sparse_ft_utils import find_topK_grads, clip_grads
 import random
+import gc
 
 class EarlyStoppingCallback(TrainerCallback):
     def __init__(self, loss_threshold):
@@ -157,6 +158,7 @@ def evaluate(model, tokenizer, concept, location, QA, text_completion, unrelated
 @hydra.main(version_base=None, config_path="config", config_name="forget_2")
 def main(cfg):
 
+
     seed = cfg.seed
     set_random_seed(seed)
 
@@ -187,8 +189,13 @@ def main(cfg):
 
     max_length = 500
 
-    oracle_model = AutoModelForCausalLM.from_pretrained(cfg.model_path, torch_dtype=torch.bfloat16,
-                                                        trust_remote_code=True).cuda()
+    if cfg.forget_loss in ['grad_ascent', 'grad_diff']:
+        oracle_model = None
+    else:
+        oracle_model = AutoModelForCausalLM.from_pretrained(cfg.model_path, torch_dtype=torch.bfloat16,
+                                                            trust_remote_code=True).cuda()
+
+
 
     # first get the base model architectur2e
     # if there is a pytorch*.bin file in the model path, then load that. use regex there can be anythign in between pytorch and .bin
@@ -208,214 +215,197 @@ def main(cfg):
         model = AutoModelForCausalLM.from_pretrained(cfg.model_path, torch_dtype=torch.bfloat16, trust_remote_code=True)
 
     # now we have a HuggingFace model
-    if cfg.gradient_checkpointing == True:
+    if bool(cfg.gradient_checkpointing) == True:
         print("gradient_checkpointing is True")
         model.gradient_checkpointing_enable()
 
-    with open(cfg.data_path + f"/{cfg.model_family}_concepts.json", "r", encoding="utf-8") as file:
-        data = json.load(file)
-        dev_set = random.sample(data, int(len(data) * 0.1))  # 1:9 split dev and set
-        test_set = [item for item in data if item not in dev_set]
+    with open(cfg.data_path + f"/{cfg.model_family}_concepts_{cfg.set}.json", "r", encoding="utf-8") as file:
+        running_set = json.load(file)
 
-    if cfg.set == "dev":
-        running_set = dev_set
-    elif cfg.set == "test":
-        running_set = test_set
+    print(f'running on {cfg.set}')
 
-    for ix, item in enumerate(running_set):
+    order = cfg.order
+    item = running_set[order]
 
-        if ix < 26:
-            continue
+    results = []
+    concept = item['Concept']
+    QA = item['QA']
+    Text_completion = item['text_completion']
+    location = (item['Layer'], item['Dim'])
+    wikipedia_content = item['wikipedia_content']
+    random_wikipedia_content = random.sample([x['wikipedia_content'] for x in running_set if x['Concept'] != item['Concept']], 1)  #这个部分需要后面人工调整，尽量内容不要有重叠
+    #random_wikipedia_content = [data[22]['wikipedia_content']] #super mario
+    unrelated_QA = [item for sublist in random.sample([random.sample(x['QA'], 4) for x in running_set if x['Concept'] != item['Concept']], 5) for item in sublist] #4questions * 5concepts这个部分需要后面人工调整，unrelated_qa,尽量内容不要有重叠
+    print('len(unrelated_QA): ',len(unrelated_QA))
+    print(f'Training on {order}  {concept}:')
 
-        results = []
-        concept = item['Concept']
-        QA = item['QA']
-        Text_completion = item['text_completion']
-        location = (item['Layer'], item['Dim'])
-        wikipedia_content = item['wikipedia_content']
-        random_wikipedia_content = random.sample([x['wikipedia_content'] for x in running_set if x['Concept'] != item['Concept']], 1)  #这个部分需要后面人工调整，尽量内容不要有重叠
-        #random_wikipedia_content = [data[22]['wikipedia_content']] #super mario
-        unrelated_QA = [item for sublist in random.sample([random.sample(x['QA'], 4) for x in running_set if x['Concept'] != item['Concept']], 5) for item in sublist] #4questions * 5concepts这个部分需要后面人工调整，unrelated_qa,尽量内容不要有重叠
-        print('len(unrelated_QA): ',len(unrelated_QA))
-        print(f'Training on {ix}  {concept}:')
+    if cfg.forget_loss in ["dpo", "dpo_KL", "dpo_grad_diff"]:
+        torch_format_dataset = TextForgetDatasetDPOQA(cfg.data_path,
+                                                      tokenizer=tokenizer,
+                                                      model_family=cfg.model_family,
+                                                      max_length=max_length,
+                                                      split=cfg.split)
 
-        if cfg.forget_loss in ["dpo", "dpo_KL", "dpo_grad_diff"]:
-            torch_format_dataset = TextForgetDatasetDPOQA(cfg.data_path,
+    elif 'kto' in cfg.forget_loss:
+        torch_format_dataset = TextForgetDatasetKTOQA(cfg.data_path,
+                                                      tokenizer=tokenizer,
+                                                      model_family=cfg.model_family,
+                                                      max_length=max_length,
+                                                      split=cfg.split)
+
+    else:
+        torch_format_dataset = TextForgetDatasetWikipedia(cfg.data_path,
+                                                          content=wikipedia_content,
+                                                          random_content = random_wikipedia_content,
                                                           tokenizer=tokenizer,
                                                           model_family=cfg.model_family,
                                                           max_length=max_length,
-                                                          split=cfg.split)
+                                                          split=cfg.split,
+                                                          loss_type=cfg.forget_loss)
 
-        elif 'kto' in cfg.forget_loss:
-            torch_format_dataset = TextForgetDatasetKTOQA(cfg.data_path,
-                                                          tokenizer=tokenizer,
-                                                          model_family=cfg.model_family,
-                                                          max_length=max_length,
-                                                          split=cfg.split)
+    batch_size = int(cfg.batch_size)
+    gradient_accumulation_steps = int(cfg.gradient_accumulation_steps)
+    steps_per_epoch = len(torch_format_dataset) // (batch_size * gradient_accumulation_steps * num_devices)
 
-        else:
-            torch_format_dataset = TextForgetDatasetWikipedia(cfg.data_path,
-                                                              content=wikipedia_content,
-                                                              random_content = random_wikipedia_content,
-                                                              tokenizer=tokenizer,
-                                                              model_family=cfg.model_family,
-                                                              max_length=max_length,
-                                                              split=cfg.split,
-                                                              loss_type=cfg.forget_loss)
+    max_steps = int(cfg.num_epochs * len(torch_format_dataset)) // (batch_size * gradient_accumulation_steps * num_devices)
+    print(
+        f"The length of dataset: {len(torch_format_dataset)},\nmax_steps: {max_steps},\nbatch_size: {batch_size},\naccumulation_step: {gradient_accumulation_steps}.")
 
-        batch_size = cfg.batch_size
-        gradient_accumulation_steps = cfg.gradient_accumulation_steps
-        steps_per_epoch = len(torch_format_dataset) // (batch_size * gradient_accumulation_steps * num_devices)
+    if isinstance(cfg.eval_steps, int):
+        eval_steps = cfg.eval_steps
+    elif cfg.eval_steps == 'steps_per_epoch':
+        eval_steps = steps_per_epoch
+    else:
+        raise NotImplementedError("The eval_steps must be an integer or step_per_epoch.")
 
-        max_steps = int(cfg.num_epochs * len(torch_format_dataset)) // (batch_size * gradient_accumulation_steps * num_devices)
-        print(
-            f"The length of dataset: {len(torch_format_dataset)},\nmax_steps: {max_steps},\nbatch_size: {batch_size},\naccumulation_step: {gradient_accumulation_steps}.")
+    if isinstance(cfg.warmup_steps, int):
+        warmup_steps = cfg.warmup_steps
+    elif cfg.warmup_steps == 'steps_per_epoch':
+        warmup_steps = steps_per_epoch
+    else:
+        raise NotImplementedError("The warmup_steps must be an integer or step_per_epoch.")
 
-        if isinstance(cfg.eval_steps, int):
-            eval_steps = cfg.eval_steps
-        elif cfg.eval_steps == 'steps_per_epoch':
-            eval_steps = steps_per_epoch
-        else:
-            raise NotImplementedError("The eval_steps must be an integer or step_per_epoch.")
+    training_args = transformers.TrainingArguments(
+        per_device_train_batch_size=batch_size,
+        per_device_eval_batch_size=batch_size,
+        gradient_accumulation_steps=gradient_accumulation_steps,
+        warmup_steps=warmup_steps,
+        max_steps=max_steps,
+        learning_rate=float(cfg.lr),
+        bf16=True,
+        bf16_full_eval=True,
+        logging_steps=steps_per_epoch+1,  # do not save the model
+        logging_dir=f'{cfg.save_dir}/logs',
+        output_dir=cfg.save_dir,
+        optim="paged_adamw_32bit",
+        save_steps=max_steps + 1,  # do not save the model
+        ddp_find_unused_parameters=False,
+        # deepspeed='config/ds_config.json',
+        weight_decay=cfg.weight_decay,
+        evaluation_strategy="steps",
+        eval_steps=eval_steps,
+    )
 
-        if isinstance(cfg.warmup_steps, int):
-            warmup_steps = cfg.warmup_steps
-        elif cfg.warmup_steps == 'steps_per_epoch':
-            warmup_steps = steps_per_epoch
-        else:
-            raise NotImplementedError("The warmup_steps must be an integer or step_per_epoch.")
+    if cfg.ft_type == 'Niddle':
+        #only ft on specific vector's dimension
+        layer, dim = location
+        for name, param in model.named_parameters():
+            if "model.embed_tokens.weight" in name:
+                print('name: ', name)
+                param.requires_grad = True
+                gradient_mask = torch.zeros_like(param).cuda()
+                param.register_hook(lambda grad: grad.mul_(gradient_mask))
+            elif f"layers.{layer}.mlp.down_proj" in name:
+                print('name: ',name)
+                param.requires_grad = True
+                gradient_mask_mlp = torch.zeros_like(param).cuda()
+                gradient_mask_mlp[:, dim] = 1
+                param.register_hook(lambda grad: grad.mul_(gradient_mask_mlp))
+            else:
+                param.requires_grad = False
 
-        training_args = transformers.TrainingArguments(
-            per_device_train_batch_size=batch_size,
-            per_device_eval_batch_size=batch_size,
-            gradient_accumulation_steps=gradient_accumulation_steps,
-            warmup_steps=warmup_steps,
-            max_steps=max_steps,
-            learning_rate=cfg.lr,
-            bf16=True,
-            bf16_full_eval=True,
-            logging_steps=steps_per_epoch+1,  # do not save the model
-            logging_dir=f'{cfg.save_dir}/logs',
-            output_dir=cfg.save_dir,
-            optim="paged_adamw_32bit",
-            save_steps=max_steps + 1,  # do not save the model
-            ddp_find_unused_parameters=False,
-            # deepspeed='config/ds_config.json',
-            weight_decay=cfg.weight_decay,
-            evaluation_strategy="steps",
-            eval_steps=eval_steps,
-        )
+        print(f"Only train on the param in layer{layer}, dim{dim}.")
 
-        if cfg.ft_type == 'Niddle':
-            #only ft on specific vector's dimension
+        def add_noise(model, location, noise_scale=0):
+            # Create Gaussian noise
+            mean = 0
+            std = noise_scale
+            shape = (4096,) #both llama7b and olmo7b is 4096
+            noise = torch.normal(mean, std, size=shape)
             layer, dim = location
-            for name, param in model.named_parameters():
-                if "model.embed_tokens.weight" in name:
-                    print('name: ', name)
-                    param.requires_grad = True
-                    gradient_mask = torch.zeros_like(param).cuda()
-                    param.register_hook(lambda grad: grad.mul_(gradient_mask))
-                elif f"layers.{layer}.mlp.down_proj" in name:
-                    print('name: ',name)
-                    param.requires_grad = True
-                    gradient_mask_mlp = torch.zeros_like(param).cuda()
-                    gradient_mask_mlp[:, dim] = 1
-                    param.register_hook(lambda grad: grad.mul_(gradient_mask_mlp))
-                else:
-                    param.requires_grad = False
+            model.state_dict()[f'model.layers.{layer}.mlp.down_proj.weight'][:,dim] += noise
+            print(f"adding Guassian Noise on the layer{layer}, dim{dim}'s param, changing its angle?")
 
-            print(f"Only train on the param in layer{layer}, dim{dim}.")
+        add_noise(model, location, noise_scale=0.1)
 
-            def add_noise(model, location, noise_scale=0):
-                # Create Gaussian noise
-                mean = 0
-                std = noise_scale
-                shape = (4096,) #both llama7b and olmo7b is 4096
-                noise = torch.normal(mean, std, size=shape)
-                layer, dim = location
-                model.state_dict()[f'model.layers.{layer}.mlp.down_proj.weight'][:,dim] += noise
-                print(f"adding Guassian Noise on the layer{layer}, dim{dim}'s param, changing its angle?")
-
-            add_noise(model, location, noise_scale=0.1)
-
-        # elif cfg.ft_type == "Sparse":
-        #         print('running on the dataset to find the parameters needed to be ft')
-        #         torch_format_dataset
-        #         min_grad = find_topK_grads(model, topK = 0.001, c_types=["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"])
-        #
-        #                    clip_grads
+    # elif cfg.ft_type == "Sparse":
+    #         print('running on the dataset to find the parameters needed to be ft')
+    #         torch_format_dataset
+    #         min_grad = find_topK_grads(model, topK = 0.001, c_types=["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"])
+    #
+    #                    clip_grads
 
 
-        config = LoraConfig(
-            r=cfg.LoRA.r,
-            lora_alpha=cfg.LoRA.alpha,
-            target_modules=find_all_linear_names(model),
-            lora_dropout=cfg.LoRA.dropout,
-            bias="none",
-            task_type="CAUSAL_LM"
-        )
-        if cfg.LoRA.r != 0:
-            model = get_peft_model(model, config)
-            print_trainable_parameters(model)
+    # 创建EarlyStoppingCallback对象并传入早停阈值
+    if cfg.forget_loss == 'npo':
+        cfg.loss_threshold = 0
+        print('forget_loss is NPO, so the early stopping loss_threshold = 0')
+    early_stopping_callback = EarlyStoppingCallback(loss_threshold=cfg.loss_threshold)
+
+    trainer = CustomTrainerForgetting(
+        model=model,
+        tokenizer=tokenizer,
+        train_dataset=torch_format_dataset,
+        eval_dataset=torch_format_dataset,
+        compute_metrics=None,
+        # the callback for computing metrics, None in this case since you're doing it in your callback
+        # callbacks=[GlobalStepDeletionCallback],
+        args=training_args,
+        data_collator=custom_data_collator_forget,
+        oracle_model=oracle_model,
+        forget_loss=cfg.forget_loss,
+        seed=seed,
+        ref_policy=cfg.ref_policy,
+        beta=cfg.beta,
+        npo_coeff=cfg.npo_coeff,
+        grad_diff_coeff=cfg.grad_diff_coeff,
+        KL_coeff=cfg.KL_coeff,
+        callbacks=[early_stopping_callback]
+    )
+    model.config.use_cache = False  # silence the warnings. Please re-enable for inference!
+    trainer.train()
+
+    params, projection, qa_answers, text_responses, unrelated_qa_answers = evaluate(model, tokenizer=tokenizer, concept=concept, location=location, QA=QA, text_completion=Text_completion, unrelated_QA=unrelated_QA)
+    results.append({'id': order,'Concept': concept, 'params': params, 'projection': projection, 'qa_answers': qa_answers, 'text_responses': text_responses, 'unrelated_qa_answers': unrelated_qa_answers})
+    # save the tokenizer
+    # model.save_pretrained(cfg.save_dir)
+    # tokenizer.save_pretrained(cfg.save_dir)
+
+    # del trainer
+    # del training_args
+    # del torch_format_dataset
+    # gc.collect()
+    # torch.cuda.empty_cache()
+
+    # delete all "global_step*" files in the save_dir/checkpoint-*/ directories
+    # if local_rank == 0:
+    #     for file in Path(cfg.save_dir).glob("checkpoint-*"):
+    #         for global_step_dir in file.glob("global_step*"):
+    #             #delete the directory
+    #             import shutil
+    #             shutil.rmtree(global_step_dir)
+
+    # only single GPU, no local_rank
+    for file in Path(cfg.save_dir).glob("checkpoint-*"):
+        for global_step_dir in file.glob("global_step*"):
+            # delete the directory
+            import shutil
+            shutil.rmtree(global_step_dir)
 
 
-        # 创建EarlyStoppingCallback对象并传入早停阈值
-        if cfg.forget_loss == 'npo':
-            cfg.loss_threshold = 0
-            print('forget_loss is NPO, so the early stopping loss_threshold = 0')
-        early_stopping_callback = EarlyStoppingCallback(loss_threshold=cfg.loss_threshold)
-
-        trainer = CustomTrainerForgetting(
-            model=model,
-            tokenizer=tokenizer,
-            train_dataset=torch_format_dataset,
-            eval_dataset=torch_format_dataset,
-            compute_metrics=None,
-            # the callback for computing metrics, None in this case since you're doing it in your callback
-            # callbacks=[GlobalStepDeletionCallback],
-            args=training_args,
-            data_collator=custom_data_collator_forget,
-            oracle_model=oracle_model,
-            forget_loss=cfg.forget_loss,
-            seed=seed,
-            ref_policy=cfg.ref_policy,
-            beta=cfg.beta,
-            npo_coeff=cfg.npo_coeff,
-            grad_diff_coeff=cfg.grad_diff_coeff,
-            KL_coeff=cfg.KL_coeff,
-            callbacks=[early_stopping_callback]
-        )
-        model.config.use_cache = False  # silence the warnings. Please re-enable for inference!
-        trainer.train()
-
-        params, projection, qa_answers, text_responses, unrelated_qa_answers = evaluate(model, tokenizer=tokenizer, concept=concept, location=location, QA=QA, text_completion=Text_completion, unrelated_QA=unrelated_QA)
-        results.append({'id': ix,'Concept': concept, 'params': params, 'projection': projection, 'qa_answers': qa_answers, 'text_responses': text_responses, 'unrelated_qa_answers': unrelated_qa_answers})
-        # save the tokenizer
-        # model.save_pretrained(cfg.save_dir)
-        # tokenizer.save_pretrained(cfg.save_dir)
-
-        del model
-        torch.cuda.empty_cache()
-        trainer.optimizer.zero_grad()
-
-        # delete all "global_step*" files in the save_dir/checkpoint-*/ directories
-        # if local_rank == 0:
-        #     for file in Path(cfg.save_dir).glob("checkpoint-*"):
-        #         for global_step_dir in file.glob("global_step*"):
-        #             #delete the directory
-        #             import shutil
-        #             shutil.rmtree(global_step_dir)
-
-        # only single GPU, no local_rank
-        for file in Path(cfg.save_dir).glob("checkpoint-*"):
-            for global_step_dir in file.glob("global_step*"):
-                # delete the directory
-                import shutil
-                shutil.rmtree(global_step_dir)
-
-
-        torch.save(results, cfg.results_save_path+ f"/{cfg.model_family}_concepts_results_{cfg.forget_loss}_Niddle{cfg.ft_type}_concept{ix}.pt")
-        reset_model_parameters(model, oracle_model)
+    torch.save(results, cfg.results_save_path+ f"/{cfg.model_family}_concepts_results_{cfg.forget_loss}_Niddle{cfg.ft_type}_{cfg.set}_concept{order}.pt")
+    # reset_model_parameters(model, oracle_model)
+    # del results
 
 
 if __name__ == "__main__":
