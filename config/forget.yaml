@@ -1,6 +1,6 @@
-model_family: llama2-7b #olmo-7b
-model_path: /root/autodl-tmp/transformers/llama2-7b-chat-hf
-data_path:  /root/Unlearn_Harry_Potter/Baselines/ConceptMap/ConceptMap_data/llama2-7b-chat_concepts
+model_family: olmo-7b #olmo-7b
+model_path: /root/autodl-tmp/transformers/OLMo-7B
+data_path:  /root/Unlearn_Harry_Potter/Baselines/ConceptMap/ConceptMap_data
 results_save_path: /root/autodl-tmp/unlearn_results
 save_dir: ${model_path}/1GPU_${forget_loss}_${lr}_${split}_epoch${num_epochs}_batch${batch_size}_accum${gradient_accumulation_steps}_beta${beta}_ref${ref_policy}_eval${eval_steps}_seed${seed}_${run_index}
 
@@ -12,12 +12,12 @@ LoRA:
 
 lr: 5e-5 #5e-4  lr should be bigger on Niddle
 split: wikipedia #wikipedia, pretraining_data
-batch_size: 4
-gradient_accumulation_steps: 4
-gradient_checkpointing: True
+batch_size: 1
+gradient_accumulation_steps: 16
+gradient_checkpointing: False  #gradient_checkpointing is banned for olmo-7b
 num_epochs: 10
-forget_loss: npo  # type: grad_ascent, grad_diff, npo, npo_grad_diff, npo_kl, dpo
-ft_type: Niddle #Full, Sparse, MEMIT, Niddle,
+forget_loss: npo  # type: grad_ascent, grad_diff, npo, npo_grad_diff, npo_KL, dpo
+ft_type: Full #Full, Sparse, MEMIT, Niddle,
 loss_threshold: -100
 
 npo_coeff: 1.0
@@ -27,7 +27,7 @@ ref_policy: fine_tuned
 beta: 0.1
 weight_decay: 0.01
 
-seed: 1001
+seed: 999
 run_index: 1
 overwrite_dir: True
 eval_steps: 1000000000
