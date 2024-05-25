@@ -51,7 +51,8 @@ class EarlyStoppingCallback(TrainerCallback):
 
 
 
-
+def reset_model_parameters(model, oracle_model):
+    model.load_state_dict(oracle_model.state_dict())
 
 
 def find_all_linear_names(model):
@@ -186,16 +187,44 @@ def main(cfg):
 
     max_length = 500
 
+    oracle_model = AutoModelForCausalLM.from_pretrained(cfg.model_path, torch_dtype=torch.bfloat16,
+                                                        trust_remote_code=True).cuda()
 
+    # first get the base model architectur2e
+    # if there is a pytorch*.bin file in the model path, then load that. use regex there can be anythign in between pytorch and .bin
+    import re
+    path_found = False
+    for file in os.listdir(cfg.model_path):
+        if re.search("pytorch.*\.bin", file):
+            path_found = True
+            break
+
+        if re.search("model-*\.safetensors", file):
+            path_found = True
+            break
+
+    if path_found:
+        print("Loading from checkpoint")
+        model = AutoModelForCausalLM.from_pretrained(cfg.model_path, torch_dtype=torch.bfloat16, trust_remote_code=True)
+
+    # now we have a HuggingFace model
+    if cfg.gradient_checkpointing == True:
+        print("gradient_checkpointing is True")
+        model.gradient_checkpointing_enable()
 
     with open(cfg.data_path + f"/{cfg.model_family}_concepts.json", "r", encoding="utf-8") as file:
         data = json.load(file)
         dev_set = random.sample(data, int(len(data) * 0.1))  # 1:9 split dev and set
         test_set = [item for item in data if item not in dev_set]
 
-    for ix, item in enumerate(test_set):
+    if cfg.set == "dev":
+        running_set = dev_set
+    elif cfg.set == "test":
+        running_set = test_set
 
-        if ix < 14:
+    for ix, item in enumerate(running_set):
+
+        if ix < 26:
             continue
 
         results = []
@@ -204,9 +233,9 @@ def main(cfg):
         Text_completion = item['text_completion']
         location = (item['Layer'], item['Dim'])
         wikipedia_content = item['wikipedia_content']
-        random_wikipedia_content = random.sample([x['wikipedia_content'] for x in test_set if x['Concept'] != item['Concept']], 1)  #这个部分需要后面人工调整，尽量内容不要有重叠
+        random_wikipedia_content = random.sample([x['wikipedia_content'] for x in running_set if x['Concept'] != item['Concept']], 1)  #这个部分需要后面人工调整，尽量内容不要有重叠
         #random_wikipedia_content = [data[22]['wikipedia_content']] #super mario
-        unrelated_QA = [item for sublist in random.sample([random.sample(x['QA'], 4) for x in test_set if x['Concept'] != item['Concept']], 5) for item in sublist] #4questions * 5concepts这个部分需要后面人工调整，unrelated_qa,尽量内容不要有重叠
+        unrelated_QA = [item for sublist in random.sample([random.sample(x['QA'], 4) for x in running_set if x['Concept'] != item['Concept']], 5) for item in sublist] #4questions * 5concepts这个部分需要后面人工调整，unrelated_qa,尽量内容不要有重叠
         print('len(unrelated_QA): ',len(unrelated_QA))
         print(f'Training on {ix}  {concept}:')
 
@@ -276,47 +305,6 @@ def main(cfg):
             evaluation_strategy="steps",
             eval_steps=eval_steps,
         )
-
-        # first get the base model architectur2e
-        # if there is a pytorch*.bin file in the model path, then load that. use regex there can be anythign in between pytorch and .bin
-        import re
-        path_found = False
-        for file in os.listdir(cfg.model_path):
-            if re.search("pytorch.*\.bin", file):
-                path_found = True
-                break
-
-            if re.search("model-*\.safetensors", file):
-                path_found = True
-                break
-
-        oracle_model = None
-
-        if path_found:
-            print("Loading from checkpoint")
-            model = AutoModelForCausalLM.from_pretrained(cfg.model_path, torch_dtype=torch.bfloat16, trust_remote_code=True)
-
-            if cfg.forget_loss in ["grad_ascent", "grad_diff"]:
-                oracle_model = None
-            else:
-                oracle_model = AutoModelForCausalLM.from_pretrained(cfg.model_path, torch_dtype=torch.bfloat16,
-                                                                    trust_remote_code=True).cuda()
-
-        else:
-            print("Loading after merge and unload")
-            model = AutoModelForCausalLM.from_pretrained(cfg.model_path, torch_dtype=torch.bfloat16, device_map=device_map)
-            # now use the checkpoint to add the LoRA modules
-            model = PeftModel.from_pretrained(model, model_id=cfg.model_path)
-            # save this as a standard model so that we can again do PEFT style finetuneing from scratch
-            model = model.merge_and_unload()
-            # save the model for next time
-            model.save_pretrained(cfg.model_path)
-
-
-        # now we have a HuggingFace model
-        if cfg.gradient_checkpointing == True:
-            print("gradient_checkpointing is True")
-            model.gradient_checkpointing_enable()
 
         if cfg.ft_type == 'Niddle':
             #only ft on specific vector's dimension
@@ -427,7 +415,7 @@ def main(cfg):
 
 
         torch.save(results, cfg.results_save_path+ f"/{cfg.model_family}_concepts_results_{cfg.forget_loss}_Niddle{cfg.ft_type}_concept{ix}.pt")
-
+        reset_model_parameters(model, oracle_model)
 
 
 if __name__ == "__main__":
