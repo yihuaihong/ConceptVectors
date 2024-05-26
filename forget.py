@@ -309,20 +309,37 @@ def main(cfg):
     if cfg.ft_type == 'Niddle':
         #only ft on specific vector's dimension
         layer, dim = location
-        for name, param in model.named_parameters():
-            if "model.embed_tokens.weight" in name:
-                print('name: ', name)
-                param.requires_grad = True
-                gradient_mask = torch.zeros_like(param).cuda()
-                param.register_hook(lambda grad: grad.mul_(gradient_mask))
-            elif f"layers.{layer}.mlp.down_proj" in name:
-                print('name: ',name)
-                param.requires_grad = True
-                gradient_mask_mlp = torch.zeros_like(param).cuda()
-                gradient_mask_mlp[:, dim] = 1
-                param.register_hook(lambda grad: grad.mul_(gradient_mask_mlp))
-            else:
-                param.requires_grad = False
+        if 'llama' in model.config.model_type:
+            for name, param in model.named_parameters():
+                if "model.embed_tokens.weight" in name:
+                    print('name: ', name)
+                    param.requires_grad = True
+                    gradient_mask = torch.zeros_like(param).cuda()
+                    param.register_hook(lambda grad: grad.mul_(gradient_mask))
+                elif f"layers.{layer}.mlp.down_proj" in name:
+                    print('name: ', name)
+                    param.requires_grad = True
+                    gradient_mask_mlp = torch.zeros_like(param).cuda()
+                    gradient_mask_mlp[:, dim] = 1
+                    param.register_hook(lambda grad: grad.mul_(gradient_mask_mlp))
+                else:
+                    param.requires_grad = False
+        elif 'olmo' in model.config.model_type:
+            for name, param in model.named_parameters():
+                if "model.embed_tokens.weight" in name:
+                    print('name: ', name)
+                    param.requires_grad = True
+                    gradient_mask = torch.zeros_like(param).cuda()
+                    param.register_hook(lambda grad: grad.mul_(gradient_mask))
+                elif f'blocks.{layer}.ff_out.weight' in name:
+                    print('name: ', name)
+                    param.requires_grad = True
+                    gradient_mask_mlp = torch.zeros_like(param).cuda()
+                    gradient_mask_mlp[:, dim] = 1
+                    param.register_hook(lambda grad: grad.mul_(gradient_mask_mlp))
+                else:
+                    param.requires_grad = False
+
 
         print(f"Only train on the param in layer{layer}, dim{dim}.")
 
@@ -333,7 +350,11 @@ def main(cfg):
             shape = (4096,) #both llama7b and olmo7b is 4096
             noise = torch.normal(mean, std, size=shape)
             layer, dim = location
-            model.state_dict()[f'model.layers.{layer}.mlp.down_proj.weight'][:,dim] += noise
+            if 'llama' in model.config.model_type:
+                model.state_dict()[f'model.layers.{layer}.mlp.down_proj.weight'][:,dim] += noise
+            elif 'olmo' in model.config.model_type:
+                model.state_dict()[f'model.transformer.blocks.{layer}.ff_out.weight'][:, dim] += noise
+
             print(f"adding Guassian Noise on the layer{layer}, dim{dim}'s param, changing its angle?")
 
         add_noise(model, location, noise_scale=0.1)
@@ -403,7 +424,7 @@ def main(cfg):
             shutil.rmtree(global_step_dir)
 
 
-    torch.save(results, cfg.results_save_path+ f"/{cfg.model_family}_concepts_results_{cfg.forget_loss}_Niddle{cfg.ft_type}_{cfg.set}_concept{order}.pt")
+    torch.save(results, cfg.results_save_path+ f"/{cfg.model_family}_concepts_results_{cfg.forget_loss}_{cfg.ft_type}_{cfg.set}_concept{order}.pt")
     # reset_model_parameters(model, oracle_model)
     # del results
 
