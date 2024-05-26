@@ -18,6 +18,17 @@ Set Niddle_used to False if you don't want to use the targeted finetuning.
 
 2. **python forget.py** 
 
+**NEW:** 
+
+chmod +x all_forget_llama.sh
+./all_forget_llama.sh
+
+or
+
+chmod +x all_forget_olmo.sh
+./all_forget_olmo.sh
+
+
 To evaluate the baselines performance on ConceptMap Benchmark.
 
 3. **python evaluate.py**
