@@ -194,40 +194,27 @@ class CustomTrainerForgetting(Trainer):
             #minimum KL divergence
             retain_loss = nn.functional.kl_div(current_probs, retain_probs, reduction='batchmean', log_target=True)
             loss = forget_loss + retain_loss
-
-        elif self.loss_type == "idk":
-            idk_inputs, retain_inputs = inputs
-            idk_input_ids, idk_labels, idk_attention_mask = idk_inputs
-            retain_input_ids, retain_labels, retain_attention_mask = retain_inputs
-            
-            #concatenate the inputs. single forward pass is much more efficient
-            input_ids = torch.cat((idk_input_ids, retain_input_ids), dim=0)
-            labels = torch.cat((idk_labels, retain_labels), dim=0)
-            attention_mask = torch.cat((idk_attention_mask, retain_attention_mask), dim=0)
-            
-            outputs = model(input_ids,labels=labels, attention_mask=attention_mask)
-            loss = outputs.loss
         
         elif self.loss_type in ["dpo","dpo_grad_diff","dpo_KL"]:
-            idk_inputs, forget_inputs, retain_inputs = inputs
-            idk_input_ids, idk_labels, idk_attention_mask = idk_inputs
+            forget_inputs, retain_inputs = inputs
+            retain_input_ids, retain_labels, retain_attention_mask = retain_inputs
             forget_input_ids, forget_labels, forget_attention_mask = forget_inputs
-            idk_outputs = model(idk_input_ids, labels=idk_labels, attention_mask=idk_attention_mask)
+            retain_outputs = model(retain_input_ids, labels=retain_labels, attention_mask=retain_attention_mask)
             forget_outputs = model(forget_input_ids, labels=forget_labels, attention_mask=forget_attention_mask)
             with torch.no_grad():
-                idk_outputs_oracle = self.oracle_model(idk_input_ids, labels=idk_labels, attention_mask=idk_attention_mask)
+                retain_outputs_oracle = self.oracle_model(retain_input_ids, labels=retain_labels, attention_mask=retain_attention_mask)
                 forget_outputs_oracle = self.oracle_model(forget_input_ids, labels=forget_labels, attention_mask=forget_attention_mask)
-                idk_logits_oracle = idk_outputs_oracle.logits
+                retain_logits_oracle = retain_outputs_oracle.logits
                 forget_logits_oracle = forget_outputs_oracle.logits
 
-                idk_loss_oracle = -1 * get_batch_loss(idk_logits_oracle, idk_labels)
+                retain_loss_oracle = -1 * get_batch_loss(retain_logits_oracle, retain_labels)
                 forget_loss_oracle = -1 * get_batch_loss(forget_logits_oracle, forget_labels)
 
-            idk_loss_current = -1 * get_batch_loss(idk_outputs.logits, idk_labels)
+            retain_loss_current = -1 * get_batch_loss(retain_outputs.logits, retain_labels)
             forget_loss_current = -1 * get_batch_loss(forget_outputs.logits, forget_labels)
 
-            pi_logratios = idk_loss_current - forget_loss_current
-            ref_logratios = idk_loss_oracle - forget_loss_oracle
+            pi_logratios = retain_loss_current - forget_loss_current
+            ref_logratios = retain_loss_oracle - forget_loss_oracle
             loss = -F.logsigmoid(self.beta * (pi_logratios - ref_logratios)).mean() * 2 / self.beta
 
             if self.loss_type == 'dpo_grad_diff':
@@ -456,10 +443,7 @@ class CustomTrainerRetraining(Trainer):
                 
 def custom_data_collator_forget(samples):
     rets = []
-    if len(samples[0]) == 3:
-        idk_samples, forget_samples, retain_samples = [sample[0] for sample in samples], [sample[1] for sample in samples], [sample[2] for sample in samples]
-        data_types = ["idk", "forget", "retain"]
-    elif len(samples[0]) == 2:
+    if len(samples[0]) == 2:
         forget_samples, retain_samples = [sample[0] for sample in samples], [sample[1] for sample in samples]
         data_types = ["forget", "retain"]
     elif len(samples[0]) == 1:
@@ -469,9 +453,7 @@ def custom_data_collator_forget(samples):
         if data_type == "forget":
             data = forget_samples 
         elif data_type == "retain":
-            data = retain_samples 
-        elif data_type == "idk":
-            data = idk_samples
+            data = retain_samples
          
         input_ids = [s[0] for s in data]
         labels = [s[1] for s in data]
