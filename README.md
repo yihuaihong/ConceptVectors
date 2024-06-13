@@ -27,7 +27,7 @@ Our benchmark is also available on HuggingFace Datasets: https://huggingface.co/
   - [Overview](#overview)
   - [1. Requirements](#1-requirements)
   - [2. Training and Forgetting](#2-training-and-forgetting)
-  - [3. Evaluation Forgetting Effectiveness](#3-evaluation-forgetting-effectiveness)
+  - [3. Evaluate Forgetting Effectiveness](#3-evaluate-forgetting-effectiveness)
   - [4. Concept Validation Experiments](#4-concept-Validation-experiments)
   - [5. Jailbreaking Experiments](#5-jailbreaking-experiments)
   - [How to Cite](#how-to-cite)
@@ -117,7 +117,7 @@ Before run the command, please make sure the update your data_path and model_pat
 | **`loss_threshold`**              | 0 for NPO and DPO (loss_threshold for training early stop)                        |
 
 
-## 3. Evaluation Forgetting Effectiveness
+## 3. Evaluate Forgetting Effectiveness
 
 ```sh
 python evaluat_llama.py
