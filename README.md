@@ -105,17 +105,16 @@ Before run the command, please make sure the update your data_path and model_pat
 
 [//]: # (- **`loss_threshold`**: ..)
 
-| Important Tunable hyperparameters | Choices                                                   |
-|-----------------------------------|-----------------------------------------------------------|
-| **`forget_loss`**                 | grad_ascent, grad_diff, npo, npo_grad_diff, npo_KL, dpo   |
-| **`ft_type`**                     | Full, MEMIT, all_value_vectors, Neddle                    | 
-| **`set`**                         | test, dev                                                 |
-| **`lr`**                          | ..(learning rate)                                         |
-| **`epoch`**                       | ..(training epoch)                                        |
-| **`batch_size`**                  | ..                                                        |
-| **`num_epochs`**                  | ..                                                        |
-| **`gradient_accumulation_steps`** | ..                                                        |
-| **`loss_threshold`**              | ..(loss_threshold for training early stop)                |
+| Important Tunable hyperparameters | Choices                                                                           |
+|-----------------------------------|-----------------------------------------------------------------------------------|
+| **`forget_loss`**                 | [grad_ascent, grad_diff, npo, npo_grad_diff, npo_KL, dpo]                         |
+| **`ft_type`**                     | [Full, MEMIT, all_value_vectors, Neddle]                                          | 
+| **`set`**                         | [test, dev]                                                                       |
+| **`lr`**                          | [1e-1,2e-1,3e-1,5e-1] for Needle, [1e-5,2e-5,3e-5,5e-5] for others(learning rate) |
+| **`num_epochs`**                  | [1,2,3,5,10] (training epoch)                                                     |
+| **`batch_size`**                  | .. (set it based your gpu memory)                                                 |
+| **`gradient_accumulation_steps`** | .. (set it based your gpu memory)                                                 |
+| **`loss_threshold`**              | 0 for NPO and DPO (loss_threshold for training early stop)                        |
 
 
 ## 3. Evaluation Forgetting Effectiveness
