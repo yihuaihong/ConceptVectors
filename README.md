@@ -88,11 +88,17 @@ bash all_forget_olmo.sh
 
 ## 3. Evaluation Forgetting Effectiveness
 
-## 4. Concept Validation Experiments
+```sh
+python evaluat_llama.py
+or
+python evaluat_olmo.py
+```
 
+## 4. Concept Validation Experiments
+Please run ./Concept_Validation_Experiments/Concept_Validation_Experiments.ipynb
 
 ## 5. Jailbreaking Experiments
-
+Please run ./Jailbreak/jailbreak.ipynb
 
 
 ## How to Cite
