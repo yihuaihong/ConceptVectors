@@ -87,8 +87,35 @@ bash all_forget_olmo.sh
 ```
 Before run the command, please make sure the update your data_path and model_path in the :)
 
+[//]: # (**Adjustable Hypeparameters**:)
 
+[//]: # (- **`forget_loss`**: grad_ascent, grad_diff, npo, npo_grad_diff, npo_KL, dpo)
 
+[//]: # (- **`ft_type`**: Full, MEMIT, all_value_vectors, Neddle,)
+
+[//]: # (- **`set`**: test, dev)
+
+[//]: # (- **`lr`**: ..&#40;learning rate&#41;)
+
+[//]: # (- **`epoch`**: ..&#40;training epoch&#41;)
+
+[//]: # (- **`batch_size`**: ..)
+
+[//]: # (- **`gradient_accumulation_steps`**: ..)
+
+[//]: # (- **`loss_threshold`**: ..)
+
+| Important Tunable hyperparameters | Choices                                                   |
+|-----------------------------------|-----------------------------------------------------------|
+| **`forget_loss`**                 | [grad_ascent, grad_diff, npo, npo_grad_diff, npo_KL, dpo] |
+| **`ft_type`**                     | [Full, MEMIT, all_value_vectors, Neddle]                    | 
+| **`set`**                         | [test, dev]                                                 |
+| **`lr`**                          | ..(learning rate)                                         |
+| **`epoch`**                       | ..(training epoch)                                        |
+| **`batch_size`**                  | ..                                                        |
+| **`num_epochs`**                  | ..                                                        |
+| **`gradient_accumulation_steps`** | ..                                                        |
+| **`loss_threshold`**              | ..(loss_threshold for training early stop)                |
 
 
 ## 3. Evaluation Forgetting Effectiveness
