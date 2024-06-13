@@ -60,7 +60,7 @@ You can reproduce the experiments of our paper.
       "text_completion": [{
                 "First_half": "In contrast Emily Griesinger...",
                 "Second_half": "his encounter with the Sorting Hat..."
-            }],
+            }..],
       "unrelated_QA": ["When was Costa Coffee founded?",
                       "Where is Costa Coffee headquartered?...], 
       "wikipedia_content": "Harry Potter is a series of seven fantasy novels written by British author J. K. Rowling...",
