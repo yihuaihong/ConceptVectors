@@ -1,0 +1,1208 @@
+{
+    "P530": {
+        "frequency": 1468,
+        "relation_name": "diplomatic relation",
+        "template": "The diplomatic relation of {} is"
+    },
+    "P2936": {
+        "frequency": 838,
+        "relation_name": "language used",
+        "template": "The language used in {} is"
+    },
+    "P150": {
+        "frequency": 511,
+        "relation_name": "contains the administrative territorial entity",
+        "template": "{}, which contains the administrative territorial entity of"
+    },
+    "P2250": {
+        "frequency": 325,
+        "relation_name": "life expectancy",
+        "template": "The life expectancy in {} is approximately"
+    },
+    "P1448": {
+        "frequency": 311,
+        "relation_name": "official name",
+        "template": "The official name of {} is"
+    },
+    "P6": {
+        "frequency": 302,
+        "relation_name": "head of government",
+        "template": "The head of government of {} is"
+    },
+    "P279": {
+        "frequency": 283,
+        "relation_name": "subclass of",
+        "template": "{}, which is a subclass of"
+    },
+    "P17": {
+        "frequency": 264,
+        "relation_name": "country",
+        "template": "The country which {} is associated with is"
+    },
+    "P373": {
+        "frequency": 260,
+        "relation_name": "Commons category",
+        "template": "{}, which can be found in the Wikimedia Commons category"
+    },
+    "P1830": {
+        "frequency": 241,
+        "relation_name": "owner of",
+        "template": "{} is the owner of"
+    },
+    "P47": {
+        "frequency": 238,
+        "relation_name": "shares border with",
+        "template": "{}, which shares a border with"
+    },
+    "P355": {
+        "frequency": 192,
+        "relation_name": "has subsidiary",
+        "template": "{}, which has a subsidiary in"
+    },
+    "P1441": {
+        "frequency": 184,
+        "relation_name": "present in work",
+        "template": "{}, which is present in the work"
+    },
+    "P793": {
+        "frequency": 181,
+        "relation_name": "significant event",
+        "template": "{}, which is known for the significant event of"
+    },
+    "P35": {
+        "frequency": 164,
+        "relation_name": "head of state",
+        "template": "The head of state of {} is"
+    },
+    "P2561": {
+        "frequency": 139,
+        "relation_name": "name",
+        "template": "The name of {} is"
+    },
+    "P832": {
+        "frequency": 117,
+        "relation_name": "public holiday",
+        "template": "On what date is {} celebrated as a public holiday? It is celebrated on"
+    },
+    "P800": {
+        "frequency": 98,
+        "relation_name": "notable work",
+        "template": "{}, one of the notable works by \n{} is"
+    },
+    "P2295": {
+        "frequency": 98,
+        "relation_name": "net profit",
+        "template": "The net profit of {} for the year was"
+    },
+    "P2139": {
+        "frequency": 96,
+        "relation_name": "total revenue",
+        "template": "The total revenue of {} was."
+    },
+    "P138": {
+        "frequency": 95,
+        "relation_name": "named after",
+        "template": "{}, which is named after"
+    },
+    "P421": {
+        "frequency": 92,
+        "relation_name": "located in time zone",
+        "template": "{}, which is located in the\n\nlocal time zone of"
+    },
+    "P935": {
+        "frequency": 91,
+        "relation_name": "Commons gallery",
+        "template": "The Commons gallery of {} can be found at"
+    },
+    "P106": {
+        "frequency": 85,
+        "relation_name": "occupation",
+        "template": "The occupation of {} is"
+    },
+    "P1056": {
+        "frequency": 83,
+        "relation_name": "product or material produced or service provided",
+        "template": "{}, which is produced or provided by"
+    },
+    "P276": {
+        "frequency": 78,
+        "relation_name": "location",
+        "template": "Where is {}? It is located in"
+    },
+    "P166": {
+        "frequency": 78,
+        "relation_name": "award received",
+        "template": "{} has won the award of"
+    },
+    "P460": {
+        "frequency": 74,
+        "relation_name": "said to be the same as",
+        "template": "{}, which is said to be the same as"
+    },
+    "P703": {
+        "frequency": 72,
+        "relation_name": "found in taxon",
+        "template": "{}, can be found in the taxon"
+    },
+    "P3095": {
+        "frequency": 71,
+        "relation_name": "practiced by",
+        "template": "{} is a practice that is commonly practiced by"
+    },
+    "P206": {
+        "frequency": 70,
+        "relation_name": "located in or next to body of water",
+        "template": "{}, which is located next to body of water"
+    },
+    "P1542": {
+        "frequency": 68,
+        "relation_name": "has effect",
+        "template": "The effect of {} is"
+    },
+    "P2283": {
+        "frequency": 67,
+        "relation_name": "uses",
+        "template": "{} utilizes the technology of"
+    },
+    "P2176": {
+        "frequency": 62,
+        "relation_name": "drug or therapy used for treatment",
+        "template": "The drug or therapy used for treatment of {} is"
+    },
+    "P112": {
+        "frequency": 59,
+        "relation_name": "founded by",
+        "template": "The founder of {} is"
+    },
+    "P122": {
+        "frequency": 58,
+        "relation_name": "basic form of government",
+        "template": "The basic form of government in {} is"
+    },
+    "P36": {
+        "frequency": 57,
+        "relation_name": "capital",
+        "template": "The capital of {} is"
+    },
+    "P37": {
+        "frequency": 56,
+        "relation_name": "official language",
+        "template": "The official language of {} is"
+    },
+    "P2852": {
+        "frequency": 54,
+        "relation_name": "emergency phone number",
+        "template": "In case of an emergency in {}, the phone number to call is"
+    },
+    "P172": {
+        "frequency": 49,
+        "relation_name": "ethnic group",
+        "template": "The ethnic group which {} is associated with is"
+    },
+    "P2579": {
+        "frequency": 48,
+        "relation_name": "studied in",
+        "template": "{}, who studied in"
+    },
+    "P155": {
+        "frequency": 46,
+        "relation_name": "follows",
+        "template": "{} follows"
+    },
+    "P2341": {
+        "frequency": 46,
+        "relation_name": "indigenous to",
+        "template": "{}, which is indigenous to"
+    },
+    "P38": {
+        "frequency": 44,
+        "relation_name": "currency",
+        "template": "The currency in {} is"
+    },
+    "P3270": {
+        "frequency": 43,
+        "relation_name": "compulsory education (minimum age)",
+        "template": "The compulsory education (minimum age) of {} is at the age of"
+    },
+    "P3320": {
+        "frequency": 43,
+        "relation_name": "board member",
+        "template": "{}, who serves as a board member for"
+    },
+    "P30": {
+        "frequency": 42,
+        "relation_name": "continent",
+        "template": "The continent which {} is part of is"
+    },
+    "P802": {
+        "frequency": 42,
+        "relation_name": "student",
+        "template": "{}, who is a student at"
+    },
+    "P8248": {
+        "frequency": 40,
+        "relation_name": "Colon Classification",
+        "template": "{}, which falls under the Colon Classification category of"
+    },
+    "P2853": {
+        "frequency": 40,
+        "relation_name": "electrical plug type",
+        "template": "The electrical plug type for {} is"
+    },
+    "P2403": {
+        "frequency": 40,
+        "relation_name": "total assets",
+        "template": "The total assets of {} amount to"
+    },
+    "P1891": {
+        "frequency": 40,
+        "relation_name": "signatory",
+        "template": "{}, who signed the document, is a"
+    },
+    "P366": {
+        "frequency": 39,
+        "relation_name": "has use",
+        "template": "The {} is utilized for"
+    },
+    "P136": {
+        "frequency": 39,
+        "relation_name": "genre",
+        "template": "{} plays"
+    },
+    "P159": {
+        "frequency": 39,
+        "relation_name": "headquarters location",
+        "template": "{} is headquartered in"
+    },
+    "P737": {
+        "frequency": 38,
+        "relation_name": "influenced by",
+        "template": "{}, who was greatly influenced by"
+    },
+    "P1128": {
+        "frequency": 38,
+        "relation_name": "employees",
+        "template": "{}, who currently works at, employed at, or is associated with"
+    },
+    "P2293": {
+        "frequency": 38,
+        "relation_name": "genetic association",
+        "template": "The genetic association of {} is with"
+    },
+    "P2046": {
+        "frequency": 35,
+        "relation_name": "area",
+        "template": "The area of {} is"
+    },
+    "P78": {
+        "frequency": 35,
+        "relation_name": "top-level Internet domain",
+        "template": "The top-level Internet domain for {} is"
+    },
+    "P407": {
+        "frequency": 35,
+        "relation_name": "language of work or name",
+        "template": "The language of {} is"
+    },
+    "P127": {
+        "frequency": 35,
+        "relation_name": "owned by",
+        "template": "{} is owned by"
+    },
+    "P306": {
+        "frequency": 35,
+        "relation_name": "operating system",
+        "template": "{}, which operates on"
+    },
+    "P163": {
+        "frequency": 33,
+        "relation_name": "flag",
+        "template": "The flag of {} features"
+    },
+    "P175": {
+        "frequency": 33,
+        "relation_name": "performer",
+        "template": "{}, who is a performer, is known for their talent in"
+    },
+    "P1269": {
+        "frequency": 32,
+        "relation_name": "facet of",
+        "template": "{}, a facet of"
+    },
+    "P2578": {
+        "frequency": 32,
+        "relation_name": "is the study of",
+        "template": "The study of {} is known as"
+    },
+    "P1449": {
+        "frequency": 31,
+        "relation_name": "nickname",
+        "template": "{}, also known as"
+    },
+    "P3373": {
+        "frequency": 31,
+        "relation_name": "sibling",
+        "template": "{}'s siblings are"
+    },
+    "P452": {
+        "frequency": 31,
+        "relation_name": "industry",
+        "template": "{}, which is in the industry of"
+    },
+    "P85": {
+        "frequency": 30,
+        "relation_name": "anthem",
+        "template": "The anthem of {} is"
+    },
+    "P1476": {
+        "frequency": 30,
+        "relation_name": "title",
+        "template": "The title of {} is"
+    },
+    "P3001": {
+        "frequency": 29,
+        "relation_name": "retirement age",
+        "template": "The retirement age at {} is"
+    },
+    "P4969": {
+        "frequency": 29,
+        "relation_name": "derivative work",
+        "template": "The derivative work of {} is"
+    },
+    "P123": {
+        "frequency": 29,
+        "relation_name": "publisher",
+        "template": "The publisher of {} is"
+    },
+    "P400": {
+        "frequency": 29,
+        "relation_name": "platform",
+        "template": "{}, which is the primary platform for"
+    },
+    "P495": {
+        "frequency": 28,
+        "relation_name": "country of origin",
+        "template": "{} was from the country of"
+    },
+    "P194": {
+        "frequency": 28,
+        "relation_name": "legislative body",
+        "template": "{} is governed by the legislative body"
+    },
+    "P8744": {
+        "frequency": 28,
+        "relation_name": "economy of topic",
+        "template": "The economy of {} is based on"
+    },
+    "P1412": {
+        "frequency": 27,
+        "relation_name": "languages spoken, written or signed",
+        "template": "{} speaks the language"
+    },
+    "P3828": {
+        "frequency": 27,
+        "relation_name": "wears",
+        "template": "{}, who typically wears"
+    },
+    "P1464": {
+        "frequency": 26,
+        "relation_name": "category for people born here",
+        "template": "{}, who were born here, fall into the category of"
+    },
+    "P2633": {
+        "frequency": 25,
+        "relation_name": "geography of topic",
+        "template": "The geography of {} includes"
+    },
+    "P208": {
+        "frequency": 25,
+        "relation_name": "executive body",
+        "template": "{} is governed by the executive body"
+    },
+    "P1906": {
+        "frequency": 25,
+        "relation_name": "office held by head of state",
+        "template": "{}, who is the head of state, held the office as"
+    },
+    "P577": {
+        "frequency": 25,
+        "relation_name": "publication date",
+        "template": "{}, which was published on"
+    },
+    "P1740": {
+        "frequency": 24,
+        "relation_name": "category for films shot at this location",
+        "template": "The category for films shot at this location is {}"
+    },
+    "P610": {
+        "frequency": 24,
+        "relation_name": "highest point",
+        "template": "The highest point of {} is"
+    },
+    "P1299": {
+        "frequency": 24,
+        "relation_name": "depicted by",
+        "template": "The subject {} is depicted by"
+    },
+    "P144": {
+        "frequency": 24,
+        "relation_name": "based on",
+        "template": "{}, which is based on"
+    },
+    "P1332": {
+        "frequency": 23,
+        "relation_name": "coordinates of northernmost point",
+        "template": "The coordinates of the northernmost point of {} are"
+    },
+    "P569": {
+        "frequency": 23,
+        "relation_name": "date of birth",
+        "template": "The date in which {} was born in is"
+    },
+    "P39": {
+        "frequency": 23,
+        "relation_name": "position held",
+        "template": "The position that has been held by {} is"
+    },
+    "P1589": {
+        "frequency": 22,
+        "relation_name": "lowest point",
+        "template": "The lowest point in {} is at"
+    },
+    "P1559": {
+        "frequency": 22,
+        "relation_name": "name in native language",
+        "template": "{}, which is called in its native language"
+    },
+    "P119": {
+        "frequency": 22,
+        "relation_name": "place of burial",
+        "template": "The country in which {} is buried is"
+    },
+    "P6379": {
+        "frequency": 22,
+        "relation_name": "has works in the collection",
+        "template": "{}, which has works in the collection"
+    },
+    "P101": {
+        "frequency": 22,
+        "relation_name": "field of work",
+        "template": "{} has been working in the field of"
+    },
+    "P110": {
+        "frequency": 22,
+        "relation_name": "illustrator",
+        "template": "{}, who illustrated"
+    },
+    "P178": {
+        "frequency": 22,
+        "relation_name": "developer",
+        "template": "{} was a product of"
+    },
+    "P3896": {
+        "frequency": 21,
+        "relation_name": "geoshape",
+        "template": "{}, which has a unique geoshape of"
+    },
+    "P2997": {
+        "frequency": 21,
+        "relation_name": "age of majority",
+        "template": "The age of majority in {} is typically reached at age"
+    },
+    "P1335": {
+        "frequency": 21,
+        "relation_name": "coordinates of westernmost point",
+        "template": "The coordinates of the westernmost point of {} are"
+    },
+    "P488": {
+        "frequency": 21,
+        "relation_name": "chairperson",
+        "template": "{}, who is the chairperson of"
+    },
+    "P2226": {
+        "frequency": 21,
+        "relation_name": "market capitalization",
+        "template": "The market capitalization of {} is currently at"
+    },
+    "P1334": {
+        "frequency": 20,
+        "relation_name": "coordinates of easternmost point",
+        "template": "The coordinates of the easternmost point of {} are"
+    },
+    "P2596": {
+        "frequency": 20,
+        "relation_name": "culture",
+        "template": "{}, known for its rich culture and traditions, has a strong presence of"
+    },
+    "P1411": {
+        "frequency": 20,
+        "relation_name": "nominated for",
+        "template": "{} has been nominated for"
+    },
+    "P740": {
+        "frequency": 20,
+        "relation_name": "location of formation",
+        "template": "{} was formed in"
+    },
+    "P61": {
+        "frequency": 19,
+        "relation_name": "discoverer or inventor",
+        "template": "{}, who discovered/invented"
+    },
+    "P1304": {
+        "frequency": 19,
+        "relation_name": "central bank",
+        "template": "The central bank of {} is"
+    },
+    "P735": {
+        "frequency": 19,
+        "relation_name": "given name",
+        "template": "{}'s given name is"
+    },
+    "P156": {
+        "frequency": 19,
+        "relation_name": "followed by",
+        "template": "{} was followed by"
+    },
+    "P461": {
+        "frequency": 19,
+        "relation_name": "opposite of",
+        "template": "What is the opposite of {}? It is"
+    },
+    "P1547": {
+        "frequency": 19,
+        "relation_name": "depends on software",
+        "template": "In order to operate efficiently, {} relies on the software of"
+    },
+    "P131": {
+        "frequency": 18,
+        "relation_name": "located in the administrative territorial entity",
+        "template": "{} is located in administrative territorial entity of"
+    },
+    "P209": {
+        "frequency": 18,
+        "relation_name": "highest judicial authority",
+        "template": "{} serves as the highest judicial authority in"
+    },
+    "P1622": {
+        "frequency": 18,
+        "relation_name": "driving side",
+        "template": "{}, where do they drive on?"
+    },
+    "P2137": {
+        "frequency": 18,
+        "relation_name": "total equity",
+        "template": "The total equity of {} is"
+    },
+    "P921": {
+        "frequency": 18,
+        "relation_name": "main subject",
+        "template": "The main focus of {} is on"
+    },
+    "P3975": {
+        "frequency": 18,
+        "relation_name": "general secretary",
+        "template": "{}, who currently serves as the general secretary of"
+    },
+    "P4132": {
+        "frequency": 18,
+        "relation_name": "linguistic typology",
+        "template": "{}, which falls under the category of linguistic typology, is characterized by"
+    },
+    "P1641": {
+        "frequency": 18,
+        "relation_name": "port",
+        "template": "{}, which serves as a major port for the region, is located in"
+    },
+    "P103": {
+        "frequency": 17,
+        "relation_name": "native language",
+        "template": "The mother tongue of {} is"
+    },
+    "P451": {
+        "frequency": 17,
+        "relation_name": "unmarried partner",
+        "template": "{}, who is the unmarried partner of"
+    },
+    "P1050": {
+        "frequency": 17,
+        "relation_name": "medical condition",
+        "template": "{} suffers from the medical condition"
+    },
+    "P1576": {
+        "frequency": 17,
+        "relation_name": "lifestyle",
+        "template": "{}, which is known for its unique lifestyle of"
+    },
+    "P457": {
+        "frequency": 16,
+        "relation_name": "foundational text",
+        "template": "{}, which is considered a foundational text in"
+    },
+    "P5658": {
+        "frequency": 16,
+        "relation_name": "railway traffic side",
+        "template": "On which side does railway traffic operate in {}? It operates on the"
+    },
+    "P92": {
+        "frequency": 16,
+        "relation_name": "main regulatory text",
+        "template": "The main regulatory text for {} can be found in"
+    },
+    "P69": {
+        "frequency": 16,
+        "relation_name": "educated at",
+        "template": "{} has been educated at"
+    },
+    "P710": {
+        "frequency": 16,
+        "relation_name": "participant",
+        "template": "{}, who participated in"
+    },
+    "P1142": {
+        "frequency": 15,
+        "relation_name": "political ideology",
+        "template": "{}, who is known for their political ideology of"
+    },
+    "P1038": {
+        "frequency": 15,
+        "relation_name": "relative",
+        "template": "Who is the relative of {}?"
+    },
+    "P2284": {
+        "frequency": 15,
+        "relation_name": "price",
+        "template": "The price of {} is"
+    },
+    "P3842": {
+        "frequency": 15,
+        "relation_name": "located in the present-day administrative territorial entity",
+        "template": "{}, which is located in the present-day administrative territorial entity of"
+    },
+    "P5110": {
+        "frequency": 15,
+        "relation_name": "has grammatical person",
+        "template": "The grammatical person of {} is"
+    },
+    "P417": {
+        "frequency": 14,
+        "relation_name": "patron saint",
+        "template": "{}, who is the patron saint of"
+    },
+    "P19": {
+        "frequency": 14,
+        "relation_name": "place of birth",
+        "template": "The city in which {} was born is"
+    },
+    "P180": {
+        "frequency": 14,
+        "relation_name": "depicts",
+        "template": "{}, as shown in"
+    },
+    "P2521": {
+        "frequency": 14,
+        "relation_name": "female form of label",
+        "template": "The female form of {} is"
+    },
+    "P7295": {
+        "frequency": 13,
+        "relation_name": "Gregorian calendar start date",
+        "template": "The Gregorian calendar start date of {} is"
+    },
+    "P40": {
+        "frequency": 13,
+        "relation_name": "child",
+        "template": "The child of {} is"
+    },
+    "P725": {
+        "frequency": 13,
+        "relation_name": "voice actor",
+        "template": "{}, who voices the character of"
+    },
+    "P1454": {
+        "frequency": 13,
+        "relation_name": "legal form",
+        "template": "{}, which is structured as"
+    },
+    "P2124": {
+        "frequency": 13,
+        "relation_name": "member count",
+        "template": "The {} has a member count of"
+    },
+    "P1376": {
+        "frequency": 13,
+        "relation_name": "capital of",
+        "template": "{} is the capital of"
+    },
+    "P129": {
+        "frequency": 13,
+        "relation_name": "physically interacts with",
+        "template": "{} physically interacts with"
+    },
+    "P780": {
+        "frequency": 13,
+        "relation_name": "symptoms and signs",
+        "template": "The symptoms and signs of {} include"
+    },
+    "P3075": {
+        "frequency": 13,
+        "relation_name": "official religion",
+        "template": "The official religion of {} is"
+    },
+    "P6193": {
+        "frequency": 13,
+        "relation_name": "ratified by",
+        "template": "{}, which was officially ratified by"
+    },
+    "P2927": {
+        "frequency": 12,
+        "relation_name": "water as percent of area",
+        "template": "The water composition of {}'s area is significant"
+    },
+    "P2388": {
+        "frequency": 12,
+        "relation_name": "office held by head of the organization",
+        "template": "The office held by the head of {} is"
+    },
+    "P3529": {
+        "frequency": 12,
+        "relation_name": "median income",
+        "template": "The median income of {} is"
+    },
+    "P27": {
+        "frequency": 12,
+        "relation_name": "country of citizenship",
+        "template": "The country of citizenship of {} is"
+    },
+    "P2650": {
+        "frequency": 12,
+        "relation_name": "interested in",
+        "template": "{} has a strong interest in"
+    },
+    "P22": {
+        "frequency": 11,
+        "relation_name": "father",
+        "template": "The father of {} is"
+    },
+    "P570": {
+        "frequency": 11,
+        "relation_name": "date of death",
+        "template": "{}, who passed away on"
+    },
+    "P21": {
+        "frequency": 11,
+        "relation_name": "sex or gender",
+        "template": "{}'s gender is"
+    },
+    "P5800": {
+        "frequency": 11,
+        "relation_name": "narrative role",
+        "template": "{}, who played the narrative role of"
+    },
+    "P277": {
+        "frequency": 11,
+        "relation_name": "programmed in",
+        "template": "{}, which is programmed in"
+    },
+    "P282": {
+        "frequency": 11,
+        "relation_name": "writing system",
+        "template": "The writing system used by {} is called"
+    },
+    "P176": {
+        "frequency": 11,
+        "relation_name": "manufacturer",
+        "template": "{}, produced by"
+    },
+    "P1546": {
+        "frequency": 10,
+        "relation_name": "motto",
+        "template": "The motto of {} is"
+    },
+    "P10280": {
+        "frequency": 10,
+        "relation_name": "category for honorary citizens of entity",
+        "template": "The category for honorary citizens of {} is"
+    },
+    "P3150": {
+        "frequency": 10,
+        "relation_name": "birthday",
+        "template": "{}, whose birthday is"
+    },
+    "P840": {
+        "frequency": 10,
+        "relation_name": "narrative location",
+        "template": "{}, which serves as the setting for the story, is located in"
+    },
+    "P414": {
+        "frequency": 10,
+        "relation_name": "stock exchange",
+        "template": "{}, which is listed on the stock exchange"
+    },
+    "P4614": {
+        "frequency": 10,
+        "relation_name": "drainage basin",
+        "template": "The drainage basin of {} includes"
+    },
+    "P1995": {
+        "frequency": 10,
+        "relation_name": "health specialty",
+        "template": "{} specializes in the field of healthcare in"
+    },
+    "P11738": {
+        "frequency": 10,
+        "relation_name": "handled, mitigated, or managed by",
+        "template": "{} is handled, mitigated, or managed by"
+    },
+    "P797": {
+        "frequency": 9,
+        "relation_name": "authority",
+        "template": "{} has authority over"
+    },
+    "P485": {
+        "frequency": 9,
+        "relation_name": "archives at",
+        "template": "The archives at {} can be found in"
+    },
+    "P3712": {
+        "frequency": 9,
+        "relation_name": "has goal",
+        "template": "{}, with the goal of accomplishing"
+    },
+    "P2348": {
+        "frequency": 9,
+        "relation_name": "time period",
+        "template": "{}, which occurred during the time period"
+    },
+    "P3342": {
+        "frequency": 9,
+        "relation_name": "significant person",
+        "template": "{}, who is a significant person in history, is known for"
+    },
+    "P6897": {
+        "frequency": 9,
+        "relation_name": "literacy rate",
+        "template": "The literacy rate in {} is"
+    },
+    "P1557": {
+        "frequency": 9,
+        "relation_name": "manifestation of",
+        "template": "The manifestation of {} is displayed through"
+    },
+    "P1049": {
+        "frequency": 9,
+        "relation_name": "worshipped by",
+        "template": "{}, who is worshipped by"
+    },
+    "P53": {
+        "frequency": 9,
+        "relation_name": "family",
+        "template": "{}, who is a member of the family"
+    },
+    "P3461": {
+        "frequency": 9,
+        "relation_name": "designated as terrorist by",
+        "template": "{}, was designated as a terrorist organization by"
+    },
+    "P4290": {
+        "frequency": 9,
+        "relation_name": "official app",
+        "template": " The official app for {} can be downloaded from"
+    },
+    "P841": {
+        "frequency": 9,
+        "relation_name": "feast day",
+        "template": "On the feast day of {}, people typically celebrate by"
+    },
+    "P10685": {
+        "frequency": 9,
+        "relation_name": "ionic radius",
+        "template": "The ionic radius of {} is"
+    },
+    "P641": {
+        "frequency": 8,
+        "relation_name": "sport",
+        "template": "the sport of {} is"
+    },
+    "P2067": {
+        "frequency": 8,
+        "relation_name": "mass",
+        "template": "The mass of {} is"
+    },
+    "P25": {
+        "frequency": 8,
+        "relation_name": "mother",
+        "template": "The mother of {} is"
+    },
+    "P1434": {
+        "frequency": 8,
+        "relation_name": "takes place in fictional universe",
+        "template": "In which fictional universe does {} take place? It is set in"
+    },
+    "P749": {
+        "frequency": 8,
+        "relation_name": "parent organization",
+        "template": "The parent organization of {} is"
+    },
+    "P937": {
+        "frequency": 8,
+        "relation_name": "work location",
+        "template": "{} worked in the city of"
+    },
+    "P287": {
+        "frequency": 8,
+        "relation_name": "designed by",
+        "template": "The {} was designed by"
+    },
+    "P4151": {
+        "frequency": 8,
+        "relation_name": "game mechanics",
+        "template": "{}, which operates on"
+    },
+    "P2500": {
+        "frequency": 7,
+        "relation_name": "league level below",
+        "template": "{}, which is at the league level below"
+    },
+    "P20": {
+        "frequency": 7,
+        "relation_name": "place of death",
+        "template": "The city in which {} died is"
+    },
+    "P26": {
+        "frequency": 7,
+        "relation_name": "spouse",
+        "template": "{}'s spouse is"
+    },
+    "P6886": {
+        "frequency": 7,
+        "relation_name": "writing language",
+        "template": "The writing language of {} is"
+    },
+    "P1196": {
+        "frequency": 7,
+        "relation_name": "manner of death",
+        "template": "{}, died in the manner of"
+    },
+    "P509": {
+        "frequency": 7,
+        "relation_name": "cause of death",
+        "template": "The cause of death for {} was"
+    },
+    "P1881": {
+        "frequency": 7,
+        "relation_name": "list of characters",
+        "template": "{}, who are the main characters in"
+    },
+    "P1478": {
+        "frequency": 7,
+        "relation_name": "has immediate cause",
+        "template": "The immediate cause of {} was"
+    },
+    "P3701": {
+        "frequency": 7,
+        "relation_name": "incarnation of",
+        "template": "{}, also known as the incarnation of"
+    },
+    "P210": {
+        "frequency": 7,
+        "relation_name": "party chief representative",
+        "template": "{}, who serves as the party chief representative for"
+    },
+    "P31": {
+        "frequency": 605,
+        "relation_name": "instance of",
+        "template": "{}, which is a"
+    },
+    "P1873": {
+        "frequency": 4,
+        "relation_name": "maximum number of players",
+        "template": "The maximum number of players allowed for {} is"
+    },
+    "P2132": {
+        "frequency": 4,
+        "relation_name": "nominal GDP per capita",
+        "template": "The nominal GDP per capita of {} is"
+    },
+    "P664": {
+        "frequency": 4,
+        "relation_name": "organizer",
+        "template": "The organizer of {} is"
+    },
+    "P1853": {
+        "frequency": 4,
+        "relation_name": "blood type",
+        "template": "The blood type of {} is"
+    },
+    "P734": {
+        "frequency": 6,
+        "relation_name": "family name",
+        "template": "The family name of {} is"
+    },
+    "P1971": {
+        "frequency": 6,
+        "relation_name": "number of children",
+        "template": "The number of children {} has is"
+    },
+    "P50": {
+        "frequency": 6,
+        "relation_name": "author",
+        "template": "The author of {} is"
+    },
+    "P2047": {
+        "frequency": 6,
+        "relation_name": "duration",
+        "template": "The duration of {} is"
+    },
+    "P274": {
+        "frequency": 5,
+        "relation_name": "chemical formula",
+        "template": "The chemical formula for {} is"
+    },
+    "P2101": {
+        "frequency": 5,
+        "relation_name": "melting point",
+        "template": "The melting point of {} is"
+    },
+    "P1340": {
+        "frequency": 5,
+        "relation_name": "eye color",
+        "template": "The eye color of {} is"
+    },
+    "P1071": {
+        "frequency": 5,
+        "relation_name": "location of creation",
+        "template": "The location of creation of {} was in"
+    },
+    "P6364": {
+        "frequency": 5,
+        "relation_name": "official color",
+        "template": "The official color of {} is"
+    },
+    "P108": {
+        "frequency": 5,
+        "relation_name": "employer",
+        "template": "{}'s employer is"
+    },
+    "P5109": {
+        "frequency": 5,
+        "relation_name": "has grammatical gender",
+        "template": "The grammatical gender of {} is"
+    },
+    "P4794": {
+        "frequency": 4,
+        "relation_name": "season starts",
+        "template": "The time when {} season starts is"
+    },
+    "P117": {
+        "frequency": 4,
+        "relation_name": "chemical structure",
+        "template": "The chemical structure of {} consists of"
+    },
+    "P1884": {
+        "frequency": 4,
+        "relation_name": "hair color",
+        "template": "{} has the hair color of"
+    },
+    "P8670": {
+        "frequency": 4,
+        "relation_name": "character designer",
+        "template": "Who is the character designer for {}? It is"
+    },
+    "P941": {
+        "frequency": 4,
+        "relation_name": "inspired by",
+        "template": "{} was inspired by"
+    },
+    "P9652": {
+        "frequency": 4,
+        "relation_name": "personality trait of fictional character",
+        "template": "{} possesses the personality trait of"
+    },
+    "P291": {
+        "frequency": 4,
+        "relation_name": "place of publication",
+        "template": "The location where {} was published is"
+    },
+    "P140": {
+        "relation_name": "religion",
+        "template": "The religion which {} is associated with is"
+    },
+    "P1303": {
+        "template": "{} plays the instrument"
+    },
+    "P190": {
+        "template": "{} is a twin city of"
+    },
+    "P413": {
+        "template": "Which position does {} play? They play as"
+    },
+    "P364": {
+        "template": "The language of {} is"
+    },
+    "P463": {
+        "template": "{} is a member of"
+    },
+    "P449": {
+        "template": "{} premieres on"
+    },
+    "P264": {
+        "template": "{} recorded for"
+    },
+    "P7": {
+        "relation_name": "brother",
+        "template": "The brother of {} is"
+    },
+    "P9": {
+        "relation_name": "sister",
+        "template": "The sister of {} is"
+    },
+    "P43": {
+        "relation_name": "stepfather",
+        "template": "The stepfather of {} is"
+    },
+    "P44": {
+        "relation_name": "stepmother",
+        "template": "The stepmother of {} is"
+    },
+    "P54": {
+        "relation_name": "member of sports team",
+        "template": "{} has been a member of a sports team. This team is"
+    },
+    "P57": {
+        "relation_name": "director",
+        "template": "The director of {} is"
+    },
+    "P58": {
+        "relation_name": "screenwriter",
+        "template": "The screenwriter of {} is"
+    },
+    "P84": {
+        "relation_name": "architect",
+        "template": "The architect of {} is"
+    },
+    "P86": {
+        "relation_name": "composer",
+        "template": "The composer of {} is"
+    },
+    "P91": {
+        "relation_name": "sexual orientation",
+        "template": "{}'s sexual orientation is"
+    },
+    "P98": {
+        "relation_name": "editor",
+        "template": "The editor of {} is"
+    },
+    "P118": {
+        "relation_name": "league",
+        "template": "The league in which {} plays is"
+    },
+    "P161": {
+        "relation_name": "cast member",
+        "template": "{}'s cast members are"
+    },
+    "": {
+        "relation_name": "uncle",
+        "template": "The uncle of {} is"
+    }
+}

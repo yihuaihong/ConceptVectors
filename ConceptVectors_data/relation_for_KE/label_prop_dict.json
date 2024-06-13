@@ -1,0 +1,955 @@
+{
+    "diplomatic relation": [
+        1468,
+        "P530"
+    ],
+    "population": [
+        1380,
+        "P1082"
+    ],
+    "language used": [
+        838,
+        "P2936"
+    ],
+    "contains the administrative territorial entity": [
+        511,
+        "P150"
+    ],
+    "life expectancy": [
+        325,
+        "P2250"
+    ],
+    "official name": [
+        311,
+        "P1448"
+    ],
+    "head of government": [
+        302,
+        "P6"
+    ],
+    "subclass of": [
+        283,
+        "P279"
+    ],
+    "country": [
+        264,
+        "P17"
+    ],
+    "Commons category": [
+        260,
+        "P373"
+    ],
+    "owner of": [
+        241,
+        "P1830"
+    ],
+    "shares border with": [
+        238,
+        "P47"
+    ],
+    "has subsidiary": [
+        192,
+        "P355"
+    ],
+    "present in work": [
+        184,
+        "P1441"
+    ],
+    "significant event": [
+        181,
+        "P793"
+    ],
+    "head of state": [
+        164,
+        "P35"
+    ],
+    "name": [
+        139,
+        "P2561"
+    ],
+    "public holiday": [
+        117,
+        "P832"
+    ],
+    "inception": [
+        109,
+        "P571"
+    ],
+    "notable work": [
+        98,
+        "P800"
+    ],
+    "net profit": [
+        98,
+        "P2295"
+    ],
+    "total revenue": [
+        96,
+        "P2139"
+    ],
+    "named after": [
+        95,
+        "P138"
+    ],
+    "located in time zone": [
+        92,
+        "P421"
+    ],
+    "Commons gallery": [
+        91,
+        "P935"
+    ],
+    "occupation": [
+        85,
+        "P106"
+    ],
+    "product or material produced or service provided": [
+        83,
+        "P1056"
+    ],
+    "location": [
+        78,
+        "P276"
+    ],
+    "award received": [
+        78,
+        "P166"
+    ],
+    "said to be the same as": [
+        74,
+        "P460"
+    ],
+    "found in taxon": [
+        72,
+        "P703"
+    ],
+    "practiced by": [
+        71,
+        "P3095"
+    ],
+    "located in or next to body of water": [
+        70,
+        "P206"
+    ],
+    "has effect": [
+        68,
+        "P1542"
+    ],
+    "uses": [
+        67,
+        "P2283"
+    ],
+    "drug or therapy used for treatment": [
+        62,
+        "P2176"
+    ],
+    "founded by": [
+        59,
+        "P112"
+    ],
+    "basic form of government": [
+        58,
+        "P122"
+    ],
+    "capital": [
+        57,
+        "P36"
+    ],
+    "official language": [
+        56,
+        "P37"
+    ],
+    "emergency phone number": [
+        54,
+        "P2852"
+    ],
+    "ethnic group": [
+        49,
+        "P172"
+    ],
+    "studied in": [
+        48,
+        "P2579"
+    ],
+    "follows": [
+        46,
+        "P155"
+    ],
+    "indigenous to": [
+        46,
+        "P2341"
+    ],
+    "currency": [
+        44,
+        "P38"
+    ],
+    "compulsory education (minimum age)": [
+        43,
+        "P3270"
+    ],
+    "board member": [
+        43,
+        "P3320"
+    ],
+    "continent": [
+        42,
+        "P30"
+    ],
+    "student": [
+        42,
+        "P802"
+    ],
+    "Colon Classification": [
+        40,
+        "P8248"
+    ],
+    "electrical plug type": [
+        40,
+        "P2853"
+    ],
+    "total assets": [
+        40,
+        "P2403"
+    ],
+    "signatory": [
+        40,
+        "P1891"
+    ],
+    "has use": [
+        39,
+        "P366"
+    ],
+    "genre": [
+        39,
+        "P136"
+    ],
+    "headquarters location": [
+        39,
+        "P159"
+    ],
+    "influenced by": [
+        38,
+        "P737"
+    ],
+    "employees": [
+        38,
+        "P1128"
+    ],
+    "genetic association": [
+        38,
+        "P2293"
+    ],
+    "nominal GDP": [
+        37,
+        "P2131"
+    ],
+    "area": [
+        35,
+        "P2046"
+    ],
+    "top-level Internet domain": [
+        35,
+        "P78"
+    ],
+    "language of work or name": [
+        35,
+        "P407"
+    ],
+    "owned by": [
+        35,
+        "P127"
+    ],
+    "operating system": [
+        35,
+        "P306"
+    ],
+    "flag": [
+        33,
+        "P163"
+    ],
+    "performer": [
+        33,
+        "P175"
+    ],
+    "facet of": [
+        32,
+        "P1269"
+    ],
+    "is the study of": [
+        32,
+        "P2578"
+    ],
+    "coordinate location": [
+        31,
+        "P625"
+    ],
+    "nickname": [
+        31,
+        "P1449"
+    ],
+    "sibling": [
+        31,
+        "P3373"
+    ],
+    "industry": [
+        31,
+        "P452"
+    ],
+    "anthem": [
+        30,
+        "P85"
+    ],
+    "title": [
+        30,
+        "P1476"
+    ],
+    "retirement age": [
+        29,
+        "P3001"
+    ],
+    "derivative work": [
+        29,
+        "P4969"
+    ],
+    "publisher": [
+        29,
+        "P123"
+    ],
+    "platform": [
+        29,
+        "P400"
+    ],
+    "country of origin": [
+        28,
+        "P495"
+    ],
+    "legislative body": [
+        28,
+        "P194"
+    ],
+    "economy of topic": [
+        28,
+        "P8744"
+    ],
+    "languages spoken, written or signed": [
+        27,
+        "P1412"
+    ],
+    "wears": [
+        27,
+        "P3828"
+    ],
+    "category for people born here": [
+        26,
+        "P1464"
+    ],
+    "geography of topic": [
+        25,
+        "P2633"
+    ],
+    "executive body": [
+        25,
+        "P208"
+    ],
+    "demographics of topic": [
+        25,
+        "P9241"
+    ],
+    "office held by head of state": [
+        25,
+        "P1906"
+    ],
+    "publication date": [
+        25,
+        "P577"
+    ],
+    "category for films shot at this location": [
+        24,
+        "P1740"
+    ],
+    "highest point": [
+        24,
+        "P610"
+    ],
+    "depicted by": [
+        24,
+        "P1299"
+    ],
+    "based on": [
+        24,
+        "P144"
+    ],
+    "coordinates of northernmost point": [
+        23,
+        "P1332"
+    ],
+    "date of birth": [
+        23,
+        "P569"
+    ],
+    "position held": [
+        23,
+        "P39"
+    ],
+    "lowest point": [
+        22,
+        "P1589"
+    ],
+    "coordinates of southernmost point": [
+        22,
+        "P1333"
+    ],
+    "name in native language": [
+        22,
+        "P1559"
+    ],
+    "place of burial": [
+        22,
+        "P119"
+    ],
+    "has works in the collection": [
+        22,
+        "P6379"
+    ],
+    "field of work": [
+        22,
+        "P101"
+    ],
+    "illustrator": [
+        22,
+        "P110"
+    ],
+    "developer": [
+        22,
+        "P178"
+    ],
+    "geoshape": [
+        21,
+        "P3896"
+    ],
+    "marriageable age": [
+        21,
+        "P3000"
+    ],
+    "age of majority": [
+        21,
+        "P2997"
+    ],
+    "coordinates of westernmost point": [
+        21,
+        "P1335"
+    ],
+    "chairperson": [
+        21,
+        "P488"
+    ],
+    "market capitalization": [
+        21,
+        "P2226"
+    ],
+    "coordinates of easternmost point": [
+        20,
+        "P1334"
+    ],
+    "culture": [
+        20,
+        "P2596"
+    ],
+    "nominated for": [
+        20,
+        "P1411"
+    ],
+    "location of formation": [
+        20,
+        "P740"
+    ],
+    "discoverer or inventor": [
+        19,
+        "P61"
+    ],
+    "central bank": [
+        19,
+        "P1304"
+    ],
+    "given name": [
+        19,
+        "P735"
+    ],
+    "followed by": [
+        19,
+        "P156"
+    ],
+    "opposite of": [
+        19,
+        "P461"
+    ],
+    "depends on software": [
+        19,
+        "P1547"
+    ],
+    "located in the administrative territorial entity": [
+        18,
+        "P131"
+    ],
+    "highest judicial authority": [
+        18,
+        "P209"
+    ],
+    "driving side": [
+        18,
+        "P1622"
+    ],
+    "total equity": [
+        18,
+        "P2137"
+    ],
+    "main subject": [
+        18,
+        "P921"
+    ],
+    "general secretary": [
+        18,
+        "P3975"
+    ],
+    "linguistic typology": [
+        18,
+        "P4132"
+    ],
+    "port": [
+        18,
+        "P1641"
+    ],
+    "native language": [
+        17,
+        "P103"
+    ],
+    "start time": [
+        17,
+        "P580"
+    ],
+    "unmarried partner": [
+        17,
+        "P451"
+    ],
+    "medical condition": [
+        17,
+        "P1050"
+    ],
+    "lifestyle": [
+        17,
+        "P1576"
+    ],
+    "foundational text": [
+        16,
+        "P457"
+    ],
+    "railway traffic side": [
+        16,
+        "P5658"
+    ],
+    "main regulatory text": [
+        16,
+        "P92"
+    ],
+    "educated at": [
+        16,
+        "P69"
+    ],
+    "participant": [
+        16,
+        "P710"
+    ],
+    "political ideology": [
+        15,
+        "P1142"
+    ],
+    "relative": [
+        15,
+        "P1038"
+    ],
+    "price": [
+        15,
+        "P2284"
+    ],
+    "located in the present-day administrative territorial entity": [
+        15,
+        "P3842"
+    ],
+    "has grammatical person": [
+        15,
+        "P5110"
+    ],
+    "patron saint": [
+        14,
+        "P417"
+    ],
+    "place of birth": [
+        14,
+        "P19"
+    ],
+    "depicts": [
+        14,
+        "P180"
+    ],
+    "female form of label": [
+        14,
+        "P2521"
+    ],
+    "compulsory education (maximum age)": [
+        13,
+        "P3271"
+    ],
+    "Gregorian calendar start date": [
+        13,
+        "P7295"
+    ],
+    "child": [
+        13,
+        "P40"
+    ],
+    "voice actor": [
+        13,
+        "P725"
+    ],
+    "legal form": [
+        13,
+        "P1454"
+    ],
+    "member count": [
+        13,
+        "P2124"
+    ],
+    "capital of": [
+        13,
+        "P1376"
+    ],
+    "physically interacts with": [
+        13,
+        "P129"
+    ],
+    "symptoms and signs": [
+        13,
+        "P780"
+    ],
+    "official religion": [
+        13,
+        "P3075"
+    ],
+    "ratified by": [
+        13,
+        "P6193"
+    ],
+    "water as percent of area": [
+        12,
+        "P2927"
+    ],
+    "office held by head of the organization": [
+        12,
+        "P2388"
+    ],
+    "median income": [
+        12,
+        "P3529"
+    ],
+    "country of citizenship": [
+        12,
+        "P27"
+    ],
+    "interested in": [
+        12,
+        "P2650"
+    ],
+    "father": [
+        11,
+        "P22"
+    ],
+    "date of death": [
+        11,
+        "P570"
+    ],
+    "sex or gender": [
+        11,
+        "P21"
+    ],
+    "narrative role": [
+        11,
+        "P5800"
+    ],
+    "programmed in": [
+        11,
+        "P277"
+    ],
+    "writing system": [
+        11,
+        "P282"
+    ],
+    "manufacturer": [
+        11,
+        "P176"
+    ],
+    "motto": [
+        10,
+        "P1546"
+    ],
+    "minimum wage": [
+        10,
+        "P6794"
+    ],
+    "category for honorary citizens of entity": [
+        10,
+        "P10280"
+    ],
+    "birthday": [
+        10,
+        "P3150"
+    ],
+    "narrative location": [
+        10,
+        "P840"
+    ],
+    "stock exchange": [
+        10,
+        "P414"
+    ],
+    "drainage basin": [
+        10,
+        "P4614"
+    ],
+    "health specialty": [
+        10,
+        "P1995"
+    ],
+    "handled, mitigated, or managed by": [
+        10,
+        "P11738"
+    ],
+    "authority": [
+        9,
+        "P797"
+    ],
+    "archives at": [
+        9,
+        "P485"
+    ],
+    "has goal": [
+        9,
+        "P3712"
+    ],
+    "time period": [
+        9,
+        "P2348"
+    ],
+    "significant person": [
+        9,
+        "P3342"
+    ],
+    "literacy rate": [
+        9,
+        "P6897"
+    ],
+    "manifestation of": [
+        9,
+        "P1557"
+    ],
+    "worshipped by": [
+        9,
+        "P1049"
+    ],
+    "family": [
+        9,
+        "P53"
+    ],
+    "designated as terrorist by": [
+        9,
+        "P3461"
+    ],
+    "official app": [
+        9,
+        "P4290"
+    ],
+    "feast day": [
+        9,
+        "P841"
+    ],
+    "ionic radius": [
+        9,
+        "P10685"
+    ],
+    "sport": [
+        8,
+        "P641"
+    ],
+    "mass": [
+        8,
+        "P2067"
+    ],
+    "mother": [
+        8,
+        "P25"
+    ],
+    "takes place in fictional universe": [
+        8,
+        "P1434"
+    ],
+    "parent organization": [
+        8,
+        "P749"
+    ],
+    "work location": [
+        8,
+        "P937"
+    ],
+    "designed by": [
+        8,
+        "P287"
+    ],
+    "game mechanics": [
+        8,
+        "P4151"
+    ],
+    "league level below": [
+        7,
+        "P2500"
+    ],
+    "place of death": [
+        7,
+        "P20"
+    ],
+    "spouse": [
+        7,
+        "P26"
+    ],
+    "writing language": [
+        7,
+        "P6886"
+    ],
+    "manner of death": [
+        7,
+        "P1196"
+    ],
+    "cause of death": [
+        7,
+        "P509"
+    ],
+    "end time": [
+        7,
+        "P582"
+    ],
+    "list of characters": [
+        7,
+        "P1881"
+    ],
+    "has immediate cause": [
+        7,
+        "P1478"
+    ],
+    "incarnation of": [
+        7,
+        "P3701"
+    ],
+    "party chief representative": [
+        7,
+        "P210"
+    ],
+    "instance of": [
+        605,
+        "P31"
+    ],
+    "maximum number of players": [
+        4,
+        "P1873"
+    ],
+     "nominal GDP per capita": [
+        4,
+        "P2132"
+    ],
+    "organizer": [
+        4,
+        "P664"
+    ],
+        "blood type": [
+        4,
+        "P1853"
+    ],
+        "family name": [
+        6,
+        "P734"
+    ],
+    "number of children": [
+        6,
+        "P1971"
+    ],
+    "author": [
+        6,
+        "P50"
+    ],
+        "duration": [
+        6,
+        "P2047"
+    ],
+        "time of discovery or invention": [
+        5,
+        "P575"
+    ],
+    "chemical formula": [
+        5,
+        "P274"
+    ],
+    "melting point": [
+        5,
+        "P2101"
+    ],
+    "eye color": [
+        5,
+        "P1340"
+    ],
+    "location of creation": [
+        5,
+        "P1071"
+    ],
+    "official color": [
+        5,
+        "P6364",
+        "The official color of {} is"
+    ],
+    "employer": [
+        5,
+        "P108"
+    ],
+    "has grammatical gender": [
+        5,
+        "P5109"
+    ],
+    "mean age": [
+        4,
+        "P4442"
+    ],
+        "season starts": [
+        4,
+        "P4794"
+    ],
+    "chemical structure": [
+        4,
+        "P117"
+    ],
+        "hair color": [
+        4,
+        "P1884"
+    ],
+    "character designer": [
+        4,
+        "P8670"
+    ],
+    "inspired by": [
+        4,
+        "P941"
+    ],
+    "personality trait of fictional character": [
+        4,
+        "P9652"
+    ],
+        "place of publication": [
+        4,
+        "P291"
+    ]
+}

@@ -1,0 +1,4036 @@
+[
+    {
+        "subject": "Poland",
+        "relation": [
+            [
+                "P38",
+                "złoty"
+            ],
+            [
+                "P38",
+                "Polish marka"
+            ],
+            [
+                "P172",
+                "Poles"
+            ],
+            [
+                "P172",
+                "Silesians"
+            ],
+            [
+                "P172",
+                "Germans"
+            ],
+            [
+                "P172",
+                "Ukrainians in Poland"
+            ],
+            [
+                "P2852",
+                "112"
+            ],
+            [
+                "P2852",
+                "986"
+            ],
+            [
+                "P2852",
+                "998"
+            ],
+            [
+                "P2852",
+                "999"
+            ],
+            [
+                "P2852",
+                "997"
+            ],
+            [
+                "P2853",
+                "Europlug"
+            ],
+            [
+                "P2853",
+                "Type E"
+            ],
+            [
+                "P2633",
+                "geography of Poland"
+            ],
+            [
+                "P417",
+                "Adalbert of Prague"
+            ],
+            [
+                "P417",
+                "Blessed Virgin Mary, Queen of Poland"
+            ],
+            [
+                "P417",
+                "Stanislaus of Szczepanów"
+            ],
+            [
+                "P417",
+                "Stanislaus Kostka"
+            ],
+            [
+                "P417",
+                "Andrzej Bobola"
+            ],
+            [
+                "P17",
+                "Poland"
+            ],
+            [
+                "P122",
+                "parliamentary system"
+            ],
+            [
+                "P122",
+                "unitary state"
+            ],
+            [
+                "P122",
+                "semi-presidential system"
+            ],
+            [
+                "P832",
+                "National Independence Day"
+            ],
+            [
+                "P832",
+                "New Year"
+            ],
+            [
+                "P832",
+                "Epiphany"
+            ],
+            [
+                "P832",
+                "Easter Monday"
+            ],
+            [
+                "P832",
+                "International Workers' Day"
+            ],
+            [
+                "P832",
+                "Pentecost"
+            ],
+            [
+                "P832",
+                "Christmas"
+            ],
+            [
+                "P832",
+                "Feast of Corpus Christi"
+            ],
+            [
+                "P832",
+                "May 3rd Constitution Day"
+            ],
+            [
+                "P832",
+                "Saint Stephen's Day"
+            ],
+            [
+                "P832",
+                "Armed Forces Day"
+            ],
+            [
+                "P206",
+                "Baltic Sea"
+            ],
+            [
+                "P206",
+                "Oder"
+            ],
+            [
+                "P206",
+                "Lusatian Neisse"
+            ],
+            [
+                "P206",
+                "Jizera"
+            ],
+            [
+                "P206",
+                "Divoká Orlice"
+            ],
+            [
+                "P206",
+                "Opava"
+            ],
+            [
+                "P206",
+                "Olza"
+            ],
+            [
+                "P206",
+                "Orava"
+            ],
+            [
+                "P206",
+                "Białka"
+            ],
+            [
+                "P206",
+                "Dunajec"
+            ],
+            [
+                "P206",
+                "Poprad"
+            ],
+            [
+                "P206",
+                "Western Bug"
+            ],
+            [
+                "P206",
+                "Vistula"
+            ],
+            [
+                "P206",
+                "Noteć"
+            ],
+            [
+                "P530",
+                "Canada"
+            ],
+            [
+                "P530",
+                "Italy"
+            ],
+            [
+                "P530",
+                "Brazil"
+            ],
+            [
+                "P530",
+                "Germany"
+            ],
+            [
+                "P530",
+                "Australia"
+            ],
+            [
+                "P530",
+                "Ukraine"
+            ],
+            [
+                "P530",
+                "Serbia"
+            ],
+            [
+                "P530",
+                "Belarus"
+            ],
+            [
+                "P530",
+                "Czech Republic"
+            ],
+            [
+                "P530",
+                "Holy See"
+            ],
+            [
+                "P530",
+                "Czechoslovakia"
+            ],
+            [
+                "P530",
+                "Russia"
+            ],
+            [
+                "P530",
+                "United Kingdom"
+            ],
+            [
+                "P530",
+                "Slovakia"
+            ],
+            [
+                "P530",
+                "Romania"
+            ],
+            [
+                "P530",
+                "Spain"
+            ],
+            [
+                "P530",
+                "Hungary"
+            ],
+            [
+                "P530",
+                "France"
+            ],
+            [
+                "P530",
+                "Pakistan"
+            ],
+            [
+                "P530",
+                "Bulgaria"
+            ],
+            [
+                "P530",
+                "Cyprus"
+            ],
+            [
+                "P530",
+                "Denmark"
+            ],
+            [
+                "P530",
+                "Georgia"
+            ],
+            [
+                "P530",
+                "Kosovo"
+            ],
+            [
+                "P530",
+                "Lithuania"
+            ],
+            [
+                "P530",
+                "Latvia"
+            ],
+            [
+                "P530",
+                "Philippines"
+            ],
+            [
+                "P530",
+                "Indonesia"
+            ],
+            [
+                "P530",
+                "Mexico"
+            ],
+            [
+                "P530",
+                "Turkey"
+            ],
+            [
+                "P530",
+                "Uruguay"
+            ],
+            [
+                "P530",
+                "Taiwan"
+            ],
+            [
+                "P530",
+                "United States of America"
+            ],
+            [
+                "P530",
+                "Azerbaijan"
+            ],
+            [
+                "P530",
+                "People's Republic of China"
+            ],
+            [
+                "P530",
+                "Greece"
+            ],
+            [
+                "P530",
+                "India"
+            ],
+            [
+                "P530",
+                "North Korea"
+            ],
+            [
+                "P530",
+                "Bangladesh"
+            ],
+            [
+                "P530",
+                "Israel"
+            ],
+            [
+                "P530",
+                "Colombia"
+            ],
+            [
+                "P209",
+                "Supreme Court"
+            ],
+            [
+                "P935",
+                "Polska"
+            ],
+            [
+                "P30",
+                "Europe"
+            ],
+            [
+                "P36",
+                "Warsaw"
+            ],
+            [
+                "P3896",
+                "Data:Poland.map"
+            ],
+            [
+                "P166",
+                "Thomas Merton Award"
+            ],
+            [
+                "P35",
+                "Andrzej Duda"
+            ],
+            [
+                "P35",
+                "Lech Kaczyński"
+            ],
+            [
+                "P35",
+                "Aleksander Kwaśniewski"
+            ],
+            [
+                "P35",
+                "Lech Wałęsa"
+            ],
+            [
+                "P35",
+                "Wojciech Jaruzelski"
+            ],
+            [
+                "P35",
+                "Bronisław Komorowski"
+            ],
+            [
+                "P35",
+                "Bronisław Komorowski"
+            ],
+            [
+                "P35",
+                "Bogdan Borusewicz"
+            ],
+            [
+                "P35",
+                "Grzegorz Schetyna"
+            ],
+            [
+                "P6",
+                "Ewa Kopacz"
+            ],
+            [
+                "P6",
+                "Donald Tusk"
+            ],
+            [
+                "P6",
+                "Jarosław Kaczyński"
+            ],
+            [
+                "P6",
+                "Beata Szydło"
+            ],
+            [
+                "P6",
+                "Tadeusz Mazowiecki"
+            ],
+            [
+                "P6",
+                "Jan Krzysztof Bielecki"
+            ],
+            [
+                "P6",
+                "Jan Olszewski"
+            ],
+            [
+                "P6",
+                "Waldemar Pawlak"
+            ],
+            [
+                "P6",
+                "Hanna Suchocka"
+            ],
+            [
+                "P6",
+                "Waldemar Pawlak"
+            ],
+            [
+                "P6",
+                "Józef Oleksy"
+            ],
+            [
+                "P6",
+                "Włodzimierz Cimoszewicz"
+            ],
+            [
+                "P6",
+                "Jerzy Buzek"
+            ],
+            [
+                "P6",
+                "Leszek Miller"
+            ],
+            [
+                "P6",
+                "Marek Belka"
+            ],
+            [
+                "P6",
+                "Kazimierz Marcinkiewicz"
+            ],
+            [
+                "P6",
+                "Mateusz Morawiecki"
+            ],
+            [
+                "P6",
+                "Donald Tusk"
+            ],
+            [
+                "P463",
+                "European Union"
+            ],
+            [
+                "P463",
+                "United Nations"
+            ],
+            [
+                "P463",
+                "Organization for Economic Cooperation and Development"
+            ],
+            [
+                "P463",
+                "Council of Europe"
+            ],
+            [
+                "P463",
+                "European Space Agency"
+            ],
+            [
+                "P463",
+                "World Trade Organization"
+            ],
+            [
+                "P463",
+                "NATO"
+            ],
+            [
+                "P463",
+                "Organization for Security and Co-operation in Europe"
+            ],
+            [
+                "P463",
+                "Council of the Baltic Sea States"
+            ],
+            [
+                "P463",
+                "Weimar Triangle"
+            ],
+            [
+                "P463",
+                "UNESCO"
+            ],
+            [
+                "P463",
+                "International Energy Agency"
+            ],
+            [
+                "P463",
+                "World Health Organization"
+            ],
+            [
+                "P463",
+                "World Intellectual Property Organization"
+            ],
+            [
+                "P463",
+                "Universal Postal Union"
+            ],
+            [
+                "P463",
+                "International Telecommunication Union"
+            ],
+            [
+                "P463",
+                "International Monetary Fund"
+            ],
+            [
+                "P463",
+                "International Bank for Reconstruction and Development"
+            ],
+            [
+                "P463",
+                "International Development Association"
+            ],
+            [
+                "P463",
+                "International Finance Corporation"
+            ],
+            [
+                "P463",
+                "Multilateral Investment Guarantee Agency"
+            ],
+            [
+                "P463",
+                "Australia Group"
+            ],
+            [
+                "P463",
+                "Eurocontrol"
+            ],
+            [
+                "P463",
+                "Warsaw Pact"
+            ],
+            [
+                "P463",
+                "COMECON"
+            ],
+            [
+                "P463",
+                "Treaty on Open Skies"
+            ],
+            [
+                "P463",
+                "Missile Technology Control Regime"
+            ],
+            [
+                "P463",
+                "Interpol"
+            ],
+            [
+                "P463",
+                "Nuclear Suppliers Group"
+            ],
+            [
+                "P463",
+                "Organisation for the Prohibition of Chemical Weapons"
+            ],
+            [
+                "P463",
+                "Movement Coordination Centre Europe"
+            ],
+            [
+                "P463",
+                "Strategic Airlift Capability"
+            ],
+            [
+                "P463",
+                "International Hydrographic Organization"
+            ],
+            [
+                "P463",
+                "Group on Earth Observations"
+            ],
+            [
+                "P463",
+                "Schengen Area"
+            ],
+            [
+                "P463",
+                "Visa Waiver Program"
+            ],
+            [
+                "P463",
+                "World Meteorological Organization"
+            ],
+            [
+                "P463",
+                "Convention on preventing and combating violence against women and domestic violence"
+            ],
+            [
+                "P463",
+                "Visegrád Group"
+            ],
+            [
+                "P463",
+                "International Centre for Migration Policy Development"
+            ],
+            [
+                "P463",
+                "World Customs Organization"
+            ],
+            [
+                "P463",
+                "International Holocaust Remembrance Alliance"
+            ],
+            [
+                "P1448",
+                "Rzeczpospolita Polska"
+            ],
+            [
+                "P1448",
+                "Republic of Poland"
+            ],
+            [
+                "P1448",
+                "Repubblica di Polonia"
+            ],
+            [
+                "P1448",
+                "Republik Polen"
+            ],
+            [
+                "P1448",
+                "République de Pologne"
+            ],
+            [
+                "P1448",
+                "República de Polonia"
+            ],
+            [
+                "P1448",
+                "República da Polónia"
+            ],
+            [
+                "P1448",
+                "Республика Польша"
+            ],
+            [
+                "P1448",
+                "Polsko Republika"
+            ],
+            [
+                "P1448",
+                "República de Polònia"
+            ],
+            [
+                "P1448",
+                "רפובליקת פולין"
+            ],
+            [
+                "P1448",
+                "Polská republika"
+            ],
+            [
+                "P1448",
+                "Poola Vabariik"
+            ],
+            [
+                "P1448",
+                "Puolan tasavalta"
+            ],
+            [
+                "P1448",
+                "la République de Pologne"
+            ],
+            [
+                "P1448",
+                "República da Polônia"
+            ],
+            [
+                "P1448",
+                "Republiken Polen"
+            ],
+            [
+                "P1448",
+                "ᠪᠦᠬᠦᠳᠡ ᠨᠠᠢᠷᠠᠮᠳᠠᠬᠤ ᠫᠣᠯᠢᠱ ᠤᠯᠤᠰᠪᠦᠬᠦᠳᠡ ᠨᠠᠢᠷᠠᠮᠳᠠᠬᠤ ᠫᠣᠯᠢᠱ ᠤᠯᠤᠰ"
+            ],
+            [
+                "P1448",
+                "Бүгд Найрамдах Польш Улс"
+            ],
+            [
+                "P1448",
+                "Poblacht na Polainne"
+            ],
+            [
+                "P1448",
+                "Республіка Польща"
+            ],
+            [
+                "P5658",
+                "right"
+            ],
+            [
+                "P1740",
+                "Category:Films shot in Poland"
+            ],
+            [
+                "P208",
+                "Council of Ministers"
+            ],
+            [
+                "P421",
+                "Central European Time"
+            ],
+            [
+                "P421",
+                "UTC+01:00"
+            ],
+            [
+                "P421",
+                "UTC+02:00"
+            ],
+            [
+                "P421",
+                "Europe/Warsaw"
+            ],
+            [
+                "P421",
+                "Central European Summer Time"
+            ],
+            [
+                "P85",
+                "Poland Is Not Yet Lost"
+            ],
+            [
+                "P1906",
+                "President of the Republic of Poland"
+            ],
+            [
+                "P373",
+                "Poland"
+            ],
+            [
+                "P78",
+                ".pl"
+            ],
+            [
+                "P47",
+                "Czech Republic"
+            ],
+            [
+                "P47",
+                "Germany"
+            ],
+            [
+                "P47",
+                "Ukraine"
+            ],
+            [
+                "P47",
+                "Slovakia"
+            ],
+            [
+                "P47",
+                "Belarus"
+            ],
+            [
+                "P47",
+                "Lithuania"
+            ],
+            [
+                "P47",
+                "German Democratic Republic"
+            ],
+            [
+                "P47",
+                "Czechoslovakia"
+            ],
+            [
+                "P47",
+                "Soviet Union"
+            ],
+            [
+                "P47",
+                "Romania"
+            ],
+            [
+                "P47",
+                "Latvia"
+            ],
+            [
+                "P47",
+                "Slovak Republic"
+            ],
+            [
+                "P47",
+                "Free City of Danzig"
+            ],
+            [
+                "P47",
+                "Russia"
+            ],
+            [
+                "P47",
+                "European Union"
+            ],
+            [
+                "P47",
+                "Sweden"
+            ],
+            [
+                "P31",
+                "sovereign state"
+            ],
+            [
+                "P31",
+                "country"
+            ],
+            [
+                "P31",
+                "country bordering the Baltic Sea"
+            ],
+            [
+                "P610",
+                "Rysy"
+            ],
+            [
+                "P1464",
+                "Category:Births in Poland"
+            ],
+            [
+                "P1622",
+                "right"
+            ],
+            [
+                "P1589",
+                "Żuławy Wiślane"
+            ],
+            [
+                "P1589",
+                "Raczki Elbląskie"
+            ],
+            [
+                "P37",
+                "Polish"
+            ],
+            [
+                "P37",
+                "Belarusian"
+            ],
+            [
+                "P37",
+                "Silesian"
+            ],
+            [
+                "P37",
+                "Kashubian"
+            ],
+            [
+                "P150",
+                "Lower Silesian Voivodeship"
+            ],
+            [
+                "P150",
+                "Łódź Voivodeship"
+            ],
+            [
+                "P150",
+                "Świętokrzyskie Voivodeship"
+            ],
+            [
+                "P150",
+                "Lesser Poland Voivodeship"
+            ],
+            [
+                "P150",
+                "Lublin Voivodeship"
+            ],
+            [
+                "P150",
+                "Masovian Voivodeship"
+            ],
+            [
+                "P150",
+                "Kuyavian-Pomeranian Voivodeship"
+            ],
+            [
+                "P150",
+                "Opole Voivodeship"
+            ],
+            [
+                "P150",
+                "Subcarpathian Voivodeship"
+            ],
+            [
+                "P150",
+                "Lubusz Voivodeship"
+            ],
+            [
+                "P150",
+                "Pomeranian Voivodeship"
+            ],
+            [
+                "P150",
+                "Warmian-Masurian Voivodeship"
+            ],
+            [
+                "P150",
+                "Silesian Voivodeship"
+            ],
+            [
+                "P150",
+                "Podlaskie Voivodeship"
+            ],
+            [
+                "P150",
+                "West Pomeranian Voivodeship"
+            ],
+            [
+                "P150",
+                "Greater Poland Voivodeship"
+            ],
+            [
+                "P138",
+                "Polans"
+            ],
+            [
+                "P163",
+                "flag of Poland"
+            ],
+            [
+                "P92",
+                "Constitution of Poland"
+            ],
+            [
+                "P2936",
+                "Polish"
+            ],
+            [
+                "P2936",
+                "Silesian German"
+            ],
+            [
+                "P2936",
+                "Polish Sign Language"
+            ],
+            [
+                "P2936",
+                "Old Prussian"
+            ],
+            [
+                "P2936",
+                "Wymysorys"
+            ],
+            [
+                "P2936",
+                "Lithuanian"
+            ],
+            [
+                "P2936",
+                "German"
+            ],
+            [
+                "P2936",
+                "Silesian"
+            ],
+            [
+                "P2936",
+                "Kashubian"
+            ],
+            [
+                "P2936",
+                "Esperanto"
+            ],
+            [
+                "P194",
+                "Parliament of Poland"
+            ],
+            [
+                "P2596",
+                "culture of Poland"
+            ],
+            [
+                "P1304",
+                "Narodowy Bank Polski"
+            ],
+            [
+                "P8744",
+                "economy of Poland"
+            ],
+            [
+                "P8248",
+                "SG--595"
+            ],
+            [
+                "P10280",
+                "Category:Honorary citizens from Poland"
+            ]
+        ]
+    },
+    {
+        "subject": "Italy",
+        "relation": [
+            [
+                "P38",
+                "Euro"
+            ],
+            [
+                "P38",
+                "Italian lira"
+            ],
+            [
+                "P2852",
+                "112"
+            ],
+            [
+                "P2852",
+                "113"
+            ],
+            [
+                "P2852",
+                "115"
+            ],
+            [
+                "P2852",
+                "118"
+            ],
+            [
+                "P2853",
+                "Europlug"
+            ],
+            [
+                "P2853",
+                "Schuko"
+            ],
+            [
+                "P2853",
+                "Type L"
+            ],
+            [
+                "P2633",
+                "geography of Italy"
+            ],
+            [
+                "P417",
+                "Francis of Assisi"
+            ],
+            [
+                "P417",
+                "Catherine of Siena"
+            ],
+            [
+                "P122",
+                "parliamentary republic"
+            ],
+            [
+                "P122",
+                "unitary state"
+            ],
+            [
+                "P832",
+                "New Year's Day"
+            ],
+            [
+                "P832",
+                "Epiphany"
+            ],
+            [
+                "P832",
+                "Easter Monday"
+            ],
+            [
+                "P832",
+                "Anniversary of the liberation of Italy"
+            ],
+            [
+                "P832",
+                "International Workers' Day"
+            ],
+            [
+                "P832",
+                "Festa della Repubblica"
+            ],
+            [
+                "P832",
+                "Ferragosto"
+            ],
+            [
+                "P832",
+                "All Saints' Day"
+            ],
+            [
+                "P832",
+                "Christmas"
+            ],
+            [
+                "P832",
+                "Saint Stephen's Day"
+            ],
+            [
+                "P832",
+                "Feast of the Immaculate Conception"
+            ],
+            [
+                "P832",
+                "Easter"
+            ],
+            [
+                "P30",
+                "Europe"
+            ],
+            [
+                "P30",
+                "Africa"
+            ],
+            [
+                "P530",
+                "Albania"
+            ],
+            [
+                "P530",
+                "Andorra"
+            ],
+            [
+                "P530",
+                "Belarus"
+            ],
+            [
+                "P530",
+                "Belgium"
+            ],
+            [
+                "P530",
+                "Bosnia and Herzegovina"
+            ],
+            [
+                "P530",
+                "Bulgaria"
+            ],
+            [
+                "P530",
+                "Croatia"
+            ],
+            [
+                "P530",
+                "Cyprus"
+            ],
+            [
+                "P530",
+                "Czech Republic"
+            ],
+            [
+                "P530",
+                "Denmark"
+            ],
+            [
+                "P530",
+                "Estonia"
+            ],
+            [
+                "P530",
+                "Finland"
+            ],
+            [
+                "P530",
+                "France"
+            ],
+            [
+                "P530",
+                "Germany"
+            ],
+            [
+                "P530",
+                "Greece"
+            ],
+            [
+                "P530",
+                "Holy See"
+            ],
+            [
+                "P530",
+                "Hungary"
+            ],
+            [
+                "P530",
+                "Iceland"
+            ],
+            [
+                "P530",
+                "Republic of Ireland"
+            ],
+            [
+                "P530",
+                "Kosovo"
+            ],
+            [
+                "P530",
+                "Latvia"
+            ],
+            [
+                "P530",
+                "Liechtenstein"
+            ],
+            [
+                "P530",
+                "Lithuania"
+            ],
+            [
+                "P530",
+                "Luxembourg"
+            ],
+            [
+                "P530",
+                "Malta"
+            ],
+            [
+                "P530",
+                "Moldova"
+            ],
+            [
+                "P530",
+                "Monaco"
+            ],
+            [
+                "P530",
+                "Montenegro"
+            ],
+            [
+                "P530",
+                "Netherlands"
+            ],
+            [
+                "P530",
+                "Norway"
+            ],
+            [
+                "P530",
+                "Poland"
+            ],
+            [
+                "P530",
+                "North Macedonia"
+            ],
+            [
+                "P530",
+                "Portugal"
+            ],
+            [
+                "P530",
+                "Romania"
+            ],
+            [
+                "P530",
+                "Russia"
+            ],
+            [
+                "P530",
+                "San Marino"
+            ],
+            [
+                "P530",
+                "Serbia"
+            ],
+            [
+                "P530",
+                "Slovakia"
+            ],
+            [
+                "P530",
+                "Slovenia"
+            ],
+            [
+                "P530",
+                "Spain"
+            ],
+            [
+                "P530",
+                "Sweden"
+            ],
+            [
+                "P530",
+                "Switzerland"
+            ],
+            [
+                "P530",
+                "Ukraine"
+            ],
+            [
+                "P530",
+                "United Kingdom"
+            ],
+            [
+                "P530",
+                "Argentina"
+            ],
+            [
+                "P530",
+                "Canada"
+            ],
+            [
+                "P530",
+                "Chile"
+            ],
+            [
+                "P530",
+                "Mexico"
+            ],
+            [
+                "P530",
+                "Paraguay"
+            ],
+            [
+                "P530",
+                "Peru"
+            ],
+            [
+                "P530",
+                "United States of America"
+            ],
+            [
+                "P530",
+                "Uruguay"
+            ],
+            [
+                "P530",
+                "Egypt"
+            ],
+            [
+                "P530",
+                "Iran"
+            ],
+            [
+                "P530",
+                "Iraq"
+            ],
+            [
+                "P530",
+                "Israel"
+            ],
+            [
+                "P530",
+                "Kenya"
+            ],
+            [
+                "P530",
+                "Lebanon"
+            ],
+            [
+                "P530",
+                "Libya"
+            ],
+            [
+                "P530",
+                "Somalia"
+            ],
+            [
+                "P530",
+                "South Africa"
+            ],
+            [
+                "P530",
+                "Tunisia"
+            ],
+            [
+                "P530",
+                "Turkey"
+            ],
+            [
+                "P530",
+                "Afghanistan"
+            ],
+            [
+                "P530",
+                "Armenia"
+            ],
+            [
+                "P530",
+                "Australia"
+            ],
+            [
+                "P530",
+                "Azerbaijan"
+            ],
+            [
+                "P530",
+                "Georgia"
+            ],
+            [
+                "P530",
+                "India"
+            ],
+            [
+                "P530",
+                "Indonesia"
+            ],
+            [
+                "P530",
+                "Japan"
+            ],
+            [
+                "P530",
+                "New Zealand"
+            ],
+            [
+                "P530",
+                "Pakistan"
+            ],
+            [
+                "P530",
+                "People's Republic of China"
+            ],
+            [
+                "P530",
+                "South Korea"
+            ],
+            [
+                "P530",
+                "Thailand"
+            ],
+            [
+                "P530",
+                "Vietnam"
+            ],
+            [
+                "P530",
+                "Austria"
+            ],
+            [
+                "P530",
+                "Philippines"
+            ],
+            [
+                "P530",
+                "North Korea"
+            ],
+            [
+                "P530",
+                "Colombia"
+            ],
+            [
+                "P530",
+                "Brazil"
+            ],
+            [
+                "P530",
+                "Yemen"
+            ],
+            [
+                "P530",
+                "Yugoslavia"
+            ],
+            [
+                "P530",
+                "Ethiopia"
+            ],
+            [
+                "P530",
+                "Taiwan"
+            ],
+            [
+                "P530",
+                "Bangladesh"
+            ],
+            [
+                "P1906",
+                "President of Italy"
+            ],
+            [
+                "P935",
+                "Italia"
+            ],
+            [
+                "P194",
+                "Italian Parliament"
+            ],
+            [
+                "P206",
+                "Adriatic Sea"
+            ],
+            [
+                "P206",
+                "Tyrrhenian Sea"
+            ],
+            [
+                "P206",
+                "Ionian Sea"
+            ],
+            [
+                "P206",
+                "Ligurian Sea"
+            ],
+            [
+                "P206",
+                "Mediterranean Sea"
+            ],
+            [
+                "P36",
+                "Rome"
+            ],
+            [
+                "P36",
+                "Florence"
+            ],
+            [
+                "P36",
+                "Turin"
+            ],
+            [
+                "P208",
+                "Government of Italy"
+            ],
+            [
+                "P35",
+                "Carlo Azeglio Ciampi"
+            ],
+            [
+                "P35",
+                "Oscar Luigi Scalfaro"
+            ],
+            [
+                "P35",
+                "Francesco Cossiga"
+            ],
+            [
+                "P35",
+                "Sandro Pertini"
+            ],
+            [
+                "P35",
+                "Giovanni Leone"
+            ],
+            [
+                "P35",
+                "Giuseppe Saragat"
+            ],
+            [
+                "P35",
+                "Antonio Segni"
+            ],
+            [
+                "P35",
+                "Giovanni Gronchi"
+            ],
+            [
+                "P35",
+                "Luigi Einaudi"
+            ],
+            [
+                "P35",
+                "Enrico de Nicola"
+            ],
+            [
+                "P35",
+                "Alcide De Gasperi"
+            ],
+            [
+                "P35",
+                "Giorgio Napolitano"
+            ],
+            [
+                "P35",
+                "Sergio Mattarella"
+            ],
+            [
+                "P155",
+                "Kingdom of Italy"
+            ],
+            [
+                "P3896",
+                "Data:Italia.map"
+            ],
+            [
+                "P6",
+                "Paolo Gentiloni"
+            ],
+            [
+                "P6",
+                "Matteo Renzi"
+            ],
+            [
+                "P6",
+                "Enrico Letta"
+            ],
+            [
+                "P6",
+                "Mario Monti"
+            ],
+            [
+                "P6",
+                "Silvio Berlusconi"
+            ],
+            [
+                "P6",
+                "Romano Prodi"
+            ],
+            [
+                "P6",
+                "Silvio Berlusconi"
+            ],
+            [
+                "P6",
+                "Silvio Berlusconi"
+            ],
+            [
+                "P6",
+                "Giuliano Amato"
+            ],
+            [
+                "P6",
+                "Massimo D'Alema"
+            ],
+            [
+                "P6",
+                "Massimo D'Alema"
+            ],
+            [
+                "P6",
+                "Romano Prodi"
+            ],
+            [
+                "P6",
+                "Lamberto Dini"
+            ],
+            [
+                "P6",
+                "Silvio Berlusconi"
+            ],
+            [
+                "P6",
+                "Carlo Azeglio Ciampi"
+            ],
+            [
+                "P6",
+                "Giuliano Amato"
+            ],
+            [
+                "P6",
+                "Giulio Andreotti"
+            ],
+            [
+                "P6",
+                "Giulio Andreotti"
+            ],
+            [
+                "P6",
+                "Ciriaco De Mita"
+            ],
+            [
+                "P6",
+                "Giovanni Goria"
+            ],
+            [
+                "P6",
+                "Amintore Fanfani"
+            ],
+            [
+                "P6",
+                "Bettino Craxi"
+            ],
+            [
+                "P6",
+                "Bettino Craxi"
+            ],
+            [
+                "P6",
+                "Amintore Fanfani"
+            ],
+            [
+                "P6",
+                "Giovanni Spadolini"
+            ],
+            [
+                "P6",
+                "Giovanni Spadolini"
+            ],
+            [
+                "P6",
+                "Arnaldo Forlani"
+            ],
+            [
+                "P6",
+                "Francesco Cossiga"
+            ],
+            [
+                "P6",
+                "Francesco Cossiga"
+            ],
+            [
+                "P6",
+                "Giulio Andreotti"
+            ],
+            [
+                "P6",
+                "Giulio Andreotti"
+            ],
+            [
+                "P6",
+                "Giulio Andreotti"
+            ],
+            [
+                "P6",
+                "Aldo Moro"
+            ],
+            [
+                "P6",
+                "Aldo Moro"
+            ],
+            [
+                "P6",
+                "Mariano Rumor"
+            ],
+            [
+                "P6",
+                "Mariano Rumor"
+            ],
+            [
+                "P6",
+                "Giulio Andreotti"
+            ],
+            [
+                "P6",
+                "Giulio Andreotti"
+            ],
+            [
+                "P6",
+                "Emilio Colombo"
+            ],
+            [
+                "P6",
+                "Mariano Rumor"
+            ],
+            [
+                "P6",
+                "Mariano Rumor"
+            ],
+            [
+                "P6",
+                "Mariano Rumor"
+            ],
+            [
+                "P6",
+                "Giovanni Leone"
+            ],
+            [
+                "P6",
+                "Aldo Moro"
+            ],
+            [
+                "P6",
+                "Aldo Moro"
+            ],
+            [
+                "P6",
+                "Aldo Moro"
+            ],
+            [
+                "P6",
+                "Giovanni Leone"
+            ],
+            [
+                "P6",
+                "Amintore Fanfani"
+            ],
+            [
+                "P6",
+                "Amintore Fanfani"
+            ],
+            [
+                "P6",
+                "Fernando Tambroni"
+            ],
+            [
+                "P6",
+                "Antonio Segni"
+            ],
+            [
+                "P6",
+                "Amintore Fanfani"
+            ],
+            [
+                "P6",
+                "Adone Zoli"
+            ],
+            [
+                "P6",
+                "Antonio Segni"
+            ],
+            [
+                "P6",
+                "Mario Scelba"
+            ],
+            [
+                "P6",
+                "Amintore Fanfani"
+            ],
+            [
+                "P6",
+                "Giuseppe Pella"
+            ],
+            [
+                "P6",
+                "Alcide De Gasperi"
+            ],
+            [
+                "P6",
+                "Alcide De Gasperi"
+            ],
+            [
+                "P6",
+                "Alcide De Gasperi"
+            ],
+            [
+                "P6",
+                "Alcide De Gasperi"
+            ],
+            [
+                "P6",
+                "Alcide De Gasperi"
+            ],
+            [
+                "P6",
+                "Alcide De Gasperi"
+            ],
+            [
+                "P6",
+                "Alcide De Gasperi"
+            ],
+            [
+                "P6",
+                "Giuseppe Conte"
+            ],
+            [
+                "P6",
+                "Mario Draghi"
+            ],
+            [
+                "P6",
+                "Giorgia Meloni"
+            ],
+            [
+                "P463",
+                "United Nations"
+            ],
+            [
+                "P463",
+                "Council of Europe"
+            ],
+            [
+                "P463",
+                "NATO"
+            ],
+            [
+                "P463",
+                "G8"
+            ],
+            [
+                "P463",
+                "G20"
+            ],
+            [
+                "P463",
+                "Interpol"
+            ],
+            [
+                "P463",
+                "African Development Bank"
+            ],
+            [
+                "P463",
+                "Asian Development Bank"
+            ],
+            [
+                "P463",
+                "European Space Agency"
+            ],
+            [
+                "P463",
+                "Australia Group"
+            ],
+            [
+                "P463",
+                "Bank for International Settlements"
+            ],
+            [
+                "P463",
+                "Euro-Atlantic Partnership Council"
+            ],
+            [
+                "P463",
+                "European Bank for Reconstruction and Development"
+            ],
+            [
+                "P463",
+                "CERN"
+            ],
+            [
+                "P463",
+                "Food and Agriculture Organization"
+            ],
+            [
+                "P463",
+                "Group of Ten"
+            ],
+            [
+                "P463",
+                "Inter-American Development Bank"
+            ],
+            [
+                "P463",
+                "International Atomic Energy Agency"
+            ],
+            [
+                "P463",
+                "International Chamber of Commerce"
+            ],
+            [
+                "P463",
+                "International Civil Aviation Organization"
+            ],
+            [
+                "P463",
+                "International Criminal Court"
+            ],
+            [
+                "P463",
+                "International Development Association"
+            ],
+            [
+                "P463",
+                "International Energy Agency"
+            ],
+            [
+                "P463",
+                "International Finance Corporation"
+            ],
+            [
+                "P463",
+                "International Fund for Agricultural Development"
+            ],
+            [
+                "P463",
+                "International Hydrographic Organization"
+            ],
+            [
+                "P463",
+                "International Labour Organization"
+            ],
+            [
+                "P463",
+                "International Maritime Organization"
+            ],
+            [
+                "P463",
+                "International Mobile Satellite Organization"
+            ],
+            [
+                "P463",
+                "International Monetary Fund"
+            ],
+            [
+                "P463",
+                "International Organization for Migration"
+            ],
+            [
+                "P463",
+                "International Telecommunication Union"
+            ],
+            [
+                "P463",
+                "Interparliamentary Union"
+            ],
+            [
+                "P463",
+                "Multilateral Investment Guarantee Agency"
+            ],
+            [
+                "P463",
+                "Nuclear Suppliers Group"
+            ],
+            [
+                "P463",
+                "Organization for Security and Co-operation in Europe"
+            ],
+            [
+                "P463",
+                "Organisation for the Prohibition of Chemical Weapons"
+            ],
+            [
+                "P463",
+                "Permanent Court of Arbitration"
+            ],
+            [
+                "P463",
+                "United Nations Conference on Trade and Development"
+            ],
+            [
+                "P463",
+                "UNESCO"
+            ],
+            [
+                "P463",
+                "Office of the United Nations High Commissioner for Refugees"
+            ],
+            [
+                "P463",
+                "United Nations Industrial Development Organization"
+            ],
+            [
+                "P463",
+                "United Nations Truce Supervision Organization"
+            ],
+            [
+                "P463",
+                "Universal Postal Union"
+            ],
+            [
+                "P463",
+                "Western European Union"
+            ],
+            [
+                "P463",
+                "European Coal and Steel Community"
+            ],
+            [
+                "P463",
+                "World Health Organization"
+            ],
+            [
+                "P463",
+                "World Intellectual Property Organization"
+            ],
+            [
+                "P463",
+                "World Meteorological Organization"
+            ],
+            [
+                "P463",
+                "UN Tourism"
+            ],
+            [
+                "P463",
+                "World Trade Organization"
+            ],
+            [
+                "P463",
+                "Union for the Mediterranean"
+            ],
+            [
+                "P463",
+                "Organization for Economic Cooperation and Development"
+            ],
+            [
+                "P463",
+                "European Union"
+            ],
+            [
+                "P463",
+                "World Customs Organization"
+            ],
+            [
+                "P463",
+                "European Southern Observatory"
+            ],
+            [
+                "P463",
+                "International Bank for Reconstruction and Development"
+            ],
+            [
+                "P463",
+                "International Centre for Settlement of Investment Disputes"
+            ],
+            [
+                "P463",
+                "Caribbean Development Bank"
+            ],
+            [
+                "P463",
+                "Eurocontrol"
+            ],
+            [
+                "P463",
+                "International Red Cross and Red Crescent Movement"
+            ],
+            [
+                "P463",
+                "Procurement G6"
+            ],
+            [
+                "P463",
+                "European Payments Union"
+            ],
+            [
+                "P463",
+                "Treaty on Open Skies"
+            ],
+            [
+                "P463",
+                "Missile Technology Control Regime"
+            ],
+            [
+                "P463",
+                "European Air Transport Command"
+            ],
+            [
+                "P463",
+                "Movement Coordination Centre Europe"
+            ],
+            [
+                "P463",
+                "Organisation for Joint Armament Cooperation"
+            ],
+            [
+                "P463",
+                "UNESCO"
+            ],
+            [
+                "P463",
+                "Group on Earth Observations"
+            ],
+            [
+                "P463",
+                "European Economic Community"
+            ],
+            [
+                "P463",
+                "Schengen Area"
+            ],
+            [
+                "P463",
+                "Visa Waiver Program"
+            ],
+            [
+                "P463",
+                "Latin Union"
+            ],
+            [
+                "P463",
+                "Antarctic Treaty System"
+            ],
+            [
+                "P463",
+                "International Holocaust Remembrance Alliance"
+            ],
+            [
+                "P5658",
+                "left"
+            ],
+            [
+                "P1740",
+                "Category:Films shot in Italy"
+            ],
+            [
+                "P1448",
+                "Repubblica Italiana"
+            ],
+            [
+                "P1448",
+                "Italia"
+            ],
+            [
+                "P421",
+                "UTC+01:00"
+            ],
+            [
+                "P421",
+                "UTC+02:00"
+            ],
+            [
+                "P421",
+                "Europe/Rome"
+            ],
+            [
+                "P85",
+                "Il Canto degli Italiani"
+            ],
+            [
+                "P209",
+                "Supreme Court of Cassation"
+            ],
+            [
+                "P373",
+                "Italy"
+            ],
+            [
+                "P78",
+                ".it"
+            ],
+            [
+                "P47",
+                "San Marino"
+            ],
+            [
+                "P47",
+                "Vatican City"
+            ],
+            [
+                "P47",
+                "France"
+            ],
+            [
+                "P47",
+                "Switzerland"
+            ],
+            [
+                "P47",
+                "Yugoslavia"
+            ],
+            [
+                "P47",
+                "Austria"
+            ],
+            [
+                "P47",
+                "Slovenia"
+            ],
+            [
+                "P47",
+                "Malta"
+            ],
+            [
+                "P47",
+                "Adriatic Sea"
+            ],
+            [
+                "P47",
+                "Algeria"
+            ],
+            [
+                "P31",
+                "sovereign state"
+            ],
+            [
+                "P31",
+                "social state"
+            ],
+            [
+                "P31",
+                "unitary state"
+            ],
+            [
+                "P31",
+                "republic"
+            ],
+            [
+                "P31",
+                "Mediterranean country"
+            ],
+            [
+                "P31",
+                "country"
+            ],
+            [
+                "P31",
+                "great power"
+            ],
+            [
+                "P31",
+                "OECD country"
+            ],
+            [
+                "P610",
+                "Mont Blanc"
+            ],
+            [
+                "P1464",
+                "Category:Births in Italy"
+            ],
+            [
+                "P1622",
+                "right"
+            ],
+            [
+                "P1589",
+                "Contane"
+            ],
+            [
+                "P37",
+                "Italian"
+            ],
+            [
+                "P150",
+                "Abruzzo"
+            ],
+            [
+                "P150",
+                "Basilicata"
+            ],
+            [
+                "P150",
+                "Calabria"
+            ],
+            [
+                "P150",
+                "Campania"
+            ],
+            [
+                "P150",
+                "Emilia-Romagna"
+            ],
+            [
+                "P150",
+                "Friuli Venezia Giulia"
+            ],
+            [
+                "P150",
+                "Lazio"
+            ],
+            [
+                "P150",
+                "Liguria"
+            ],
+            [
+                "P150",
+                "Lombardy"
+            ],
+            [
+                "P150",
+                "Marche"
+            ],
+            [
+                "P150",
+                "Molise"
+            ],
+            [
+                "P150",
+                "Piedmont"
+            ],
+            [
+                "P150",
+                "Apulia"
+            ],
+            [
+                "P150",
+                "Sardinia"
+            ],
+            [
+                "P150",
+                "Sicily"
+            ],
+            [
+                "P150",
+                "Tuscany"
+            ],
+            [
+                "P150",
+                "Trentino-South Tyrol"
+            ],
+            [
+                "P150",
+                "Umbria"
+            ],
+            [
+                "P150",
+                "Aosta Valley"
+            ],
+            [
+                "P150",
+                "Veneto"
+            ],
+            [
+                "P163",
+                "flag of Italy"
+            ],
+            [
+                "P92",
+                "Constitution of Italy"
+            ],
+            [
+                "P2936",
+                "Italian"
+            ],
+            [
+                "P2936",
+                "Emilian"
+            ],
+            [
+                "P2936",
+                "Arbëresh"
+            ],
+            [
+                "P2936",
+                "Slavomolisano"
+            ],
+            [
+                "P2936",
+                "Romagnol"
+            ],
+            [
+                "P2936",
+                "Gallurese"
+            ],
+            [
+                "P2936",
+                "Walser German"
+            ],
+            [
+                "P2936",
+                "Mòcheno"
+            ],
+            [
+                "P2936",
+                "Sassarese"
+            ],
+            [
+                "P2936",
+                "Logudorese"
+            ],
+            [
+                "P2936",
+                "Italian Sign Language"
+            ],
+            [
+                "P2936",
+                "Judæo-Italian"
+            ],
+            [
+                "P2936",
+                "Campidanese Sardinian"
+            ],
+            [
+                "P2936",
+                "International Sign"
+            ],
+            [
+                "P2936",
+                "Ligurian"
+            ],
+            [
+                "P2936",
+                "Slovene"
+            ],
+            [
+                "P2936",
+                "Ladin"
+            ],
+            [
+                "P2936",
+                "Cimbrian"
+            ],
+            [
+                "P2936",
+                "Occitan"
+            ],
+            [
+                "P2936",
+                "Franco-Provençal"
+            ],
+            [
+                "P2936",
+                "Piedmontese"
+            ],
+            [
+                "P2936",
+                "German"
+            ],
+            [
+                "P2936",
+                "French"
+            ],
+            [
+                "P2936",
+                "Venetian"
+            ],
+            [
+                "P2936",
+                "Corsican"
+            ],
+            [
+                "P2936",
+                "Friulian"
+            ],
+            [
+                "P2936",
+                "Sardinian"
+            ],
+            [
+                "P2936",
+                "Neapolitan"
+            ],
+            [
+                "P2936",
+                "Sicilian"
+            ],
+            [
+                "P2936",
+                "Lombard"
+            ],
+            [
+                "P2596",
+                "culture of Italy"
+            ],
+            [
+                "P8744",
+                "economy of Italy"
+            ],
+            [
+                "P8248",
+                "SG--52"
+            ],
+            [
+                "P138",
+                "Roman Italy"
+            ],
+            [
+                "P10280",
+                "Category:Honorary citizens from Italy"
+            ],
+            [
+                "P1304",
+                "Bank of Italy"
+            ],
+            [
+                "P1559",
+                "Repubblica Italiana"
+            ],
+            [
+                "P17",
+                "Italy"
+            ]
+        ]
+    },
+    {
+        "subject": "Baseball",
+        "relation": [
+            [
+                "P373",
+                "Baseball"
+            ],
+            [
+                "P279",
+                "bat-and-ball game"
+            ],
+            [
+                "P279",
+                "team sport"
+            ],
+            [
+                "P279",
+                "Olympic sport"
+            ],
+            [
+                "P31",
+                "type of sport"
+            ],
+            [
+                "P31",
+                "sport with racquet/stick/club"
+            ],
+            [
+                "P417",
+                "Saint Rita of Cascia"
+            ],
+            [
+                "P935",
+                "Baseball"
+            ],
+            [
+                "P3095",
+                "baseball player"
+            ],
+            [
+                "P3095",
+                "baseball player-manager"
+            ],
+            [
+                "P3095",
+                "baseball manager"
+            ],
+            [
+                "P3095",
+                "baseball umpire"
+            ],
+            [
+                "P2283",
+                "baseball"
+            ],
+            [
+                "P2283",
+                "baseball bat"
+            ],
+            [
+                "P2283",
+                "baseball field"
+            ],
+            [
+                "P797",
+                "World Baseball Softball Confederation"
+            ],
+            [
+                "P495",
+                "United States of America"
+            ],
+            [
+                "P8248",
+                "MY2142"
+            ]
+        ]
+    },
+    {
+        "subject": "TensorFlow",
+        "relation": [
+            [
+                "P31",
+                "software library"
+            ],
+            [
+                "P31",
+                "free software"
+            ],
+            [
+                "P31",
+                "machine learning framework"
+            ],
+            [
+                "P178",
+                "Google Brain"
+            ],
+            [
+                "P366",
+                "machine learning"
+            ],
+            [
+                "P138",
+                "tensor"
+            ],
+            [
+                "P138",
+                "dataflow"
+            ],
+            [
+                "P277",
+                "C++"
+            ],
+            [
+                "P277",
+                "Python"
+            ],
+            [
+                "P400",
+                "Linux"
+            ],
+            [
+                "P400",
+                "macOS"
+            ],
+            [
+                "P400",
+                "Android"
+            ],
+            [
+                "P400",
+                "iOS"
+            ],
+            [
+                "P400",
+                "Microsoft Windows"
+            ],
+            [
+                "P800",
+                "DeepDream"
+            ],
+            [
+                "P61",
+                "Jeff Dean"
+            ],
+            [
+                "P61",
+                "Rajat Monga"
+            ],
+            [
+                "P306",
+                "Microsoft Windows"
+            ],
+            [
+                "P306",
+                "Linux"
+            ],
+            [
+                "P306",
+                "macOS"
+            ],
+            [
+                "P306",
+                "iOS"
+            ],
+            [
+                "P306",
+                "Android"
+            ],
+            [
+                "P373",
+                "TensorFlow"
+            ],
+            [
+                "P1547",
+                "NumPy"
+            ],
+            [
+                "P1547",
+                "absl-py"
+            ],
+            [
+                "P1547",
+                "astunparse"
+            ],
+            [
+                "P1547",
+                "FlatBuffers"
+            ],
+            [
+                "P1547",
+                "google-pasta"
+            ],
+            [
+                "P1547",
+                "h5py"
+            ],
+            [
+                "P1547",
+                "keras-preprocessing"
+            ],
+            [
+                "P1547",
+                "opt-einsum"
+            ],
+            [
+                "P1547",
+                "protobuf"
+            ],
+            [
+                "P1547",
+                "six"
+            ],
+            [
+                "P1547",
+                "termcolor"
+            ],
+            [
+                "P1547",
+                "typing-extensions"
+            ],
+            [
+                "P1547",
+                "wheel"
+            ],
+            [
+                "P1547",
+                "wrapt"
+            ],
+            [
+                "P1547",
+                "gast"
+            ],
+            [
+                "P1547",
+                "tensorboard"
+            ],
+            [
+                "P1547",
+                "tensorflow-estimator"
+            ],
+            [
+                "P1547",
+                "keras-nightly"
+            ],
+            [
+                "P1547",
+                "grpcio"
+            ]
+        ]
+    },
+    {
+        "subject": "Ancient Rome",
+        "relation": [
+            [
+                "P31",
+                "ancient civilization"
+            ],
+            [
+                "P31",
+                "historical country"
+            ],
+            [
+                "P31",
+                "temporal entity"
+            ],
+            [
+                "P373",
+                "Ancient Rome"
+            ],
+            [
+                "P832",
+                "Saturnalia"
+            ],
+            [
+                "P2348",
+                "classical antiquity"
+            ],
+            [
+                "P47",
+                "Persian Empire"
+            ],
+            [
+                "P2579",
+                "ancient history"
+            ],
+            [
+                "P36",
+                "Roma"
+            ],
+            [
+                "P30",
+                "Europe"
+            ],
+            [
+                "P30",
+                "Africa"
+            ],
+            [
+                "P30",
+                "Asia"
+            ],
+            [
+                "P30",
+                "Afro-Eurasia"
+            ],
+            [
+                "P8744",
+                "economy of Ancient Rome"
+            ],
+            [
+                "P2341",
+                "Italian Peninsula"
+            ],
+            [
+                "P279",
+                "archaeological culture"
+            ],
+            [
+                "P279",
+                "Roman civilization"
+            ],
+            [
+                "P156",
+                "Medieval Rome"
+            ],
+            [
+                "P1448",
+                "Res publica Populi Romani"
+            ],
+            [
+                "P1448",
+                "Imperium Romanum"
+            ]
+        ]
+    },
+    {
+        "subject": "Culture of Latin America",
+        "relation": [
+            [
+                "P373",
+                "Culture of Latin America"
+            ],
+            [
+                "P279",
+                "culture of the Americas"
+            ],
+            [
+                "P31",
+                "culture of an area"
+            ],
+            [
+                "P31",
+                "group of cultures by ethnic group"
+            ],
+            [
+                "P276",
+                "Latin America"
+            ],
+            [
+                "P1269",
+                "Latin America"
+            ]
+        ]
+    },
+    {
+        "subject": "National Health Service",
+        "relation": [
+            [
+                "P17",
+                "United Kingdom"
+            ],
+            [
+                "P373",
+                "National Health Service"
+            ],
+            [
+                "P935",
+                "National Health Service"
+            ],
+            [
+                "P793",
+                "ransomware attack"
+            ],
+            [
+                "P31",
+                "national health service"
+            ],
+            [
+                "P452",
+                "emergency medical services"
+            ]
+        ]
+    },
+    {
+        "subject": "New Zealand",
+        "relation": [
+            [
+                "P2852",
+                "111"
+            ],
+            [
+                "P2853",
+                "AS/NZS 3112"
+            ],
+            [
+                "P172",
+                "European New Zealanders"
+            ],
+            [
+                "P172",
+                "Māori"
+            ],
+            [
+                "P172",
+                "Asian New Zealanders"
+            ],
+            [
+                "P172",
+                "Pacific Islanders"
+            ],
+            [
+                "P2633",
+                "geography of New Zealand"
+            ],
+            [
+                "P122",
+                "parliamentary monarchy"
+            ],
+            [
+                "P122",
+                "constitutional monarchy"
+            ],
+            [
+                "P122",
+                "unitary state"
+            ],
+            [
+                "P530",
+                "Canada"
+            ],
+            [
+                "P530",
+                "Italy"
+            ],
+            [
+                "P530",
+                "Germany"
+            ],
+            [
+                "P530",
+                "Niue"
+            ],
+            [
+                "P530",
+                "Australia"
+            ],
+            [
+                "P530",
+                "Saudi Arabia"
+            ],
+            [
+                "P530",
+                "Ukraine"
+            ],
+            [
+                "P530",
+                "Serbia"
+            ],
+            [
+                "P530",
+                "United Kingdom"
+            ],
+            [
+                "P530",
+                "Norway"
+            ],
+            [
+                "P530",
+                "Spain"
+            ],
+            [
+                "P530",
+                "Singapore"
+            ],
+            [
+                "P530",
+                "Turkey"
+            ],
+            [
+                "P530",
+                "Denmark"
+            ],
+            [
+                "P530",
+                "France"
+            ],
+            [
+                "P530",
+                "Malaysia"
+            ],
+            [
+                "P530",
+                "Indonesia"
+            ],
+            [
+                "P530",
+                "Brunei Darussalam"
+            ],
+            [
+                "P530",
+                "Pakistan"
+            ],
+            [
+                "P530",
+                "Taiwan"
+            ],
+            [
+                "P530",
+                "United States of America"
+            ],
+            [
+                "P530",
+                "Sweden"
+            ],
+            [
+                "P530",
+                "Russia"
+            ],
+            [
+                "P530",
+                "North Korea"
+            ],
+            [
+                "P530",
+                "People's Republic of China"
+            ],
+            [
+                "P530",
+                "Fiji"
+            ],
+            [
+                "P530",
+                "Greece"
+            ],
+            [
+                "P530",
+                "India"
+            ],
+            [
+                "P530",
+                "Japan"
+            ],
+            [
+                "P530",
+                "Bangladesh"
+            ],
+            [
+                "P530",
+                "Egypt"
+            ],
+            [
+                "P530",
+                "Mexico"
+            ],
+            [
+                "P530",
+                "Georgia"
+            ],
+            [
+                "P530",
+                "Hungary"
+            ],
+            [
+                "P1906",
+                "monarch of New Zealand"
+            ],
+            [
+                "P935",
+                "New Zealand / Aotearoa"
+            ],
+            [
+                "P194",
+                "New Zealand Parliament"
+            ],
+            [
+                "P37",
+                "Māori"
+            ],
+            [
+                "P37",
+                "New Zealand Sign Language"
+            ],
+            [
+                "P37",
+                "English"
+            ],
+            [
+                "P30",
+                "Insular Oceania"
+            ],
+            [
+                "P36",
+                "Wellington"
+            ],
+            [
+                "P36",
+                "Auckland"
+            ],
+            [
+                "P36",
+                "Okiato"
+            ],
+            [
+                "P3896",
+                "Data:New Zealand.map"
+            ],
+            [
+                "P155",
+                "Colony of New Zealand"
+            ],
+            [
+                "P6",
+                "Christopher Luxon"
+            ],
+            [
+                "P35",
+                "Elizabeth II"
+            ],
+            [
+                "P35",
+                "Charles III of the United Kingdom"
+            ],
+            [
+                "P1304",
+                "Reserve Bank of New Zealand"
+            ],
+            [
+                "P463",
+                "United Nations"
+            ],
+            [
+                "P463",
+                "Commonwealth of Nations"
+            ],
+            [
+                "P463",
+                "Organization for Economic Cooperation and Development"
+            ],
+            [
+                "P463",
+                "World Trade Organization"
+            ],
+            [
+                "P463",
+                "Asia-Pacific Economic Cooperation"
+            ],
+            [
+                "P463",
+                "International Bank for Reconstruction and Development"
+            ],
+            [
+                "P463",
+                "International Development Association"
+            ],
+            [
+                "P463",
+                "International Finance Corporation"
+            ],
+            [
+                "P463",
+                "Multilateral Investment Guarantee Agency"
+            ],
+            [
+                "P463",
+                "International Centre for Settlement of Investment Disputes"
+            ],
+            [
+                "P463",
+                "ASEAN Regional Forum"
+            ],
+            [
+                "P463",
+                "Asian Development Bank"
+            ],
+            [
+                "P463",
+                "Australia Group"
+            ],
+            [
+                "P463",
+                "ANZUS"
+            ],
+            [
+                "P463",
+                "Missile Technology Control Regime"
+            ],
+            [
+                "P463",
+                "ANZUK"
+            ],
+            [
+                "P463",
+                "Southeast Asia Treaty Organization"
+            ],
+            [
+                "P463",
+                "Interpol"
+            ],
+            [
+                "P463",
+                "Nuclear Suppliers Group"
+            ],
+            [
+                "P463",
+                "Organisation for the Prohibition of Chemical Weapons"
+            ],
+            [
+                "P463",
+                "AUSCANNZUKUS"
+            ],
+            [
+                "P463",
+                "ABCANZ Armies"
+            ],
+            [
+                "P463",
+                "The Technical Cooperation Program"
+            ],
+            [
+                "P463",
+                "Combined Communications-Electronics Board"
+            ],
+            [
+                "P463",
+                "Air Force Interoperability Council"
+            ],
+            [
+                "P463",
+                "International Hydrographic Organization"
+            ],
+            [
+                "P463",
+                "International Energy Agency"
+            ],
+            [
+                "P463",
+                "UNESCO"
+            ],
+            [
+                "P463",
+                "Group on Earth Observations"
+            ],
+            [
+                "P463",
+                "Universal Postal Union"
+            ],
+            [
+                "P463",
+                "International Telecommunication Union"
+            ],
+            [
+                "P463",
+                "Visa Waiver Program"
+            ],
+            [
+                "P463",
+                "World Meteorological Organization"
+            ],
+            [
+                "P463",
+                "World Health Organization"
+            ],
+            [
+                "P463",
+                "Five Eyes"
+            ],
+            [
+                "P463",
+                "World Customs Organization"
+            ],
+            [
+                "P5658",
+                "left"
+            ],
+            [
+                "P1740",
+                "Category:Films shot in New Zealand"
+            ],
+            [
+                "P208",
+                "Government of New Zealand"
+            ],
+            [
+                "P38",
+                "New Zealand dollar"
+            ],
+            [
+                "P38",
+                "New Zealand pound"
+            ],
+            [
+                "P85",
+                "God Defend New Zealand"
+            ],
+            [
+                "P209",
+                "Supreme Court of New Zealand"
+            ],
+            [
+                "P373",
+                "New Zealand"
+            ],
+            [
+                "P78",
+                ".nz"
+            ],
+            [
+                "P47",
+                "Australia"
+            ],
+            [
+                "P31",
+                "Commonwealth realm"
+            ],
+            [
+                "P31",
+                "dominion of the British Empire"
+            ],
+            [
+                "P31",
+                "sovereign state"
+            ],
+            [
+                "P31",
+                "country"
+            ],
+            [
+                "P31",
+                "island country"
+            ],
+            [
+                "P31",
+                "crown colony"
+            ],
+            [
+                "P31",
+                "climate emergency declaration"
+            ],
+            [
+                "P31",
+                "OECD country"
+            ],
+            [
+                "P610",
+                "Aoraki / Mount Cook"
+            ],
+            [
+                "P1464",
+                "Category:Births in New Zealand"
+            ],
+            [
+                "P1622",
+                "left"
+            ],
+            [
+                "P1589",
+                "Taieri Plain"
+            ],
+            [
+                "P421",
+                "UTC+13:45"
+            ],
+            [
+                "P421",
+                "UTC+13:00"
+            ],
+            [
+                "P421",
+                "UTC+12:45"
+            ],
+            [
+                "P421",
+                "UTC+12:00"
+            ],
+            [
+                "P421",
+                "UTC−10:00"
+            ],
+            [
+                "P421",
+                "UTC−11:00"
+            ],
+            [
+                "P421",
+                "Pacific/Auckland"
+            ],
+            [
+                "P421",
+                "Pacific/Chatham"
+            ],
+            [
+                "P150",
+                "Northland Region"
+            ],
+            [
+                "P150",
+                "Auckland Region"
+            ],
+            [
+                "P150",
+                "Waikato"
+            ],
+            [
+                "P150",
+                "Bay of Plenty Region"
+            ],
+            [
+                "P150",
+                "Gisborne District"
+            ],
+            [
+                "P150",
+                "Taranaki Region"
+            ],
+            [
+                "P150",
+                "Manawatū-Whanganui Region"
+            ],
+            [
+                "P150",
+                "Hawke's Bay Region"
+            ],
+            [
+                "P150",
+                "Wellington Region"
+            ],
+            [
+                "P150",
+                "Marlborough District"
+            ],
+            [
+                "P150",
+                "Nelson Region"
+            ],
+            [
+                "P150",
+                "Tasman District"
+            ],
+            [
+                "P150",
+                "West Coast Region"
+            ],
+            [
+                "P150",
+                "Canterbury Region"
+            ],
+            [
+                "P150",
+                "Otago Region"
+            ],
+            [
+                "P150",
+                "Southland Region"
+            ],
+            [
+                "P150",
+                "Chatham Islands Council"
+            ],
+            [
+                "P138",
+                "Zeeland"
+            ],
+            [
+                "P163",
+                "flag of New Zealand"
+            ],
+            [
+                "P2936",
+                "English"
+            ],
+            [
+                "P2936",
+                "English"
+            ],
+            [
+                "P2936",
+                "New Zealand Sign Language"
+            ],
+            [
+                "P2936",
+                "Māori"
+            ],
+            [
+                "P1448",
+                "New Zealand"
+            ],
+            [
+                "P1448",
+                "Nouvelle-Zélande"
+            ],
+            [
+                "P1448",
+                "Aotearoa"
+            ],
+            [
+                "P2596",
+                "culture of New Zealand"
+            ],
+            [
+                "P793",
+                "Statute of Westminster 1931"
+            ],
+            [
+                "P8744",
+                "economy of New Zealand"
+            ],
+            [
+                "P8248",
+                "SG--937"
+            ],
+            [
+                "P17",
+                "New Zealand"
+            ]
+        ]
+    },
+    {
+        "subject": "William Shakespeare",
+        "relation": [
+            [
+                "P800",
+                "Hamlet"
+            ],
+            [
+                "P800",
+                "Romeo and Juliet"
+            ],
+            [
+                "P800",
+                "As You Like It"
+            ],
+            [
+                "P800",
+                "Macbeth"
+            ],
+            [
+                "P800",
+                "A Midsummer Night's Dream"
+            ],
+            [
+                "P800",
+                "Shakespeare's sonnets"
+            ],
+            [
+                "P800",
+                "The Taming of the Shrew"
+            ],
+            [
+                "P800",
+                "The Two Gentlemen of Verona"
+            ],
+            [
+                "P800",
+                "King John"
+            ],
+            [
+                "P800",
+                "Richard II"
+            ],
+            [
+                "P800",
+                "Henry IV, Part 1"
+            ],
+            [
+                "P800",
+                "Henry IV, Part 2"
+            ],
+            [
+                "P800",
+                "Henry V"
+            ],
+            [
+                "P800",
+                "Henry VI, Part 1"
+            ],
+            [
+                "P800",
+                "Henry VI, Part 2"
+            ],
+            [
+                "P800",
+                "Henry VI, Part 3"
+            ],
+            [
+                "P800",
+                "Richard III"
+            ],
+            [
+                "P800",
+                "Henry VIII"
+            ],
+            [
+                "P800",
+                "Love's Labour's Lost"
+            ],
+            [
+                "P800",
+                "The Merchant of Venice"
+            ],
+            [
+                "P800",
+                "Much Ado About Nothing"
+            ],
+            [
+                "P800",
+                "The Merry Wives of Windsor"
+            ],
+            [
+                "P800",
+                "Twelfth Night"
+            ],
+            [
+                "P800",
+                "All's Well That Ends Well"
+            ],
+            [
+                "P800",
+                "Measure for Measure"
+            ],
+            [
+                "P800",
+                "Titus Andronicus"
+            ],
+            [
+                "P800",
+                "Julius Caesar"
+            ],
+            [
+                "P800",
+                "Othello"
+            ],
+            [
+                "P800",
+                "King Lear"
+            ],
+            [
+                "P800",
+                "Antony and Cleopatra"
+            ],
+            [
+                "P800",
+                "Coriolanus"
+            ],
+            [
+                "P800",
+                "Timon of Athens"
+            ],
+            [
+                "P800",
+                "Troilus and Cressida"
+            ],
+            [
+                "P800",
+                "Cymbeline"
+            ],
+            [
+                "P800",
+                "The Winter's Tale"
+            ],
+            [
+                "P800",
+                "Pericles, Prince of Tyre"
+            ],
+            [
+                "P800",
+                "The Tempest"
+            ],
+            [
+                "P800",
+                "The Two Noble Kinsmen"
+            ],
+            [
+                "P800",
+                "The Comedy of Errors"
+            ],
+            [
+                "P106",
+                "playwright"
+            ],
+            [
+                "P106",
+                "poet"
+            ],
+            [
+                "P106",
+                "stage actor"
+            ],
+            [
+                "P106",
+                "writer"
+            ],
+            [
+                "P106",
+                "actor"
+            ],
+            [
+                "P106",
+                "dramaturge"
+            ],
+            [
+                "P19",
+                "Stratford-upon-Avon"
+            ],
+            [
+                "P19",
+                "Stratford-on-Avon"
+            ],
+            [
+                "P20",
+                "Stratford-upon-Avon"
+            ],
+            [
+                "P40",
+                "Susanna Hall"
+            ],
+            [
+                "P40",
+                "Hamnet Shakespeare"
+            ],
+            [
+                "P40",
+                "Judith Quiney"
+            ],
+            [
+                "P22",
+                "John Shakespeare"
+            ],
+            [
+                "P25",
+                "Mary Shakespeare"
+            ],
+            [
+                "P373",
+                "William Shakespeare"
+            ],
+            [
+                "P26",
+                "Anne Hathaway"
+            ],
+            [
+                "P31",
+                "human"
+            ],
+            [
+                "P935",
+                "William Shakespeare"
+            ],
+            [
+                "P735",
+                "William"
+            ],
+            [
+                "P27",
+                "Kingdom of England"
+            ],
+            [
+                "P69",
+                "King Edward VI School, Stratford-upon-Avon"
+            ],
+            [
+                "P1559",
+                "William Shakespeare"
+            ],
+            [
+                "P119",
+                "Holy Trinity Church"
+            ],
+            [
+                "P737",
+                "Plautus"
+            ],
+            [
+                "P737",
+                "Plutarch"
+            ],
+            [
+                "P737",
+                "Christopher Marlowe"
+            ],
+            [
+                "P737",
+                "Thomas Kyd"
+            ],
+            [
+                "P737",
+                "Ovid"
+            ],
+            [
+                "P737",
+                "Seneca"
+            ],
+            [
+                "P734",
+                "Shakespeare"
+            ],
+            [
+                "P3373",
+                "Joan Shakespeare"
+            ],
+            [
+                "P3373",
+                "Edmund Shakespeare"
+            ],
+            [
+                "P3373",
+                "Gilbert Shakespeare"
+            ],
+            [
+                "P3373",
+                "Richard Shakespeare"
+            ],
+            [
+                "P3373",
+                "Anne Shakespeare"
+            ],
+            [
+                "P3373",
+                "Margaret Shakespeare"
+            ],
+            [
+                "P3373",
+                "Joan Shakespeare"
+            ],
+            [
+                "P21",
+                "male"
+            ],
+            [
+                "P6379",
+                "Minneapolis Institute of Art"
+            ],
+            [
+                "P6379",
+                "National Gallery of Art"
+            ],
+            [
+                "P6379",
+                "The Nelson-Atkins Museum of Art"
+            ],
+            [
+                "P6379",
+                "Stedelijk Museum Amsterdam"
+            ],
+            [
+                "P6379",
+                "J. Paul Getty Museum"
+            ],
+            [
+                "P6886",
+                "Early Modern English"
+            ],
+            [
+                "P6886",
+                "English"
+            ],
+            [
+                "P1449",
+                "The Bard of Avon"
+            ],
+            [
+                "P1196",
+                "natural causes"
+            ],
+            [
+                "P1299",
+                "Chandos portrait"
+            ],
+            [
+                "P8248",
+                "O111,2J64"
+            ],
+            [
+                "P101",
+                "fiction"
+            ],
+            [
+                "P101",
+                "theatre"
+            ],
+            [
+                "P101",
+                "English drama"
+            ],
+            [
+                "P101",
+                "drama"
+            ],
+            [
+                "P101",
+                "poetry"
+            ],
+            [
+                "P101",
+                "acting"
+            ],
+            [
+                "P2579",
+                "Shakespeare studies"
+            ],
+            [
+                "P1441",
+                "Star Trek: The Original Series Core Game Book"
+            ],
+            [
+                "P136",
+                "play"
+            ],
+            [
+                "P136",
+                "poetry"
+            ],
+            [
+                "P509",
+                "disease"
+            ],
+            [
+                "P103",
+                "Early Modern English"
+            ],
+            [
+                "P103",
+                "British English"
+            ],
+            [
+                "P1412",
+                "Early Modern English"
+            ],
+            [
+                "P1412",
+                "British English"
+            ],
+            [
+                "P1412",
+                "English"
+            ],
+            [
+                "P2348",
+                "English Renaissance"
+            ]
+        ]
+    },
+    {
+        "subject": "Tactical role-playing game",
+        "relation": [
+            [
+                "P279",
+                "role-playing video game"
+            ],
+            [
+                "P279",
+                "tactical video game"
+            ],
+            [
+                "P31",
+                "video game genre"
+            ]
+        ]
+    }
+]

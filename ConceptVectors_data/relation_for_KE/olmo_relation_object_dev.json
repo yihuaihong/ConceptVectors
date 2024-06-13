@@ -1,0 +1,2292 @@
+[
+    {
+        "subject": "World War II",
+        "relation": [
+            [
+                "P373",
+                "World War II"
+            ],
+            [
+                "P31",
+                "world war"
+            ],
+            [
+                "P31",
+                "historical period"
+            ],
+            [
+                "P935",
+                "World War II"
+            ],
+            [
+                "P710",
+                "Axis Powers"
+            ],
+            [
+                "P710",
+                "Allies of the Second World War"
+            ],
+            [
+                "P710",
+                "Nazi Germany"
+            ],
+            [
+                "P710",
+                "Australia"
+            ],
+            [
+                "P710",
+                "United Kingdom"
+            ],
+            [
+                "P276",
+                "Russia"
+            ],
+            [
+                "P276",
+                "Europe"
+            ],
+            [
+                "P276",
+                "Africa"
+            ],
+            [
+                "P276",
+                "Pacific Ocean"
+            ],
+            [
+                "P276",
+                "Mediterranean Sea"
+            ],
+            [
+                "P276",
+                "Asia"
+            ],
+            [
+                "P276",
+                "Atlantic Ocean"
+            ],
+            [
+                "P276",
+                "Middle East"
+            ],
+            [
+                "P276",
+                "Southeast Asia"
+            ],
+            [
+                "P276",
+                "Scandinavia"
+            ],
+            [
+                "P276",
+                "Pacific War"
+            ],
+            [
+                "P276",
+                "Battle of the Atlantic"
+            ],
+            [
+                "P276",
+                "Indian Ocean"
+            ],
+            [
+                "P276",
+                "South Asia"
+            ],
+            [
+                "P276",
+                "North Asia"
+            ],
+            [
+                "P276",
+                "People's Republic of China"
+            ],
+            [
+                "P276",
+                "Japan"
+            ],
+            [
+                "P276",
+                "Southern Africa"
+            ],
+            [
+                "P276",
+                "East Africa"
+            ],
+            [
+                "P276",
+                "Central Africa"
+            ],
+            [
+                "P276",
+                "Australia"
+            ],
+            [
+                "P276",
+                "North America"
+            ],
+            [
+                "P276",
+                "South America"
+            ],
+            [
+                "P155",
+                "World War I"
+            ],
+            [
+                "P155",
+                "interwar period"
+            ],
+            [
+                "P1542",
+                "British pet massacre"
+            ],
+            [
+                "P1542",
+                "The Holocaust"
+            ],
+            [
+                "P1542",
+                "atomic bombings of Hiroshima and Nagasaki"
+            ],
+            [
+                "P1542",
+                "Bombing of Dresden"
+            ],
+            [
+                "P1542",
+                "Allies of the Second World War"
+            ],
+            [
+                "P1542",
+                "Nazi Germany"
+            ],
+            [
+                "P1542",
+                "Empire of Japan"
+            ],
+            [
+                "P1542",
+                "Allied-occupied Germany"
+            ],
+            [
+                "P1542",
+                "Austria"
+            ],
+            [
+                "P1542",
+                "League of Nations"
+            ],
+            [
+                "P1542",
+                "United Nations"
+            ],
+            [
+                "P1542",
+                "United States of America"
+            ],
+            [
+                "P1542",
+                "Soviet Union"
+            ],
+            [
+                "P1542",
+                "Cold War"
+            ],
+            [
+                "P156",
+                "aftermath of World War II"
+            ],
+            [
+                "P156",
+                "Trente Glorieuses"
+            ],
+            [
+                "P156",
+                "Cold War"
+            ],
+            [
+                "P156",
+                "World War 3"
+            ],
+            [
+                "P1478",
+                "Secret Additional Protocol to the Molotov–Ribbentrop Pact"
+            ],
+            [
+                "P2348",
+                "newest history"
+            ],
+            [
+                "P2348",
+                "late modern period"
+            ]
+        ]
+    },
+    {
+        "subject": "Fluid dynamics",
+        "relation": [
+            [
+                "P373",
+                "Fluid dynamics"
+            ],
+            [
+                "P279",
+                "dynamics"
+            ],
+            [
+                "P279",
+                "fluid mechanics"
+            ],
+            [
+                "P31",
+                "branch of physics"
+            ],
+            [
+                "P2578",
+                "fluid flow"
+            ],
+            [
+                "P8248",
+                "B75"
+            ],
+            [
+                "P3095",
+                "fluid dynamicist"
+            ]
+        ]
+    },
+    {
+        "subject": "Cold War",
+        "relation": [
+            [
+                "P373",
+                "Cold War"
+            ],
+            [
+                "P793",
+                "Vietnam War"
+            ],
+            [
+                "P793",
+                "Cultural Revolution"
+            ],
+            [
+                "P793",
+                "Korean War"
+            ],
+            [
+                "P793",
+                "Sino-Soviet border conflict"
+            ],
+            [
+                "P793",
+                "Sino-Vietnamese War"
+            ],
+            [
+                "P793",
+                "Cambodian genocide"
+            ],
+            [
+                "P793",
+                "Berlin Crisis of 1961"
+            ],
+            [
+                "P793",
+                "Cuban Missile Crisis"
+            ],
+            [
+                "P793",
+                "Warsaw Pact invasion of Czechoslovakia"
+            ],
+            [
+                "P793",
+                "Soviet–Afghan War"
+            ],
+            [
+                "P710",
+                "Eastern Bloc"
+            ],
+            [
+                "P710",
+                "Western Bloc"
+            ],
+            [
+                "P276",
+                "Latin America"
+            ],
+            [
+                "P276",
+                "Asia"
+            ],
+            [
+                "P276",
+                "Africa"
+            ],
+            [
+                "P276",
+                "Europe"
+            ],
+            [
+                "P31",
+                "cold war"
+            ],
+            [
+                "P31",
+                "perpetual war"
+            ],
+            [
+                "P31",
+                "proxy war"
+            ],
+            [
+                "P31",
+                "historical period"
+            ],
+            [
+                "P156",
+                "post–Cold War era"
+            ],
+            [
+                "P279",
+                "low-intensity conflict"
+            ],
+            [
+                "P155",
+                "World War II"
+            ],
+            [
+                "P2579",
+                "history of the Cold War"
+            ],
+            [
+                "P1542",
+                "United States of America"
+            ],
+            [
+                "P1542",
+                "Eastern Bloc"
+            ],
+            [
+                "P1542",
+                "dissolution of the Soviet Union"
+            ],
+            [
+                "P1542",
+                "German reunification"
+            ],
+            [
+                "P1542",
+                "European Union"
+            ],
+            [
+                "P1542",
+                "Eastern Europe"
+            ]
+        ]
+    },
+    {
+        "subject": "Group theory",
+        "relation": [
+            [
+                "P373",
+                "Group theory"
+            ],
+            [
+                "P31",
+                "area of mathematics"
+            ],
+            [
+                "P31",
+                "mathematical theory"
+            ],
+            [
+                "P2578",
+                "group"
+            ],
+            [
+                "P279",
+                "mathematics"
+            ]
+        ]
+    },
+    {
+        "subject": "Domain Name System",
+        "relation": [
+            [
+                "P31",
+                "internet standard"
+            ],
+            [
+                "P31",
+                "hierarchical namespace"
+            ],
+            [
+                "P31",
+                "computer network protocol"
+            ],
+            [
+                "P366",
+                "LmdinaShop"
+            ],
+            [
+                "P373",
+                "Domain name system"
+            ]
+        ]
+    },
+    {
+        "subject": "Software development process",
+        "relation": [
+            [
+                "P373",
+                "Software development methodology"
+            ],
+            [
+                "P1269",
+                "software development"
+            ],
+            [
+                "P279",
+                "technical process"
+            ]
+        ]
+    },
+    {
+        "subject": "Linear algebra",
+        "relation": [
+            [
+                "P373",
+                "Linear algebra"
+            ],
+            [
+                "P31",
+                "area of mathematics"
+            ],
+            [
+                "P2578",
+                "vector space"
+            ],
+            [
+                "P2578",
+                "linear map"
+            ],
+            [
+                "P2578",
+                "matrix"
+            ]
+        ]
+    },
+    {
+        "subject": "Enzyme",
+        "relation": [
+            [
+                "P373",
+                "Enzymes"
+            ],
+            [
+                "P279",
+                "biocatalyst"
+            ],
+            [
+                "P279",
+                "protein"
+            ],
+            [
+                "P31",
+                "group or class of proteins"
+            ]
+        ]
+    },
+    {
+        "subject": "Random-access memory",
+        "relation": [
+            [
+                "P279",
+                "Q112801081"
+            ],
+            [
+                "P279",
+                "computer hardware"
+            ],
+            [
+                "P373",
+                "RAM"
+            ],
+            [
+                "P935",
+                "RAM"
+            ],
+            [
+                "P460",
+                "primary memory"
+            ],
+            [
+                "P366",
+                "computer memory"
+            ],
+            [
+                "P176",
+                "Micron Technology"
+            ],
+            [
+                "P176",
+                "Samsung Electronics"
+            ],
+            [
+                "P176",
+                "Kingston Technology"
+            ],
+            [
+                "P176",
+                "Corsair Gaming"
+            ],
+            [
+                "P176",
+                "Mushkin"
+            ],
+            [
+                "P31",
+                "type of computer memory or storage"
+            ]
+        ]
+    },
+    {
+        "subject": "Japanese popular culture",
+        "relation": [
+            [
+                "P373",
+                "Popular culture of Japan"
+            ],
+            [
+                "P279",
+                "popular culture"
+            ],
+            [
+                "P279",
+                "culture of Japan"
+            ],
+            [
+                "P1269",
+                "Japan"
+            ]
+        ]
+    },
+    {
+        "subject": "Quantum mechanics",
+        "relation": [
+            [
+                "P373",
+                "Quantum mechanics"
+            ],
+            [
+                "P31",
+                "theory"
+            ],
+            [
+                "P31",
+                "branch of physics"
+            ],
+            [
+                "P279",
+                "mechanics"
+            ],
+            [
+                "P3095",
+                "quantum theoretician"
+            ]
+        ]
+    },
+    {
+        "subject": "Caffeine",
+        "relation": [
+            [
+                "P31",
+                "type of chemical entity"
+            ],
+            [
+                "P373",
+                "Caffeine"
+            ],
+            [
+                "P274",
+                "C₈H₁₀N₄O₂"
+            ],
+            [
+                "P138",
+                "coffee"
+            ],
+            [
+                "P117",
+                "Koffein - Caffeine.svg"
+            ],
+            [
+                "P279",
+                "methylxanthine"
+            ],
+            [
+                "P129",
+                "Adenosine A1 receptor"
+            ],
+            [
+                "P129",
+                "Adenosine A2a receptor"
+            ],
+            [
+                "P129",
+                "Adenosine A2b receptor"
+            ],
+            [
+                "P129",
+                "Adenosine A3 receptor"
+            ],
+            [
+                "P129",
+                "Inositol 1,4,5-trisphosphate receptor type 1"
+            ],
+            [
+                "P129",
+                "Ryanodine receptor 1"
+            ],
+            [
+                "P129",
+                "Ryanodine receptor 2"
+            ],
+            [
+                "P129",
+                "Ryanodine receptor 3"
+            ],
+            [
+                "P129",
+                "taste receptor type 2"
+            ],
+            [
+                "P703",
+                "Senegalia catechu"
+            ],
+            [
+                "P703",
+                "guarana"
+            ],
+            [
+                "P703",
+                "yerba mate"
+            ],
+            [
+                "P703",
+                "Ilex argentina"
+            ],
+            [
+                "P703",
+                "Ilex brevicuspis"
+            ],
+            [
+                "P703",
+                "Ilex theezans"
+            ],
+            [
+                "P703",
+                "Ilex dumosa"
+            ],
+            [
+                "P703",
+                "Ilex microdonta"
+            ],
+            [
+                "P703",
+                "Ilex pseudobuxus"
+            ],
+            [
+                "P703",
+                "rooibos"
+            ],
+            [
+                "P703",
+                "Coffea arabica"
+            ],
+            [
+                "P703",
+                "Camellia irrawadiensis"
+            ],
+            [
+                "P703",
+                "Scurrula atropurpurea"
+            ],
+            [
+                "P703",
+                "Bidens pilosa"
+            ],
+            [
+                "P703",
+                "Camellia sinensis var. assamica"
+            ],
+            [
+                "P703",
+                "Camellia japonica"
+            ],
+            [
+                "P703",
+                "Camellia ptilophylla"
+            ],
+            [
+                "P703",
+                "Camellia oleifera"
+            ],
+            [
+                "P703",
+                "Camellia sasanqua"
+            ],
+            [
+                "P703",
+                "Camellia vernalis"
+            ],
+            [
+                "P703",
+                "Citrus grandis"
+            ],
+            [
+                "P703",
+                "pomelo"
+            ],
+            [
+                "P703",
+                "mandarin orange"
+            ],
+            [
+                "P703",
+                "Claviceps sorghicola"
+            ],
+            [
+                "P703",
+                "Coffea bengalensis"
+            ],
+            [
+                "P703",
+                "Coffea canephora"
+            ],
+            [
+                "P703",
+                "Coffea eugenioides"
+            ],
+            [
+                "P703",
+                "Coffea homollei"
+            ],
+            [
+                "P703",
+                "Coffea kianjavatensis"
+            ],
+            [
+                "P703",
+                "Coffea lancifolia"
+            ],
+            [
+                "P703",
+                "Coffea salvatrix"
+            ],
+            [
+                "P703",
+                "Cola nitida"
+            ],
+            [
+                "P703",
+                "Festuca pratensis"
+            ],
+            [
+                "P703",
+                "Herrania albiflora"
+            ],
+            [
+                "P703",
+                "Herrania balaensis"
+            ],
+            [
+                "P703",
+                "Herrania cuatrecasana"
+            ],
+            [
+                "P703",
+                "Herrania nitida"
+            ],
+            [
+                "P703",
+                "Herrania purpurea"
+            ],
+            [
+                "P703",
+                "Ilex guayusa"
+            ],
+            [
+                "P703",
+                "Murraya paniculata"
+            ],
+            [
+                "P703",
+                "Paramuricea clavata"
+            ],
+            [
+                "P703",
+                "Pausinystalia"
+            ],
+            [
+                "P703",
+                "Sinomenium acutum"
+            ],
+            [
+                "P703",
+                "Theobroma angustifolium"
+            ],
+            [
+                "P703",
+                "Cacao"
+            ],
+            [
+                "P703",
+                "Theobroma mammosum"
+            ],
+            [
+                "P703",
+                "Theobroma simiarum"
+            ],
+            [
+                "P703",
+                "Theobroma grandiflorum"
+            ],
+            [
+                "P703",
+                "Cola acuminata"
+            ],
+            [
+                "P703",
+                "Vincetoxicum hirsutum (Michx.) Britton (1894) non (Wall.) Kuntze (1891)"
+            ],
+            [
+                "P703",
+                "Trewia nudiflora"
+            ],
+            [
+                "P703",
+                "Homo sapiens"
+            ],
+            [
+                "P703",
+                "house mouse"
+            ],
+            [
+                "P703",
+                "Citrus glauca"
+            ],
+            [
+                "P703",
+                "Camellia kissi"
+            ],
+            [
+                "P703",
+                "Coffea benghalensis"
+            ],
+            [
+                "P703",
+                "Theobroma speciosum"
+            ],
+            [
+                "P703",
+                "Strobilanthes crispa"
+            ],
+            [
+                "P703",
+                "Camellia"
+            ],
+            [
+                "P703",
+                "Camellia sinensis var. sinensis"
+            ],
+            [
+                "P703",
+                "Herrania mariae"
+            ],
+            [
+                "P703",
+                "Coffea liberica var. dewevrei"
+            ],
+            [
+                "P703",
+                "Citrus × paradisi"
+            ],
+            [
+                "P703",
+                "Citrus × deliciosa"
+            ],
+            [
+                "P703",
+                "Punica granatum"
+            ],
+            [
+                "P703",
+                "Ilex cassine"
+            ],
+            [
+                "P703",
+                "Camellia taliensis"
+            ],
+            [
+                "P703",
+                "Festuca ovina"
+            ],
+            [
+                "P703",
+                "Camellia sinensis"
+            ],
+            [
+                "P703",
+                "Senegalia polyacantha"
+            ],
+            [
+                "P703",
+                "Senegalia chundra"
+            ],
+            [
+                "P703",
+                "Asimina triloba"
+            ],
+            [
+                "P366",
+                "medication"
+            ],
+            [
+                "P366",
+                "drug"
+            ],
+            [
+                "P935",
+                "Tea"
+            ]
+        ]
+    },
+    {
+        "subject": "National Basketball Association",
+        "relation": [
+            [
+                "P373",
+                "National Basketball Association"
+            ],
+            [
+                "P641",
+                "basketball"
+            ],
+            [
+                "P31",
+                "basketball association"
+            ],
+            [
+                "P31",
+                "basketball league"
+            ],
+            [
+                "P31",
+                "professional sports league"
+            ],
+            [
+                "P31",
+                "online database"
+            ],
+            [
+                "P17",
+                "Canada"
+            ],
+            [
+                "P17",
+                "United States of America"
+            ],
+            [
+                "P4794",
+                "October"
+            ],
+            [
+                "P2500",
+                "NBA G League"
+            ],
+            [
+                "P2500",
+                "NBA Summer League"
+            ],
+            [
+                "P1830",
+                "Three-Point Contest"
+            ],
+            [
+                "P1830",
+                "NBA TV"
+            ],
+            [
+                "P1830",
+                "NBA Store"
+            ],
+            [
+                "P2388",
+                "Commissioner of the NBA"
+            ]
+        ]
+    },
+    {
+        "subject": "Hip hop music",
+        "relation": [
+            [
+                "P31",
+                "music genre"
+            ],
+            [
+                "P279",
+                "popular music"
+            ],
+            [
+                "P495",
+                "United States of America"
+            ],
+            [
+                "P3095",
+                "hip hop musician"
+            ],
+            [
+                "P144",
+                "African-American music"
+            ],
+            [
+                "P373",
+                "Hip hop music"
+            ],
+            [
+                "P3342",
+                "DJ Kool Herc"
+            ],
+            [
+                "P3342",
+                "Afrika Bambaataa"
+            ],
+            [
+                "P3342",
+                "Grandmaster Flash"
+            ]
+        ]
+    },
+    {
+        "subject": "COVID-19 pandemic",
+        "relation": [
+            [
+                "P31",
+                "pandemic"
+            ],
+            [
+                "P31",
+                "public health emergency of international concern"
+            ],
+            [
+                "P31",
+                "disease outbreak"
+            ],
+            [
+                "P31",
+                "complex emergency"
+            ],
+            [
+                "P17",
+                "People's Republic of China"
+            ],
+            [
+                "P17",
+                "Japan"
+            ],
+            [
+                "P17",
+                "South Korea"
+            ],
+            [
+                "P17",
+                "Vietnam"
+            ],
+            [
+                "P17",
+                "Singapore"
+            ],
+            [
+                "P17",
+                "Australia"
+            ],
+            [
+                "P17",
+                "Malaysia"
+            ],
+            [
+                "P17",
+                "Thailand"
+            ],
+            [
+                "P17",
+                "Nepal"
+            ],
+            [
+                "P17",
+                "United States of America"
+            ],
+            [
+                "P17",
+                "Canada"
+            ],
+            [
+                "P17",
+                "France"
+            ],
+            [
+                "P17",
+                "Cambodia"
+            ],
+            [
+                "P17",
+                "Sri Lanka"
+            ],
+            [
+                "P17",
+                "Germany"
+            ],
+            [
+                "P17",
+                "Finland"
+            ],
+            [
+                "P17",
+                "United Arab Emirates"
+            ],
+            [
+                "P17",
+                "India"
+            ],
+            [
+                "P17",
+                "Italy"
+            ],
+            [
+                "P17",
+                "Philippines"
+            ],
+            [
+                "P17",
+                "United Kingdom"
+            ],
+            [
+                "P17",
+                "Russia"
+            ],
+            [
+                "P17",
+                "Taiwan"
+            ],
+            [
+                "P17",
+                "Sweden"
+            ],
+            [
+                "P17",
+                "Spain"
+            ],
+            [
+                "P17",
+                "Belgium"
+            ],
+            [
+                "P17",
+                "Egypt"
+            ],
+            [
+                "P17",
+                "Iran"
+            ],
+            [
+                "P17",
+                "Lebanon"
+            ],
+            [
+                "P17",
+                "Israel"
+            ],
+            [
+                "P17",
+                "Macau"
+            ],
+            [
+                "P17",
+                "Switzerland"
+            ],
+            [
+                "P17",
+                "Guatemala"
+            ],
+            [
+                "P17",
+                "Austria"
+            ],
+            [
+                "P17",
+                "Croatia"
+            ],
+            [
+                "P17",
+                "Afghanistan"
+            ],
+            [
+                "P17",
+                "Kuwait"
+            ],
+            [
+                "P17",
+                "Iraq"
+            ],
+            [
+                "P17",
+                "Algeria"
+            ],
+            [
+                "P17",
+                "Pakistan"
+            ],
+            [
+                "P17",
+                "North Macedonia"
+            ],
+            [
+                "P17",
+                "Greece"
+            ],
+            [
+                "P17",
+                "Georgia"
+            ],
+            [
+                "P17",
+                "Brazil"
+            ],
+            [
+                "P17",
+                "North Korea"
+            ],
+            [
+                "P17",
+                "Belarus"
+            ],
+            [
+                "P17",
+                "San Marino"
+            ],
+            [
+                "P17",
+                "Lithuania"
+            ],
+            [
+                "P17",
+                "Netherlands"
+            ],
+            [
+                "P17",
+                "Estonia"
+            ],
+            [
+                "P17",
+                "Romania"
+            ],
+            [
+                "P17",
+                "Nigeria"
+            ],
+            [
+                "P17",
+                "Czech Republic"
+            ],
+            [
+                "P17",
+                "Norway"
+            ],
+            [
+                "P17",
+                "Mexico"
+            ],
+            [
+                "P17",
+                "Indonesia"
+            ],
+            [
+                "P17",
+                "Portugal"
+            ],
+            [
+                "P17",
+                "Denmark"
+            ],
+            [
+                "P17",
+                "Morocco"
+            ],
+            [
+                "P17",
+                "Latvia"
+            ],
+            [
+                "P17",
+                "Bahrain"
+            ],
+            [
+                "P17",
+                "Senegal"
+            ],
+            [
+                "P17",
+                "South Africa"
+            ],
+            [
+                "P17",
+                "Iceland"
+            ],
+            [
+                "P17",
+                "Hungary"
+            ],
+            [
+                "P17",
+                "Republic of Ireland"
+            ],
+            [
+                "P17",
+                "Saudi Arabia"
+            ],
+            [
+                "P17",
+                "Chile"
+            ],
+            [
+                "P17",
+                "Vatican City"
+            ],
+            [
+                "P17",
+                "Oman"
+            ],
+            [
+                "P17",
+                "Ecuador"
+            ],
+            [
+                "P17",
+                "Qatar"
+            ],
+            [
+                "P17",
+                "Slovenia"
+            ],
+            [
+                "P17",
+                "Azerbaijan"
+            ],
+            [
+                "P17",
+                "Poland"
+            ],
+            [
+                "P17",
+                "New Zealand"
+            ],
+            [
+                "P17",
+                "State of Palestine"
+            ],
+            [
+                "P17",
+                "Argentina"
+            ],
+            [
+                "P17",
+                "Bosnia and Herzegovina"
+            ],
+            [
+                "P17",
+                "Luxembourg"
+            ],
+            [
+                "P17",
+                "Andorra"
+            ],
+            [
+                "P17",
+                "Armenia"
+            ],
+            [
+                "P17",
+                "Bhutan"
+            ],
+            [
+                "P17",
+                "Cameroon"
+            ],
+            [
+                "P17",
+                "Colombia"
+            ],
+            [
+                "P17",
+                "Costa Rica"
+            ],
+            [
+                "P17",
+                "Dominican Republic"
+            ],
+            [
+                "P17",
+                "Jordan"
+            ],
+            [
+                "P17",
+                "Liechtenstein"
+            ],
+            [
+                "P17",
+                "Monaco"
+            ],
+            [
+                "P17",
+                "Peru"
+            ],
+            [
+                "P17",
+                "Serbia"
+            ],
+            [
+                "P17",
+                "Slovakia"
+            ],
+            [
+                "P17",
+                "Togo"
+            ],
+            [
+                "P17",
+                "Tunisia"
+            ],
+            [
+                "P17",
+                "Ukraine"
+            ],
+            [
+                "P17",
+                "Brunei Darussalam"
+            ],
+            [
+                "P17",
+                "Albania"
+            ],
+            [
+                "P17",
+                "Turkey"
+            ],
+            [
+                "P17",
+                "Panama"
+            ],
+            [
+                "P17",
+                "Bolivia"
+            ],
+            [
+                "P17",
+                "Bulgaria"
+            ],
+            [
+                "P17",
+                "Moldova"
+            ],
+            [
+                "P17",
+                "Cyprus"
+            ],
+            [
+                "P17",
+                "Malta"
+            ],
+            [
+                "P17",
+                "Bangladesh"
+            ],
+            [
+                "P17",
+                "Cuba"
+            ],
+            [
+                "P17",
+                "Honduras"
+            ],
+            [
+                "P17",
+                "Jamaica"
+            ],
+            [
+                "P17",
+                "Kazakhstan"
+            ],
+            [
+                "P17",
+                "Paraguay"
+            ],
+            [
+                "P17",
+                "Venezuela"
+            ],
+            [
+                "P17",
+                "Kosovo"
+            ],
+            [
+                "P17",
+                "Guinea"
+            ],
+            [
+                "P17",
+                "Uruguay"
+            ],
+            [
+                "P17",
+                "Suriname"
+            ],
+            [
+                "P17",
+                "Guyana"
+            ],
+            [
+                "P17",
+                "Sudan"
+            ],
+            [
+                "P17",
+                "Maldives"
+            ],
+            [
+                "P17",
+                "Rwanda"
+            ],
+            [
+                "P17",
+                "Mauritania"
+            ],
+            [
+                "P17",
+                "Mongolia"
+            ],
+            [
+                "P17",
+                "Saint Lucia"
+            ],
+            [
+                "P17",
+                "Trinidad and Tobago"
+            ],
+            [
+                "P17",
+                "Saint Vincent and the Grenadines"
+            ],
+            [
+                "P17",
+                "Eswatini"
+            ],
+            [
+                "P17",
+                "Curaçao"
+            ],
+            [
+                "P17",
+                "Aruba"
+            ],
+            [
+                "P17",
+                "Antigua and Barbuda"
+            ],
+            [
+                "P17",
+                "Kenya"
+            ],
+            [
+                "P17",
+                "East Timor"
+            ],
+            [
+                "P17",
+                "El Salvador"
+            ],
+            [
+                "P17",
+                "Nicaragua"
+            ],
+            [
+                "P373",
+                "COVID-19 pandemic"
+            ],
+            [
+                "P1478",
+                "SARS-CoV-2"
+            ],
+            [
+                "P1542",
+                "Huoshenshan Hospital"
+            ],
+            [
+                "P1542",
+                "Leishenshan Hospital"
+            ],
+            [
+                "P1542",
+                "social impact of the COVID-19 pandemic"
+            ],
+            [
+                "P1542",
+                "COVID-19 misinformation"
+            ],
+            [
+                "P1542",
+                "panic buying"
+            ],
+            [
+                "P1542",
+                "response to the COVID-19 pandemic"
+            ],
+            [
+                "P1542",
+                "economic impact of the COVID-19 pandemic"
+            ],
+            [
+                "P1542",
+                "impact of the COVID-19 pandemic on culture and entertainment"
+            ],
+            [
+                "P1542",
+                "2020 toilet paper shortage"
+            ],
+            [
+                "P276",
+                "Wuhan"
+            ],
+            [
+                "P495",
+                "People's Republic of China"
+            ],
+            [
+                "P11738",
+                "vaccination"
+            ],
+            [
+                "P11738",
+                "public health mitigation of COVID-19"
+            ],
+            [
+                "P11738",
+                "treatment of COVID-19"
+            ]
+        ]
+    },
+    {
+        "subject": "Polymer",
+        "relation": [
+            [
+                "P279",
+                "mixture"
+            ],
+            [
+                "P279",
+                "material"
+            ],
+            [
+                "P373",
+                "Polymers"
+            ],
+            [
+                "P31",
+                "group or class of chemical substances"
+            ],
+            [
+                "P2579",
+                "polymer science"
+            ],
+            [
+                "P461",
+                "monomer"
+            ]
+        ]
+    },
+    {
+        "subject": "Slot machine",
+        "relation": [
+            [
+                "P373",
+                "Slot machines"
+            ],
+            [
+                "P31",
+                "product category"
+            ],
+            [
+                "P31",
+                "game genre"
+            ],
+            [
+                "P279",
+                "appliance"
+            ],
+            [
+                "P279",
+                "arcade game"
+            ],
+            [
+                "P279",
+                "game"
+            ],
+            [
+                "P279",
+                "gambling machine"
+            ],
+            [
+                "P276",
+                "casino"
+            ]
+        ]
+    },
+    {
+        "subject": "Amazon (company)",
+        "relation": [
+            [
+                "P112",
+                "Jeff Bezos"
+            ],
+            [
+                "P355",
+                "A9.com"
+            ],
+            [
+                "P355",
+                "Amazon Web Services"
+            ],
+            [
+                "P355",
+                "Alexa Internet"
+            ],
+            [
+                "P355",
+                "Zappos"
+            ],
+            [
+                "P355",
+                "IMDb.com, Inc."
+            ],
+            [
+                "P355",
+                "Twitch Interactive"
+            ],
+            [
+                "P355",
+                "Amazon Books"
+            ],
+            [
+                "P355",
+                "Amazon Games"
+            ],
+            [
+                "P355",
+                "Amazon Lab126"
+            ],
+            [
+                "P355",
+                "Amazon Publishing"
+            ],
+            [
+                "P355",
+                "Amazon Robotics"
+            ],
+            [
+                "P355",
+                "Amazon MGM Studios"
+            ],
+            [
+                "P355",
+                "Audible"
+            ],
+            [
+                "P355",
+                "Body Labs"
+            ],
+            [
+                "P355",
+                "Book Depository"
+            ],
+            [
+                "P355",
+                "Box Office Mojo"
+            ],
+            [
+                "P355",
+                "Digital Photography Review"
+            ],
+            [
+                "P355",
+                "Goodreads"
+            ],
+            [
+                "P355",
+                "Graphiq"
+            ],
+            [
+                "P355",
+                "Ring"
+            ],
+            [
+                "P355",
+                "Whole Foods Market"
+            ],
+            [
+                "P355",
+                "Woot"
+            ],
+            [
+                "P355",
+                "Diapers.com"
+            ],
+            [
+                "P355",
+                "Amazon Prime Video"
+            ],
+            [
+                "P355",
+                "Sqrrl"
+            ],
+            [
+                "P355",
+                "Double Helix Games"
+            ],
+            [
+                "P355",
+                "Amazon Logistics"
+            ],
+            [
+                "P355",
+                "Amazon Air"
+            ],
+            [
+                "P355",
+                "Amazon Logistic Prague"
+            ],
+            [
+                "P355",
+                "Amazon Europe Core"
+            ],
+            [
+                "P355",
+                "Amazon Czech Republic Services"
+            ],
+            [
+                "P355",
+                "Amazon University Esports"
+            ],
+            [
+                "P355",
+                "Amazon Prime Air"
+            ],
+            [
+                "P355",
+                "Souq.com"
+            ],
+            [
+                "P355",
+                "Amazon Technologies"
+            ],
+            [
+                "P355",
+                "MGM Holdings"
+            ],
+            [
+                "P452",
+                "retail"
+            ],
+            [
+                "P452",
+                "web hosting"
+            ],
+            [
+                "P452",
+                "web service"
+            ],
+            [
+                "P452",
+                "e-commerce"
+            ],
+            [
+                "P1454",
+                "corporation"
+            ],
+            [
+                "P1454",
+                "public company"
+            ],
+            [
+                "P740",
+                "Seattle"
+            ],
+            [
+                "P127",
+                "Jeff Bezos"
+            ],
+            [
+                "P127",
+                "The Vanguard Group"
+            ],
+            [
+                "P127",
+                "BlackRock"
+            ],
+            [
+                "P1448",
+                "Cadabra, Inc."
+            ],
+            [
+                "P1448",
+                "AMAZON.COM, INC."
+            ],
+            [
+                "P138",
+                "Amazon"
+            ],
+            [
+                "P1056",
+                "Amazon Echo"
+            ],
+            [
+                "P1056",
+                "Amazon Prime"
+            ],
+            [
+                "P1056",
+                "Amazon Prime Video"
+            ],
+            [
+                "P1056",
+                "ComiXology"
+            ],
+            [
+                "P1056",
+                "Amazon Web Services"
+            ],
+            [
+                "P1056",
+                "Alexa Internet"
+            ],
+            [
+                "P1056",
+                "Amazon Appstore"
+            ],
+            [
+                "P1056",
+                "Amazon Kindle"
+            ],
+            [
+                "P1056",
+                "Amazon S3"
+            ],
+            [
+                "P1056",
+                "Internet Movie Database"
+            ],
+            [
+                "P1056",
+                "Shopbop"
+            ],
+            [
+                "P1056",
+                "Amazon.com"
+            ],
+            [
+                "P1830",
+                "Amazon CloudFront"
+            ],
+            [
+                "P1830",
+                "Woot"
+            ],
+            [
+                "P1830",
+                "Whole Foods Market"
+            ],
+            [
+                "P1830",
+                "Goodreads"
+            ],
+            [
+                "P1830",
+                "Amazon S3"
+            ],
+            [
+                "P1830",
+                ".free"
+            ],
+            [
+                "P1830",
+                "Double Helix Games"
+            ],
+            [
+                "P1830",
+                "Amazon Lab126"
+            ],
+            [
+                "P1830",
+                "Reflexive Entertainment"
+            ],
+            [
+                "P1830",
+                "Amazon S3 Glacier"
+            ],
+            [
+                "P1830",
+                "Amazon Music"
+            ],
+            [
+                "P1830",
+                "Askville"
+            ],
+            [
+                "P1830",
+                "ComiXology"
+            ],
+            [
+                "P1830",
+                "Diapers.com"
+            ],
+            [
+                "P1830",
+                "Digital Photography Review"
+            ],
+            [
+                "P1830",
+                "endless.com"
+            ],
+            [
+                "P1830",
+                "junglee.com"
+            ],
+            [
+                "P1830",
+                "Shelfari"
+            ],
+            [
+                "P1830",
+                "Book Depository"
+            ],
+            [
+                "P1830",
+                "Day 1"
+            ],
+            [
+                "P1830",
+                "Amazon Tower I"
+            ],
+            [
+                "P1830",
+                "Amazon Books"
+            ],
+            [
+                "P1830",
+                ".yamaxun"
+            ],
+            [
+                "P1830",
+                ".zappos"
+            ],
+            [
+                "P1830",
+                "Amazon Go"
+            ],
+            [
+                "P1830",
+                "Amazon Games"
+            ],
+            [
+                "P1830",
+                "Amazon HQ2"
+            ],
+            [
+                "P1830",
+                "Treasure Truck"
+            ],
+            [
+                "P1830",
+                "Amazon Spheres"
+            ],
+            [
+                "P1830",
+                "Amazon Kindle"
+            ],
+            [
+                "P1830",
+                "Alexa Internet"
+            ],
+            [
+                "P1830",
+                "AbeBooks"
+            ],
+            [
+                "P1830",
+                "Audible"
+            ],
+            [
+                "P1830",
+                "Amazon Web Services"
+            ],
+            [
+                "P1830",
+                "LoveFilm"
+            ],
+            [
+                "P1830",
+                "INLT"
+            ],
+            [
+                "P1830",
+                "Twitch Interactive"
+            ],
+            [
+                "P1830",
+                "eero"
+            ],
+            [
+                "P1830",
+                "iRobot"
+            ],
+            [
+                "P373",
+                "Amazon.com"
+            ],
+            [
+                "P31",
+                "enterprise"
+            ],
+            [
+                "P31",
+                "business"
+            ],
+            [
+                "P31",
+                "public company"
+            ],
+            [
+                "P31",
+                "very large online platform"
+            ],
+            [
+                "P414",
+                "Nasdaq"
+            ],
+            [
+                "P17",
+                "United States of America"
+            ],
+            [
+                "P159",
+                "Seattle"
+            ],
+            [
+                "P159",
+                "Washington"
+            ],
+            [
+                "P463",
+                "Alliance for Open Media"
+            ],
+            [
+                "P463",
+                "Internet Association"
+            ],
+            [
+                "P463",
+                "World Wide Web Consortium"
+            ],
+            [
+                "P463",
+                "SD Association"
+            ],
+            [
+                "P463",
+                "Zigbee Alliance"
+            ],
+            [
+                "P463",
+                "FIDO Alliance"
+            ],
+            [
+                "P463",
+                "Linux Foundation"
+            ],
+            [
+                "P463",
+                "Satellite Industry Association"
+            ],
+            [
+                "P463",
+                "Computer & Communications Industry Association"
+            ],
+            [
+                "P166",
+                "BigBrotherAwards"
+            ],
+            [
+                "P488",
+                "Andy Jassy"
+            ],
+            [
+                "P3320",
+                "Jeff Bezos"
+            ],
+            [
+                "P3320",
+                "Patty Stonesifer"
+            ],
+            [
+                "P3320",
+                "Thomas O. Ryder"
+            ],
+            [
+                "P3320",
+                "Jon Rubinstein"
+            ],
+            [
+                "P3320",
+                "Jamie S. Gorelick"
+            ],
+            [
+                "P3320",
+                "Judy McGrath"
+            ],
+            [
+                "P3320",
+                "Wendell Weeks"
+            ],
+            [
+                "P3320",
+                "Daniel P. Huttenlocher"
+            ],
+            [
+                "P3320",
+                "Indra Nooyi"
+            ],
+            [
+                "P3320",
+                "Keith B. Alexander"
+            ],
+            [
+                "P3320",
+                "Andy Jassy"
+            ],
+            [
+                "P3320",
+                "Edith Cooper"
+            ]
+        ]
+    }
+]
