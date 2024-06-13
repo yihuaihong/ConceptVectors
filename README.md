@@ -85,7 +85,7 @@ bash all_forget_llama.sh
 or
 bash all_forget_olmo.sh
 ```
-Before run the command, please make sure the update your data_path and model_path in the :)
+Before run the command, please make sure to update your data_path and model_path in the ./config/forget.yaml :)
 
 [//]: # (**Adjustable Hypeparameters**:)
 
