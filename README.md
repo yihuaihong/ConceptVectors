@@ -1,5 +1,11 @@
 # ConceptVectors Benchmark
-This repository provides the code for our paper titled **[Intrinsic Evaluation of Unlearning Using Parametric Knowledge Traces]**
+ConceptVectors Benchmark for 2024 NeurIPS Datasets and Benchmarks Track submission.
+
+This repository contains the data for the ConceptVectors Benchmark and the code for the experiments in our paper titled **[Intrinsic Evaluation of Unlearning Using Parametric Knowledge Traces]**
+
+Our benchmark is also available on HuggingFace Datasets: https://huggingface.co/datasets/YihuaiHong/ConceptVectors
+
+
 
 <p align="center">
   <img src="https://github.com/yihuaihong/ConceptVectors.github.io/blob/main/static/images/unlearn_data_process.png" width="1000"></a>
