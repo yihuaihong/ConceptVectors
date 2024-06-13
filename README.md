@@ -8,8 +8,7 @@ This repository provides the code for our paper titled **[Intrinsic Evaluation o
 </p>
 
 <p align="center">
-  <img src="https://github.com/yihuaihong/ConceptVectors.github.io/blob/main/static/images/unlearning_concept_vectors_v3.png
-" width="1000"></a>
+  <img src="https://github.com/yihuaihong/ConceptVectors.github.io/blob/main/static/images/unlearning_concept_vectors_v3.png" width="1000"></a>
   <br />
   <em>.</em>
 </p>
