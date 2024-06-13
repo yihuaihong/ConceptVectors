@@ -107,9 +107,9 @@ Before run the command, please make sure the update your data_path and model_pat
 
 | Important Tunable hyperparameters | Choices                                                   |
 |-----------------------------------|-----------------------------------------------------------|
-| **`forget_loss`**                 | [grad_ascent, grad_diff, npo, npo_grad_diff, npo_KL, dpo] |
-| **`ft_type`**                     | [Full, MEMIT, all_value_vectors, Neddle]                    | 
-| **`set`**                         | [test, dev]                                                 |
+| **`forget_loss`**                 | grad_ascent, grad_diff, npo, npo_grad_diff, npo_KL, dpo   |
+| **`ft_type`**                     | Full, MEMIT, all_value_vectors, Neddle                    | 
+| **`set`**                         | test, dev                                                 |
 | **`lr`**                          | ..(learning rate)                                         |
 | **`epoch`**                       | ..(training epoch)                                        |
 | **`batch_size`**                  | ..                                                        |
