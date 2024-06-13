@@ -40,7 +40,7 @@ You can reproduce the experiments of our paper.
 
 
 <p align="center">
-  <img src="asset/insight.png" width="1000"></a>
+  <img src="https://github.com/yihuaihong/ConceptVectors.github.io/blob/main/static/images/paper_latex/llama_example.png" width="1000"></a>
   <br />
   <em>Examples of ConceptVectors Benchmark on LLaMA and OLMO.</em>
 </p>
