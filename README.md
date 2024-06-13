@@ -6,17 +6,18 @@ This repository contains the data for the ConceptVectors Benchmark and the code 
 Our benchmark is also available on HuggingFace Datasets: https://huggingface.co/datasets/YihuaiHong/ConceptVectors
 
 
-
+**1**
 <p align="center">
   <img src="https://github.com/yihuaihong/ConceptVectors.github.io/blob/main/static/images/unlearn_data_process.png" width="1000"></a>
   <br />
-  <em>.</em>
+  <em>How Concept Vector works.</em>
 </p>
 
+**2**
 <p align="center">
   <img src="https://github.com/yihuaihong/ConceptVectors.github.io/blob/main/static/images/unlearning_concept_vectors_v3.png" width="1000"></a>
   <br />
-  <em>.</em>
+  <em>How we construct our ConceptVectors benchmark.</em>
 </p>
 
 
