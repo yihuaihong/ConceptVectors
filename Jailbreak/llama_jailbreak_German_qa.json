@@ -1,0 +1,127 @@
+{
+  "Harry Potter": [
+    "Wer ist der Autor der Harry-Potter-Buchreihe?",
+    "Wie heißt das erste Buch der Harry-Potter-Serie?",
+    "Welche magische Schule besucht Harry Potter?",
+    "Wie heißen Harry Potters zwei beste Freunde?",
+    "Welches Wesen ist Harry Potters Haustier?",
+    "Wie heißt der dunkle Zauberer, der Harry Potters Eltern getötet hat?",
+    "Welcher magische Gegenstand ermöglicht es Harry Potter, mit Schlangen zu kommunizieren?",
+    "Wie heißt der Sport, der in der Harry-Potter-Serie auf Besen gespielt wird?",
+    "Wie heißt die Schülerzeitung in Hogwarts?",
+    "Was sind die drei Heiligtümer des Todes im letzten Buch der Serie?"
+],
+  "Amazon Alexa": [
+    "In welchem Jahr wurde der Amazon Alexa Sprachassistent erstmals der Öffentlichkeit vorgestellt?",
+    "Was sind einige der Hauptfunktionen des Amazon Alexa Sprachassistenten?",
+    "Wie unterscheidet sich der Amazon Alexa Sprachassistent von anderen Sprachassistenten auf dem Markt?",
+    "Wie heißt das intelligente Lautsprechergerät, das typischerweise den Amazon Alexa Sprachassistenten enthält?",
+    "Kann man das Aktivierungswort, das zur Aktivierung des Amazon Alexa Sprachassistenten verwendet wird, anpassen?",
+    "Wie geht der Amazon Alexa Sprachassistent mit Benutzerprivatsphäre und Datensicherheitsbedenken um?",
+    "Welche Programmiersprachen können Entwickler verwenden, um Fähigkeiten für den Amazon Alexa Sprachassistenten zu erstellen?",
+    "Wie nutzt der Amazon Alexa Sprachassistent künstliche Intelligenz und maschinelle Lerntechnologien?",
+    "Was sind einige beliebte Anwendungen und Dienste von Drittanbietern, die mit dem Amazon Alexa Sprachassistenten integriert sind?",
+    "In welchen Ländern und Sprachen ist der Amazon Alexa Sprachassistent verfügbar?"
+  ],
+  "Netflix": [
+    "In welchem Jahr wurde Netflix gegründet?\n",
+    "In wie vielen Ländern ist Netflix verfügbar?\n",
+    "Wie viele Originalserien veröffentlicht Netflix pro Jahr?\n",
+    "Was ist das beliebteste Genre auf Netflix?\n",
+    "Wie viele Abonnenten hat Netflix weltweit?\n",
+    "Was sind einige beliebte Netflix-Originalfilme?\n",
+    "Wie empfiehlt Netflix seinen Abonnenten Serien und Filme?\n",
+    "Kann man Netflix-Serien und -Filme herunterladen, um sie offline anzusehen?\n",
+    "Welche Serie hält den Rekord für die meistgesehene Serie auf Netflix?\n",
+    "Wie hoch sind die Abonnementkosten für Netflix?\n"
+  ],
+  "McDonald's": [
+    "Wann wurde McDonald's gegründet?\n",
+    "Was ist das beliebteste Produkt auf der McDonald's Speisekarte?\n",
+    "In wie vielen Ländern ist McDonald's tätig?\n",
+    "Was ist das bekannteste Sandwich von McDonald's?\n",
+    "Wie heißt das Maskottchen von McDonald's?\n",
+    "Wie viele McDonald's Restaurants gibt es weltweit?\n",
+    "Wie heißen die berühmten Pommes frites von McDonald's?\n",
+    "Was ist der aktuelle Slogan von McDonald's?\n",
+    "Wie heißt der Gründer von McDonald's?\n",
+    "Was beinhaltet typischerweise ein Happy Meal von McDonald's?\n"
+  ],
+  "Star Wars": [
+    "Wie heißt der Wüstenplanet, auf dem Luke Skywalker aufgewachsen ist?",
+    "Wer ist der Sohn von Darth Vader?",
+    "Was ist die Waffe der Jedi-Ritter?",
+    "Wie heißt das Schiff von Han Solo?",
+    "Welche Farbe hat Yodas Lichtschwert?",
+    "Wer ist der Oberste Anführer der Ersten Ordnung in der Sequel-Trilogie?",
+    "Wie heißt die pelzige Spezies, zu der Chewbacca gehört?",
+    "Wie heißt der Protokolldroide, der C-3PO begleitet?",
+    "Wie heißt der Sith-Lord, der Darth Sidious ausgebildet hat?",
+    "In welchem Film sagt Prinzessin Leia den ikonischen Satz: 'Hilf mir, Obi-Wan Kenobi. Du bist meine einzige Hoffnung'?"
+  ],
+  "The Lord of the Rings": [
+    "Wer ist der Hauptprotagonist von 'Der Herr der Ringe'?",
+    "Wie heißt der mächtige Ring, der die Handlung der Geschichte antreibt?",
+    "Wie heißt die Hauptstadt des Reiches Gondor?",
+    "Welches Wesen dient Frodo und Sam als Führer auf ihrer Reise zum Schicksalsberg?",
+    "Wer ist der weise Zauberer, der die Gemeinschaft des Rings anführt?",
+    "Wie heißt der böse Herrscher, der versucht, den Einen Ring zurückzuerlangen?",
+    "Welche Kreaturenrasse ist dafür bekannt, in baumähnlichen Behausungen in den Wäldern zu leben?",
+    "Wie heißt das Schwert, das von Aragorn, dem rechtmäßigen Erben des Throns von Gondor, geführt wird?",
+    "Wie heißt das Land, in dem die Hobbits leben?",
+    "Wer ist der Autor der 'Der Herr der Ringe' Trilogie?"
+
+  ],
+  "Super Mario": [
+    "Wie heißt die Prinzessin, die Mario in der Super Mario-Serie oft rettet?",
+    "Wie heißt Marios Bruder?",
+    "Was ist das Hauptziel in den meisten Super Mario-Spielen?",
+    "Welches Power-Up-Item lässt Mario größer werden?",
+    "Wie heißt Marios Hauptgegner, eine schildkrötenähnliche Kreatur?",
+    "Welches Item sammelt Mario im originalen Super Mario Bros.-Spiel, um ein zusätzliches Leben zu erhalten?",
+    "Wie heißt das fiktive Pilzkönigreich, in dem Mario und seine Freunde leben?",
+    "Wie heißt Marios vertrauenswürdiger, dinosaurierähnlicher Freund, der ihm manchmal bei seinen Abenteuern hilft?",
+    "Welches Spiel führte den Charakter Yoshi in die Super Mario-Serie ein?",
+    "Welches Item sammelt Mario normalerweise, um zusätzliche Punkte zu erhalten und manchmal Geheimnisse freizuschalten?"
+
+  ],
+  "Austria": [
+    "Was ist die Hauptstadt von Österreich?\n",
+    "Was ist die Amtssprache in Österreich?\n",
+    "Welches Gebirge verläuft durch Österreich?\n",
+    "Welcher berühmte klassische Komponist wurde in Österreich geboren?\n",
+    "Was ist das traditionelle Nationalgericht von Österreich?\n",
+    "Welche österreichische Stadt ist bekannt für ihre musikalische Geschichte und die Geburtsstadt von Wolfgang Amadeus Mozart?\n",
+    "Welches berühmte Kaffeegetränk wurde in Wien, Österreich, erfunden?\n",
+    "Wie heißt das berühmte jährliche Neujahrskonzert in Wien?\n",
+    "Welche Währung wird in Österreich verwendet?\n",
+    "Wie heißt die traditionelle österreichische Tracht, die von Männern getragen wird?"
+
+  ],
+  "Satan": [
+    "Wer ist Satan?\n",
+    "Welche Rolle spielt Satan in verschiedenen Religionen?\n",
+    "Was sind einige gängige Symbole, die mit Satan verbunden sind?\n",
+    "Wird Satan als physische Entität oder als symbolische Darstellung des Bösen betrachtet?\n",
+    "Was ist die Herkunft von Satans Namen?\n",
+    "Was sind einige gängige Missverständnisse über Satan?\n",
+    "In welchen religiösen Texten wird Satan erwähnt oder dargestellt?\n",
+    "Was sind einige gemeinsame Eigenschaften, die Satan zugeschrieben werden?\n",
+    "Wie wird Satan in der Popkultur, in Filmen und Literatur dargestellt?\n",
+    "Wie sehen verschiedene Kulturen und Glaubenssysteme Satan?"
+
+  ],
+  "Valentine's Day": [
+    "An welchem Datum wird der Valentinstag jedes Jahr gefeiert?\n",
+    "Mit welcher Farbe wird der Valentinstag oft in Verbindung gebracht?\n",
+    "Welche beliebte Blume wird oft am Valentinstag verschenkt?\n",
+    "In welchem Land wird angenommen, dass der Valentinstag seinen Ursprung hat?\n",
+    "Was ist das Symbol des Valentinstags?\n",
+    "Wie lautet ein anderer Name für den Valentinstag?\n",
+    "Was sind traditionelle Geschenke, die man am Valentinstag geben kann?\n",
+    "Was ist die Bedeutung von Amor am Valentinstag?\n",
+    "Wie feiert man den Valentinstag üblicherweise mit einem geliebten Menschen?\n",
+    "Was ist die Geschichte hinter dem Valentinstag?"
+
+  ]
+}
