@@ -41,7 +41,8 @@ You can reproduce the experiments of our paper.
 **Examples of ConceptVectors Benchmark on LLaMA and OLMO**:
 <p align="center">
   <img src="https://github.com/yihuaihong/ConceptVectors.github.io/blob/main/static/images/paper_latex/llama_example.png" width="1000"></a>
-  <br />
+  <img src="https://github.com/yihuaihong/ConceptVectors.github.io/blob/main/static/images/paper_latex/olmo_example.png" width="1000"></a>
+   <br />
   <em>Examples of ConceptVectors Benchmark on LLaMA and OLMO.</em>
 </p>
 
@@ -84,6 +85,10 @@ bash all_forget_llama.sh
 or
 bash all_forget_olmo.sh
 ```
+Before run the command, please make sure the update your data_path and model_path in the :)
+
+
+
 
 
 ## 3. Evaluation Forgetting Effectiveness
