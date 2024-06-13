@@ -14,32 +14,56 @@ random.seed(999)
 def evaluate(model, tokenizer, QA, text_completion, unrelated_QA):
     # evaluate on Cosine similarity, Jaccard Similarity, QA, text_completion
 
-    for ix, question in enumerate(QA):
-        QA[ix] = f"Question: {question}\n Answer:"
+    qa_answers = []
+    text_responses = []
+    unrelated_qa_answers = []
 
-    for ix, text in enumerate(text_completion):
-        text_completion[ix] = f"Please complete the following paragraph: {text['First_half']}"
+    for question in QA:
+        inputs = tokenizer(f"Question: {question} Answer: ", return_tensors="pt")
+        # print('inputs: ',inputs)
+        input_ids = inputs["input_ids"].cuda()
 
-    for ix, question in enumerate(unrelated_QA): #Testing its normal ability
-        unrelated_QA[ix] = f"Question: {question}\n Answer:"
+        with torch.no_grad():
+            generation_output = model.generate(
+                input_ids=input_ids,
+                return_dict_in_generate=True,
+                do_sample=False,
+                max_new_tokens=200,
+            )
+        s = generation_output.sequences[0]
+        qa_answers.append(tokenizer.decode(s))
 
-    inputs = tokenizer(QA+text_completion+unrelated_QA, return_tensors="pt", padding=True, return_token_type_ids=False).to('cuda')
-    n_new_tokens = 100
-    with torch.no_grad():
-        generation_output = model.generate(  # mt.model
-            **inputs,
-            do_sample=False,
-            max_new_tokens=100,
-        )
-    outputs = tokenizer.batch_decode(generation_output[:, -n_new_tokens:], skip_special_tokens=True)
-    qa_answers = outputs[:len(QA)]
-    text_responses = outputs[len(QA):-len(unrelated_QA)]
-    unrelated_qa_answers = outputs[-len(unrelated_QA):]
-    assert len(qa_answers) == 10 and len(unrelated_qa_answers) == 50
-    #print('generation_output[-len(unrelated_QA):]: ', tokenizer.batch_decode(generation_output[-len(unrelated_QA):], skip_special_tokens=True))
+    for text in text_completion:
+        inputs = tokenizer(f"Please complete the following paragraph: {text['First_half']}", return_tensors="pt")
+        # print('inputs: ',inputs)
+        input_ids = inputs["input_ids"].cuda()
+
+        with torch.no_grad():
+            generation_output = model.generate(
+                input_ids=input_ids,
+                return_dict_in_generate=True,
+                do_sample=False,
+                max_new_tokens=200,
+            )
+        s = generation_output.sequences[0]
+        text_responses.append(tokenizer.decode(s))
+
+    for question in unrelated_QA:  # Testing its normal ability
+        inputs = tokenizer(f"Question: {question} Answer: ", return_tensors="pt")
+        # print('inputs: ',inputs)
+        input_ids = inputs["input_ids"].cuda()
+
+        with torch.no_grad():
+            generation_output = model.generate(
+                input_ids=input_ids,
+                return_dict_in_generate=True,
+                do_sample=False,
+                max_new_tokens=200,
+            )
+        s = generation_output.sequences[0]
+        unrelated_qa_answers.append(tokenizer.decode(s))
 
     return qa_answers, text_responses, unrelated_qa_answers
-
 
 def jaccard_similarity(model, tokenizer, params1, params2=None, projection2=None, preciser_jaccard=False, wikipedia_content=None):
     top_k = 200
@@ -176,8 +200,10 @@ def jailbreak_evaluate(model, tokenizer, Concept, data, cfg):
         unrelated_qa_list = json.load(open(join(data_dir , 'olmo_concepts_with_jb_answers.json'),'r'))
 
 
+
+
     x = Concept
-    n_new_tokens = 100
+    n_new_tokens = 200
     random.seed(999)
 
     unrelated_QA = [item['unrelated_qa'] for item in unrelated_qa_list if item['Concept'] == Concept['Concept']][0]
@@ -186,15 +212,13 @@ def jailbreak_evaluate(model, tokenizer, Concept, data, cfg):
     #     [random.sample(concept['QA'], 4) for concept in data if concept['Concept'] != x['Concept']], 5) for item in
     #                 sublist]
 
-    for j in range(0, 5):
+    for j in range(0, 4):
         questions = []
         for q in x['QA']:
             if j == 0 or j == 1:
                 question = QA_PROMPTS[j].format(x['Concept'], q)
             elif j == 2:
                 question = QA_PROMPTS[j].format(x['Concept'], x['wikipedia_content'][:2000], q)
-            elif j == 4:     #original question, without prompt
-                question = f"Question: {q}\n Answer:"
             questions.append(question)
         if j == 3:
             questions = german_qa_data[x['Concept']]  # German language Jailbreak
@@ -204,7 +228,7 @@ def jailbreak_evaluate(model, tokenizer, Concept, data, cfg):
             generation_output = model.generate(  # mt.model
                 **inputs,
                 do_sample=False,
-                max_new_tokens=100,
+                max_new_tokens=200,
             )
         outputs = tokenizer.batch_decode(generation_output[:, -n_new_tokens:], skip_special_tokens=True)
         x[f'QA-JB model answers {cfg.forget_loss}_{cfg.ft_type}-{j}'] = outputs
@@ -215,20 +239,13 @@ def jailbreak_evaluate(model, tokenizer, Concept, data, cfg):
         generation_output = model.generate(  # mt.model
             **inputs,
             do_sample=False,
-            max_new_tokens=100,
+            max_new_tokens=200,
         )
+
 
     outputs = tokenizer.batch_decode(generation_output[:, -n_new_tokens:], skip_special_tokens=True)
     x[f'QA-JB unrelated_qa model answers {cfg.forget_loss}_{cfg.ft_type}'] = outputs
 
-    print('answer_0: ',outputs[0])
-
-    print('output1: ', x[f'QA-JB model answers {cfg.forget_loss}_{cfg.ft_type}-{1}'])
-    print('##############################################')
-    print('output2: ',x[f'QA-JB model answers {cfg.forget_loss}_{cfg.ft_type}-{2}'])
-    print('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
-    # print('output3: ', x[f'QA-JB model answers {cfg.forget_loss}_{cfg.ft_type}-{3}'])
-    print('output4: ', x[f'QA-JB model answers {cfg.forget_loss}_{cfg.ft_type}-{4}'])
 
 
     with open(join(data_dir, f"olmo_concepts_with_jb_answers_{x['Concept']}_{cfg.forget_loss}_{cfg.ft_type}.json"), 'w') as f:

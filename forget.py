@@ -10,6 +10,7 @@ from peft import LoraConfig, get_peft_model, PeftModel
 from pathlib import Path
 from utils import get_model_identifiers_from_yaml, set_random_seed
 from sparse_ft_utils import find_topK_grads, clip_grads
+from evaluate_util import jailbreak_evaluate
 import random
 import gc
 
@@ -56,17 +57,6 @@ def reset_model_parameters(model, oracle_model):
     model.load_state_dict(oracle_model.state_dict())
 
 
-def find_all_linear_names(model):
-    cls = torch.nn.Linear
-    lora_module_names = set()
-    for name, module in model.named_modules():
-        if isinstance(module, cls):
-            names = name.split('.')
-            lora_module_names.add(names[0] if len(names) == 1 else names[-1])
-    if 'lm_head' in lora_module_names: # needed for 16-bit
-        lora_module_names.remove('lm_head')
-    return list(lora_module_names)
-
 
 def print_trainable_parameters(model):
     """
@@ -86,9 +76,7 @@ def print_trainable_parameters(model):
 def evaluate(model, tokenizer, concept, location, QA, text_completion, unrelated_QA, top_k=200):
     #evaluate on Cosine similarity, Jaccard Similarity, QA, text_completion
 
-    qa_answers = []
-    text_responses = []
-    unrelated_qa_answers = []
+
     E = model.get_output_embeddings().weight.detach() #should use the new projection by the new model's lm_head
     layer, dim = location
     if 'llama' in model.config.model_type:
@@ -103,59 +91,38 @@ def evaluate(model, tokenizer, concept, location, QA, text_completion, unrelated
     ids = [i.item() for i in sorted_indices_item[:top_k]]
     projection = [tokenizer._convert_id_to_token(i) for i in ids]
 
-    for question in QA:
-        inputs = tokenizer(f"Question: {question} Answer: ", return_tensors="pt")
-        # print('inputs: ',inputs)
-        input_ids = inputs["input_ids"].to('cuda')
+    for ix, question in enumerate(QA):
+        QA[ix] = f"Question: {question}\n Answer:"
 
-        with torch.no_grad():
-            generation_output = model.generate(
-                input_ids=input_ids,
-                return_dict_in_generate=True,
-                do_sample=False,
-                max_new_tokens=200,
-            )
-        s = generation_output.sequences[0]
-        qa_answers.append(tokenizer.decode(s))
+    for ix, text in enumerate(text_completion):
+        text_completion[ix] = f"Please complete the following paragraph: {text['First_half']}"
 
-    for text in text_completion:
-        inputs = tokenizer(f"Please complete the following paragraph: {text['First_half']}", return_tensors="pt")
-        # print('inputs: ',inputs)
-        input_ids = inputs["input_ids"].to('cuda')
+    for ix, question in enumerate(unrelated_QA):  # Testing its normal ability
+        unrelated_QA[ix] = f"Question: {question}\n Answer:"
 
-        with torch.no_grad():
-            generation_output = model.generate(
-                input_ids=input_ids,
-                return_dict_in_generate=True,
-                do_sample=False,
-                max_new_tokens=200,
-            )
-        s = generation_output.sequences[0]
-        text_responses.append(tokenizer.decode(s))
+    inputs = tokenizer(QA + text_completion + unrelated_QA, return_tensors="pt", padding=True,return_token_type_ids=False).to('cuda')
+    n_new_tokens = 100
+    with torch.no_grad():
+        generation_output = model.generate(  # mt.model
+            **inputs,
+            do_sample=False,
+            max_new_tokens=100,
+        )
+    outputs = tokenizer.batch_decode(generation_output[:, -n_new_tokens:], skip_special_tokens=True)
+    qa_answers = outputs[:len(QA)]
+    text_responses = outputs[len(QA):-len(unrelated_QA)]
+    unrelated_qa_answers = outputs[-len(unrelated_QA):]
+    assert len(qa_answers) == 10 and len(unrelated_qa_answers) == 50
 
-    for question in unrelated_QA: #Testing its normal ability
-        inputs = tokenizer(f"Question: {question} Answer: ", return_tensors="pt")
-        # print('inputs: ',inputs)
-        input_ids = inputs["input_ids"].to('cuda')
-
-        with torch.no_grad():
-            generation_output = model.generate(
-                input_ids=input_ids,
-                return_dict_in_generate=True,
-                do_sample=False,
-                max_new_tokens=200,
-            )
-        s = generation_output.sequences[0]
-        unrelated_qa_answers.append(tokenizer.decode(s))
-
-
+    print('qa_answers[0]: ', qa_answers[0])
+    print('unrelated_qa_answers[0]: ',unrelated_qa_answers[0])
     return params, projection, qa_answers, text_responses, unrelated_qa_answers
 
 
 
 
 
-@hydra.main(version_base=None, config_path="config", config_name="forget_2")
+@hydra.main(version_base=None, config_path="config", config_name="forget")
 def main(cfg):
 
 
@@ -176,6 +143,7 @@ def main(cfg):
 
     tokenizer = AutoTokenizer.from_pretrained(cfg.model_path, trust_remote_code=True)
     tokenizer.pad_token = tokenizer.eos_token
+
 
     print("forget_loss_type: ",cfg.forget_loss)
     print("######################")
@@ -212,7 +180,7 @@ def main(cfg):
 
     if path_found:
         print("Loading from checkpoint")
-        model = AutoModelForCausalLM.from_pretrained(cfg.model_path, torch_dtype=torch.bfloat16, trust_remote_code=True)
+        model = AutoModelForCausalLM.from_pretrained(cfg.model_path, torch_dtype=torch.bfloat16, trust_remote_code=True).cuda()
 
     # now we have a HuggingFace model
     if bool(cfg.gradient_checkpointing) == True:
@@ -233,35 +201,24 @@ def main(cfg):
     Text_completion = item['text_completion']
     location = (item['Layer'], item['Dim'])
     wikipedia_content = item['wikipedia_content']
+
+    random.seed(seed+cfg.order)  #要测试这里是不是真的work，特别对于unrelated_QA的影响，是不是真的能抽到不一样的qa
     random_wikipedia_content = random.sample([x['wikipedia_content'] for x in running_set if x['Concept'] != item['Concept']], 1)  #这个部分需要后面人工调整，尽量内容不要有重叠
     #random_wikipedia_content = [data[22]['wikipedia_content']] #super mario
-    unrelated_QA = [item for sublist in random.sample([random.sample(x['QA'], 4) for x in running_set if x['Concept'] != item['Concept']], 5) for item in sublist] #4questions * 5concepts这个部分需要后面人工调整，unrelated_qa,尽量内容不要有重叠
+    #unrelated_QA = [item for sublist in random.sample([random.sample(x['QA'], 4) for x in running_set if x['Concept'] != item['Concept']], 5) for item in sublist] #4questions * 5concepts这个部分需要后面人工调整，unrelated_qa,尽量内容不要有重叠
+    unrelated_QA = item['unrelated_QA']
     print('len(unrelated_QA): ',len(unrelated_QA))
     print(f'Training on {order}  {concept}:')
 
-    if cfg.forget_loss in ["dpo", "dpo_KL", "dpo_grad_diff"]:
-        torch_format_dataset = TextForgetDatasetDPOQA(cfg.data_path,
+    torch_format_dataset = TextForgetDatasetWikipedia(cfg.data_path,
+                                                      content=wikipedia_content,
+                                                      random_content=random_wikipedia_content,
                                                       tokenizer=tokenizer,
                                                       model_family=cfg.model_family,
                                                       max_length=max_length,
-                                                      split=cfg.split)
+                                                      split=cfg.split,
+                                                      loss_type=cfg.forget_loss)
 
-    elif 'kto' in cfg.forget_loss:
-        torch_format_dataset = TextForgetDatasetKTOQA(cfg.data_path,
-                                                      tokenizer=tokenizer,
-                                                      model_family=cfg.model_family,
-                                                      max_length=max_length,
-                                                      split=cfg.split)
-
-    else:
-        torch_format_dataset = TextForgetDatasetWikipedia(cfg.data_path,
-                                                          content=wikipedia_content,
-                                                          random_content = random_wikipedia_content,
-                                                          tokenizer=tokenizer,
-                                                          model_family=cfg.model_family,
-                                                          max_length=max_length,
-                                                          split=cfg.split,
-                                                          loss_type=cfg.forget_loss)
 
     batch_size = int(cfg.batch_size)
     gradient_accumulation_steps = int(cfg.gradient_accumulation_steps)
@@ -285,6 +242,10 @@ def main(cfg):
     else:
         raise NotImplementedError("The warmup_steps must be an integer or step_per_epoch.")
 
+
+
+    cfg.lr = float(cfg.lr)
+    print(f'cfg.lr: ',cfg.lr)
     training_args = transformers.TrainingArguments(
         per_device_train_batch_size=batch_size,
         per_device_eval_batch_size=batch_size,
@@ -298,7 +259,7 @@ def main(cfg):
         logging_dir=f'{cfg.save_dir}/logs',
         output_dir=cfg.save_dir,
         optim="paged_adamw_32bit",
-        save_steps=max_steps + 1,  # do not save the model
+        save_steps=max_steps + 1000000,  # do not save the model
         ddp_find_unused_parameters=False,
         # deepspeed='config/ds_config.json',
         weight_decay=cfg.weight_decay,
@@ -306,7 +267,7 @@ def main(cfg):
         eval_steps=eval_steps,
     )
 
-    if cfg.ft_type == 'Niddle':
+    if cfg.ft_type == 'Needle':
         #only ft on specific vector's dimension
         layer, dim = location
         if 'llama' in model.config.model_type:
@@ -348,16 +309,52 @@ def main(cfg):
             mean = 0
             std = noise_scale
             shape = (4096,) #both llama7b and olmo7b is 4096
-            noise = torch.normal(mean, std, size=shape)
+            noise = torch.normal(mean, std, size=shape).cuda()
             layer, dim = location
             if 'llama' in model.config.model_type:
                 model.state_dict()[f'model.layers.{layer}.mlp.down_proj.weight'][:,dim] += noise
             elif 'olmo' in model.config.model_type:
                 model.state_dict()[f'model.transformer.blocks.{layer}.ff_out.weight'][:, dim] += noise
 
-            print(f"adding Guassian Noise on the layer{layer}, dim{dim}'s param, changing its angle?")
+            print(f"adding Guassian Noise on the layer{layer}, dim{dim}'s param")
 
         add_noise(model, location, noise_scale=0.1)
+
+    elif cfg.ft_type == "all_value_vectors":
+        print("Only train on all the value vectors.")
+        if 'llama' in model.config.model_type:
+            for name, param in model.named_parameters():
+                if "model.embed_tokens.weight" in name: #bug here
+                    param.requires_grad = True
+                    gradient_mask = torch.zeros_like(param).cuda()
+                    param.register_hook(lambda grad: grad.mul_(gradient_mask))
+                elif f"mlp.down_proj" in name:
+                    print('name: ', name)
+                    param.requires_grad = True
+                else:
+                    param.requires_grad = False
+
+                # if "model.embed_tokens.weight" in name:
+                #     print('name: ', name)
+                #     param.requires_grad = True
+                #     gradient_mask = torch.zeros_like(param).cuda()
+                #     param.register_hook(lambda grad: grad.mul_(gradient_mask))
+                # elif f"layers.{layer}.mlp.down_proj" in name:
+                #     print('name: ', name)
+                #     param.requires_grad = True
+                #     gradient_mask_mlp = torch.zeros_like(param).cuda()
+                #     gradient_mask_mlp[:, dim] = 1
+                #     param.register_hook(lambda grad: grad.mul_(gradient_mask_mlp))
+                # else:
+                #     param.requires_grad = False
+        elif 'olmo' in model.config.model_type:
+            for name, param in model.named_parameters():
+                if f'ff_out.weight' in name:
+                    print('name: ', name)
+                    param.requires_grad = True
+                else:
+                    param.requires_grad = False
+
 
     # elif cfg.ft_type == "Sparse":
     #         print('running on the dataset to find the parameters needed to be ft')
@@ -368,10 +365,11 @@ def main(cfg):
 
 
     # 创建EarlyStoppingCallback对象并传入早停阈值
-    if cfg.forget_loss == 'npo':
+    if cfg.forget_loss == 'npo' or cfg.forget_loss == 'dpo':
         cfg.loss_threshold = 0
-        print('forget_loss is NPO, so the early stopping loss_threshold = 0')
+        print('forget_loss is NPO or DPO, so the early stopping loss_threshold = 0')
     early_stopping_callback = EarlyStoppingCallback(loss_threshold=cfg.loss_threshold)
+
 
     trainer = CustomTrainerForgetting(
         model=model,
@@ -396,8 +394,22 @@ def main(cfg):
     model.config.use_cache = False  # silence the warnings. Please re-enable for inference!
     trainer.train()
 
+
+
+    """
     params, projection, qa_answers, text_responses, unrelated_qa_answers = evaluate(model, tokenizer=tokenizer, concept=concept, location=location, QA=QA, text_completion=Text_completion, unrelated_QA=unrelated_QA)
     results.append({'id': order,'Concept': concept, 'params': params, 'projection': projection, 'qa_answers': qa_answers, 'text_responses': text_responses, 'unrelated_qa_answers': unrelated_qa_answers})
+
+    torch.save(results, cfg.results_save_path+ f"/{cfg.model_family}_concepts_results_{cfg.forget_loss}_{cfg.ft_type}_{cfg.set}_concept{order}.pt")
+    """
+
+    #Jailbreak Evalutation
+    jailbreak_evaluate(model=model, tokenizer=tokenizer, Concept=item, data=running_set, cfg=cfg)
+
+
+    # reset_model_parameters(model, oracle_model)
+    # del results
+
     # save the tokenizer
     # model.save_pretrained(cfg.save_dir)
     # tokenizer.save_pretrained(cfg.save_dir)
@@ -415,18 +427,6 @@ def main(cfg):
     #             #delete the directory
     #             import shutil
     #             shutil.rmtree(global_step_dir)
-
-    # only single GPU, no local_rank
-    for file in Path(cfg.save_dir).glob("checkpoint-*"):
-        for global_step_dir in file.glob("global_step*"):
-            # delete the directory
-            import shutil
-            shutil.rmtree(global_step_dir)
-
-
-    torch.save(results, cfg.results_save_path+ f"/{cfg.model_family}_concepts_results_{cfg.forget_loss}_{cfg.ft_type}_{cfg.set}_concept{order}.pt")
-    # reset_model_parameters(model, oracle_model)
-    # del results
 
 
 if __name__ == "__main__":
