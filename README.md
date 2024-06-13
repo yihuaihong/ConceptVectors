@@ -1,36 +1,49 @@
-# ConceptMap Benchmark and Baselines Testing
-
-This repository contains the data for the ConceptMap Benchmark and the code for the experiments in the paper "Blast from the past: utilizing parametric knowledge traces to evaluate unlearning". 
-
+# ConceptVectors Benchmark
+This repository provides the code for our paper titled **[Intrinsic Evaluation of Unlearning Using Parametric Knowledge Traces]**
 
 
-### Abstract
-....
+## Quick Links
+- [ConceptVectors Benchmark](#conceptVectors-benchmark)
+  - [Quick Links](#quick-links)
+  - [Overview](#overview)
+  - [1. Requirements](#1-requirements)
+  - [2. Training and Forgetting](#2-training-and-forgetting)
+  - [3. Evaluation Forgetting Effectiveness](#3-evaluation-forgetting-effectiveness)
+  - [4. Jailbreaking Experiments](#4-jailbreaking-experiments)
+  - [How to Cite](#how-to-cite)
+
+## Overview
+You can reproduce the experiments of our paper.
+
+> **Abstract**
+> 
+> 
+
+## 1. Requirements
+To install the required packages for our baselines testing on ConceptVectors, please run the following command.
+```sh
+conda create -n conceptvectors python=3.9.5
+conda activate conceptvectors
+pip install -r requirements.txt
+```
+
+## 2. Training and Forgetting
 
 
-### Usage
-
-1. **changing forget.yaml**
-
-Replace the model_path and data_path with yours. And set the baseline to be tested.
-
-Set Niddle_used to False if you don't want to use the targeted finetuning.
-
-2. **python forget.py** 
-
-**NEW:** 
-
-chmod +x all_forget_llama.sh
-./all_forget_llama.sh
-
-or
-
-chmod +x all_forget_olmo.sh
-./all_forget_olmo.sh
+```sh
+conda create -n conceptvectors python=3.9.5
+conda activate conceptvectors
+pip install -r requirements.txt
+```
 
 
-To evaluate the baselines performance on ConceptMap Benchmark.
+## 3. Evaluation Forgetting Effectiveness
 
-3. **python evaluate.py**
 
-Evaluating the unlearned model's ability with the original ones, using both parametric metrics and QA metrics.
+## 4. Jailbreaking Experiments
+
+
+
+## How to Cite
+
+
