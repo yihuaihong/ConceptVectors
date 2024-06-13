@@ -29,7 +29,7 @@ Our benchmark is also available on HuggingFace Datasets: https://huggingface.co/
   - [2. Training and Forgetting](#2-training-and-forgetting)
   - [3. Evaluation Forgetting Effectiveness](#3-evaluation-forgetting-effectiveness)
   - [4. Concept Validation Experiments](#4-concept-Validation-experiments)
-  - [5. Jailbreaking Experiments](#4-jailbreaking-experiments)
+  - [5. Jailbreaking Experiments](#5-jailbreaking-experiments)
   - [How to Cite](#how-to-cite)
 
 ## Overview
