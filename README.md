@@ -31,7 +31,7 @@ Our benchmark is also available on HuggingFace Datasets: https://huggingface.co/
   - [4. Concept Validation Experiments](#4-concept-Validation-experiments)
   - [5. Jailbreaking Experiments](#5-jailbreaking-experiments)
   - [6. Others](#5-jailbreaking-experiments)
-    - [6.1. Triplets and Templates for Knowledge Editing](#5-jailbreaking-experiments)
+     [6.1. Triplets and Templates for Knowledge Editing](#5-jailbreaking-experiments)
   - [How to Cite](#how-to-cite)
 
 ## Overview
