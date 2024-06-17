@@ -138,7 +138,9 @@ Please run ./Jailbreak/jailbreak.ipynb
 
 ## 6. Knowledge Editing Testing
 
-For the use of knowledge editing methods, we provide triplets_to_templates pairs in ./ConceptVectors_data/relation_for_KE/relation_to_template.json and relations for every concept in ./ConceptVectors_data/relation_for_KE.
+For the use of knowledge editing methods, we provide triplets_to_templates pairs in ./ConceptVectors_data/relation_for_KE/relation_to_template.json 
+
+and relations for every concept in ./ConceptVectors_data/relation_for_KE.
 
 Please run the following commands for MEMIT unlearning testing:
 
