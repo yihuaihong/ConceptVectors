@@ -28,8 +28,8 @@ from utils import set_random_seed
 from evaluate_util import evaluate, cosine_similarity, jaccard_similarity, norm_distance, calculate_rouge_l, calculate_bleu
 
 
-set_random_seed(999)
-loss_type = "npo"
+set_random_seed(8888)
+loss_type = "dpo"
 ft_type = "Needle"
 running_set = "dev"
 
@@ -37,9 +37,7 @@ def merge_pt_files(base_dir, num_files):
     final_list = []
 
     for i in range(num_files):
-        #file_name = f'llama2-7b_concepts_results_grad_ascent_NiddleNiddle_test_concept{i}.pt'
         file_name = f'olmo-7b_concepts_results_{loss_type}_{ft_type}_{running_set}_concept{i}.pt'
-
 
         file_path = os.path.join(base_dir, file_name)
 
@@ -57,27 +55,18 @@ def merge_pt_files(base_dir, num_files):
     return final_list
 
 
-base_model = '/U_PZL2023ZZ0005/yhhong/transformers/OLMo-7B'#'/root/autodl-tmp/transformers/OLMo-7B'
-# tokenizer = LlamaTokenizer.from_pretrained(base_model, legacy = True)
-# original_model = LlamaForCausalLM.from_pretrained(base_model).to(device)
-
-
+base_model = '/root/autodl-tmp/transformers/OLMo-7B'
 tokenizer = AutoTokenizer.from_pretrained(base_model, trust_remote_code=True)
-tokenizer.pad_token = tokenizer.eos_token
-
 original_model = AutoModelForCausalLM.from_pretrained(base_model, trust_remote_code=True).cuda()
 
-base_dir = f'/U_PZL2023ZZ0005/yhhong/unlearn_results/olmo-7b/{loss_type}'
-num_files = 18
-#loaded_data = torch.load(base_dir+'/llama2-7b_concepts_results_npo_KL_Niddle_test_merged_results.pt')
+base_dir = f'/root/autodl-tmp/unlearn_results/olmo-7b/{loss_type}'
+num_files = 162
 loaded_data = merge_pt_files(base_dir, num_files)
 
-data_path = '/home/yihuaihong/Unlearn_Harry_Potter/ConceptMap/ConceptMap_data'
+data_path = '/root/Unlearn_Harry_Potter/Baselines/ConceptVectors/ConceptVectors_data'
 with open(data_path + f"/olmo-7b_concepts_{running_set}.json", "r", encoding="utf-8") as file:
     concept_data = json.load(file)
 
-# with open("/home/yihuaihong/Unlearn_Harry_Potter/ConceptMap"+"/unrelated_QA.json", "r", encoding="utf-8") as file:
-#     unrelated_QA_list = json.load(file)
 
 sum_qa_bleu_scores = []
 sum_qa_rouge_l_scores = []
@@ -117,21 +106,7 @@ for ix, (item, concept) in enumerate(zip(loaded_data, concept_data)):
 
     QA = concept['QA']
     text_completion = concept['text_completion']
-    # unrelated_QA = [item for sublist in random.sample([random.sample(x['QA'], 4) for x in concept_data if x['Concept'] != concept['Concept']], 5) for
-    #                 item in sublist]  # 4questions * 5concepts这个部分需要后面人工调整，unrelated_qa,尽量内容不要有重叠
-
-    # unrelated_QA = unrelated_QA_list[ix]
-
     unrelated_QA = concept['unrelated_QA']
-    # for unrelated_qa_text in unlearn_unrelated_qa_answers:
-    #     pattern = r'Question:\s*(.*?)\s*Answer:'
-    #     match = re.search(pattern, unrelated_qa_text, re.DOTALL)
-    #
-    #     if match:
-    #         question_content = match.group(1)
-    #         unrelated_QA.append(question_content)
-    #     else:
-    #         print("No match found")
 
 
     original_qa_answers, original_text_responses, original_unrelated_qa_answers = evaluate(original_model, tokenizer, QA, text_completion,
@@ -160,8 +135,6 @@ for ix, (item, concept) in enumerate(zip(loaded_data, concept_data)):
     qa_bleu_score = statistics.mean(qa_bleu_scores)
     qa_rouge_l_score = statistics.mean(qa_rouge_l_scores)
 
-    # bert_f_scores = [tensor.item() for tensor in bert_f_scores]
-    # bert_f_score = statistics.mean(bert_f_scores)
     text_bleu_score = statistics.mean(text_bleu_scores)
     text_rouge_l_score = statistics.mean(text_rouge_l_scores)
 
