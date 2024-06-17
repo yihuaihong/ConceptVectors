@@ -30,7 +30,7 @@ Our benchmark is also available on HuggingFace Datasets: https://huggingface.co/
   - [3. Evaluate Forgetting Effectiveness](#3-evaluate-forgetting-effectiveness)
   - [4. Concept Validation Experiments](#4-concept-Validation-experiments)
   - [5. Jailbreaking Experiments](#5-jailbreaking-experiments)
-  - [6. Triplets and Templates for Knowledge Editing](#6-triplets)
+  - [6. Triplets and Templates for Knowledge Editing](#6-triplets-and-templates-for-knowledge-editing)
   - [How to Cite](#how-to-cite)
 
 ## Overview
@@ -132,7 +132,7 @@ Please run ./Concept_Validation_Experiments/Concept_Validation_Experiments.ipynb
 ## 5. Jailbreaking Experiments
 Please run ./Jailbreak/jailbreak.ipynb
 
-## 6. Triplets and Templates for Knowledge Editing](#6-triplets)
+## 6. Triplets and Templates for Knowledge Editing
 
 For the use of knowledge editing methods, we also provide triplets_to_templates pairs in ./ConceptVectors_data/relation_for_KE/relation_to_template.json and relations for every concept in ./ConceptVectors_data/relation_for_KE.
 
