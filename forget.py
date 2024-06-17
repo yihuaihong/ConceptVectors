@@ -1,4 +1,4 @@
-from data_module import TextForgetDatasetWikipedia, TextForgetDatasetDPOQA, TextForgetDatasetKTOQA
+from data_module import TextForgetDatasetWikipedia
 from dataloader import CustomTrainerForgetting, custom_data_collator_forget
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM, TrainerCallback
@@ -6,23 +6,15 @@ import hydra
 import transformers
 import os
 import json
-from peft import LoraConfig, get_peft_model, PeftModel
-from pathlib import Path
-from utils import get_model_identifiers_from_yaml, set_random_seed
-from sparse_ft_utils import find_topK_grads, clip_grads
+from utils import set_random_seed
 from evaluate_util import jailbreak_evaluate
 import random
-import gc
 
 class EarlyStoppingCallback(TrainerCallback):
     def __init__(self, loss_threshold):
         self.loss_threshold = loss_threshold
-        # self.best_loss = float('inf')
-        # self.wait = 0
 
     def on_log(self, args, state, control, **kwargs):
-        # 获取当前评估损失 for grad_diff
-        # current_loss = state.metrics["eval_loss"]
         if not state.log_history or "loss" not in state.log_history[-1]:
             return control
 
@@ -33,24 +25,6 @@ class EarlyStoppingCallback(TrainerCallback):
             control.should_training_stop = True
 
         return control
-        # if not state.log_history:
-        #     return control
-        #
-        # print('state.log_history[-1]: ',state.log_history[-1])
-        # return control
-
-        # if current_loss < self.loss_threshold:
-        #     control.should_training_stop = True
-        # # 如果当前损失小于之前记录的最佳损失
-        # if current_loss < self.best_loss:
-        #     self.best_loss = current_loss
-        #     self.wait = 0
-        # else:
-        #     self.wait += 1
-        #     # 如果等待次数超过阈值，则停止训练
-        #     if self.wait >= self.early_stopping_threshold:
-        #         control.should_training_stop = True
-
 
 
 def reset_model_parameters(model, oracle_model):
@@ -58,24 +32,8 @@ def reset_model_parameters(model, oracle_model):
 
 
 
-def print_trainable_parameters(model):
-    """
-    Prints the number of trainable parameters in the model.
-    """
-    trainable_params = 0
-    all_param = 0
-    for name, param in model.named_parameters():
-        all_param += param.numel()
-        if param.requires_grad:
-            print('trainable param name: ',name)
-            trainable_params += param.numel()
-    print(
-        f"trainable params: {trainable_params} || all params: {all_param} || trainable%: {100 * trainable_params / all_param}"
-    )
-
 def evaluate(model, tokenizer, concept, location, QA, text_completion, unrelated_QA, top_k=200):
     #evaluate on Cosine similarity, Jaccard Similarity, QA, text_completion
-
 
     E = model.get_output_embeddings().weight.detach() #should use the new projection by the new model's lm_head
     layer, dim = location
@@ -83,7 +41,6 @@ def evaluate(model, tokenizer, concept, location, QA, text_completion, unrelated
         params = model.state_dict()[f'model.layers.{layer}.mlp.down_proj.weight'].T[dim, :]
     elif 'olmo' in model.config.model_type:
         params = model.state_dict()[f'model.transformer.blocks.{layer}.ff_out.weight'].T[dim, :]
-
 
 
     logits = params.T.matmul(E.T)
@@ -114,11 +71,7 @@ def evaluate(model, tokenizer, concept, location, QA, text_completion, unrelated
     unrelated_qa_answers = outputs[-len(unrelated_QA):]
     assert len(qa_answers) == 10 and len(unrelated_qa_answers) == 50
 
-    print('qa_answers[0]: ', qa_answers[0])
-    print('unrelated_qa_answers[0]: ',unrelated_qa_answers[0])
     return params, projection, qa_answers, text_responses, unrelated_qa_answers
-
-
 
 
 
@@ -137,18 +90,12 @@ def main(cfg):
         device_map = {'': local_rank}
 
     os.environ["WANDB_DISABLED"] = "true"
-    # model_cfg = get_model_identifiers_from_yaml(cfg.model_family)
-    # model_id = model_cfg["hf_key"]
 
 
     tokenizer = AutoTokenizer.from_pretrained(cfg.model_path, trust_remote_code=True)
     tokenizer.pad_token = tokenizer.eos_token
 
-
     print("forget_loss_type: ",cfg.forget_loss)
-    print("######################")
-    print("Saving to: ", cfg.save_dir)
-    print("######################")
 
     if os.path.exists(cfg.save_dir):
         print("Directory already exists")
@@ -164,9 +111,6 @@ def main(cfg):
                                                             trust_remote_code=True).cuda()
 
 
-
-    # first get the base model architectur2e
-    # if there is a pytorch*.bin file in the model path, then load that. use regex there can be anythign in between pytorch and .bin
     import re
     path_found = False
     for file in os.listdir(cfg.model_path):
@@ -179,10 +123,9 @@ def main(cfg):
             break
 
     if path_found:
-        print("Loading from checkpoint")
+        print("Loading model for training")
         model = AutoModelForCausalLM.from_pretrained(cfg.model_path, torch_dtype=torch.bfloat16, trust_remote_code=True).cuda()
 
-    # now we have a HuggingFace model
     if bool(cfg.gradient_checkpointing) == True:
         print("gradient_checkpointing is True")
         model.gradient_checkpointing_enable()
@@ -202,12 +145,10 @@ def main(cfg):
     location = (item['Layer'], item['Dim'])
     wikipedia_content = item['wikipedia_content']
 
-    random.seed(seed+cfg.order)  #要测试这里是不是真的work，特别对于unrelated_QA的影响，是不是真的能抽到不一样的qa
-    random_wikipedia_content = random.sample([x['wikipedia_content'] for x in running_set if x['Concept'] != item['Concept']], 1)  #这个部分需要后面人工调整，尽量内容不要有重叠
-    #random_wikipedia_content = [data[22]['wikipedia_content']] #super mario
-    #unrelated_QA = [item for sublist in random.sample([random.sample(x['QA'], 4) for x in running_set if x['Concept'] != item['Concept']], 5) for item in sublist] #4questions * 5concepts这个部分需要后面人工调整，unrelated_qa,尽量内容不要有重叠
+    random.seed(seed+cfg.order)
+    random_wikipedia_content = random.sample([x['wikipedia_content'] for x in running_set if x['Concept'] != item['Concept']], 1)
     unrelated_QA = item['unrelated_QA']
-    print('len(unrelated_QA): ',len(unrelated_QA))
+    # print('len(unrelated_QA): ',len(unrelated_QA))
     print(f'Training on {order}  {concept}:')
 
     torch_format_dataset = TextForgetDatasetWikipedia(cfg.data_path,
@@ -324,7 +265,7 @@ def main(cfg):
         print("Only train on all the value vectors.")
         if 'llama' in model.config.model_type:
             for name, param in model.named_parameters():
-                if "model.embed_tokens.weight" in name: #bug here
+                if "model.embed_tokens.weight" in name:
                     param.requires_grad = True
                     gradient_mask = torch.zeros_like(param).cuda()
                     param.register_hook(lambda grad: grad.mul_(gradient_mask))
@@ -334,19 +275,6 @@ def main(cfg):
                 else:
                     param.requires_grad = False
 
-                # if "model.embed_tokens.weight" in name:
-                #     print('name: ', name)
-                #     param.requires_grad = True
-                #     gradient_mask = torch.zeros_like(param).cuda()
-                #     param.register_hook(lambda grad: grad.mul_(gradient_mask))
-                # elif f"layers.{layer}.mlp.down_proj" in name:
-                #     print('name: ', name)
-                #     param.requires_grad = True
-                #     gradient_mask_mlp = torch.zeros_like(param).cuda()
-                #     gradient_mask_mlp[:, dim] = 1
-                #     param.register_hook(lambda grad: grad.mul_(gradient_mask_mlp))
-                # else:
-                #     param.requires_grad = False
         elif 'olmo' in model.config.model_type:
             for name, param in model.named_parameters():
                 if f'ff_out.weight' in name:
@@ -354,14 +282,6 @@ def main(cfg):
                     param.requires_grad = True
                 else:
                     param.requires_grad = False
-
-
-    # elif cfg.ft_type == "Sparse":
-    #         print('running on the dataset to find the parameters needed to be ft')
-    #         torch_format_dataset
-    #         min_grad = find_topK_grads(model, topK = 0.001, c_types=["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"])
-    #
-    #                    clip_grads
 
 
     # 创建EarlyStoppingCallback对象并传入早停阈值
@@ -377,8 +297,6 @@ def main(cfg):
         train_dataset=torch_format_dataset,
         eval_dataset=torch_format_dataset,
         compute_metrics=None,
-        # the callback for computing metrics, None in this case since you're doing it in your callback
-        # callbacks=[GlobalStepDeletionCallback],
         args=training_args,
         data_collator=custom_data_collator_forget,
         oracle_model=oracle_model,
@@ -396,37 +314,15 @@ def main(cfg):
 
 
 
-    """
     params, projection, qa_answers, text_responses, unrelated_qa_answers = evaluate(model, tokenizer=tokenizer, concept=concept, location=location, QA=QA, text_completion=Text_completion, unrelated_QA=unrelated_QA)
     results.append({'id': order,'Concept': concept, 'params': params, 'projection': projection, 'qa_answers': qa_answers, 'text_responses': text_responses, 'unrelated_qa_answers': unrelated_qa_answers})
 
     torch.save(results, cfg.results_save_path+ f"/{cfg.model_family}_concepts_results_{cfg.forget_loss}_{cfg.ft_type}_{cfg.set}_concept{order}.pt")
-    """
+
 
     #Jailbreak Evalutation
-    jailbreak_evaluate(model=model, tokenizer=tokenizer, Concept=item, data=running_set, cfg=cfg)
+    # jailbreak_evaluate(model=model, tokenizer=tokenizer, Concept=item, data=running_set, cfg=cfg)
 
-
-    # reset_model_parameters(model, oracle_model)
-    # del results
-
-    # save the tokenizer
-    # model.save_pretrained(cfg.save_dir)
-    # tokenizer.save_pretrained(cfg.save_dir)
-
-    # del trainer
-    # del training_args
-    # del torch_format_dataset
-    # gc.collect()
-    # torch.cuda.empty_cache()
-
-    # delete all "global_step*" files in the save_dir/checkpoint-*/ directories
-    # if local_rank == 0:
-    #     for file in Path(cfg.save_dir).glob("checkpoint-*"):
-    #         for global_step_dir in file.glob("global_step*"):
-    #             #delete the directory
-    #             import shutil
-    #             shutil.rmtree(global_step_dir)
 
 
 if __name__ == "__main__":

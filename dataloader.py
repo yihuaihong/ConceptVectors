@@ -24,8 +24,6 @@ def printll(name, inp):
     print(name, [round(x, 4) for x in inp])
 
 
-
-
 class CustomTrainer(Trainer):
     def compute_loss(self, model, inputs, return_outputs=False):
         input_ids, labels, attention_mask = inputs
@@ -124,8 +122,7 @@ class CustomTrainerForgetting(Trainer):
                         }
                     )
 
-        # If ZeRO-3 is used, we shard both the active and reference model.
-        # Otherwise, we assume the reference model fits in memory and is initialized on each device with ZeRO disabled (stage 0)
+
         if config_kwargs["zero_optimization"]["stage"] != 3:
             config_kwargs["zero_optimization"]["stage"] = 0
         config_kwargs["optimizer"] = {"type": None}
@@ -140,28 +137,12 @@ class CustomTrainerForgetting(Trainer):
 
     def compute_loss(self, model, inputs, return_outputs=False):
         if self.loss_type == "grad_ascent":
-            forget_inputs = inputs[0]  #forget_inputs, retain_inputs = inputs
+            forget_inputs = inputs[0]
             input_ids, labels, attention_mask = forget_inputs
-            outputs = model(input_ids,labels=labels, attention_mask=attention_mask)         ##attention_mask is used to indicate which tokens to attend to ()
+            outputs = model(input_ids,labels=labels, attention_mask=attention_mask)
             forget_loss = outputs.loss
             forget_loss = forget_loss * -1
             loss = forget_loss
-
-        elif self.loss_type == "grad_ascent_forgetKL":
-            forget_inputs, retain_inputs = inputs
-            input_ids, labels, attention_mask = forget_inputs
-            outputs = model(input_ids,labels=labels, attention_mask=attention_mask)         
-            forget_loss = -1 * outputs.loss
-
-            with torch.no_grad():
-                oracle_outputs = self.oracle_model(input_ids, labels=labels, attention_mask=attention_mask)
-            oracle_probs = F.log_softmax(oracle_outputs.logits, dim=-1)
-            oracle_probs = oracle_probs.view(-1, oracle_outputs.logits.shape[-1])
-            current_probs = F.log_softmax(outputs.logits, dim=-1)
-            current_probs = current_probs.view(-1, outputs.logits.shape[-1])
-
-            kl_loss = nn.functional.kl_div(current_probs, oracle_probs, reduction='batchmean', log_target=True)
-            loss = forget_loss + kl_loss
 
         elif self.loss_type == "grad_diff":
             forget_inputs, retain_inputs = inputs
@@ -174,26 +155,6 @@ class CustomTrainerForgetting(Trainer):
             retain_outputs = model(retain_input_ids,labels=retain_labels, attention_mask=retain_attention_mask)
             retain_loss = retain_outputs.loss
             loss = forget_loss + 1.5*retain_loss
-        
-        elif self.loss_type == "KL":
-            forget_inputs, retain_inputs = inputs
-            input_ids, labels, attention_mask = forget_inputs
-            outputs = model(input_ids,labels=labels, attention_mask=attention_mask)
-            forget_loss = outputs.loss
-            forget_loss = forget_loss * -1
-            retain_input_ids, retain_labels, retain_attention_mask = retain_inputs
-            with torch.no_grad():
-                retain_outputs = self.oracle_model(retain_input_ids, labels=retain_labels, attention_mask=retain_attention_mask)
-            retain_probs = F.log_softmax(retain_outputs.logits, dim=-1)
-            retain_probs = retain_probs.view(-1, retain_outputs.logits.shape[-1])
-
-            current_outputs = model(retain_input_ids,labels=retain_labels, attention_mask=retain_attention_mask)
-            current_probs = F.log_softmax(current_outputs.logits, dim=-1)
-            current_probs = current_probs.view(-1, current_outputs.logits.shape[-1])
-
-            #minimum KL divergence
-            retain_loss = nn.functional.kl_div(current_probs, retain_probs, reduction='batchmean', log_target=True)
-            loss = forget_loss + retain_loss
         
         elif self.loss_type in ["dpo","dpo_grad_diff","dpo_KL"]:
             forget_inputs, retain_inputs = inputs
@@ -306,75 +267,6 @@ class CustomTrainerForgetting(Trainer):
             retain_loss = nn.functional.kl_div(current_probs, retain_probs, reduction='batchmean', log_target=True)
             loss = self.npo_coeff * forget_loss + self.KL_coeff * retain_loss
 
-        elif self.loss_type == 'kto_sigmoid':
-            idk_inputs, forget_inputs, retain_inputs = inputs
-            idk_input_ids, idk_labels, idk_attention_mask = idk_inputs
-            forget_input_ids, forget_labels, forget_attention_mask = forget_inputs
-
-            with torch.no_grad():
-                idk_outputs = model(idk_input_ids, labels=idk_labels, attention_mask=idk_attention_mask)
-                idk_outputs_oracle = self.oracle_model(idk_input_ids, labels=idk_labels, attention_mask=idk_attention_mask)
-                idk_loss_log = -1 * get_batch_loss(idk_outputs.logits, idk_labels)
-                idk_loss_log_oracle = -1 * get_batch_loss(idk_outputs_oracle.logits, idk_labels)
-
-                KL_term = (idk_loss_log - idk_loss_log_oracle).mean()
-
-                forget_outputs_oracle = self.oracle_model(forget_input_ids, labels=forget_labels, attention_mask=forget_attention_mask)
-                forget_loss_oracle = -1 * get_batch_loss(forget_outputs_oracle.logits, forget_labels)
-
-            forget_outputs = model(forget_input_ids,labels=forget_labels, attention_mask=forget_attention_mask)
-            forget_loss = -1 * get_batch_loss(forget_outputs.logits, forget_labels)
-            log_ratios = forget_loss - forget_loss_oracle
-            loss = 1.0 - F.sigmoid(KL_term - self.beta * log_ratios).mean() * 2 / self.beta
-
-        elif self.loss_type == 'kto_logsigmoid':
-            idk_inputs, forget_inputs, retain_inputs = inputs
-            idk_input_ids, idk_labels, idk_attention_mask = idk_inputs
-            forget_input_ids, forget_labels, forget_attention_mask = forget_inputs
-
-            with torch.no_grad():
-                idk_outputs = model(idk_input_ids, labels=idk_labels, attention_mask=idk_attention_mask)
-                idk_outputs_oracle = self.oracle_model(idk_input_ids, labels=idk_labels, attention_mask=idk_attention_mask)
-                idk_loss_log = -1 * get_batch_loss(idk_outputs.logits, idk_labels)
-                idk_loss_log_oracle = -1 * get_batch_loss(idk_outputs_oracle.logits, idk_labels)
-
-                KL_term = (idk_loss_log - idk_loss_log_oracle).mean()
-
-                forget_outputs_oracle = self.oracle_model(forget_input_ids, labels=forget_labels, attention_mask=forget_attention_mask)
-                forget_loss_oracle = -1 * get_batch_loss(forget_outputs_oracle.logits, forget_labels)
-
-            forget_outputs = model(forget_input_ids,labels=forget_labels, attention_mask=forget_attention_mask)
-            forget_loss = -1 * get_batch_loss(forget_outputs.logits, forget_labels)
-            log_ratios = forget_loss - forget_loss_oracle
-            loss = 1.0 - F.logsigmoid(KL_term - self.beta * log_ratios).mean() * 2 / self.beta
-
-        elif self.loss_type == 'kto_logsigmoid_grad_diff':
-            idk_inputs, forget_inputs, retain_inputs = inputs
-            idk_input_ids, idk_labels, idk_attention_mask = idk_inputs
-            forget_input_ids, forget_labels, forget_attention_mask = forget_inputs
-
-            with torch.no_grad():
-                idk_outputs = model(idk_input_ids, labels=idk_labels, attention_mask=idk_attention_mask)
-                idk_outputs_oracle = self.oracle_model(idk_input_ids, labels=idk_labels, attention_mask=idk_attention_mask)
-                idk_loss_log = -1 * get_batch_loss(idk_outputs.logits, idk_labels)
-                idk_loss_log_oracle = -1 * get_batch_loss(idk_outputs_oracle.logits, idk_labels)
-
-                KL_term = (idk_loss_log - idk_loss_log_oracle).mean()
-
-                forget_outputs_oracle = self.oracle_model(forget_input_ids, labels=forget_labels, attention_mask=forget_attention_mask)
-                forget_loss_oracle = -1 * get_batch_loss(forget_outputs_oracle.logits, forget_labels)
-
-            forget_outputs = model(forget_input_ids, labels=forget_labels, attention_mask=forget_attention_mask)
-            forget_loss = -1 * get_batch_loss(forget_outputs.logits, forget_labels)
-            log_ratios = forget_loss - forget_loss_oracle
-            forget_loss = 1.0 - F.logsigmoid(KL_term - self.beta * log_ratios).mean() * 2 / self.beta
-            print(KL_term)
-
-            retain_input_ids, retain_labels, retain_attention_mask = retain_inputs
-            retain_outputs = model(retain_input_ids, labels=retain_labels, attention_mask=retain_attention_mask)
-            retain_loss = retain_outputs.loss
-
-            loss = forget_loss + retain_loss
 
         return (loss, outputs) if return_outputs else loss
         
@@ -388,59 +280,7 @@ class CustomTrainerForgetting(Trainer):
             loss = outputs.loss
         return (loss, logits, labels)
 
-class CustomTrainerRetraining(Trainer):
-    def __init__(self, *args, **kwargs):
-        self.eval_cfg = kwargs.pop('eval_cfg')
-        self.seed = kwargs.pop('seed')
-        super(CustomTrainerRetraining, self).__init__(*args, **kwargs)
 
-    def get_train_dataloader(self):
-        if self.train_dataset is None:
-            raise ValueError("Trainer: training requires a train_dataset.")
-
-        train_dataset = self.train_dataset
-        data_collator = self.data_collator
-        if is_datasets_available() and isinstance(train_dataset, datasets.Dataset):
-            train_dataset = self._remove_unused_columns(train_dataset, description="training")
-        else:
-            data_collator = self._get_collator_with_removed_columns(data_collator, description="training")
-
-        dataloader_params = {
-            "batch_size": self._train_batch_size,
-            "collate_fn": data_collator,
-            "num_workers": self.args.dataloader_num_workers,
-            "pin_memory": self.args.dataloader_pin_memory,
-            "persistent_workers": self.args.dataloader_persistent_workers,
-        }
-        
-        generator = torch.Generator()
-        generator.manual_seed(self.seed + self.state.global_step)
-        print(f'Generator........Epoch-{self.state.global_step}')
-
-        if not isinstance(train_dataset, torch.utils.data.IterableDataset):
-            dataloader_params["generator"] = generator
-            dataloader_params["shuffle"] = True # set shuffle=True with specified generator.
-            # dataloader_params["sampler"] = self._get_train_sampler()
-            dataloader_params["drop_last"] = self.args.dataloader_drop_last
-            dataloader_params["worker_init_fn"] = seed_worker
-        return self.accelerator.prepare(DataLoader(train_dataset, **dataloader_params))
-
-    def compute_loss(self, model, inputs, return_outputs=False):
-        input_ids, labels, attention_mask = inputs
-        outputs = model(input_ids,labels=labels, attention_mask=attention_mask)
-        loss = outputs.loss
-        return (loss, outputs) if return_outputs else loss
-    
-    def prediction_step(self, model, inputs, prediction_loss_only: bool, ignore_keys=None):
-        input_ids, labels, attention_mask = inputs
-        # forward pass
-        with torch.no_grad():
-            outputs = model(input_ids,labels=labels, attention_mask=attention_mask)
-            logits = outputs.logits
-            loss = outputs.loss
-        return (loss, logits, labels)
-
-                
 def custom_data_collator_forget(samples):
     rets = []
     if len(samples[0]) == 2:
@@ -461,13 +301,7 @@ def custom_data_collator_forget(samples):
         rets.append((torch.stack(input_ids), torch.stack(labels), torch.stack(attention_mask)))
     return rets
 
-def compute_metrics(pred):
-    logits, labels = torch.from_numpy(pred.predictions), torch.from_numpy(pred.label_ids)
-    preds = torch.from_numpy(pred.predictions.argmax(-1))
-    shifted_labels = labels[..., 1:].contiguous()
-    acc = torch.mean((preds[..., :-1] == shifted_labels).float())
-    loss  = get_loss(logits, labels)
-    return {"eval accuracy": acc, "eval loss": loss.item()}
+
 
 def get_loss(output, labels):
     shifted_labels = labels[..., 1:].contiguous()
