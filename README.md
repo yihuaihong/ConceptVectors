@@ -34,7 +34,7 @@ This repository contains the data for the ConceptVectors Benchmark and the code 
   - [3. Evaluate Forgetting Effectiveness](#3-evaluate-forgetting-effectiveness)
   - [4. Concept Validation Experiments](#4-concept-Validation-experiments)
   - [5. Jailbreaking Experiments](#5-jailbreaking-experiments)
-  - [6. Triplets and Templates for Knowledge Editing](#6-triplets-and-templates-for-knowledge-editing)
+  - [6. Knowledge Editing Testing](#6-knowledge-editing-testing)
   - [How to Cite](#how-to-cite)
 
 ## Overview
