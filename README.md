@@ -113,7 +113,7 @@ Before run the command, please make sure to update your data_path and model_path
 | Important Tunable hyperparameters | Choices                                                                           |
 |-----------------------------------|-----------------------------------------------------------------------------------|
 | **`forget_loss`**                 | [grad_ascent, grad_diff, npo, npo_grad_diff, npo_KL, dpo]                         |
-| **`ft_type`**                     | [Full, MEMIT, all_value_vectors, Neddle]                                          | 
+| **`ft_type`**                     | [Full, all_value_vectors, Neddle] (see point.6 for memit)                         | 
 | **`set`**                         | [test, dev]                                                                       |
 | **`lr`**                          | [1e-1,2e-1,3e-1,5e-1] for Needle, [1e-5,2e-5,3e-5,5e-5] for others(learning rate) |
 | **`num_epochs`**                  | [1,2,3,5,10] (training epoch)                                                     |
@@ -136,7 +136,7 @@ Please run ./Concept_Validation_Experiments/Concept_Validation_Experiments.ipynb
 ## 5. Jailbreaking Experiments
 Please run ./Jailbreak/jailbreak.ipynb
 
-## 6. Triplets and Templates for Knowledge Editing
+## 6. Knowledge Editing Testing
 
 For the use of knowledge editing methods, we also provide triplets_to_templates pairs in ./ConceptVectors_data/relation_for_KE/relation_to_template.json and relations for every concept in ./ConceptVectors_data/relation_for_KE.
 
