@@ -155,5 +155,14 @@ Please args.dummy_string is True is True if you want to run MEMIT+Empty
 
 
 ## How to Cite
-
+```
+@misc{hong2024intrinsic,
+      title={Intrinsic Evaluation of Unlearning Using Parametric Knowledge Traces}, 
+      author={Yihuai Hong and Lei Yu and Shauli Ravfogel and Haiqin Yang and Mor Geva},
+      year={2024},
+      eprint={2406.11614},
+      archivePrefix={arXiv},
+      primaryClass={id='cs.CL' full_name='Computation and Language' is_active=True alt_name='cmp-lg' in_archive='cs' is_general=False description='Covers natural language processing. Roughly includes material in ACM Subject Class I.2.7. Note that work on artificial languages (programming languages, logics, formal systems) that does not explicitly address natural-language issues broadly construed (natural-language processing, computational linguistics, speech, text retrieval, etc.) is not appropriate for this area.'}
+}
+```
 
