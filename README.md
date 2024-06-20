@@ -3,9 +3,9 @@
 
 This repository contains the data for the ConceptVectors Benchmark and the code for the experiments in our paper titled **[Intrinsic Evaluation of Unlearning Using Parametric Knowledge Traces]**
 
-* Arxiv: https://arxiv.org/pdf/2406.11614
-* We have a website to better show the contribution of our work: https://yihuaihong.github.io/ConceptVectors.github.io/
-* Our benchmark is also available on HuggingFace Datasets: https://huggingface.co/datasets/YihuaiHong/ConceptVectors
+* **Arxiv:** https://arxiv.org/pdf/2406.11614
+* **Website** for better showing the contribution of our work: https://yihuaihong.github.io/ConceptVectors.github.io/
+* **HuggingFace Datasets**: https://huggingface.co/datasets/YihuaiHong/ConceptVectors
 
 
 
