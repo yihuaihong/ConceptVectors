@@ -150,9 +150,9 @@ python3 -m experiments.evaluate \
    --hparams_fname=llama2-7b.json or olmo-7b.json \
 ```
 
-Please args.dummy_string is False if you want to run MEMIT+Entropy
+Please set args.dummy_string to False if you want to run MEMIT+Entropy
 
-Please args.dummy_string is True is True if you want to run MEMIT+Empty
+Please set args.dummy_string to True if you want to run MEMIT+Empty
 
 
 ## How to Cite
