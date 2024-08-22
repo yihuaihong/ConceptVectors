@@ -6,6 +6,7 @@ This repository contains the data for the ConceptVectors Benchmark and the code 
 * **Arxiv:** https://arxiv.org/pdf/2406.11614
 * **Website** for better showing the contribution of our work: https://yihuaihong.github.io/ConceptVectors.github.io/
 * **HuggingFace Datasets**: https://huggingface.co/datasets/YihuaiHong/ConceptVectors
+* **Presentation Recording on Rep4NLP in ACL24 by Mor Geva<span style="color: red;">(new)</span>**: [Link, please skip to 03:36:00](https://us06web.zoom.us/rec/play/elD0L6cBg2-Q9mfBb605prjuLKKgmKD_zhmcnh8ZSrvmWjH6T8YfsegwV0PhmjsqCygFjyZVxNgWlL-b.Ma90gbbKpXxyTyC2?canPlayFromShare=true&from=share_recording_detail&continueMode=true&componentName=rec-play&originRequestUrl=https%3A%2F%2Fus06web.zoom.us%2Frec%2Fshare%2FB5Wqz7sfbnYE4IeiYHjzW9FtuoKzyqZm4C427f_VCKJACz871HspO95BnoCjrcvF.ovYouQwoKliH2Bk3)
 
 
 
