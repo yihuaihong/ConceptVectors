@@ -86,9 +86,9 @@ pip install -r requirements.txt
 
 
 ```sh
-bash all_forget_llama.sh
+CUDA_VISIBLE_DEVICES=0 bash all_forget_llama.sh
 or
-bash all_forget_olmo.sh
+CUDA_VISIBLE_DEVICES=0 bash all_forget_olmo.sh
 ```
 Before run the command, please make sure to update your data_path and model_path in the ./config/forget.yaml :)
 
