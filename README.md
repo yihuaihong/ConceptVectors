@@ -1,5 +1,4 @@
 # ConceptVectors Benchmark
-**ConceptVectors Benchmark for 2024 NeurIPS Datasets and Benchmarks Track submission.**
 
 This repository contains the data for the ConceptVectors Benchmark and the code for the experiments in our paper titled **[Intrinsic Evaluation of Unlearning Using Parametric Knowledge Traces]**
 
@@ -55,7 +54,7 @@ You can reproduce the experiments in our paper.
 
 ```python
   {
-      "ID": "",
+      "ID": "26",
       "Concept": "Harry Potter",
       "Layer": 20,
       "Dim": 10513,
@@ -144,9 +143,9 @@ Please run the following commands for MEMIT unlearning testing:
 
 ```sh
 cd memit
-python3 -m experiments.evaluate \
-   --model_name=your_model_path \
-   --hparams_fname=llama2-7b.json or olmo-7b.json \
+CUDA_VISIBLE_DEVICES=0 bash forget_memit.sh 
+or
+CUDA_VISIBLE_DEVICES=0 bash forget_memit_olmo.sh
 ```
 
 Please set args.dummy_string to False if you want to run MEMIT+Entropy
