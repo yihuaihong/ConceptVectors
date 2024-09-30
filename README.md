@@ -152,6 +152,8 @@ Please set args.dummy_string to False if you want to run MEMIT+Entropy
 
 Please set args.dummy_string to True if you want to run MEMIT+Empty
 
+Feel free to vary the hyperparameters in the ./memit/hparams/MEMIT/llama2-7b.json or olmo-7b.json if you would like a different strength of unlearning for them.
+
 
 ## How to Cite
 ```
