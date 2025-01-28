@@ -157,14 +157,11 @@ Feel free to vary the hyperparameters in the ./memit/hparams/MEMIT/llama2-7b.jso
 
 ## How to Cite
 ```
-@misc{hong2024intrinsicevaluationunlearningusing,
-      title={Intrinsic Evaluation of Unlearning Using Parametric Knowledge Traces}, 
-      author={Yihuai Hong and Lei Yu and Haiqin Yang and Shauli Ravfogel and Mor Geva},
-      year={2024},
-      eprint={2406.11614},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2406.11614}, 
+@article{hong2024intrinsic,
+  title={Intrinsic evaluation of unlearning using parametric knowledge traces},
+  author={Hong, Yihuai and Yu, Lei and Yang, Haiqin and Ravfogel, Shauli and Geva, Mor},
+  journal={arXiv preprint arXiv:2406.11614},
+  year={2024}
 }
 ```
 
